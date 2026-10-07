@@ -28,6 +28,12 @@ each group. The diagonal compares alternating line halves within a page.
 Outlier scores compare the nearest page on another bifolium against this
 within-page variation. Ranked pages require at least 60 words and 20 per half.
 
+For studied pages, a separate ranking compares isolation with equally short
+samples from longer pages. Choose a reference regime to inspect the percentile
+range from random words and contiguous windows. This measure requires neighbors
+on two distinct external bifolia. Comparisons with fewer than five source
+bifolia are displayed separately without a rank. Unstudied pages have no score.
+
 Sparse text and the distance geometry limit interpretation. Clustering and
 outlier scores are exploratory rather than tests establishing distinct languages.
 The viewer's expandable method notes describe the calculations in more detail.
