@@ -1,0 +1,10 @@
+{
+  "generator": "clustermatrix-static-v1",
+  "include_global_ward": false,
+  "source_matrix_sha256": "1a6e1c062b44d98e9ac3ff58239e9b7da898f020a9d2b6cdedb450139148d669",
+  "files": {
+    "index.html": "63b683a354c45fbb61ac8e5c0244bd6dfd6d1ed945caabe00efa8ec824b225b5",
+    "README.md": "d678cb15568abcf6c0cda53c944a46ce82339e9484cb48346b27188a1395198c",
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
