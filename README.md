@@ -33,6 +33,9 @@ samples from longer pages. Choose a reference regime to inspect the percentile
 range from random words and contiguous windows. This measure requires neighbors
 on two distinct external bifolia. Comparisons with fewer than five source
 bifolia are displayed separately without a rank. Unstudied pages have no score.
+For f57v, this ranking uses 68 words after excluding single-unit words from the
+page and its comparison material. This exception is labeled in the viewer;
+the matrix and scatterplot retain the full selected text.
 
 Sparse text and the distance geometry limit interpretation. Clustering and
 outlier scores are exploratory rather than tests establishing distinct languages.
