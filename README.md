@@ -17,6 +17,30 @@ includes [René Zandbergen's language classifications](https://www.voynich.nu/ex
   or LFD hand while following the bifolium and quire tracks.
 - Inspect outlier scores and external distances, and download charts or data.
 
+## Page classifications and scores
+
+[Download the page classifications CSV](golf-classifications.csv) for all 225
+pages and panels in the viewer, in manuscript order. Each row gives the Golf
+classification and bifolium, followed by separate `paragraph_` and `all_` scores.
+Unassigned pages are retained. These are the viewer's existing classifications.
+
+Nearest and second-nearest external JS values include small samples and exclude
+the page's own bifolium. The two neighbors may share a bifolium with each other.
+JS values are in bits. The outlier score uses the nearest external page that
+meets the sample rules, divided by internal split-half JS. Its reference page
+and distance are included because it can differ from the unrestricted nearest
+neighbor. Blank outlier scores mean the page does not meet the sample rules or
+has zero internal JS.
+
+The isolation percentile range compares equally short samples from Early A,
+using random words and contiguous windows. Higher values mean greater isolation
+for the word count. Comparisons with fewer than five source bifolia are marked
+as limited. Blank percentiles mean the page was not studied or had no qualifying
+sources. Entirely blank paragraph fields mean the page has no paragraph profile.
+For f57v, `all_no_singletons` identifies the 68-word isolation comparison that
+excludes 124 single-unit words and filters comparison pages too. Its other
+all-text metrics still use all 192 words.
+
 ## Text and method
 
 Paragraph text is the default and covers 207 pages and panels. All text adds

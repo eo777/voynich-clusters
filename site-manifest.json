@@ -4,7 +4,8 @@
   "source_matrix_sha256": "1a6e1c062b44d98e9ac3ff58239e9b7da898f020a9d2b6cdedb450139148d669",
   "files": {
     "index.html": "ccbace847a2a9a95b30c26e95fc15186c608c9ea5b24bb85d6b3250203f5153c",
-    "README.md": "f17a6b1432bdf73075a37d2a4a699cec0ad72b7b1b7bbbca7543b09cf69e3648",
-    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "README.md": "458d71d7f7ad74dda6d5aa12a90493e1a83ee9ba8e640e185092992cf2486b52",
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "golf-classifications.csv": "5c261a8a19ec65650933588fb96036fd8e589048e9de4aafbe7a9d95a151ac0e"
   }
 }
