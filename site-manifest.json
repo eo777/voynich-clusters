@@ -4,8 +4,9 @@
   "source_matrix_sha256": "1a6e1c062b44d98e9ac3ff58239e9b7da898f020a9d2b6cdedb450139148d669",
   "files": {
     "index.html": "05460bb590f86abf85b4b61cd043ccbf7f22f0c1fd9cef3af5572fe6b7ce2464",
-    "README.md": "35a34645d95e07a92cb2c421353bdb189abbc1e3b06d5344d7184b7d590ad8f7",
+    "README.md": "a8616ce2f28558565fef9d2389e12a577f5139c2833aefc88affccbd3df7716f",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "golf-classifications.csv": "ff642d2c0d3c7856ad23f5fd70099b9c875fbddfb273d7f01c3adfbf9f720379"
+    "golf-classifications.csv": "ff642d2c0d3c7856ad23f5fd70099b9c875fbddfb273d7f01c3adfbf9f720379",
+    "golf-v2-assignments.csv": "b10e2d71f80ae7a3d88bb1c6427cc4582b8a5806796e7d0daaac488f5621d42e"
   }
 }

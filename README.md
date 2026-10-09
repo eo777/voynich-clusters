@@ -69,6 +69,12 @@ brown; Stars uses violet and gold. Lighter fills indicate qualified support.
 
 ## Page classifications and scores
 
+[Download the Golf V2 assignments CSV](golf-v2-assignments.csv) for the complete
+authoritative membership export. Each row represents a page and text kind,
+including labels, circular text and radial text. It includes working assignment
+codes, support levels, audit status, intermediate candidates and uncertainty
+reasons. This is an unchanged copy of Golf's `page_membership.csv`.
+
 [Download the page classifications CSV](golf-classifications.csv) for all 225
 pages and panels in the viewer, in manuscript order. Each row gives the Golf
 classification and bifolium, followed by separate `paragraph_` and `all_` scores.
