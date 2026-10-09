@@ -3,9 +3,9 @@
   "include_global_ward": false,
   "source_matrix_sha256": "1a6e1c062b44d98e9ac3ff58239e9b7da898f020a9d2b6cdedb450139148d669",
   "files": {
-    "index.html": "ccbace847a2a9a95b30c26e95fc15186c608c9ea5b24bb85d6b3250203f5153c",
-    "README.md": "458d71d7f7ad74dda6d5aa12a90493e1a83ee9ba8e640e185092992cf2486b52",
+    "index.html": "05460bb590f86abf85b4b61cd043ccbf7f22f0c1fd9cef3af5572fe6b7ce2464",
+    "README.md": "35a34645d95e07a92cb2c421353bdb189abbc1e3b06d5344d7184b7d590ad8f7",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "golf-classifications.csv": "5c261a8a19ec65650933588fb96036fd8e589048e9de4aafbe7a9d95a151ac0e"
+    "golf-classifications.csv": "ff642d2c0d3c7856ad23f5fd70099b9c875fbddfb273d7f01c3adfbf9f720379"
   }
 }
