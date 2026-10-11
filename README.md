@@ -3,7 +3,32 @@
 Expanding Currier's voynich languages beyond A / B
 
 Voynich Clusters explores similarities between manuscript pages using
-Jensen–Shannon divergence between within-word transition matrices.
+Jensen–Shannon divergence between word and joined-line transition matrices.
+
+**Current classification — Golf 2.1, reviewed 10 October 2026**
+
+- [Page classifications and scores](golf-classifications.csv) includes Golf 1.0,
+  Golf 2.0 and the current Golf 2.1 memberships for 225 pages/panels. Separate
+  paragraph and all-text columns retain the outlier, neighbor and short-text scores.
+- [Complete Golf 2.1 assignments](golf-v21-assignments.csv) covers all 302
+  page/text-kind units, including labels, with support and adjudications.
+- [Explore Golf 2.1](index.html#golf-v21) or [open the MDS viewer](index.html#mds).
+
+### From Golf 1.0 to Golf 2.1
+
+![Golf classification evolution across page and bifolium MDS](golf-evolution.png)
+
+[Forum PNG, 1200 × 650](golf-evolution.png) · [Vector SVG](golf-evolution.svg) ·
+[Plotted coordinates](golf-evolution-coordinates.csv)
+
+The first two columns reproduce the original Golf 2.0 word-transition map's
+163 jointly fitted units with at least 80 words. The last two reproduce the
+interactive viewer's combined-profile map, first with Golf 2.0 labels and then
+Golf 2.1. That map fits 207 paragraph pages and projects 16 non-prose units.
+The move between maps therefore changes both representation and fitting
+population. The last two columns isolate the change in labels.
+The separate bifolium row retains all 50 paragraph pools from 207 pages,
+including short pages. Slices show page memberships weighted by word count.
 
 The Golf regimes come from npcompl33t's
 [analysis of languages beyond Currier A/B](https://www.voynich.ninja/thread-6084.html).
@@ -11,7 +36,7 @@ Golf is the project's internal name for those classifications. The viewer also
 includes [René Zandbergen's language classifications](https://www.voynich.nu/extra/rz_lang.html).
 
 Golf 2.0 adds the revised profile assignments from the 8 October 2026 membership
-audit. Both Golf versions appear in the overview and are available as matrix
+audit. Golf 1.0, 2.0 and 2.1 appear in the overview and are available as matrix
 groupings. Diagonal stripes identify six intermediate candidates. They retain
 their exported working membership while their candidate boundaries remain unconfirmed.
 
@@ -55,10 +80,52 @@ source attribution. Units without a separate writeup receive a clearly labeled
 explanation of their saved audit measurements. The supporting table separates
 page evidence, assistance from its bifolium, and the whole-bifolium comparison.
 
-Current identifiers follow the Golf codebook, including 3c Stars-T, 4c Stars-S,
+Golf 2.0 identifiers follow its codebook, including 3c Stars-T, 4c Stars-S,
 3d-c Rosette circles, 3d-l Rosette labels and 6 f58. V2 uses distinct hues rather
 than lightness variations of the original Golf colors. Herbal B uses pink and
 brown; Stars uses violet and gold. Lighter fills indicate qualified support.
+
+## Golf 2.1 and MDS
+
+The **Golf 2.1** tab shows the reviewed combined word- and joined-line
+classification, including the four A profiles 1a, 1b, 1.5a and 2a. Its branch
+chart retains support levels and intermediate candidates. Eleven comparisons
+show page and bifolium transition rates alongside transition tables. These
+descriptive features come from frozen reference profiles; the plots are not
+independent validation of the assignments. Label and other non-prose assignments
+retain their previous audit support unless explicitly reviewed.
+
+The **MDS** tab embeds the interactive branch viewer, including page and pooled
+bifolium views, branch-specific fits and Golf 2.0 comparisons. Its combined
+divergence gives equal weight to word and joined-line transition JS. The main
+cluster map still displays **word-transition JS**, even when grouped by Golf 2.1.
+
+Use `#golf-v21` or `#mds` to link directly to these tabs.
+[Download the Golf 2.1 assignments](golf-v21-assignments.csv) for the complete
+reviewed page/text-kind membership export with support and adjudication fields.
+
+## The manuscript path
+
+The **Curves** tab compares word, joined-line and combined transition profiles
+in a shared page-and-bifolium MDS. Toggle fits based on pools, pages, or both,
+and inspect all eight displayed dimensions. The **Sequence** tab follows the
+proposed nonlinear path from group 1 to the Bio side, with manuscript section
+annotations and clickable connections between a pool and its pages.
+
+MDS1 already has only **2.29%** of page variation within bifolia. The curved
+coordinate has **0.76%**, or **1.55%** when each tested bifolium is left out of
+curve fitting. The chart compares these values with all eight MDS axes on the
+same scale. The embedding stays fixed during the held-out calculation.
+
+Use `#curves` and `#sequence` for direct links. The SVG charts can be saved for
+a writeup. This is a candidate sequence for evaluating a proposed chronology;
+its positions are not dates or independently established historical order.
+
+- [Bifolia in sequence](sequence-bifolia.csv)
+- [Page positions and distance from the path](sequence-profiles.csv)
+- [Within-bifolium variation across MDS axes](sequence-variation.csv)
+- [Methods and interpretation](path-methods.md)
+- [Complete chart data and source hashes](path-data.json)
 
 ## Explore the manuscript
 
@@ -79,6 +146,10 @@ reasons. This is an unchanged copy of Golf's `page_membership.csv`.
 pages and panels in the viewer, in manuscript order. Each row gives the Golf
 classification and bifolium, followed by separate `paragraph_` and `all_` scores.
 Unassigned pages are retained. These are the viewer's existing classifications.
+The `golf_v21_` fields contain the current reviewed membership, support,
+intermediate boundaries and written adjudication. `golf_v21_text_kind` identifies
+the controlling text kind. Golf 2.0 fields remain for comparison. The numerical
+outlier and neighbor scores retain their original word-transition basis.
 The `golf_v2_assignment_code` and `golf_v2_assignment_id` columns give authoritative
 working membership. `golf_v2_assignment_source` and `golf_v2_assignment_status`
 record its provenance and qualification. These match Golf's `page_membership.csv`
@@ -125,7 +196,12 @@ Label text never controls a page's matrix placement. All-text distances still us
 selected text, so the grouping is not a new classification of combined text.
 
 Assignments remain fixed within each text kind. Ward clustering orders pages within
-each group. The diagonal compares alternating line halves within a page.
+each group. Between groups, the map minimizes the sum of square roots of median
+cross-bifolium JS distances between neighboring groups. Golf V2 preserves its
+hierarchy, Golf 1.0 keeps 3a and 3b together, and RZ permits any class order.
+Whole-group reversals then minimize page distances across block boundaries.
+Unassigned pages remain last. This display ordering does not establish new
+branches or change any classifications. The diagonal compares alternating line halves within a page.
 Outlier scores compare the nearest page on another bifolium against this
 within-page variation. Ranked pages require at least 60 words and 20 per half.
 
