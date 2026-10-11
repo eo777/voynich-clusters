@@ -28,12 +28,13 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
   <label class="check"><input type="checkbox" id="annotations" checked>Section labels</label>
  </div>
  <div class="controls compact curves-only" id="curveControls">
-  <label class="check"><input type="checkbox" data-curve="pools" checked><i class="line pool"></i>Bifolia only</label>
-  <label class="check"><input type="checkbox" data-curve="pages" checked><i class="line page"></i>Paragraph pages only</label>
+  <label class="check" id="proposedControl"><input type="checkbox" data-curve="proposed" checked><i class="line proposed"></i>Sequence curve</label>
+  <label class="check"><input type="checkbox" data-curve="pools"><i class="line pool"></i>Alternative bifolium fit</label>
+  <label class="check"><input type="checkbox" data-curve="pages"><i class="line page"></i>Paragraph pages only</label>
   <label class="check"><input type="checkbox" data-curve="paragraphs_and_pools"><i class="line joint"></i>Bifolia and paragraph pages</label>
   <label class="check"><input type="checkbox" data-curve="all_points"><i class="line all"></i>All profiles</label>
-  <label class="check" id="proposedControl"><input type="checkbox" data-curve="proposed"><i class="line proposed"></i>Proposed Early A turn</label>
  </div>
+ <p class="curves-only hint" id="curveNote"></p>
  <div id="legend" class="legend"></div>
  <details class="key"><summary>Point and support key</summary><div><span>● Small circles are paragraph pages</span><span>● Large circles are pooled bifolia</span><span>▲ Triangles are non-paragraph text</span><span><i class="support strong"></i>Strong support</span><span><i class="support tentative"></i>Tentative support</span><span><i class="support unverified"></i>Unverified membership</span></div><p>Pools use the dominant membership or section by paragraph word count. Mixed pools retain every constituent in the selection details.</p></details>
  <div id="charts" class="charts"></div>
@@ -78,12 +79,12 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
  const sd=xs=>Math.sqrt(xs.reduce((s,x)=>s+(x-mean(xs))**2,0)/(xs.length-1));
  const median=xs=>{const a=[...xs].sort((x,y)=>x-y),m=Math.floor(a.length/2);return a.length%2?a[m]:(a[m-1]+a[m])/2};
  const styles={pools:['#233a4b',''],pages:['#bf5148','8 4'],paragraphs_and_pools:['#ac7e15','6 3'],all_points:['#7f60a7','2 4'],proposed:['#168366','']};
- const curveNames={pools:'Bifolia only',pages:'Paragraph pages only',paragraphs_and_pools:'Bifolia and paragraph pages',all_points:'All profiles',proposed:'Proposed Early A turn'};
- let mode=sequence?'combined':'word',selected=null,hovered=null,dragging=null;
- $('representation').value=mode;$('colors').value=sequence?'golf21':'golf20';$('annotations').checked=sequence;
- $('eyebrow').textContent=sequence?'Combined word and line transitions':'Word boundaries and MDS';
+ const curveNames={pools:'Alternative bifolium fit',pages:'Paragraph pages only',paragraphs_and_pools:'Bifolia and paragraph pages',all_points:'All profiles',proposed:'Sequence curve'};
+ let mode='combined',selected=null,hovered=null,dragging=null;
+ $('representation').value=mode;$('colors').value='golf21';$('annotations').checked=sequence;
+ $('eyebrow').textContent='Combined word and line transitions';
  $('heading').textContent=sequence?'Following the manuscript sequence':'Comparing the curved paths';
- $('subtitle').textContent=sequence?'A candidate sequence from group 1 to the Bio side, fitted through pooled bifolia in the shared page-and-bifolium MDS.':'The same 207 paragraph pages, 16 other text profiles and 50 bifolia, compared under three transition representations.';
+ $('subtitle').textContent=sequence?'A candidate sequence from group 1 to the Bio side, fitted through pooled bifolia in the shared page-and-bifolium MDS.':'The path used in Sequence, with alternative fits available for comparison.';
  $('sheet').innerHTML+=[...pools].sort((a,b)=>pts[a].id.localeCompare(pts[b].id,undefined,{numeric:true})).map(i=>`<option value="${esc(pts[i].id)}">${esc(pts[i].id)}</option>`).join('');
  if(parent!==window)document.body.classList.add('embedded');
  const panels=sequence?[
@@ -104,7 +105,7 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
  $('reset').onclick=()=>{panels.forEach(p=>p.view=null);draw()};
  document.addEventListener('keydown',e=>{if(e.key==='Escape')clear()});
  $('colors').onchange=draw;
- $('representation').onchange=()=>{mode=$('representation').value;panels.forEach(p=>p.view=null);draw()};
+ $('representation').onchange=()=>{mode=$('representation').value;document.querySelectorAll('[data-curve]').forEach(el=>el.checked=mode==='combined'?el.dataset.curve==='proposed':['pools','pages'].includes(el.dataset.curve));panels.forEach(p=>p.view=null);draw()};
  document.querySelectorAll('input').forEach(el=>el.addEventListener('input',draw));
  function activeCurves(){return sequence?['proposed']:[...document.querySelectorAll('[data-curve]')].filter(el=>el.checked&&D.modes[mode].curves[el.dataset.curve]).map(el=>el.dataset.curve)}
  function bounds(p){
@@ -218,7 +219,10 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
   $('offsetPlot').innerHTML=html;
  }
  function draw(){
-  $('proposedControl').hidden=mode!=='combined';legend();panels.forEach((p,n)=>drawPanel(n));detail();
+  $('proposedControl').hidden=mode!=='combined';
+  $('curveNote').textContent=mode==='combined'?'The green curve is the exact bifolium fit used in Sequence. The alternative bifolium fit starts from a different initial path.':'These are alternative fits. The curve used in Sequence is available under Combined transitions.';
+  $('eyebrow').textContent={combined:'Combined word and line transitions',word:'Word transitions',line:'Joined-line transitions'}[mode];
+  legend();panels.forEach((p,n)=>drawPanel(n));detail();
   if(sequence){sectionPlot();rows();if(document.querySelector('.offsets').open)offsetPlot()}
  }
  function pointer(e,svg,p){const r=svg.getBoundingClientRect();return[(e.clientX-r.left)*p.w/r.width,(e.clientY-r.top)*p.h/r.height]}

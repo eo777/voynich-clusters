@@ -71,6 +71,14 @@ proposed path's initialization did use the Early A grouping to specify the turn.
 
 ## Interpretation and downloads
 
+Endpoint identity is sensitive to the fitted route. D:25-32 remains first across
+twenty smoothing settings with the current initialization, but falls to eighth
+when its own pool is omitted from curve fitting. An alternative initialization
+captures almost the same pooled variation and starts at C:19-22 instead. The
+Bio-side terminal bifolium also changes with representation and smoothing.
+The broad ends are more stable than the identity of the first or last bifolium.
+These checks hold the upstream MDS fixed and do not provide date uncertainty.
+
 Tight bifolium agreement is evidence of structure linked to the physical
 manuscript. It does not by itself distinguish chronology from other sources of
 production-linked variation. The sequence is a candidate for evaluating a
