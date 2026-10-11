@@ -121,7 +121,7 @@ Use `#curves` and `#sequence` for direct links. The SVG charts can be saved for
 a writeup. This is a candidate sequence for evaluating a proposed chronology;
 its positions are not dates or independently established historical order.
 
-The [page classifications CSV](golf-classifications.csv) includes two path columns.
+The [Golf 2.1 assignments CSV](golf-v21-assignments.csv) includes two path columns.
 `page_path_position` gives the page's own projection onto the combined-transition
 Sequence curve. It uses paragraph text when available, otherwise the saved
 supplementary circular/radial profile. `bifolium_path_position` gives the
@@ -130,6 +130,9 @@ Both use the same coordinate, with 0 at the group 1 end and 1 at the Bio side.
 Page projections can extend beyond that interval. Blank values mean that no
 corresponding projection or pooled bifolium exists in the saved study; zero is
 a valid position. Neither column measures elapsed time or assignment confidence.
+These are page-level coordinates repeated across a page's text-kind rows, not
+separate path estimates for each label, circular or radial assignment. All
+original assignment fields and all 302 rows are preserved.
 
 - [Bifolia in sequence](sequence-bifolia.csv)
 - [Page positions and distance from the path](sequence-profiles.csv)
