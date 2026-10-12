@@ -13,6 +13,10 @@ Jensen–Shannon divergence between word and joined-line transition matrices.
 - [Complete Golf 2.1 assignments](golf-v21-assignments.csv) covers all 302
   page/text-kind units, including labels, with support and adjudications.
 - [Explore Golf 2.1](index.html#golf-v21) or [open the MDS viewer](index.html#mds).
+- [Transition matrices and MDS data](research-data/README.md) provides complete
+  word and joined-line transition counts and probabilities, pairwise JS
+  matrices, all positive MDS dimensions, saved branch coordinates and path
+  projections as CSVs. It includes a NumPy reproduction script and source hashes.
 
 ### From Golf 1.0 to Golf 2.1
 

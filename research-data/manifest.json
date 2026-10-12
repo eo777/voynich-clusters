@@ -1,0 +1,222 @@
+{
+  "export_version": 1,
+  "source_date": "2026-10-12",
+  "profiles": 592,
+  "alphabet": [
+    "$",
+    "^",
+    "a",
+    "cfh",
+    "ch",
+    "ckh",
+    "cph",
+    "cth",
+    "d",
+    "e",
+    "ee",
+    "eee",
+    "f",
+    "i",
+    "ii",
+    "iii",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "other",
+    "p",
+    "q",
+    "r",
+    "s",
+    "sh",
+    "t",
+    "y"
+  ],
+  "shared_profiles": 273,
+  "atomic_units": 302,
+  "csv_files": {
+    "profiles.csv": {
+      "rows": 592,
+      "columns": 16,
+      "bytes": 50852,
+      "sha256": "b3e6dd1614f786471d68450732da753615e114fdebed3f4830b34722b25320c6"
+    },
+    "alphabet.csv": {
+      "rows": 29,
+      "columns": 3,
+      "bytes": 725,
+      "sha256": "fb84f956283696487038538df09b0de4bdc2ee082e4c398bc1a49a5a23057a1e"
+    },
+    "pool-members.csv": {
+      "rows": 207,
+      "columns": 3,
+      "bytes": 5605,
+      "sha256": "4c414153b989efd9570c81b6bcae49c3b21dcb86f1f145835fee255739690bdf"
+    },
+    "transitions-word-counts.csv": {
+      "rows": 17168,
+      "columns": 34,
+      "bytes": 1670347,
+      "sha256": "1fa488985d1606ac1098fcaf49f49f53e3c169daadd69f0949843eb5b3c2a35d"
+    },
+    "transitions-word-probabilities.csv": {
+      "rows": 17168,
+      "columns": 34,
+      "bytes": 3180010,
+      "sha256": "aff444200132b5795c5aae63e8c10380d44a287fb6debcb893758adbf20a265b"
+    },
+    "transitions-line-counts.csv": {
+      "rows": 17168,
+      "columns": 34,
+      "bytes": 1668463,
+      "sha256": "ab116d7cac4b9ac12e8a7267642fe86f19a7b35b5634fd2b7ebd0c6d53f99197"
+    },
+    "transitions-line-probabilities.csv": {
+      "rows": 17168,
+      "columns": 34,
+      "bytes": 3273099,
+      "sha256": "f050a394609b18f0942e204d52a1057e297cee9cc97c0a8972b87bf95f1823c0"
+    },
+    "pairwise/shared-word-eligible-weight.csv": {
+      "rows": 273,
+      "columns": 274,
+      "bytes": 1412800,
+      "sha256": "8044316bc9bdf50dfe71a9491ab0a440eae07dfa9ddfedb7c779af27757dfed4"
+    },
+    "pairwise/shared-line-eligible-weight.csv": {
+      "rows": 273,
+      "columns": 274,
+      "bytes": 1412837,
+      "sha256": "648e44b38bff0a7a2dba7ee120f00b8c95f0d5bef66143bdc14e84576607c8b2"
+    },
+    "pairwise/shared-word-js.csv": {
+      "rows": 273,
+      "columns": 274,
+      "bytes": 1470081,
+      "sha256": "7bdc89edb873cbc7b1a8827ed3cb55a422a2bf0a4b64daef498b78e5dae04f5d"
+    },
+    "pairwise/shared-line-js.csv": {
+      "rows": 273,
+      "columns": 274,
+      "bytes": 1461051,
+      "sha256": "164735de6ed36a95fc9ca4560fda9d006d452808e9e142d0ec8a0a6178823ca2"
+    },
+    "pairwise/shared-combined-js.csv": {
+      "rows": 273,
+      "columns": 274,
+      "bytes": 1465313,
+      "sha256": "6f2de0bc9765d2cfe4a043a227dd0ccd9e24b5eb78ee930c99123608651a4e6b"
+    },
+    "pairwise/matrix-paragraph-word-js.csv": {
+      "rows": 207,
+      "columns": 208,
+      "bytes": 844369,
+      "sha256": "00cad61e225b8a98a31729268729a82d8675dc9e278619dbd714e7c8a0967f59"
+    },
+    "pairwise/matrix-all-nonlabel-word-js.csv": {
+      "rows": 225,
+      "columns": 226,
+      "bytes": 1001123,
+      "sha256": "94f0c504b5e56a8a75b8cd1580dae3dcb720394113d4fbf3f9666ee2114ccf80"
+    },
+    "mds/shared-word.csv": {
+      "rows": 273,
+      "columns": 250,
+      "bytes": 1481593,
+      "sha256": "528cbe05376908050288d83ba74bf053567e191df8e1fc7ef1ed635b822d8559"
+    },
+    "mds/shared-line.csv": {
+      "rows": 273,
+      "columns": 252,
+      "bytes": 1487962,
+      "sha256": "93acbf21e5a99ffb3a6bf46db1d64634a4efc2346a957077f047976aaaba0933"
+    },
+    "mds/shared-combined.csv": {
+      "rows": 273,
+      "columns": 255,
+      "bytes": 1507288,
+      "sha256": "3755ca76631911d28e07ee9738ca10186b71d367e75410f70135b70d0e19c284"
+    },
+    "mds/viewer-pages-combined.csv": {
+      "rows": 223,
+      "columns": 211,
+      "bytes": 1011931,
+      "sha256": "a39849d39688a0156338f88bedb0a817cbab2d5e1b75bb64dd6a81d449c41eae"
+    },
+    "mds/viewer-bifolia-combined.csv": {
+      "rows": 50,
+      "columns": 50,
+      "bytes": 53065,
+      "sha256": "0e5e81cd1961c54140d16a756520e1aafda53ff2269eb43e5f6747a8b2a725af"
+    },
+    "mds/eigenvalues.csv": {
+      "rows": 1092,
+      "columns": 5,
+      "bytes": 67652,
+      "sha256": "c8a5dda16638e6b9870e306def77e643fb76837db2d5c4d674ef66d4f954c3ba"
+    },
+    "mds/models.csv": {
+      "rows": 5,
+      "columns": 5,
+      "bytes": 326,
+      "sha256": "1745100a5af6402082cf067e8f9eb27c5759e29a510daff15233902a84452da4"
+    },
+    "mds/viewer-branches.csv": {
+      "rows": 4574,
+      "columns": 15,
+      "bytes": 700637,
+      "sha256": "dd46d681828f418c7402338ddfcfa513d9607e09443018e1c98bbff0d81922cf"
+    },
+    "mds/viewer-branch-statistics.csv": {
+      "rows": 144,
+      "columns": 9,
+      "bytes": 15608,
+      "sha256": "207cb9b4465182c3a2eaa7192efc8495c9dcd2eae78e4950c8d674bfb9bebfc2"
+    },
+    "mds/original-golf20-saved.csv": {
+      "rows": 163,
+      "columns": 9,
+      "bytes": 11665,
+      "sha256": "16a83b49a3c7bbda2729b766b1a9b778070813f862dc8e2955b6d0667a54e957"
+    },
+    "mds/viewer-comparison-saved.csv": {
+      "rows": 471,
+      "columns": 13,
+      "bytes": 64195,
+      "sha256": "b780c570d5cf7562f1ae0749a1fe1131bee0f53eae92876a4db19fbb1131cf47"
+    },
+    "mds/path-nodes.csv": {
+      "rows": 2888,
+      "columns": 12,
+      "bytes": 556348,
+      "sha256": "90af206c87767eea7bc882a66f03671bed88b2a9f71e6246789ea28f3da4cf91"
+    },
+    "mds/path-projections.csv": {
+      "rows": 3549,
+      "columns": 5,
+      "bytes": 177862,
+      "sha256": "1d8b770e1cfbbafb236f231d757705b9e7cc409dd459a16ff224770c8c6e4882"
+    }
+  },
+  "source_sha256": {
+    "apps/clustermatrix/matrix.json": "fae9928304292e89a236a9fcc3233c80a0bf622cc96582a02afdaf59def79dff",
+    "apps/clustermatrix/golf-v2-evidence.json": "f1d63db3668f3042758ab3ca06debaed50ee90f7c017dc9cdb627309c84ff213",
+    "ZL_ivtff_raw.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "solve/botanical_enrichment/team_golf/golf_v21_20261010/page_membership.csv": "c267a375b7d51f78423a701a94d79d26ee1c12309e878525e99ce129544562cc",
+    "solve/botanical_enrichment/team_golf/mds_axes_20261010/analyze.py": "8614f6dfe7c34ba26f28d970875c55938e20c4e08c4f91541d95a9d35c78e634",
+    "solve/botanical_enrichment/team_golf/line_join_test_20261010/analyze.py": "f32344441880c2788e41c10fb038accfd5ac966363adacf0fe17cebd58ecf7ef",
+    "solve/botanical_enrichment/team_golf/golf_common.py": "5ffd6e445c09ff8a9defaec29c8b7be6b32daffced54432bf8cb77da7d0a1b54",
+    "solve/botanical_enrichment/team_golf/combined_mds_20261010/branches.json": "54194bea02a39950a835e0c0e768481d0173170ab52c1796535babce3e6f27e9",
+    "solve/botanical_enrichment/team_golf/combined_mds_20261010/branches21.json": "1446d9bf8b4700ebe4a30bb4c9fac00d853a8390f5f3d25fd1296fee9559f1f9",
+    "solve/botanical_enrichment/team_golf/combined_mds_20261010/coordinates.json": "3c53bd12223cc069dffe269d71260eeccf8fe46d447067c9e45fb2ff5b55f50f",
+    "solve/botanical_enrichment/team_golf/combined_mds_20261010/nonprose.json": "209d9b983a33209a7484133c1759d53aa08cd5bd7f2e98fe3dea524ad3539c51",
+    "voynich_toolkit/glyph_units.py": "b823d660a9d2b2a00c127d9278c558f1d7b5bfb61d59fffa6473fe0b0753a57f",
+    "voynich_toolkit/glyph_matrix_export.py": "9b4ab41aa77c9977b5e4b977c2bcf28cd08e36e9f94f149182b434b79e62e37d",
+    "solve/botanical_enrichment/team_golf/golf_v2_20261008/revision2/build_master.py": "039ac819a9fe654b89ce01e4b2e917d007f7aef9460b897576ed81323e54c647",
+    "solve/botanical_enrichment/team_golf/golf_v2_20261008/revision2/label_controls_20261008/corpus.py": "6577bc3a7037f5629ae65ecf7ae1dbbd31478f952d40a160257e878b6d170316",
+    "apps/clustermatrix/figures/golf-v2-mds/golf-v2-mds.csv": "5ae464ed9fd30ef5da748b9d85c048e4af541368d0d40c0c30e17849876c50c3"
+  },
+  "published_path_data_sha256": "d4460afc027d55da5f791ae0666f4d98c1dab550d0535b709e435ba7ed70ebbb",
+  "validation": "Counts match canonical MDS loader. Both manuscript matrices match within 5.1e-9 bits. All saved MDS axes match within 1e-9. CSV shapes checked after writing."
+}

@@ -1,0 +1,593 @@
+profile_id,page,text_kind,bifolium,readable_words,constituent_units,golf21_code,assignment_support,section,currier,lfd_hand,quire,shared_mds_id,shared_mds_index,matrix_paragraph_index,matrix_all_index
+f100r|label,f100r,label,S:100-101,19,f100r|label,2c,Unverified membership,P,A,1,S,,,,
+f100r|para,f100r,para,S:100-101,90,f100r|para,2a,Strong support,P,A,1,S,f100r,176,176,
+f100v|label,f100v,label,S:100-101,14,f100v|label,2c,Unverified membership,P,A,1,S,,,,
+f100v|para,f100v,para,S:100-101,79,f100v|para,2a,Strong support,P,A,1,S,f100v,177,177,
+f101r|para,f101r,para,S:100-101,227,f101r|para,2a,Strong support,P,A,1,S,f101r,178,178,
+f101v|label,f101v,label,S:100-101,18,f101v|label,2c,Unverified membership,P,A,1,S,,,,
+f101v|para,f101v,para,S:100-101,183,f101v|para,2a,Strong support,P,A,1,S,f101v,179,179,
+f102r1|label,f102r1,label,S:99-102,4,f102r1|label,2c,Unverified membership,P,A,1,S,,,,
+f102r1|para,f102r1,para,S:99-102,102,f102r1|para,2a,Strong support,P,A,1,S,f102r1,180,180,
+f102r2|label,f102r2,label,S:99-102,4,f102r2|label,2c,Unverified membership,P,A,1,S,,,,
+f102r2|para,f102r2,para,S:99-102,137,f102r2|para,2a,Strong support,P,A,1,S,f102r2,181,181,
+f102v1|label,f102v1,label,S:99-102,9,f102v1|label,2c,Unverified membership,P,A,1,S,,,,
+f102v1|para,f102v1,para,S:99-102,118,f102v1|para,2a,Strong support,P,A,1,S,f102v1,183,183,
+f102v2|label,f102v2,label,S:99-102,20,f102v2|label,2c,Unverified membership,P,A,1,S,,,,
+f102v2|para,f102v2,para,S:99-102,165,f102v2|para,2a,Strong support,P,A,1,S,f102v2,182,182,
+f103r|para,f103r,para,T:103-116,523,f103r|para,4c,Unverified membership,S,B,3,T,f103r,184,184,
+f103v|para,f103v,para,T:103-116,453,f103v|para,4c,Tentative support,S,B,3,T,f103v,185,185,
+f104r|para,f104r,para,T:104-115,448,f104r|para,3c,Strong support,S,B,3,T,f104r,186,186,
+f104v|para,f104v,para,T:104-115,475,f104v|para,3c,Strong support,S,B,3,T,f104v,187,187,
+f105r|para,f105r,para,T:105-114,378,f105r|para,3c,Strong support,S,B,3,T,f105r,188,188,
+f105v|para,f105v,para,T:105-114,399,f105v|para,3c,Strong support,S,B,3,T,f105v,189,189,
+f106r|para,f106r,para,T:106-113,431,f106r|para,3c,Strong support,S,B,3,T,f106r,190,190,
+f106v|para,f106v,para,T:106-113,444,f106v|para,3c,Strong support,S,B,3,T,f106v,191,191,
+f107r|para,f107r,para,T:107-112,487,f107r|para,3c,Strong support,S,B,3,T,f107r,192,192,
+f107v|para,f107v,para,T:107-112,462,f107v|para,3c,Unverified membership,S,B,3,T,f107v,193,193,
+f108r|para,f108r,para,T:108-111,493,f108r|para,4c,Strong support,S,B,3,T,f108r,194,194,
+f108v|para,f108v,para,T:108-111,580,f108v|para,4c,Strong support,S,B,3,T,f108v,195,195,
+f10r|para,f10r,para,B:10-15,92,f10r|para,1b,Strong support,H,A,1,B,f10r,18,18,
+f10v|para,f10v,para,B:10-15,57,f10v|para,1a,Tentative support,H,A,1,B,f10v,19,19,
+f111r|para,f111r,para,T:108-111,622,f111r|para,4c,Strong support,S,B,3,T,f111r,196,196,
+f111v|para,f111v,para,T:108-111,565,f111v|para,4c,Tentative support,S,B,3,T,f111v,197,197,
+f112r|para,f112r,para,T:107-112,398,f112r|para,4c,Strong support,S,B,3,T,f112r,198,198,
+f112v|para,f112v,para,T:107-112,419,f112v|para,4c,Tentative support,S,B,3,T,f112v,199,199,
+f113r|para,f113r,para,T:106-113,529,f113r|para,3c,Strong support,S,B,3,T,f113r,200,200,
+f113v|para,f113v,para,T:106-113,501,f113v|para,3c,Strong support,S,B,3,T,f113v,201,201,
+f114r|para,f114r,para,T:105-114,456,f114r|para,3c,Strong support,S,B,3,T,f114r,202,202,
+f114v|para,f114v,para,T:105-114,374,f114v|para,3c,Strong support,S,B,3,T,f114v,203,203,
+f115r|para,f115r,para,T:104-115,461,f115r|para,3c,Strong support,S,B,2/3,T,f115r,204,204,
+f115v|para,f115v,para,T:104-115,408,f115v|para,3c,Strong support,S,B,3,T,f115v,205,205,
+f116r|para,f116r,para,T:103-116,545,f116r|para,4c,Unverified membership,S,B,3,T,f116r,206,206,
+f116v|label,f116v,label,UNKNOWN:f116v,2,f116v|label,,Unassigned,,,,UNKNOWN,,,,
+f11r|para,f11r,para,B:11-14,59,f11r|para,1b,Tentative support,H,A,1,B,f11r,20,20,
+f11v|label,f11v,label,B:11-14,1,f11v|label,,Unassigned,H,A,1,B,,,,
+f11v|para,f11v,para,B:11-14,49,f11v|para,1b,Strong support,H,A,1,B,f11v,21,21,
+f13r|para,f13r,para,B:12-13,76,f13r|para,1b,Strong support,H,A,1,B,f13r,22,22,
+f13v|para,f13v,para,B:12-13,69,f13v|para,1b,Strong support,H,A,1,B,f13v,23,23,
+f14r|para,f14r,para,B:11-14,76,f14r|para,1b,Tentative support,H,A,1,B,f14r,24,24,
+f14v|para,f14v,para,B:11-14,75,f14v|para,1b,Strong support,H,A,1,B,f14v,25,25,
+f15r|para,f15r,para,B:10-15,94,f15r|para,1a,Unverified membership,H,A,1,B,f15r,26,26,
+f15v|para,f15v,para,B:10-15,70,f15v|para,1b,Tentative support,H,A,1,B,f15v,27,27,
+f16r|para,f16r,para,B:9-16,84,f16r|para,1b,Strong support,H,A,1,B,f16r,28,28,
+f16v|para,f16v,para,B:9-16,76,f16v|para,1b,Strong support,H,A,1,B,f16v,29,29,
+f17r|label,f17r,label,C:17-24,2,f17r|label,,Unassigned,H,A,1,C,,,,
+f17r|para,f17r,para,C:17-24,78,f17r|para,1.5a,Unverified membership,H,A,1,C,f17r,30,30,
+f17v|para,f17v,para,C:17-24,135,f17v|para,2a,Tentative support,H,A,1,C,f17v,31,31,
+f18r|para,f18r,para,C:18-23,84,f18r|para,1b,Strong support,H,A,1,C,f18r,32,32,
+f18v|para,f18v,para,C:18-23,69,f18v|para,1b,Strong support,H,A,1,C,f18v,33,33,
+f19r|para,f19r,para,C:19-22,78,f19r|para,1b,Strong support,H,A,1,C,f19r,34,34,
+f19v|para,f19v,para,C:19-22,78,f19v|para,1b,Strong support,H,A,1,C,f19v,35,35,
+f1r|para,f1r,para,A:1-8,210,f1r|para,1a,Strong support,T,A,1,A,f1r,0,0,
+f1v|para,f1v,para,A:1-8,92,f1v|para,1.5a,Unverified membership,H,A,1,A,f1v,1,1,
+f20r|para,f20r,para,C:20-21,89,f20r|para,1a,Strong support,H,A,1,C,f20r,36,36,
+f20v|para,f20v,para,C:20-21,86,f20v|para,1a,Strong support,H,A,1,C,f20v,37,37,
+f21r|para,f21r,para,C:20-21,104,f21r|para,1a,Strong support,H,A,1,C,f21r,38,38,
+f21v|para,f21v,para,C:20-21,58,f21v|para,1a,Strong support,H,A,1,C,f21v,39,39,
+f22r|para,f22r,para,C:19-22,111,f22r|para,1b,Strong support,H,A,1,C,f22r,40,40,
+f22v|para,f22v,para,C:19-22,77,f22v|para,1b,Strong support,H,A,1,C,f22v,41,41,
+f23r|para,f23r,para,C:18-23,109,f23r|para,1b,Strong support,H,A,1,C,f23r,42,42,
+f23v|para,f23v,para,C:18-23,94,f23v|para,1b,Strong support,H,A,1,C,f23v,43,43,
+f24r|para,f24r,para,C:17-24,109,f24r|para,1.5a,Strong support,H,A,1,C,f24r,44,44,
+f24v|para,f24v,para,C:17-24,85,f24v|para,1.5a,Strong support,H,A,1,C,f24v,45,45,
+f25r|para,f25r,para,D:25-32,47,f25r|para,1a,Strong support,H,A,1,D,f25r,46,46,
+f25v|para,f25v,para,D:25-32,60,f25v|para,1a,Strong support,H,A,1,D,f25v,47,47,
+f26r|para,f26r,para,D:26-31,90,f26r|para,3b,Strong support,H,B,2,D,f26r,48,48,
+f26v|para,f26v,para,D:26-31,93,f26v|para,3b,Strong support,H,B,2,D,f26v,49,49,
+f27r|para,f27r,para,D:27-30,94,f27r|para,1a,Strong support,H,A,1,D,f27r,50,50,
+f27v|para,f27v,para,D:27-30,61,f27v|para,1a,Strong support,H,A,1,D,f27v,51,51,
+f28r|para,f28r,para,D:28-29,68,f28r|para,1a,Tentative support,H,A,1,D,f28r,52,52,
+f28v|para,f28v,para,D:28-29,68,f28v|para,1a,Strong support,H,A,1,D,f28v,53,53,
+f29r|para,f29r,para,D:28-29,65,f29r|para,1a,Strong support,H,A,1,D,f29r,54,54,
+f29v|para,f29v,para,D:28-29,94,f29v|para,1a,Strong support,H,A,1,D,f29v,55,55,
+f2r|label,f2r,label,A:2-7,4,f2r|label,,Unassigned,H,A,1,A,,,,
+f2r|para,f2r,para,A:2-7,101,f2r|para,1a,Strong support,H,A,1,A,f2r,2,2,
+f2v|para,f2v,para,A:2-7,61,f2v|para,1a,Strong support,H,A,1,A,f2v,3,3,
+f30r|para,f30r,para,D:27-30,99,f30r|para,1a,Strong support,H,A,1,D,f30r,56,56,
+f30v|para,f30v,para,D:27-30,63,f30v|para,1a,Strong support,H,A,1,D,f30v,57,57,
+f31r|para,f31r,para,D:26-31,102,f31r|para,3b,Strong support,H,B,2,D,f31r,58,58,
+f31v|para,f31v,para,D:26-31,110,f31v|para,3b,Strong support,H,B,2,D,f31v,59,59,
+f32r|para,f32r,para,D:25-32,76,f32r|para,1a,Tentative support,H,A,1,D,f32r,60,60,
+f32v|para,f32v,para,D:25-32,89,f32v|para,1a,Strong support,H,A,1,D,f32v,61,61,
+f33r|para,f33r,para,E:33-40,74,f33r|para,3a,Strong support,H,B,2,E,f33r,62,62,
+f33v|para,f33v,para,E:33-40,114,f33v|para,3a,Strong support,H,B,2,E,f33v,63,63,
+f34r|para,f34r,para,E:34-39,149,f34r|para,3a,Strong support,H,B,2,E,f34r,64,64,
+f34v|para,f34v,para,E:34-39,117,f34v|para,3a,Strong support,H,B,2,E,f34v,65,65,
+f35r|para,f35r,para,E:35-38,94,f35r|para,1a,Strong support,H,A,1,E,f35r,66,66,
+f35v|para,f35v,para,E:35-38,91,f35v|para,1a,Strong support,H,A,1,E,f35v,67,67,
+f36r|para,f36r,para,E:36-37,63,f36r|para,1b,Strong support,H,A,1,E,f36r,68,68,
+f36v|para,f36v,para,E:36-37,76,f36v|para,1b,Strong support,H,A,1,E,f36v,69,69,
+f37r|para,f37r,para,E:36-37,78,f37r|para,1b,Strong support,H,A,1,E,f37r,70,70,
+f37v|para,f37v,para,E:36-37,89,f37v|para,1b,Tentative support,H,A,1,E,f37v,71,71,
+f38r|para,f38r,para,E:35-38,44,f38r|para,1b,Tentative support,H,A,1,E,f38r,72,72,
+f38v|para,f38v,para,E:35-38,68,f38v|para,1a,Strong support,H,A,1,E,f38v,73,73,
+f39r|para,f39r,para,E:34-39,157,f39r|para,3a,Strong support,H,B,2,E,f39r,74,74,
+f39v|para,f39v,para,E:34-39,146,f39v|para,3a,Strong support,H,B,2,E,f39v,75,75,
+f3r|para,f3r,para,A:3-6,114,f3r|para,1.5a,Tentative support,H,A,1,A,f3r,4,4,
+f3v|para,f3v,para,A:3-6,85,f3v|para,1.5a,Unverified membership,H,A,1,A,f3v,5,5,
+f40r|para,f40r,para,E:33-40,103,f40r|para,3a,Strong support,H,B,2,E,f40r,76,76,
+f40v|para,f40v,para,E:33-40,105,f40v|para,3a,Strong support,H,B,2,E,f40v,77,77,
+f41r|para,f41r,para,F:41-48,97,f41r|para,3b,Strong support,H,B,5,F,f41r,78,78,
+f41v|label,f41v,label,F:41-48,1,f41v|label,,Unassigned,H,B,5,F,,,,
+f41v|para,f41v,para,F:41-48,65,f41v|para,3b,Strong support,H,B,5,F,f41v,79,79,
+f42r|para,f42r,para,F:42-47,141,f42r|para,1a,Strong support,H,A,1,F,f42r,80,80,
+f42v|para,f42v,para,F:42-47,116,f42v|para,1a,Strong support,H,A,1,F,f42v,81,81,
+f43r|para,f43r,para,F:43-46,153,f43r|para,3b,Unverified membership,H,B,2,F,f43r,82,82,
+f43v|para,f43v,para,F:43-46,151,f43v|para,3b,Strong support,H,B,2,F,f43v,83,83,
+f44r|para,f44r,para,F:44-45,74,f44r|para,1b,Strong support,H,A,1,F,f44r,84,84,
+f44v|para,f44v,para,F:44-45,100,f44v|para,1b,Tentative support,H,A,1,F,f44v,85,85,
+f45r|para,f45r,para,F:44-45,89,f45r|para,1b,Strong support,H,A,1,F,f45r,86,86,
+f45v|para,f45v,para,F:44-45,84,f45v|para,1b,Strong support,H,A,1,F,f45v,87,87,
+f46r|para,f46r,para,F:43-46,163,f46r|para,3a,Unverified membership,H,B,2,F,f46r,88,88,
+f46v|para,f46v,para,F:43-46,110,f46v|para,3b,Unverified membership,H,B,2,F,f46v,89,89,
+f47r|para,f47r,para,F:42-47,76,f47r|para,1a,Strong support,H,A,1,F,f47r,90,90,
+f47v|para,f47v,para,F:42-47,85,f47v|para,1a,Strong support,H,A,1,F,f47v,91,91,
+f48r|para,f48r,para,F:41-48,89,f48r|para,3b,Strong support,H,B,5,F,f48r,92,92,
+f48v|para,f48v,para,F:41-48,128,f48v|para,3a,Tentative support,H,B,5,F,f48v,93,93,
+f49r|para,f49r,para,G:49-56,114,f49r|para,1a,Strong support,H,A,1,G,f49r,94,94,
+f49v|label,f49v,label,G:49-56,26,f49v|label,,Unassigned,H,A,1,G,,,,
+f49v|para,f49v,para,G:49-56,143,f49v|para,1a,Strong support,H,A,1,G,f49v,95,95,
+f4r|para,f4r,para,A:4-5,64,f4r|para,1a,Strong support,H,A,1,A,f4r,6,6,
+f4v|para,f4v,para,A:4-5,84,f4v|para,1a,Strong support,H,A,1,A,f4v,7,7,
+f50r|para,f50r,para,G:50-55,93,f50r|para,3a,Strong support,H,B,2,G,f50r,96,96,
+f50v|para,f50v,para,G:50-55,100,f50v|para,3a,Strong support,H,B,2,G,f50v,97,97,
+f51r|para,f51r,para,G:51-54,89,f51r|para,1.5a,Unverified membership,H,A,1,G,f51r,98,98,
+f51v|para,f51v,para,G:51-54,82,f51v|para,1.5a,Unverified membership,H,A,1,G,f51v,99,99,
+f52r|para,f52r,para,G:52-53,69,f52r|para,1b,Strong support,H,A,1,G,f52r,100,100,
+f52v|para,f52v,para,G:52-53,78,f52v|para,1.5a,Tentative support,H,A,1,G,f52v,101,101,
+f53r|para,f53r,para,G:52-53,61,f53r|para,1.5a,Tentative support,H,A,1,G,f53r,102,102,
+f53v|para,f53v,para,G:52-53,73,f53v|para,1.5a,Tentative support,H,A,1,G,f53v,103,103,
+f54r|para,f54r,para,G:51-54,110,f54r|para,1.5a,Tentative support,H,A,1,G,f54r,104,104,
+f54v|para,f54v,para,G:51-54,93,f54v|para,1.5a,Unverified membership,H,A,1,G,f54v,105,105,
+f55r|para,f55r,para,G:50-55,124,f55r|para,3a,Strong support,H,B,2,G,f55r,106,106,
+f55v|para,f55v,para,G:50-55,105,f55v|para,3a,Strong support,H,B,2,G,f55v,107,107,
+f56r|para,f56r,para,G:49-56,103,f56r|para,1a,Strong support,H,A,1,G,f56r,108,108,
+f56v|para,f56v,para,G:49-56,91,f56v|para,1a,Strong support,H,A,1,G,f56v,109,109,
+f57r|para,f57r,para,H:57-66,87,f57r|para,3b,Strong support,H,B,5,H,f57r,110,110,
+f57v|circle,f57v,circle,H:57-66,188,f57v|circle,,Unassigned,C,unassigned,1,H,,,,
+f57v|label,f57v,label,H:57-66,5,f57v|label,,Unassigned,C,unassigned,1,H,,,,
+f57v|radial,f57v,radial,H:57-66,4,f57v|radial,,Unassigned,C,unassigned,1,H,,,,
+f58r|para,f58r,para,H:58-65,378,f58r|para,6,Unverified membership,S,A,3,H,f58r,111,111,
+f58v|para,f58v,para,H:58-65,374,f58v|para,6,Unverified membership,S,A,3,H,f58v,112,112,
+f5r|para,f5r,para,A:4-5,54,f5r|para,1a,Strong support,H,A,1,A,f5r,8,8,
+f5v|para,f5v,para,A:4-5,48,f5v|para,1b,Unverified membership,H,A,1,A,f5v,9,9,
+f65r|label,f65r,label,UNKNOWN:f65r,3,f65r|label,,Unassigned,,,,UNKNOWN,,,,
+f65v|para,f65v,para,H:58-65,45,f65v|para,3b,Strong support,H,unassigned,3,H,f65v,113,113,
+f66r|label,f66r,label,H:57-66,54,f66r|label,,Unassigned,T,B,5,H,,,,
+f66r|para,f66r,para,H:57-66,294,f66r|para,3b,Strong support,T,B,5,H,f66r,114,114,
+f66v|para,f66v,para,H:57-66,114,f66v|para,3b,Unverified membership,H,B,5,H,f66v,115,115,
+f67r1|circle,f67r1,circle,I:67-68,109,f67r1|circle,5a,Strong support,A,unassigned,4,I,,,,
+f67r1|para,f67r1,para,I:67-68,41,f67r1|para,5a,Tentative support,A,unassigned,4,I,f67r1,116,116,
+f67r1|radial,f67r1,radial,I:67-68,17,f67r1|radial,5a,Unverified membership,A,unassigned,4,I,,,,
+f67r2|label,f67r2,label,I:67-68,64,f67r2|label,5b,Unverified membership,A,unassigned,4,I,,,,
+f67r2|para,f67r2,para,I:67-68,126,f67r2|para,2a,Strong support,A,unassigned,4,I,f67r2,117,117,
+f67v1|label,f67v1,label,I:67-68,16,f67v1|label,5b,Unverified membership,A,unassigned,4,I,,,,
+f67v1|radial,f67v1,radial,I:67-68,57,f67v1|radial,5a,Unverified membership,A,unassigned,4,I,,,,
+f67v2|label,f67v2,label,I:67-68,8,f67v2|label,,Unassigned,C,unassigned,4,I,,,,
+f67v2|para,f67v2,para,I:67-68,33,f67v2|para,5a,Unverified membership,C,unassigned,4,I,f67v2,118,118,
+f67v2|radial,f67v2,radial,I:67-68,18,f67v2|radial,,Unassigned,C,unassigned,4,I,,,,
+f68r1|circle,f68r1,circle,I:67-68,4,f68r1|circle,5a,Unverified membership,A,unassigned,4,I,,,,
+f68r1|label,f68r1,label,I:67-68,29,f68r1|label,5b,Unverified membership,A,unassigned,4,I,,,,
+f68r1|para,f68r1,para,I:67-68,31,f68r1|para,2a,Strong support,A,unassigned,4,I,f68r1,119,119,
+f68r2|circle,f68r2,circle,I:67-68,20,f68r2|circle,5a,Unverified membership,A,unassigned,4,I,,,,
+f68r2|label,f68r2,label,I:67-68,25,f68r2|label,5b,Unverified membership,A,unassigned,4,I,,,,
+f68r2|para,f68r2,para,I:67-68,37,f68r2|para,2a,Strong support,A,unassigned,4,I,f68r2,120,120,
+f68r3|circle,f68r3,circle,I:67-68,48,f68r3|circle,5a,Tentative support,A,unassigned,4,I,,,,
+f68r3|label,f68r3,label,I:67-68,16,f68r3|label,5b,Unverified membership,A,unassigned,4,I,,,,
+f68r3|radial,f68r3,radial,I:67-68,41,f68r3|radial,5a,Unverified membership,A,unassigned,4,I,,,,
+f68v1|circle,f68v1,circle,I:67-68,77,f68v1|circle,5a,Tentative support,A,unassigned,4,I,,,,
+f68v1|radial,f68v1,radial,I:67-68,19,f68v1|radial,5a,Unverified membership,A,unassigned,4,I,,,,
+f68v2|circle,f68v2,circle,I:67-68,34,f68v2|circle,5a,Tentative support,A,unassigned,4,I,,,,
+f68v2|para,f68v2,para,I:67-68,44,f68v2|para,5a,Unverified membership,A,unassigned,4,I,f68v2,122,122,
+f68v2|radial,f68v2,radial,I:67-68,25,f68v2|radial,5a,Tentative support,A,unassigned,4,I,,,,
+f68v3|circle,f68v3,circle,I:67-68,65,f68v3|circle,5a,Unverified membership,C,unassigned,4,I,,,,
+f68v3|label,f68v3,label,I:67-68,2,f68v3|label,,Unassigned,C,unassigned,4,I,,,,
+f68v3|para,f68v3,para,I:67-68,55,f68v3|para,1.5a,Unverified membership,C,unassigned,4,I,f68v3,121,121,
+f68v3|radial,f68v3,radial,I:67-68,45,f68v3|radial,5a,Unverified membership,C,unassigned,4,I,,,,
+f69r|circle,f69r,circle,J:69-70,9,f69r|circle,5a,Unverified membership,C,unassigned,4,J,,,,
+f69r|label,f69r,label,J:69-70,47,f69r|label,,Unassigned,C,unassigned,4,J,,,,
+f69r|para,f69r,para,J:69-70,36,f69r|para,5a,Unverified membership,C,unassigned,4,J,f69r,123,123,
+f69r|radial,f69r,radial,J:69-70,66,f69r|radial,5a,Tentative support,C,unassigned,4,J,,,,
+f69v|circle,f69v,circle,J:69-70,107,f69v|circle,5a,Strong support,C,unassigned,4,J,,,,
+f69v|radial,f69v,radial,J:69-70,33,f69v|radial,5a,Unverified membership,C,unassigned,4,J,,,,
+f6r|para,f6r,para,A:3-6,86,f6r|para,1.5a,Tentative support,H,A,1,A,f6r,10,10,
+f6v|para,f6v,para,A:3-6,116,f6v|para,1.5a,Unverified membership,H,A,1,A,f6v,11,11,
+f70r1|circle,f70r1,circle,J:69-70,86,f70r1|circle,5a,Strong support,C,unassigned,4,J,,,,
+f70r1|radial,f70r1,radial,J:69-70,25,f70r1|radial,5a,Unverified membership,C,unassigned,4,J,,,,
+f70r2|circle,f70r2,circle,J:69-70,145,f70r2|circle,5a,Strong support,C,unassigned,4,J,,,,
+f70r2|para,f70r2,para,J:69-70,101,f70r2|para,5a,Unverified membership,C,unassigned,4,J,f70r2,124,124,
+f70v1|circle,f70v1,circle,J:69-70,60,f70v1|circle,5a,Strong support,Z,unassigned,4,J,,,,
+f70v1|label,f70v1,label,J:69-70,25,f70v1|label,5c,Tentative support,Z,unassigned,4,J,,,,
+f70v2|circle,f70v2,circle,J:69-70,95,f70v2|circle,5a,Strong support,Z,unassigned,4,J,,,,
+f70v2|label,f70v2,label,J:69-70,34,f70v2|label,5c,Tentative support,Z,unassigned,4,J,,,,
+f71r|circle,f71r,circle,K:71-72,73,f71r|circle,5a,Strong support,Z,unassigned,4,K,,,,
+f71r|label,f71r,label,K:71-72,17,f71r|label,5c,Unverified membership,Z,unassigned,4,K,,,,
+f71v|circle,f71v,circle,K:71-72,77,f71v|circle,5a,Tentative support,Z,unassigned,4,K,,,,
+f71v|label,f71v,label,K:71-72,22,f71v|label,5c,Unverified membership,Z,unassigned,4,K,,,,
+f72r1|circle,f72r1,circle,K:71-72,81,f72r1|circle,5a,Unverified membership,Z,unassigned,4,K,,,,
+f72r1|label,f72r1,label,K:71-72,23,f72r1|label,5c,Unverified membership,Z,unassigned,4,K,,,,
+f72r2|circle,f72r2,circle,K:71-72,82,f72r2|circle,5a,Unverified membership,Z,unassigned,4,K,,,,
+f72r2|label,f72r2,label,K:71-72,31,f72r2|label,5c,Tentative support,Z,unassigned,4,K,,,,
+f72r3|circle,f72r3,circle,K:71-72,122,f72r3|circle,5a,Strong support,Z,unassigned,4,K,,,,
+f72r3|label,f72r3,label,K:71-72,40,f72r3|label,5c,Unverified membership,Z,unassigned,4,K,,,,
+f72v1|circle,f72v1,circle,K:71-72,72,f72v1|circle,5a,Unverified membership,Z,unassigned,4,K,,,,
+f72v1|label,f72v1,label,K:71-72,28,f72v1|label,5c,Tentative support,Z,unassigned,4,K,,,,
+f72v2|circle,f72v2,circle,K:71-72,75,f72v2|circle,5a,Strong support,Z,unassigned,4,K,,,,
+f72v2|label,f72v2,label,K:71-72,31,f72v2|label,5c,Tentative support,Z,unassigned,4,K,,,,
+f72v3|circle,f72v3,circle,K:71-72,81,f72v3|circle,5a,Strong support,Z,unassigned,4,K,,,,
+f72v3|label,f72v3,label,K:71-72,34,f72v3|label,5c,Tentative support,Z,unassigned,4,K,,,,
+f73r|circle,f73r,circle,L:73-74,65,f73r|circle,5a,Strong support,Z,unassigned,4,L,,,,
+f73r|label,f73r,label,L:73-74,30,f73r|label,5c,Unverified membership,Z,unassigned,4,L,,,,
+f73v|circle,f73v,circle,L:73-74,68,f73v|circle,5a,Unverified membership,Z,unassigned,4,L,,,,
+f73v|label,f73v,label,L:73-74,30,f73v|label,5c,Unverified membership,Z,unassigned,4,L,,,,
+f75r|para,f75r,para,M:75-84,418,f75r|para,4a,Strong support,B,B,2,M,f75r,125,125,
+f75v|label,f75v,label,M:75-84,36,f75v|label,4b,Unverified membership,B,B,2,M,,,,
+f75v|para,f75v,para,M:75-84,323,f75v|para,4a,Strong support,B,B,2,M,f75v,126,126,
+f76r|label,f76r,label,M:76-83,9,f76r|label,,Unassigned,T,B,2,M,,,,
+f76r|para,f76r,para,M:76-83,561,f76r|para,4a,Strong support,T,B,2,M,f76r,127,127,
+f76v|para,f76v,para,M:76-83,399,f76v|para,4a,Strong support,B,B,2,M,f76v,128,128,
+f77r|label,f77r,label,M:77-82,11,f77r|label,4b,Unverified membership,B,B,2,M,,,,
+f77r|para,f77r,para,M:77-82,321,f77r|para,4a,Strong support,B,B,2,M,f77r,129,129,
+f77v|label,f77v,label,M:77-82,10,f77v|label,4b,Unverified membership,B,B,2,M,,,,
+f77v|para,f77v,para,M:77-82,321,f77v|para,4a,Strong support,B,B,2,M,f77v,130,130,
+f78r|label,f78r,label,M:78-81,8,f78r|label,4b,Unverified membership,B,B,2,M,,,,
+f78r|para,f78r,para,M:78-81,290,f78r|para,4a,Strong support,B,B,2,M,f78r,131,131,
+f78v|para,f78v,para,M:78-81,295,f78v|para,4a,Strong support,B,B,2,M,f78v,132,132,
+f79r|para,f79r,para,M:79-80,382,f79r|para,4a,Strong support,B,B,2,M,f79r,133,133,
+f79v|para,f79v,para,M:79-80,355,f79v|para,4a,Strong support,B,B,2,M,f79v,134,134,
+f7r|para,f7r,para,A:2-7,66,f7r|para,1a,Strong support,H,A,1,A,f7r,12,12,
+f7v|para,f7v,para,A:2-7,78,f7v|para,1a,Strong support,H,A,1,A,f7v,13,13,
+f80r|label,f80r,label,M:79-80,10,f80r|label,4b,Unverified membership,B,B,2,M,,,,
+f80r|para,f80r,para,M:79-80,435,f80r|para,4a,Strong support,B,B,2,M,f80r,135,135,
+f80v|para,f80v,para,M:79-80,376,f80v|para,4a,Strong support,B,B,2,M,f80v,136,136,
+f81r|para,f81r,para,M:78-81,210,f81r|para,4a,Strong support,B,B,2,M,f81r,137,137,
+f81v|label,f81v,label,M:78-81,2,f81v|label,4b,Unverified membership,B,B,2,M,,,,
+f81v|para,f81v,para,M:78-81,252,f81v|para,4a,Strong support,B,B,2,M,f81v,138,138,
+f82r|label,f82r,label,M:77-82,13,f82r|label,4b,Unverified membership,B,B,2,M,,,,
+f82r|para,f82r,para,M:77-82,278,f82r|para,4a,Tentative support,B,B,2,M,f82r,139,139,
+f82v|label,f82v,label,M:77-82,14,f82v|label,4b,Unverified membership,B,B,2,M,,,,
+f82v|para,f82v,para,M:77-82,306,f82v|para,4a,Strong support,B,B,2,M,f82v,140,140,
+f83r|label,f83r,label,M:76-83,4,f83r|label,4b,Unverified membership,B,B,2,M,,,,
+f83r|para,f83r,para,M:76-83,340,f83r|para,4a,Strong support,B,B,2,M,f83r,141,141,
+f83v|label,f83v,label,M:76-83,4,f83v|label,4b,Unverified membership,B,B,2,M,,,,
+f83v|para,f83v,para,M:76-83,255,f83v|para,4a,Strong support,B,B,2,M,f83v,142,142,
+f84r|label,f84r,label,M:75-84,14,f84r|label,4b,Unverified membership,B,B,2,M,,,,
+f84r|para,f84r,para,M:75-84,354,f84r|para,4a,Strong support,B,B,2,M,f84r,143,143,
+f84v|para,f84v,para,M:75-84,341,f84v|para,4a,Strong support,B,B,2,M,f84v,144,144,
+f85r1|para,f85r1,para,N:85-86,347,f85r1|para,,Unassigned,T,B,2,N,f85r1,145,145,
+f85r2|circle,f85r2,circle,N:85-86,48,f85r2|circle,,Unassigned,C,B,2,N,,,,
+f85r2|para,f85r2,para,N:85-86,107,f85r2|para,,Unassigned,C,B,2,N,f85r2,146,146,
+f86v3|para,f86v3,para,N:85-86,280,f86v3|para,3c,Strong support,C,B,2,N,f86v3,151,151,
+f86v4|circle,f86v4,circle,N:85-86,139,f86v4|circle,3b,Tentative support,C,B,2,N,,,,
+f86v4|para,f86v4,para,N:85-86,48,f86v4|para,3b,Unverified membership,C,B,2,N,f86v4,148,148,
+f86v5|para,f86v5,para,N:85-86,389,f86v5|para,3c,Tentative support,T,B,2,N,f86v5,150,150,
+f86v6|para,f86v6,para,N:85-86,490,f86v6|para,3c,Tentative support,T,B,2,N,f86v6,149,149,
+f87r|para,f87r,para,O:87-90,102,f87r|para,2a,Strong support,H,A,1,O,f87r,152,152,
+f87v|para,f87v,para,O:87-90,92,f87v|para,2a,Strong support,H,A,1,O,f87v,153,153,
+f88r|label,f88r,label,O:88-89,16,f88r|label,2c,Unverified membership,P,A,1,O,,,,
+f88r|para,f88r,para,O:88-89,134,f88r|para,2a,Strong support,P,A,1,O,f88r,154,154,
+f88v|label,f88v,label,O:88-89,13,f88v|label,2c,Unverified membership,P,A,1,O,,,,
+f88v|para,f88v,para,O:88-89,131,f88v|para,2a,Strong support,P,A,1,O,f88v,155,155,
+f89r1|label,f89r1,label,O:88-89,15,f89r1|label,2c,Unverified membership,P,A,1,O,,,,
+f89r1|para,f89r1,para,O:88-89,126,f89r1|para,2a,Unverified membership,P,A,1,O,f89r1,156,156,
+f89r2|label,f89r2,label,O:88-89,22,f89r2|label,2c,Unverified membership,P,A,1,O,,,,
+f89r2|para,f89r2,para,O:88-89,211,f89r2|para,2a,Strong support,P,A,1,O,f89r2,157,157,
+f89v1|label,f89v1,label,O:88-89,9,f89v1|label,2c,Unverified membership,P,A,1,O,,,,
+f89v1|para,f89v1,para,O:88-89,145,f89v1|para,2a,Unverified membership,P,A,1,O,f89v1,159,159,
+f89v2|label,f89v2,label,O:88-89,15,f89v2|label,2c,Unverified membership,P,A,1,O,,,,
+f89v2|para,f89v2,para,O:88-89,164,f89v2|para,2a,Strong support,P,A,1,O,f89v2,158,158,
+f8r|para,f8r,para,A:1-8,151,f8r|para,1a,Strong support,H,A,1,A,f8r,14,14,
+f8v|para,f8v,para,A:1-8,118,f8v|para,1a,Strong support,H,A,1,A,f8v,15,15,
+f90r1|para,f90r1,para,O:87-90,69,f90r1|para,1.5a,Unverified membership,H,A,1,O,f90r1,160,160,
+f90r2|para,f90r2,para,O:87-90,47,f90r2|para,2a,Strong support,H,A,1,O,f90r2,161,161,
+f90v1|para,f90v1,para,O:87-90,96,f90v1|para,2a,Strong support,H,A,1,O,f90v1,163,163,
+f90v2|para,f90v2,para,O:87-90,67,f90v2|para,2a,Strong support,H,A,1,O,f90v2,162,162,
+f93r|para,f93r,para,Q:93-96,152,f93r|para,1.5a,Strong support,H,A,1,Q,f93r,164,164,
+f93v|para,f93v,para,Q:93-96,87,f93v|para,1.5a,Tentative support,H,A,1,Q,f93v,165,165,
+f94r|para,f94r,para,Q:94-95,79,f94r|para,3a,Strong support,H,B,3,Q,f94r,166,166,
+f94v|para,f94v,para,Q:94-95,97,f94v|para,3a,Strong support,H,B,3,Q,f94v,167,167,
+f95r1|para,f95r1,para,Q:94-95,101,f95r1|para,3a,Strong support,H,B,3,Q,f95r1,168,168,
+f95r2|para,f95r2,para,Q:94-95,79,f95r2|para,3a,Strong support,H,B,3,Q,f95r2,169,169,
+f95v1|para,f95v1,para,Q:94-95,118,f95v1|para,3a,Strong support,H,B,3,Q,f95v1,171,171,
+f95v2|para,f95v2,para,Q:94-95,60,f95v2|para,3a,Strong support,H,B,3,Q,f95v2,170,170,
+f96r|para,f96r,para,Q:93-96,84,f96r|para,1.5a,Unverified membership,H,A,1,Q,f96r,172,172,
+f96v|para,f96v,para,Q:93-96,56,f96v|para,2a,Strong support,H,A,1,Q,f96v,173,173,
+f99r|label,f99r,label,S:99-102,35,f99r|label,2c,Unverified membership,P,A,1,S,,,,
+f99r|para,f99r,para,S:99-102,158,f99r|para,2a,Strong support,P,A,1,S,f99r,174,174,
+f99v|label,f99v,label,S:99-102,28,f99v|label,2c,Unverified membership,P,A,1,S,,,,
+f99v|para,f99v,para,S:99-102,148,f99v|para,2a,Strong support,P,A,1,S,f99v,175,175,
+f9r|para,f9r,para,B:9-16,85,f9r|para,1b,Strong support,H,A,1,B,f9r,16,16,
+f9v|para,f9v,para,B:9-16,86,f9v|para,1b,Strong support,H,A,1,B,f9v,17,17,
+fRos|circle,fRos,circle,N:85-86,341,fRos|circle,3d-c,Unverified membership,C,B,4,N,,,,
+fRos|label,fRos,label,N:85-86,152,fRos|label,3d-l,Unverified membership,C,B,4,N,fRos#L,222,,
+fRos|para,fRos,para,N:85-86,37,fRos|para,5a,Unverified membership,C,B,4,N,fRos,147,147,
+f57v|circle/radial,f57v,circle/radial,Non-prose,192,f57v|circle;f57v|radial,,Unassigned,C,unassigned,1,H,f57v*,207,,
+f67r1|circle/radial,f67r1,circle/radial,I:67-68,126,f67r1|circle;f67r1|radial,5a,Strong support,A,unassigned,4,I,f67r1*,208,,
+f68r3|circle/radial,f68r3,circle/radial,Non-prose,89,f68r3|circle;f68r3|radial,5a,Tentative support,A,unassigned,4,I,f68r3*,209,,
+f68v1|circle/radial,f68v1,circle/radial,Non-prose,96,f68v1|circle;f68v1|radial,5a,Tentative support,A,unassigned,4,I,f68v1*,210,,
+f68v3|circle/radial,f68v3,circle/radial,I:67-68,110,f68v3|circle;f68v3|radial,5a,Unverified membership,C,unassigned,4,I,f68v3*,211,,
+f69v|circle/radial,f69v,circle/radial,Non-prose,140,f69v|circle;f69v|radial,5a,Strong support,C,unassigned,4,J,f69v*,212,,
+f70r1|circle/radial,f70r1,circle/radial,Non-prose,111,f70r1|circle;f70r1|radial,5a,Strong support,C,unassigned,4,J,f70r1*,213,,
+f70r2|circle/radial,f70r2,circle/radial,J:69-70,145,f70r2|circle,5a,Strong support,C,unassigned,4,J,f70r2*,214,,
+f70v2|circle/radial,f70v2,circle/radial,Non-prose,95,f70v2|circle,5a,Strong support,Z,unassigned,4,J,f70v2*,215,,
+f72r1|circle/radial,f72r1,circle/radial,Non-prose,81,f72r1|circle,5a,Unverified membership,Z,unassigned,4,K,f72r1*,216,,
+f72r2|circle/radial,f72r2,circle/radial,Non-prose,82,f72r2|circle,5a,Unverified membership,Z,unassigned,4,K,f72r2*,217,,
+f72r3|circle/radial,f72r3,circle/radial,Non-prose,122,f72r3|circle,5a,Strong support,Z,unassigned,4,K,f72r3*,218,,
+f72v3|circle/radial,f72v3,circle/radial,Non-prose,81,f72v3|circle,5a,Strong support,Z,unassigned,4,K,f72v3*,219,,
+f86v4|circle/radial,f86v4,circle/radial,N:85-86,139,f86v4|circle,3b,Tentative support,C,B,2,N,f86v4*,220,,
+fRos|circle/radial,fRos,circle/radial,N:85-86,341,fRos|circle,3d-c,Unverified membership,C,B,4,N,fRos*,221,,
+pool|A:1-8,,pool,A:1-8,571,f1r|para;f1v|para;f8r|para;f8v|para,1a,Constituent assignments,H,,,A,A:1-8,223,,
+pool|A:2-7,,pool,A:2-7,306,f2r|para;f2v|para;f7r|para;f7v|para,1a,Constituent assignments,H,,,A,A:2-7,224,,
+pool|A:3-6,,pool,A:3-6,401,f3r|para;f3v|para;f6r|para;f6v|para,1.5a,Constituent assignments,H,,,A,A:3-6,225,,
+pool|A:4-5,,pool,A:4-5,250,f4r|para;f4v|para;f5r|para;f5v|para,1a,Constituent assignments,H,,,A,A:4-5,226,,
+pool|B:10-15,,pool,B:10-15,313,f10r|para;f10v|para;f15r|para;f15v|para,1b,Constituent assignments,H,,,B,B:10-15,227,,
+pool|B:11-14,,pool,B:11-14,259,f11r|para;f11v|para;f14r|para;f14v|para,1b,Constituent assignments,H,,,B,B:11-14,228,,
+pool|B:12-13,,pool,B:12-13,145,f13r|para;f13v|para,1b,Constituent assignments,H,,,B,B:12-13,229,,
+pool|B:9-16,,pool,B:9-16,331,f9r|para;f9v|para;f16r|para;f16v|para,1b,Constituent assignments,H,,,B,B:9-16,230,,
+pool|C:17-24,,pool,C:17-24,407,f17r|para;f17v|para;f24r|para;f24v|para,1.5a,Constituent assignments,H,,,C,C:17-24,231,,
+pool|C:18-23,,pool,C:18-23,356,f18r|para;f18v|para;f23r|para;f23v|para,1b,Constituent assignments,H,,,C,C:18-23,232,,
+pool|C:19-22,,pool,C:19-22,344,f19r|para;f19v|para;f22r|para;f22v|para,1b,Constituent assignments,H,,,C,C:19-22,233,,
+pool|C:20-21,,pool,C:20-21,337,f20r|para;f20v|para;f21r|para;f21v|para,1a,Constituent assignments,H,,,C,C:20-21,234,,
+pool|D:25-32,,pool,D:25-32,272,f25r|para;f25v|para;f32r|para;f32v|para,1a,Constituent assignments,H,,,D,D:25-32,235,,
+pool|D:26-31,,pool,D:26-31,395,f26r|para;f26v|para;f31r|para;f31v|para,3b,Constituent assignments,H,,,D,D:26-31,236,,
+pool|D:27-30,,pool,D:27-30,317,f27r|para;f27v|para;f30r|para;f30v|para,1a,Constituent assignments,H,,,D,D:27-30,237,,
+pool|D:28-29,,pool,D:28-29,295,f28r|para;f28v|para;f29r|para;f29v|para,1a,Constituent assignments,H,,,D,D:28-29,238,,
+pool|E:33-40,,pool,E:33-40,396,f33r|para;f33v|para;f40r|para;f40v|para,3a,Constituent assignments,H,,,E,E:33-40,239,,
+pool|E:34-39,,pool,E:34-39,569,f34r|para;f34v|para;f39r|para;f39v|para,3a,Constituent assignments,H,,,E,E:34-39,240,,
+pool|E:35-38,,pool,E:35-38,297,f35r|para;f35v|para;f38r|para;f38v|para,1a,Constituent assignments,H,,,E,E:35-38,241,,
+pool|E:36-37,,pool,E:36-37,306,f36r|para;f36v|para;f37r|para;f37v|para,1b,Constituent assignments,H,,,E,E:36-37,242,,
+pool|F:41-48,,pool,F:41-48,379,f41r|para;f41v|para;f48r|para;f48v|para,3b,Constituent assignments,H,,,F,F:41-48,243,,
+pool|F:42-47,,pool,F:42-47,418,f42r|para;f42v|para;f47r|para;f47v|para,1a,Constituent assignments,H,,,F,F:42-47,244,,
+pool|F:43-46,,pool,F:43-46,577,f43r|para;f43v|para;f46r|para;f46v|para,3b,Constituent assignments,H,,,F,F:43-46,245,,
+pool|F:44-45,,pool,F:44-45,347,f44r|para;f44v|para;f45r|para;f45v|para,1b,Constituent assignments,H,,,F,F:44-45,246,,
+pool|G:49-56,,pool,G:49-56,451,f49r|para;f49v|para;f56r|para;f56v|para,1a,Constituent assignments,H,,,G,G:49-56,247,,
+pool|G:50-55,,pool,G:50-55,422,f50r|para;f50v|para;f55r|para;f55v|para,3a,Constituent assignments,H,,,G,G:50-55,248,,
+pool|G:51-54,,pool,G:51-54,374,f51r|para;f51v|para;f54r|para;f54v|para,1.5a,Constituent assignments,H,,,G,G:51-54,249,,
+pool|G:52-53,,pool,G:52-53,281,f52r|para;f52v|para;f53r|para;f53v|para,1.5a,Constituent assignments,H,,,G,G:52-53,250,,
+pool|H:57-66,,pool,H:57-66,495,f57r|para;f66r|para;f66v|para,3b,Constituent assignments,T,,,H,H:57-66,251,,
+pool|H:58-65,,pool,H:58-65,797,f58r|para;f58v|para;f65v|para,6,Constituent assignments,S,,,H,H:58-65,252,,
+pool|I:67-68,,pool,I:67-68,367,f67r1|para;f67r2|para;f67v2|para;f68r1|para;f68r2|para;f68v3|para;f68v2|para,2a,Constituent assignments,A,,,I,I:67-68,253,,
+pool|J:69-70,,pool,J:69-70,137,f69r|para;f70r2|para,5a,Constituent assignments,C,,,J,J:69-70,254,,
+pool|M:75-84,,pool,M:75-84,1436,f75r|para;f75v|para;f84r|para;f84v|para,4a,Constituent assignments,B,,,M,M:75-84,255,,
+pool|M:76-83,,pool,M:76-83,1555,f76r|para;f76v|para;f83r|para;f83v|para,4a,Constituent assignments,B,,,M,M:76-83,256,,
+pool|M:77-82,,pool,M:77-82,1226,f77r|para;f77v|para;f82r|para;f82v|para,4a,Constituent assignments,B,,,M,M:77-82,257,,
+pool|M:78-81,,pool,M:78-81,1047,f78r|para;f78v|para;f81r|para;f81v|para,4a,Constituent assignments,B,,,M,M:78-81,258,,
+pool|M:79-80,,pool,M:79-80,1548,f79r|para;f79v|para;f80r|para;f80v|para,4a,Constituent assignments,B,,,M,M:79-80,259,,
+pool|N:85-86,,pool,N:85-86,1698,f85r1|para;f85r2|para;fRos|para;f86v4|para;f86v6|para;f86v5|para;f86v3|para,3c,Constituent assignments,T,,,N,N:85-86,260,,
+pool|O:87-90,,pool,O:87-90,473,f87r|para;f87v|para;f90r1|para;f90r2|para;f90v2|para;f90v1|para,2a,Constituent assignments,H,,,O,O:87-90,261,,
+pool|O:88-89,,pool,O:88-89,911,f88r|para;f88v|para;f89r1|para;f89r2|para;f89v2|para;f89v1|para,2a,Constituent assignments,P,,,O,O:88-89,262,,
+pool|Q:93-96,,pool,Q:93-96,379,f93r|para;f93v|para;f96r|para;f96v|para,1.5a,Constituent assignments,H,,,Q,Q:93-96,263,,
+pool|Q:94-95,,pool,Q:94-95,534,f94r|para;f94v|para;f95r1|para;f95r2|para;f95v2|para;f95v1|para,3a,Constituent assignments,H,,,Q,Q:94-95,264,,
+pool|S:100-101,,pool,S:100-101,579,f100r|para;f100v|para;f101r|para;f101v|para,2a,Constituent assignments,P,,,S,S:100-101,265,,
+pool|S:99-102,,pool,S:99-102,828,f99r|para;f99v|para;f102r1|para;f102r2|para;f102v2|para;f102v1|para,2a,Constituent assignments,P,,,S,S:99-102,266,,
+pool|T:103-116,,pool,T:103-116,1521,f103r|para;f103v|para;f116r|para,4c,Constituent assignments,S,,,T,T:103-116,267,,
+pool|T:104-115,,pool,T:104-115,1792,f104r|para;f104v|para;f115r|para;f115v|para,3c,Constituent assignments,S,,,T,T:104-115,268,,
+pool|T:105-114,,pool,T:105-114,1607,f105r|para;f105v|para;f114r|para;f114v|para,3c,Constituent assignments,S,,,T,T:105-114,269,,
+pool|T:106-113,,pool,T:106-113,1905,f106r|para;f106v|para;f113r|para;f113v|para,3c,Constituent assignments,S,,,T,T:106-113,270,,
+pool|T:107-112,,pool,T:107-112,1766,f107r|para;f107v|para;f112r|para;f112v|para,3c,Constituent assignments,S,,,T,T:107-112,271,,
+pool|T:108-111,,pool,T:108-111,2260,f108r|para;f108v|para;f111r|para;f111v|para,4c,Constituent assignments,S,,,T,T:108-111,272,,
+f1r|all_nonlabel,f1r,all_nonlabel,A:1-8,210,f1r|para,,,T,A,1,A,,,,0
+f1v|all_nonlabel,f1v,all_nonlabel,A:1-8,92,f1v|para,,,H,A,1,A,,,,1
+f2r|all_nonlabel,f2r,all_nonlabel,A:2-7,101,f2r|para,,,H,A,1,A,,,,2
+f2v|all_nonlabel,f2v,all_nonlabel,A:2-7,61,f2v|para,,,H,A,1,A,,,,3
+f3r|all_nonlabel,f3r,all_nonlabel,A:3-6,114,f3r|para,,,H,A,1,A,,,,4
+f3v|all_nonlabel,f3v,all_nonlabel,A:3-6,85,f3v|para,,,H,A,1,A,,,,5
+f4r|all_nonlabel,f4r,all_nonlabel,A:4-5,64,f4r|para,,,H,A,1,A,,,,6
+f4v|all_nonlabel,f4v,all_nonlabel,A:4-5,84,f4v|para,,,H,A,1,A,,,,7
+f5r|all_nonlabel,f5r,all_nonlabel,A:4-5,54,f5r|para,,,H,A,1,A,,,,8
+f5v|all_nonlabel,f5v,all_nonlabel,A:4-5,48,f5v|para,,,H,A,1,A,,,,9
+f6r|all_nonlabel,f6r,all_nonlabel,A:3-6,86,f6r|para,,,H,A,1,A,,,,10
+f6v|all_nonlabel,f6v,all_nonlabel,A:3-6,116,f6v|para,,,H,A,1,A,,,,11
+f7r|all_nonlabel,f7r,all_nonlabel,A:2-7,66,f7r|para,,,H,A,1,A,,,,12
+f7v|all_nonlabel,f7v,all_nonlabel,A:2-7,78,f7v|para,,,H,A,1,A,,,,13
+f8r|all_nonlabel,f8r,all_nonlabel,A:1-8,151,f8r|para,,,H,A,1,A,,,,14
+f8v|all_nonlabel,f8v,all_nonlabel,A:1-8,118,f8v|para,,,H,A,1,A,,,,15
+f9r|all_nonlabel,f9r,all_nonlabel,B:9-16,85,f9r|para,,,H,A,1,B,,,,16
+f9v|all_nonlabel,f9v,all_nonlabel,B:9-16,86,f9v|para,,,H,A,1,B,,,,17
+f10r|all_nonlabel,f10r,all_nonlabel,B:10-15,92,f10r|para,,,H,A,1,B,,,,18
+f10v|all_nonlabel,f10v,all_nonlabel,B:10-15,57,f10v|para,,,H,A,1,B,,,,19
+f11r|all_nonlabel,f11r,all_nonlabel,B:11-14,59,f11r|para,,,H,A,1,B,,,,20
+f11v|all_nonlabel,f11v,all_nonlabel,B:11-14,49,f11v|para,,,H,A,1,B,,,,21
+f13r|all_nonlabel,f13r,all_nonlabel,B:12-13,76,f13r|para,,,H,A,1,B,,,,22
+f13v|all_nonlabel,f13v,all_nonlabel,B:12-13,69,f13v|para,,,H,A,1,B,,,,23
+f14r|all_nonlabel,f14r,all_nonlabel,B:11-14,76,f14r|para,,,H,A,1,B,,,,24
+f14v|all_nonlabel,f14v,all_nonlabel,B:11-14,75,f14v|para,,,H,A,1,B,,,,25
+f15r|all_nonlabel,f15r,all_nonlabel,B:10-15,94,f15r|para,,,H,A,1,B,,,,26
+f15v|all_nonlabel,f15v,all_nonlabel,B:10-15,70,f15v|para,,,H,A,1,B,,,,27
+f16r|all_nonlabel,f16r,all_nonlabel,B:9-16,84,f16r|para,,,H,A,1,B,,,,28
+f16v|all_nonlabel,f16v,all_nonlabel,B:9-16,76,f16v|para,,,H,A,1,B,,,,29
+f17r|all_nonlabel,f17r,all_nonlabel,C:17-24,78,f17r|para,,,H,A,1,C,,,,30
+f17v|all_nonlabel,f17v,all_nonlabel,C:17-24,135,f17v|para,,,H,A,1,C,,,,31
+f18r|all_nonlabel,f18r,all_nonlabel,C:18-23,84,f18r|para,,,H,A,1,C,,,,32
+f18v|all_nonlabel,f18v,all_nonlabel,C:18-23,69,f18v|para,,,H,A,1,C,,,,33
+f19r|all_nonlabel,f19r,all_nonlabel,C:19-22,78,f19r|para,,,H,A,1,C,,,,34
+f19v|all_nonlabel,f19v,all_nonlabel,C:19-22,78,f19v|para,,,H,A,1,C,,,,35
+f20r|all_nonlabel,f20r,all_nonlabel,C:20-21,89,f20r|para,,,H,A,1,C,,,,36
+f20v|all_nonlabel,f20v,all_nonlabel,C:20-21,86,f20v|para,,,H,A,1,C,,,,37
+f21r|all_nonlabel,f21r,all_nonlabel,C:20-21,104,f21r|para,,,H,A,1,C,,,,38
+f21v|all_nonlabel,f21v,all_nonlabel,C:20-21,58,f21v|para,,,H,A,1,C,,,,39
+f22r|all_nonlabel,f22r,all_nonlabel,C:19-22,111,f22r|para,,,H,A,1,C,,,,40
+f22v|all_nonlabel,f22v,all_nonlabel,C:19-22,77,f22v|para,,,H,A,1,C,,,,41
+f23r|all_nonlabel,f23r,all_nonlabel,C:18-23,109,f23r|para,,,H,A,1,C,,,,42
+f23v|all_nonlabel,f23v,all_nonlabel,C:18-23,94,f23v|para,,,H,A,1,C,,,,43
+f24r|all_nonlabel,f24r,all_nonlabel,C:17-24,109,f24r|para,,,H,A,1,C,,,,44
+f24v|all_nonlabel,f24v,all_nonlabel,C:17-24,85,f24v|para,,,H,A,1,C,,,,45
+f25r|all_nonlabel,f25r,all_nonlabel,D:25-32,47,f25r|para,,,H,A,1,D,,,,46
+f25v|all_nonlabel,f25v,all_nonlabel,D:25-32,60,f25v|para,,,H,A,1,D,,,,47
+f26r|all_nonlabel,f26r,all_nonlabel,D:26-31,90,f26r|para,,,H,B,2,D,,,,48
+f26v|all_nonlabel,f26v,all_nonlabel,D:26-31,93,f26v|para,,,H,B,2,D,,,,49
+f27r|all_nonlabel,f27r,all_nonlabel,D:27-30,94,f27r|para,,,H,A,1,D,,,,50
+f27v|all_nonlabel,f27v,all_nonlabel,D:27-30,61,f27v|para,,,H,A,1,D,,,,51
+f28r|all_nonlabel,f28r,all_nonlabel,D:28-29,68,f28r|para,,,H,A,1,D,,,,52
+f28v|all_nonlabel,f28v,all_nonlabel,D:28-29,68,f28v|para,,,H,A,1,D,,,,53
+f29r|all_nonlabel,f29r,all_nonlabel,D:28-29,65,f29r|para,,,H,A,1,D,,,,54
+f29v|all_nonlabel,f29v,all_nonlabel,D:28-29,94,f29v|para,,,H,A,1,D,,,,55
+f30r|all_nonlabel,f30r,all_nonlabel,D:27-30,99,f30r|para,,,H,A,1,D,,,,56
+f30v|all_nonlabel,f30v,all_nonlabel,D:27-30,63,f30v|para,,,H,A,1,D,,,,57
+f31r|all_nonlabel,f31r,all_nonlabel,D:26-31,102,f31r|para,,,H,B,2,D,,,,58
+f31v|all_nonlabel,f31v,all_nonlabel,D:26-31,110,f31v|para,,,H,B,2,D,,,,59
+f32r|all_nonlabel,f32r,all_nonlabel,D:25-32,76,f32r|para,,,H,A,1,D,,,,60
+f32v|all_nonlabel,f32v,all_nonlabel,D:25-32,89,f32v|para,,,H,A,1,D,,,,61
+f33r|all_nonlabel,f33r,all_nonlabel,E:33-40,74,f33r|para,,,H,B,2,E,,,,62
+f33v|all_nonlabel,f33v,all_nonlabel,E:33-40,114,f33v|para,,,H,B,2,E,,,,63
+f34r|all_nonlabel,f34r,all_nonlabel,E:34-39,149,f34r|para,,,H,B,2,E,,,,64
+f34v|all_nonlabel,f34v,all_nonlabel,E:34-39,117,f34v|para,,,H,B,2,E,,,,65
+f35r|all_nonlabel,f35r,all_nonlabel,E:35-38,94,f35r|para,,,H,A,1,E,,,,66
+f35v|all_nonlabel,f35v,all_nonlabel,E:35-38,91,f35v|para,,,H,A,1,E,,,,67
+f36r|all_nonlabel,f36r,all_nonlabel,E:36-37,63,f36r|para,,,H,A,1,E,,,,68
+f36v|all_nonlabel,f36v,all_nonlabel,E:36-37,76,f36v|para,,,H,A,1,E,,,,69
+f37r|all_nonlabel,f37r,all_nonlabel,E:36-37,78,f37r|para,,,H,A,1,E,,,,70
+f37v|all_nonlabel,f37v,all_nonlabel,E:36-37,89,f37v|para,,,H,A,1,E,,,,71
+f38r|all_nonlabel,f38r,all_nonlabel,E:35-38,44,f38r|para,,,H,A,1,E,,,,72
+f38v|all_nonlabel,f38v,all_nonlabel,E:35-38,68,f38v|para,,,H,A,1,E,,,,73
+f39r|all_nonlabel,f39r,all_nonlabel,E:34-39,157,f39r|para,,,H,B,2,E,,,,74
+f39v|all_nonlabel,f39v,all_nonlabel,E:34-39,146,f39v|para,,,H,B,2,E,,,,75
+f40r|all_nonlabel,f40r,all_nonlabel,E:33-40,103,f40r|para,,,H,B,2,E,,,,76
+f40v|all_nonlabel,f40v,all_nonlabel,E:33-40,105,f40v|para,,,H,B,2,E,,,,77
+f41r|all_nonlabel,f41r,all_nonlabel,F:41-48,97,f41r|para,,,H,B,5,F,,,,78
+f41v|all_nonlabel,f41v,all_nonlabel,F:41-48,65,f41v|para,,,H,B,5,F,,,,79
+f42r|all_nonlabel,f42r,all_nonlabel,F:42-47,141,f42r|para,,,H,A,1,F,,,,80
+f42v|all_nonlabel,f42v,all_nonlabel,F:42-47,116,f42v|para,,,H,A,1,F,,,,81
+f43r|all_nonlabel,f43r,all_nonlabel,F:43-46,153,f43r|para,,,H,B,2,F,,,,82
+f43v|all_nonlabel,f43v,all_nonlabel,F:43-46,151,f43v|para,,,H,B,2,F,,,,83
+f44r|all_nonlabel,f44r,all_nonlabel,F:44-45,74,f44r|para,,,H,A,1,F,,,,84
+f44v|all_nonlabel,f44v,all_nonlabel,F:44-45,100,f44v|para,,,H,A,1,F,,,,85
+f45r|all_nonlabel,f45r,all_nonlabel,F:44-45,89,f45r|para,,,H,A,1,F,,,,86
+f45v|all_nonlabel,f45v,all_nonlabel,F:44-45,84,f45v|para,,,H,A,1,F,,,,87
+f46r|all_nonlabel,f46r,all_nonlabel,F:43-46,163,f46r|para,,,H,B,2,F,,,,88
+f46v|all_nonlabel,f46v,all_nonlabel,F:43-46,110,f46v|para,,,H,B,2,F,,,,89
+f47r|all_nonlabel,f47r,all_nonlabel,F:42-47,76,f47r|para,,,H,A,1,F,,,,90
+f47v|all_nonlabel,f47v,all_nonlabel,F:42-47,85,f47v|para,,,H,A,1,F,,,,91
+f48r|all_nonlabel,f48r,all_nonlabel,F:41-48,89,f48r|para,,,H,B,5,F,,,,92
+f48v|all_nonlabel,f48v,all_nonlabel,F:41-48,128,f48v|para,,,H,B,5,F,,,,93
+f49r|all_nonlabel,f49r,all_nonlabel,G:49-56,114,f49r|para,,,H,A,1,G,,,,94
+f49v|all_nonlabel,f49v,all_nonlabel,G:49-56,143,f49v|para,,,H,A,1,G,,,,95
+f50r|all_nonlabel,f50r,all_nonlabel,G:50-55,93,f50r|para,,,H,B,2,G,,,,96
+f50v|all_nonlabel,f50v,all_nonlabel,G:50-55,100,f50v|para,,,H,B,2,G,,,,97
+f51r|all_nonlabel,f51r,all_nonlabel,G:51-54,89,f51r|para,,,H,A,1,G,,,,98
+f51v|all_nonlabel,f51v,all_nonlabel,G:51-54,82,f51v|para,,,H,A,1,G,,,,99
+f52r|all_nonlabel,f52r,all_nonlabel,G:52-53,69,f52r|para,,,H,A,1,G,,,,100
+f52v|all_nonlabel,f52v,all_nonlabel,G:52-53,78,f52v|para,,,H,A,1,G,,,,101
+f53r|all_nonlabel,f53r,all_nonlabel,G:52-53,61,f53r|para,,,H,A,1,G,,,,102
+f53v|all_nonlabel,f53v,all_nonlabel,G:52-53,73,f53v|para,,,H,A,1,G,,,,103
+f54r|all_nonlabel,f54r,all_nonlabel,G:51-54,110,f54r|para,,,H,A,1,G,,,,104
+f54v|all_nonlabel,f54v,all_nonlabel,G:51-54,93,f54v|para,,,H,A,1,G,,,,105
+f55r|all_nonlabel,f55r,all_nonlabel,G:50-55,124,f55r|para,,,H,B,2,G,,,,106
+f55v|all_nonlabel,f55v,all_nonlabel,G:50-55,105,f55v|para,,,H,B,2,G,,,,107
+f56r|all_nonlabel,f56r,all_nonlabel,G:49-56,103,f56r|para,,,H,A,1,G,,,,108
+f56v|all_nonlabel,f56v,all_nonlabel,G:49-56,91,f56v|para,,,H,A,1,G,,,,109
+f57r|all_nonlabel,f57r,all_nonlabel,H:57-66,87,f57r|para,,,H,B,5,H,,,,110
+f57v|all_nonlabel,f57v,all_nonlabel,H:57-66,192,f57v|circle;f57v|radial,,,C,unassigned,1,H,,,,111
+f58r|all_nonlabel,f58r,all_nonlabel,H:58-65,378,f58r|para,,,S,A,3,H,,,,112
+f58v|all_nonlabel,f58v,all_nonlabel,H:58-65,374,f58v|para,,,S,A,3,H,,,,113
+f65v|all_nonlabel,f65v,all_nonlabel,H:58-65,45,f65v|para,,,H,unassigned,3,H,,,,114
+f66r|all_nonlabel,f66r,all_nonlabel,H:57-66,294,f66r|para,,,T,B,5,H,,,,115
+f66v|all_nonlabel,f66v,all_nonlabel,H:57-66,114,f66v|para,,,H,B,5,H,,,,116
+f67r1|all_nonlabel,f67r1,all_nonlabel,I:67-68,167,f67r1|para;f67r1|circle;f67r1|radial,,,A,unassigned,4,I,,,,117
+f67r2|all_nonlabel,f67r2,all_nonlabel,I:67-68,126,f67r2|para,,,A,unassigned,4,I,,,,118
+f67v2|all_nonlabel,f67v2,all_nonlabel,I:67-68,51,f67v2|para;f67v2|radial,,,C,unassigned,4,I,,,,119
+f67v1|all_nonlabel,f67v1,all_nonlabel,I:67-68,57,f67v1|radial,,,A,unassigned,4,I,,,,120
+f68r1|all_nonlabel,f68r1,all_nonlabel,I:67-68,35,f68r1|para;f68r1|circle,,,A,unassigned,4,I,,,,121
+f68r2|all_nonlabel,f68r2,all_nonlabel,I:67-68,57,f68r2|para;f68r2|circle,,,A,unassigned,4,I,,,,122
+f68r3|all_nonlabel,f68r3,all_nonlabel,I:67-68,89,f68r3|circle;f68r3|radial,,,A,unassigned,4,I,,,,123
+f68v3|all_nonlabel,f68v3,all_nonlabel,I:67-68,165,f68v3|para;f68v3|circle;f68v3|radial,,,C,unassigned,4,I,,,,124
+f68v2|all_nonlabel,f68v2,all_nonlabel,I:67-68,103,f68v2|para;f68v2|circle;f68v2|radial,,,A,unassigned,4,I,,,,125
+f68v1|all_nonlabel,f68v1,all_nonlabel,I:67-68,96,f68v1|circle;f68v1|radial,,,A,unassigned,4,I,,,,126
+f69r|all_nonlabel,f69r,all_nonlabel,J:69-70,111,f69r|para;f69r|circle;f69r|radial,,,C,unassigned,4,J,,,,127
+f69v|all_nonlabel,f69v,all_nonlabel,J:69-70,140,f69v|circle;f69v|radial,,,C,unassigned,4,J,,,,128
+f70r1|all_nonlabel,f70r1,all_nonlabel,J:69-70,111,f70r1|circle;f70r1|radial,,,C,unassigned,4,J,,,,129
+f70r2|all_nonlabel,f70r2,all_nonlabel,J:69-70,246,f70r2|para;f70r2|circle,,,C,unassigned,4,J,,,,130
+f70v2|all_nonlabel,f70v2,all_nonlabel,J:69-70,95,f70v2|circle,,,Z,unassigned,4,J,,,,131
+f70v1|all_nonlabel,f70v1,all_nonlabel,J:69-70,60,f70v1|circle,,,Z,unassigned,4,J,,,,132
+f71r|all_nonlabel,f71r,all_nonlabel,K:71-72,73,f71r|circle,,,Z,unassigned,4,K,,,,133
+f71v|all_nonlabel,f71v,all_nonlabel,K:71-72,77,f71v|circle,,,Z,unassigned,4,K,,,,134
+f72r1|all_nonlabel,f72r1,all_nonlabel,K:71-72,81,f72r1|circle,,,Z,unassigned,4,K,,,,135
+f72r2|all_nonlabel,f72r2,all_nonlabel,K:71-72,82,f72r2|circle,,,Z,unassigned,4,K,,,,136
+f72r3|all_nonlabel,f72r3,all_nonlabel,K:71-72,122,f72r3|circle,,,Z,unassigned,4,K,,,,137
+f72v3|all_nonlabel,f72v3,all_nonlabel,K:71-72,81,f72v3|circle,,,Z,unassigned,4,K,,,,138
+f72v2|all_nonlabel,f72v2,all_nonlabel,K:71-72,75,f72v2|circle,,,Z,unassigned,4,K,,,,139
+f72v1|all_nonlabel,f72v1,all_nonlabel,K:71-72,72,f72v1|circle,,,Z,unassigned,4,K,,,,140
+f73r|all_nonlabel,f73r,all_nonlabel,L:73-74,65,f73r|circle,,,Z,unassigned,4,L,,,,141
+f73v|all_nonlabel,f73v,all_nonlabel,L:73-74,68,f73v|circle,,,Z,unassigned,4,L,,,,142
+f75r|all_nonlabel,f75r,all_nonlabel,M:75-84,418,f75r|para,,,B,B,2,M,,,,143
+f75v|all_nonlabel,f75v,all_nonlabel,M:75-84,323,f75v|para,,,B,B,2,M,,,,144
+f76r|all_nonlabel,f76r,all_nonlabel,M:76-83,561,f76r|para,,,T,B,2,M,,,,145
+f76v|all_nonlabel,f76v,all_nonlabel,M:76-83,399,f76v|para,,,B,B,2,M,,,,146
+f77r|all_nonlabel,f77r,all_nonlabel,M:77-82,321,f77r|para,,,B,B,2,M,,,,147
+f77v|all_nonlabel,f77v,all_nonlabel,M:77-82,321,f77v|para,,,B,B,2,M,,,,148
+f78r|all_nonlabel,f78r,all_nonlabel,M:78-81,290,f78r|para,,,B,B,2,M,,,,149
+f78v|all_nonlabel,f78v,all_nonlabel,M:78-81,295,f78v|para,,,B,B,2,M,,,,150
+f79r|all_nonlabel,f79r,all_nonlabel,M:79-80,382,f79r|para,,,B,B,2,M,,,,151
+f79v|all_nonlabel,f79v,all_nonlabel,M:79-80,355,f79v|para,,,B,B,2,M,,,,152
+f80r|all_nonlabel,f80r,all_nonlabel,M:79-80,435,f80r|para,,,B,B,2,M,,,,153
+f80v|all_nonlabel,f80v,all_nonlabel,M:79-80,376,f80v|para,,,B,B,2,M,,,,154
+f81r|all_nonlabel,f81r,all_nonlabel,M:78-81,210,f81r|para,,,B,B,2,M,,,,155
+f81v|all_nonlabel,f81v,all_nonlabel,M:78-81,252,f81v|para,,,B,B,2,M,,,,156
+f82r|all_nonlabel,f82r,all_nonlabel,M:77-82,278,f82r|para,,,B,B,2,M,,,,157
+f82v|all_nonlabel,f82v,all_nonlabel,M:77-82,306,f82v|para,,,B,B,2,M,,,,158
+f83r|all_nonlabel,f83r,all_nonlabel,M:76-83,340,f83r|para,,,B,B,2,M,,,,159
+f83v|all_nonlabel,f83v,all_nonlabel,M:76-83,255,f83v|para,,,B,B,2,M,,,,160
+f84r|all_nonlabel,f84r,all_nonlabel,M:75-84,354,f84r|para,,,B,B,2,M,,,,161
+f84v|all_nonlabel,f84v,all_nonlabel,M:75-84,341,f84v|para,,,B,B,2,M,,,,162
+f85r1|all_nonlabel,f85r1,all_nonlabel,N:85-86,347,f85r1|para,,,T,B,2,N,,,,163
+f85r2|all_nonlabel,f85r2,all_nonlabel,N:85-86,155,f85r2|para;f85r2|circle,,,C,B,2,N,,,,164
+fRos|all_nonlabel,fRos,all_nonlabel,N:85-86,378,fRos|para;fRos|circle,,,C,B,4,N,,,,165
+f86v4|all_nonlabel,f86v4,all_nonlabel,N:85-86,187,f86v4|para;f86v4|circle,,,C,B,2,N,,,,166
+f86v6|all_nonlabel,f86v6,all_nonlabel,N:85-86,490,f86v6|para,,,T,B,2,N,,,,167
+f86v5|all_nonlabel,f86v5,all_nonlabel,N:85-86,389,f86v5|para,,,T,B,2,N,,,,168
+f86v3|all_nonlabel,f86v3,all_nonlabel,N:85-86,280,f86v3|para,,,C,B,2,N,,,,169
+f87r|all_nonlabel,f87r,all_nonlabel,O:87-90,102,f87r|para,,,H,A,1,O,,,,170
+f87v|all_nonlabel,f87v,all_nonlabel,O:87-90,92,f87v|para,,,H,A,1,O,,,,171
+f88r|all_nonlabel,f88r,all_nonlabel,O:88-89,134,f88r|para,,,P,A,1,O,,,,172
+f88v|all_nonlabel,f88v,all_nonlabel,O:88-89,131,f88v|para,,,P,A,1,O,,,,173
+f89r1|all_nonlabel,f89r1,all_nonlabel,O:88-89,126,f89r1|para,,,P,A,1,O,,,,174
+f89r2|all_nonlabel,f89r2,all_nonlabel,O:88-89,211,f89r2|para,,,P,A,1,O,,,,175
+f89v2|all_nonlabel,f89v2,all_nonlabel,O:88-89,164,f89v2|para,,,P,A,1,O,,,,176
+f89v1|all_nonlabel,f89v1,all_nonlabel,O:88-89,145,f89v1|para,,,P,A,1,O,,,,177
+f90r1|all_nonlabel,f90r1,all_nonlabel,O:87-90,69,f90r1|para,,,H,A,1,O,,,,178
+f90r2|all_nonlabel,f90r2,all_nonlabel,O:87-90,47,f90r2|para,,,H,A,1,O,,,,179
+f90v2|all_nonlabel,f90v2,all_nonlabel,O:87-90,67,f90v2|para,,,H,A,1,O,,,,180
+f90v1|all_nonlabel,f90v1,all_nonlabel,O:87-90,96,f90v1|para,,,H,A,1,O,,,,181
+f93r|all_nonlabel,f93r,all_nonlabel,Q:93-96,152,f93r|para,,,H,A,1,Q,,,,182
+f93v|all_nonlabel,f93v,all_nonlabel,Q:93-96,87,f93v|para,,,H,A,1,Q,,,,183
+f94r|all_nonlabel,f94r,all_nonlabel,Q:94-95,79,f94r|para,,,H,B,3,Q,,,,184
+f94v|all_nonlabel,f94v,all_nonlabel,Q:94-95,97,f94v|para,,,H,B,3,Q,,,,185
+f95r1|all_nonlabel,f95r1,all_nonlabel,Q:94-95,101,f95r1|para,,,H,B,3,Q,,,,186
+f95r2|all_nonlabel,f95r2,all_nonlabel,Q:94-95,79,f95r2|para,,,H,B,3,Q,,,,187
+f95v2|all_nonlabel,f95v2,all_nonlabel,Q:94-95,60,f95v2|para,,,H,B,3,Q,,,,188
+f95v1|all_nonlabel,f95v1,all_nonlabel,Q:94-95,118,f95v1|para,,,H,B,3,Q,,,,189
+f96r|all_nonlabel,f96r,all_nonlabel,Q:93-96,84,f96r|para,,,H,A,1,Q,,,,190
+f96v|all_nonlabel,f96v,all_nonlabel,Q:93-96,56,f96v|para,,,H,A,1,Q,,,,191
+f99r|all_nonlabel,f99r,all_nonlabel,S:99-102,158,f99r|para,,,P,A,1,S,,,,192
+f99v|all_nonlabel,f99v,all_nonlabel,S:99-102,148,f99v|para,,,P,A,1,S,,,,193
+f100r|all_nonlabel,f100r,all_nonlabel,S:100-101,90,f100r|para,,,P,A,1,S,,,,194
+f100v|all_nonlabel,f100v,all_nonlabel,S:100-101,79,f100v|para,,,P,A,1,S,,,,195
+f101r|all_nonlabel,f101r,all_nonlabel,S:100-101,227,f101r|para,,,P,A,1,S,,,,196
+f101v|all_nonlabel,f101v,all_nonlabel,S:100-101,183,f101v|para,,,P,A,1,S,,,,197
+f102r1|all_nonlabel,f102r1,all_nonlabel,S:99-102,102,f102r1|para,,,P,A,1,S,,,,198
+f102r2|all_nonlabel,f102r2,all_nonlabel,S:99-102,137,f102r2|para,,,P,A,1,S,,,,199
+f102v2|all_nonlabel,f102v2,all_nonlabel,S:99-102,165,f102v2|para,,,P,A,1,S,,,,200
+f102v1|all_nonlabel,f102v1,all_nonlabel,S:99-102,118,f102v1|para,,,P,A,1,S,,,,201
+f103r|all_nonlabel,f103r,all_nonlabel,T:103-116,523,f103r|para,,,S,B,3,T,,,,202
+f103v|all_nonlabel,f103v,all_nonlabel,T:103-116,453,f103v|para,,,S,B,3,T,,,,203
+f104r|all_nonlabel,f104r,all_nonlabel,T:104-115,448,f104r|para,,,S,B,3,T,,,,204
+f104v|all_nonlabel,f104v,all_nonlabel,T:104-115,475,f104v|para,,,S,B,3,T,,,,205
+f105r|all_nonlabel,f105r,all_nonlabel,T:105-114,378,f105r|para,,,S,B,3,T,,,,206
+f105v|all_nonlabel,f105v,all_nonlabel,T:105-114,399,f105v|para,,,S,B,3,T,,,,207
+f106r|all_nonlabel,f106r,all_nonlabel,T:106-113,431,f106r|para,,,S,B,3,T,,,,208
+f106v|all_nonlabel,f106v,all_nonlabel,T:106-113,444,f106v|para,,,S,B,3,T,,,,209
+f107r|all_nonlabel,f107r,all_nonlabel,T:107-112,487,f107r|para,,,S,B,3,T,,,,210
+f107v|all_nonlabel,f107v,all_nonlabel,T:107-112,462,f107v|para,,,S,B,3,T,,,,211
+f108r|all_nonlabel,f108r,all_nonlabel,T:108-111,493,f108r|para,,,S,B,3,T,,,,212
+f108v|all_nonlabel,f108v,all_nonlabel,T:108-111,580,f108v|para,,,S,B,3,T,,,,213
+f111r|all_nonlabel,f111r,all_nonlabel,T:108-111,622,f111r|para,,,S,B,3,T,,,,214
+f111v|all_nonlabel,f111v,all_nonlabel,T:108-111,565,f111v|para,,,S,B,3,T,,,,215
+f112r|all_nonlabel,f112r,all_nonlabel,T:107-112,398,f112r|para,,,S,B,3,T,,,,216
+f112v|all_nonlabel,f112v,all_nonlabel,T:107-112,419,f112v|para,,,S,B,3,T,,,,217
+f113r|all_nonlabel,f113r,all_nonlabel,T:106-113,529,f113r|para,,,S,B,3,T,,,,218
+f113v|all_nonlabel,f113v,all_nonlabel,T:106-113,501,f113v|para,,,S,B,3,T,,,,219
+f114r|all_nonlabel,f114r,all_nonlabel,T:105-114,456,f114r|para,,,S,B,3,T,,,,220
+f114v|all_nonlabel,f114v,all_nonlabel,T:105-114,374,f114v|para,,,S,B,3,T,,,,221
+f115r|all_nonlabel,f115r,all_nonlabel,T:104-115,461,f115r|para,,,S,B,2/3,T,,,,222
+f115v|all_nonlabel,f115v,all_nonlabel,T:104-115,408,f115v|para,,,S,B,3,T,,,,223
+f116r|all_nonlabel,f116r,all_nonlabel,T:103-116,545,f116r|para,,,S,B,3,T,,,,224
