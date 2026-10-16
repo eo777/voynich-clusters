@@ -1,0 +1,30 @@
+index,unit,meaning
+0,$,word/line end
+1,^,word/line start
+2,a,Zattera glyph unit
+3,cfh,Zattera glyph unit
+4,ch,Zattera glyph unit
+5,ckh,Zattera glyph unit
+6,cph,Zattera glyph unit
+7,cth,Zattera glyph unit
+8,d,Zattera glyph unit
+9,e,Zattera glyph unit
+10,ee,Zattera glyph unit
+11,eee,Zattera glyph unit
+12,f,Zattera glyph unit
+13,i,Zattera glyph unit
+14,ii,Zattera glyph unit
+15,iii,Zattera glyph unit
+16,k,Zattera glyph unit
+17,l,Zattera glyph unit
+18,m,Zattera glyph unit
+19,n,Zattera glyph unit
+20,o,Zattera glyph unit
+21,other,collapsed rare glyph units
+22,p,Zattera glyph unit
+23,q,Zattera glyph unit
+24,r,Zattera glyph unit
+25,s,Zattera glyph unit
+26,sh,Zattera glyph unit
+27,t,Zattera glyph unit
+28,y,Zattera glyph unit

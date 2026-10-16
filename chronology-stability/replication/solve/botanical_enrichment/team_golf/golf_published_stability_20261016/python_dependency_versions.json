@@ -1,0 +1,30 @@
+[
+  {
+    "package": "elpigraph-python",
+    "version": "0.3.4"
+  },
+  {
+    "package": "igraph",
+    "version": "0.11.8"
+  },
+  {
+    "package": "llvmlite",
+    "version": "0.43.0"
+  },
+  {
+    "package": "networkx",
+    "version": "3.2.1"
+  },
+  {
+    "package": "numba",
+    "version": "0.60.0"
+  },
+  {
+    "package": "shapely",
+    "version": "2.0.7"
+  },
+  {
+    "package": "texttable",
+    "version": "1.7.0"
+  }
+]

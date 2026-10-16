@@ -1,0 +1,329 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Golf chronology: methods and results</title><style>
+:root{color-scheme:light;--ink:#193246;--muted:#536b7b;--line:#dce4e9;--paper:#fff;--wash:#f4f7f9}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:36px 24px 70px}h1,h2,h3{line-height:1.2;letter-spacing:-.02em}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px;margin-top:42px}h3{font-size:20px}p{max-width:92ch}a{color:#075c86;text-underline-offset:3px}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}.muted{color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;margin:22px 0}img{display:block;width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap;margin:12px 0 0}.caption{font-size:15px;color:var(--muted)}table{border-collapse:collapse;max-width:100%;font-size:15px;display:block;overflow:auto}th,td{padding:9px 13px;border-bottom:1px solid var(--line);text-align:left}th{background:#eaf0f4}code{font-size:.9em;background:#eaf0f4;padding:2px 4px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eaf0f4;padding:14px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:650}footer{margin-top:40px;color:var(--muted);font-size:14px}.report{max-width:1000px}blockquote{border-left:3px solid #89acbd;padding-left:16px;margin-left:0}
+@media(max-width:600px){main{padding:20px 12px}h1{font-size:28px}.card{padding:10px}body{font-size:16px}}
+</style></head><body><nav><a href="index.html">Full report</a><a href="figures.html">Figures</a><a href="replication.html">Data and replication</a><a href="FORUM_METHODS.md">Forum methodology</a><a href="../index.html#stability" target="_top">Voynich Clusters</a></nav><main class="report"><nav><a href="figures.html">Figures and downloads</a><a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/RESULTS.md">Report source</a></nav><h1>Golf ordering uncertainty and H-position sensitivity</h1>
+<p><strong>Completed 16 October 2026.</strong> The study runs the original ElPiGraph fitting implementation, Cassidy's derivative-based continuation calculation, and the original scEGRET assessment functions, with the manuscript-specific adaptations documented below. All numerical audits passed.</p>
+<p>The main findings are that <strong>3a/3b remains competitively unstable</strong>, observed H lies very near an equal-score frontier, and pooling can hide feature discontinuities rather than resolve them. Bio/Stars alternatives persist, but the best recovered elastic scores usually favor Stars before Bio. scEGRET adds useful continuity information while exposing a serious resolution limitation: pooled Bio and Stars often fall in the same bin, so its aggregate score cannot settle their internal order.</p>
+<p><a href="figures.html">Open the figures and downloads</a>. The two requested replacements are <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ordering_ensemble.png">overall ordering sensitivity</a> and the <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/cassidy_H_regions.png">H-position map at lambda 0.01</a>. The additional <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_original_golf.png">scEGRET figure</a> shows the original Golf route's feature continuity. The <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ordering_ensemble_sheet_control.png">whole-sheet sampling control</a> is provided separately.</p>
+<h2>Purpose</h2>
+<p>The two requested outputs are (1) an overall ordering-sensitivity chart covering individual paragraph profiles and pooled bifolia, including B-region alternatives, and (2) an MDS1/2 and MDS1/3 map of how the position of observed H:58–65 affects preference between Herbal 3a and 3b. Here “Herbal A/B” refers to Golf 3a/3b; it does not relabel Currier A/B.</p>
+<p>The original Golf sequence used an eleven-knot cubic spline. This study uses the published elastic-principal-curve model to examine alternative orderings. Its numerical variability belongs to this model. Independent historical evidence is not an input to the scores. No private or unpublished research is used.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Published calculation used</th>
+<th>What is varied</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Which fitted positions and orders recur?</td>
+<td>ElPiGraph principal-graph ensembles</td>
+<td>Random observation inclusion, initial route and penalty</td>
+<td>Position frequencies and joint order outcomes</td>
+</tr>
+<tr>
+<td>How does moving H change competing fitted solutions?</td>
+<td>Cassidy implicit-function continuation</td>
+<td>Two coordinates of the observed H pool</td>
+<td>Score-preference frontier and route dependence</td>
+</tr>
+<tr>
+<td>Where does a proposed route join sharply different text profiles?</td>
+<td>scEGRET continuity assessment</td>
+<td>Proposed order, bin width, word/line features and count scaling</td>
+<td>Adjacent-bin and all-bin feature changes</td>
+</tr>
+</tbody>
+</table>
+<h2>Published techniques actually implemented</h2>
+<h3>Random principal-graph ensembles: ElPiGraph</h3>
+<p>Albergante et al. (2020), section 2.10 and Figure 1C, describe repeated fits to random 90% subsets, with 100 realizations, to inspect which regions of a principal graph vary. The same section describes varying initializations and parameters as additional ensemble constructions. We reproduce that random-resampling procedure using ElPiGraph 0.3.4 for fresh graph growth, rather than reusing the earlier leave-one-bifolium-out runs.</p>
+<p>The Python package implements the 90% fraction as independent Bernoulli inclusion, so individual subsample sizes vary. A separate physical-sheet control includes or excludes all paragraph profiles from a bifolium together. The block control changes the sampling unit, because profiles on a sheet are related; it is explicitly an adaptation rather than an additional published example.</p>
+<p>The native wrapper subsets observations without subsetting supplied point weights. We therefore generate exactly the same Bernoulli masks outside the wrapper, subset the weights consistently, and call the unmodified graph-growth algorithm. An unweighted native-wrapper comparison reproduces the explicitly masked fit to maximum node difference 9.71×10⁻¹⁷. The wrapper's extra averaged graph is not counted as another random realization. <code>AvoidResampling</code> controls initialization-point reuse, not data subsampling; the earlier fits had no random data subsampling because they used <code>ProbPoint=1</code> and <code>nReps=1</code>.</p>
+<p>There are 100 independent masks per sampling scheme, eight starts per mask and two penalties. Four starts cover the joint 3a/3b × Bio/Stars alternatives recovered by the earlier B-permutation search; their mirrored early-A prefixes supply the other four. The representatives are selected separately by cohort and penalty. This is a balanced exploration of sampling, starts and regularization, not a pure paired experiment isolating lambda. Eight starts share each mask and must not be treated as eight independent data samples. Main point ensembles comprise 3,200 fits; the paragraph whole-sheet control adds 1,600.</p>
+<p>Every retained observation has a position histogram on the normalized curve. The figure combines starts and penalties with equal design weight and preserves multiple modes. These position-frequency strips are our readout of the published ensemble procedure, not a confidence-interval formula established by that paper. The physical-sheet control is shown separately. Group-median and individual-pair order frequencies distinguish actual reversals from coherent movement along the curve. All-reference projections are retained as diagnostics; omitted observations do not enter the main retained-only histograms.</p>
+<p>Sources: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7516753/">paper, section 2.10</a>, <a href="https://github.com/j-bac/elpigraph-python">published Python implementation</a>.</p>
+<h3>Implicit-function predictor and corrector: Cassidy</h3>
+<p>Cassidy (2023), section 2.2, equations 7–8, obtains the sensitivity of an optimum to changed data from the inverse parameter Hessian and the mixed data/parameter derivative. Remark 1 permits a general twice continuously differentiable objective; the method is not restricted to a biological likelihood.</p>
+<p>For fitted vertex coordinates Y and data X, the elastic objective within fixed nearest-node assignments is</p>
+<p><code>G(Y,X) = sum_i w_i ||x_i - y_a(i)||² + lambda ||B Y||² + mu ||C Y||²</code>.</p>
+<p>Here B takes adjacent-vertex differences, C takes each interior vertex minus the mean of its two neighbors, and a(i) is the assigned nearest vertex. Define <code>A = diag(assigned masses) + lambda B.T B + mu C.T C</code>. The Hessian for each coordinate is <code>2A</code>. Moving H in that coordinate has mixed derivative <code>-2 w_H e_a(H)</code>. Cassidy's equation 8 gives</p>
+<p><code>dY / dx_H = solve(A, w_H e_a(H))</code>.</p>
+<p>This predictor is exactly affine as long as assignments do not change. The implementation detects nearest-node equalities for every observation and competing vertex along a proposed move. At an assignment boundary it corrects the fitted solution and recomputes the derivative. The smooth theorem is not asserted across those events. Endpoint checks compare straight, x-then-y, y-then-x and return paths; numerical derivative and event-step checks are retained.</p>
+<p>Source: <a href="https://link.springer.com/article/10.1007/s11538-023-01200-0">Cassidy (2023), sections 2.1.1–2.3</a>. Exact implementation and diagnostics are described in <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/CASSIDY_DESIGN.md">CASSIDY_DESIGN.md</a>.</p>
+<h3>Continuity screening: scEGRET</h3>
+<p>scEGRET belongs in this analysis because it evaluates continuity along an already proposed trajectory. Being a screening method rather than a trajectory-fitting method is not a reason to exclude it. The original <code>egret.flap</code> and <code>egret.fly</code> R functions are executed unchanged from commit <code>93517e5ce3f09ccdd3c0d604d0a1b53e70c5cc70</code>. We use a local R/WebR interpreter; the package's plotting wrappers and unrelated Seurat/Monocle convenience dependencies are not needed to execute these computations. Runtime versions, source files and checksums are retained.</p>
+<p>The text adaptation treats each transition type as a feature and each paragraph or pool as an observation. Word and line transitions are evaluated separately. Counts per million transitions within each profile are the primary input, analogous to the TPM input the package accepts; raw event counts provide a text-length sensitivity control. These are declared text inputs, not a claim that expression thresholds transfer to manuscript analysis.</p>
+<p>The actual source calculation for retained bins k and l is</p>
+<p><code>E(k,l) = mean_g[ abs(log1p(mean_k C_g) - log1p(mean_l C_g)) / log1p(mean_all C_g) ]</code>.</p>
+<p>Features must occur in strictly more than 10% of observations. Equal-width pseudotime bins must contain strictly more than three observations. The latter differs from the paper's brief prose; the whole-profile mean normalization is also more specific than its displayed formula. We follow the executable source and disclose both details. Bin averages give observations equal weight; they do not use the curve's equal-physical-sheet weighting. Cohorts have different retained feature sets, so absolute scores should not be compared as if based on identical assays.</p>
+<p>We examine 27 saved orders per cohort: eighteen original elastic fits, eight B-permutation representatives covering both Herbal and terminal directions at both penalties, and the original Golf spline. Paragraph resolutions are 10/12/14 bins; pooled resolutions are 6/8/10. Each is evaluated for word/line × normalized/raw inputs, giving 648 unique retained evaluations. The middle resolutions follow the approximate Rice-rule guidance in the source. Sparse bins remain visible with original bin numbers; connecting surviving bins across a discarded bin is explicitly marked. Adjacent scores and all-bin-pair scores reproduce the published continuity-screening approach. Mean and maximum adjacent scores are our descriptive summaries, not calibrated chronology likelihoods. We do not transfer the biological example's 0.5 reference threshold.</p>
+<p>scEGRET examines the same observed features used to build the geometry. It is a complementary criterion, not independent historical evidence. A jump may reflect missing text, section/topic differences, scribal differences or short samples. A smooth route can still be historically wrong: mixing heterogeneous observations into similar bin averages can also lower between-bin change. We therefore retain bin composition and geometric-fit context rather than minimizing scEGRET as a stand-alone ordering objective. Whole-route reversal leaves the absolute-change calculation unchanged, so the method cannot establish historical direction by itself. Moving H in MDS space does not supply a hypothetical text profile; we do not invent such profiles for scEGRET. Although the original function also performs Wilcoxon comparisons, those p-values are not used as manuscript significance tests here.</p>
+<p>Sources: <a href="https://academic.oup.com/bib/article/24/6/bbad356/7325910">Zheng et al. (2023), methods and Figure 2</a>, <a href="https://github.com/qingshanni/scEGRET">original scEGRET source</a>.</p>
+<h2>Data and readout</h2>
+<p>The frozen data are 207 paragraph-text profiles on 50 physical bifolia and their 50 pooled profiles. The 223-unit whole-manuscript display also includes other text-unit kinds; the frozen chronology-test cohort selects <code>kind=para</code>. Distances combine the existing word- and line-transition divergences. Classical MDS treats those divergences as squared-distance input and retains all positive dimensions: 196 for paragraph profiles, 49 for pools. These two native geometries are separate. Both model families use 28 vertices and harmonicity penalty mu=0.1; the ordering ensemble includes lambda=0.01 and 0.05, while the main H map uses lambda=0.01 only.</p>
+<p>Fits minimize distance to the nearest vertex plus the elastic penalties. Displayed ordering is calculated afterward by projection to the closest curve segment and normalized arc length <code>t=s/L</code>. Thus vertex-assignment stability and ordering stability are distinct. Positions are relative to each curve, not dates or a common elapsed-time scale. Final whole-curve orientation is normalized; initialization does not impose the final internal order.</p>
+<p>Group-order statements compare median projected positions. “3a before 3b” does not mean that every 3a page precedes every 3b page; groups may interleave. Individual-pair counts are retained separately. Pooling changes the observations, distances, geometry and sometimes Golf labels for mixed sheets, so it can change the preferred route rather than simply narrow uncertainty around the page-level route.</p>
+<h2>How to read the figures</h2>
+<h3>Ordering ensemble</h3>
+<p>The figure shows empirical position frequencies from random-resampled graph ensembles, retaining separate modes rather than fitting bell curves or averaging competing routes. Each horizontal strip is one observation, with position from 0 to 1 on the horizontal axis. Darker color means more runs placed that observation in that interval. Several dark patches mean several recurring positions. Rows are grouped by Golf label for readability; row order is not a recovered chronology. A shared intensity scale allows comparisons between rows, with saturation above 20% per interval. Page and pooled results remain separate. Starts and penalties receive declared design weights. Frequencies describe this chosen ensemble; they are not posterior probabilities of historical positions or confidence intervals. Joint group-order outcomes remain available in the report because overlapping marginal position distributions alone cannot prove a reversal.</p>
+<h3>H-position map</h3>
+<p>Only the two displayed coordinates of H:58–65 change. H pools the observed f58r, f58v and f65v paragraph profiles. Its other coordinates, all other profiles, weights, MDS basis, topology and penalties remain fixed. The plotted frontier compares minimum recovered scores for the two strict Herbal directions among final-1a-first solutions. Colors describe preference within the explored families and continuation paths. They do not locate missing text or prove that a historical connection exists. Path disagreement and assignment events are reported separately from equal-score crossings.</p>
+<p>This map perturbs the observed H pool; it does not reconstruct the missing inner-H bifolia. A hypothetical MDS coordinate need not correspond to a realizable transition profile. The earlier missing-material insertion experiments remain scenarios, not estimated missing texts. scEGRET can flag observed discontinuities consistent with absent intermediates, but it cannot place unobserved bifolia without further feature assumptions or evidence.</p>
+<h2>Completed H-continuation results</h2>
+<p>Ten fitted families are continued over each 25×25 grid along three routes: straight, horizontal-then-vertical and vertical-then-horizontal. Straight routes are also reversed. A score frontier is where competing families exchange preference; it is not automatically a loss of local stability or evidence of a historical branch.</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th style="text-align:right">MDS 1/2</th>
+<th style="text-align:right">MDS 1/3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grid cells preferring 3a before 3b</td>
+<td style="text-align:right">301/625</td>
+<td style="text-align:right">175/625</td>
+</tr>
+<tr>
+<td>Cells changing preference versus the earlier independent-refit map</td>
+<td style="text-align:right">127/625</td>
+<td style="text-align:right">127/625</td>
+</tr>
+<tr>
+<td>Cells where preference depends on the continuation route</td>
+<td style="text-align:right">35/625</td>
+<td style="text-align:right">32/625</td>
+</tr>
+<tr>
+<td>Cells preferring Stars 4c before Bio 4a</td>
+<td style="text-align:right">625/625</td>
+<td style="text-align:right">617/625</td>
+</tr>
+</tbody>
+</table>
+<p>At observed H the recovered Herbal advantage is only <strong>0.01686% in favor of 3a first</strong>. It remains effectively near the equal-score boundary, not a decisive ordering result. The eight Bio-first cells in MDS1/3 also show why the terminal ordering should not be described as universally invariant to this perturbation. Grid-cell proportions depend on the plotted range and are not probabilities of where H belongs.</p>
+<p>Each individually tracked seed retains its focal group-order signs through these moves; coordinates and costs change, and the preferred seed can change. Some round trips return to different fine solutions. A separate check of 36 selected excursions/returns leaves the native-H Herbal advantage unchanged but reduces the recovered Stars-before-Bio advantage from 1.464% to 0.971%. This is evidence of local optimization/path sensitivity, not an exhaustive search over all possible histories.</p>
+<p>The minimum fixed-assignment Hessian eigenvalue encountered is positive (0.02340). Positive curvature is expected from this connected quadratic model with positive assigned mass; it supports local uniqueness within those assignments, not global uniqueness or a historical connection across missing material. Sixty derivative checks have maximum relative error 1.97×10⁻¹⁰. Thirty-six smaller event-crossing checks recover identical endpoints. An independent audit checks 30 derivatives, 24 event roots, 72 outward paths and 24 returns; objective differences are at most 2.08×10⁻¹⁷. See <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/cassidy_h_summary.json">continuation summary</a>, <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/cassidy_independent_audit.json">independent audit</a> and <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/cassidy_return_check.json">return check</a>.</p>
+<h2>Ensemble results</h2>
+<p>All 4,800 fresh fits completed and their final refinements converged. The complete accounting audit verifies the masks, retained weights, source hashes and objective components. Convergence means convergence to a recovered local solution, not proof of the global optimum.</p>
+<h3>Herbal reversal persists under random resampling</h3>
+<p>For each random mask and penalty, we compare the best recovered candidates on that same retained data. The following counts restrict candidates to those whose final median order is 1a before 1b. This respects the requested early-order preference as a readout, without pretending initialization imposed a hard constraint. Each row has 100 independent masks; the eight starts within a mask are competing solutions, not independent samples.</p>
+<table>
+<thead>
+<tr>
+<th>Data and sampling unit</th>
+<th style="text-align:right">Lambda</th>
+<th style="text-align:right">3a before 3b</th>
+<th style="text-align:right">Bio 4a before Stars 4c</th>
+<th style="text-align:right">Stars 3c before Bio 4a</th>
+<th style="text-align:right">Stars 3c before Stars 4c</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, individual profiles</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">44/100</td>
+<td style="text-align:right">2/100</td>
+<td style="text-align:right">98/100</td>
+<td style="text-align:right">98/100</td>
+</tr>
+<tr>
+<td>Pages, whole physical sheets</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">38/100</td>
+<td style="text-align:right">2/100</td>
+<td style="text-align:right">98/100</td>
+<td style="text-align:right">98/100</td>
+</tr>
+<tr>
+<td>Pages, individual profiles</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">24/100</td>
+<td style="text-align:right">13/100</td>
+<td style="text-align:right">87/100</td>
+<td style="text-align:right">87/100</td>
+</tr>
+<tr>
+<td>Pages, whole physical sheets</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">25/100</td>
+<td style="text-align:right">24/100</td>
+<td style="text-align:right">76/100</td>
+<td style="text-align:right">76/100</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">58/100</td>
+<td style="text-align:right">1/100</td>
+<td style="text-align:right">99/100</td>
+<td style="text-align:right">99/100</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">23/100</td>
+<td style="text-align:right">0/100</td>
+<td style="text-align:right">100/100</td>
+<td style="text-align:right">100/100</td>
+</tr>
+</tbody>
+</table>
+<p>There are no median-order ties among these winners. These are finite-search frequencies under the declared resampling scheme, not chances that a historical order is true. The 3a/3b direction is competitively unsettled: both directions win substantial numbers of samples, and pooled results change their majority between penalties. Pooling does not simply tighten a fixed order.</p>
+<p>For scale, define the directional score gap as <code>100 × (best reversed score − best first-listed score) / min(the two scores)</code>. Positive gaps favor the first-listed group. Comparisons use only an identical mask and lambda. The 5th/50th/95th percentiles for <strong>3a before 3b</strong>, among final-1a-first candidates, are:</p>
+<table>
+<thead>
+<tr>
+<th>Data and sampling unit</th>
+<th style="text-align:right">Lambda</th>
+<th style="text-align:right">5th percentile</th>
+<th style="text-align:right">Median</th>
+<th style="text-align:right">95th percentile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, individual profiles</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">−0.297%</td>
+<td style="text-align:right">−0.047%</td>
+<td style="text-align:right">+0.618%</td>
+</tr>
+<tr>
+<td>Pages, whole physical sheets</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">−0.504%</td>
+<td style="text-align:right">−0.136%</td>
+<td style="text-align:right">+0.489%</td>
+</tr>
+<tr>
+<td>Pages, individual profiles</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">−0.752%</td>
+<td style="text-align:right">−0.182%</td>
+<td style="text-align:right">+0.386%</td>
+</tr>
+<tr>
+<td>Pages, whole physical sheets</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">−0.762%</td>
+<td style="text-align:right">−0.199%</td>
+<td style="text-align:right">+0.355%</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">−0.990%</td>
+<td style="text-align:right">+0.100%</td>
+<td style="text-align:right">+1.836%</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">−0.721%</td>
+<td style="text-align:right">−0.253%</td>
+<td style="text-align:right">+0.856%</td>
+</tr>
+</tbody>
+</table>
+<p>These distributions cross zero in every setting. They quantify competition between recovered routes; the percentages are elastic-objective differences, not probabilities or chronological effect sizes. Different routes can change several B relationships together. They do not isolate the causal effect of a single swap. Starting representatives also differ by lambda, so the cross-lambda contrast includes both regularization and the enriched search design.</p>
+<h3>Bio/Stars alternatives persist, with a different score pattern</h3>
+<p>Stars 4c before Bio 4a has the lower recovered score in most samples, even though Bio-first alternatives frequently persist as local solutions from other starts. At lambda 0.05, including or omitting physical sheets together raises the Bio-first winner count from 13/100 to 24/100. This descriptive difference shows that the sampling unit matters; it is not a formal significance test. At lambda 0.01 the corresponding count is 2/100 under both page schemes.</p>
+<p>The wider sheet-control positions are especially visible for Stars 4c at lambda 0.05: the median across pages of the empirical 5th-to-95th position span changes from 0.094 to 0.295 on the normalized curve. For f58r/v at lambda 0.01, those spans change from approximately 0.09–0.10 under page sampling to approximately 0.36 under sheet sampling. These spans describe retained-only positions across all starts. A wide position span can reflect a whole block moving together and is not itself proof of a relative-order reversal.</p>
+<p>The eight starts deliberately cover the joint 3a/3b and Bio/Stars alternatives; they do not exhaust all 120 possible five-group B orders. Stars 3c relationships are reported only for the coverage actually explored. Some 3c and Bio/Stars comparisons select the same competing candidates, explaining repeated winner counts; they are not independent corroborating tests.</p>
+<h3>Why the combined chart includes more than the winning route</h3>
+<p>The position strips give equal design weight to the eight starts and two penalties. They show where solutions recur and preserve alternative modes, including locally persistent solutions with somewhat worse scores. Consequently, a mode's height partly reflects our deliberate balance of starting routes. It is neither a random-initialization basin volume nor an objective-weighted posterior. The per-mask winner table above supplies the missing score context; neither display replaces the other. Averaging the modes into one bell curve would put apparent mass between distinct solutions and hide the alternatives the study was designed to expose.</p>
+<p>The earlier figures and scientific results remain preserved for comparison. Detailed counts, pairwise orders, omitted-direction availability and per-start objective excesses are retained in <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_findings.json">ensemble findings</a>, <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_summary.json">ensemble summary</a>, <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_competition.json">within-mask competition</a> and the <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_audit.json">accounting audit</a>.</p>
+<h2>scEGRET results</h2>
+<h3>H is a distinct pocket in some page-level views</h3>
+<p>Along the original Golf route, the 12-bin page calculation puts f58r and f58v with f67v2, f69r and f70r2 in bin 8. Both transitions into and out of that bin are larger than the direct feature contrast between its two neighbors:</p>
+<table>
+<thead>
+<tr>
+<th>Primary transition channel</th>
+<th style="text-align:right">Bin 7 → 8</th>
+<th style="text-align:right">Bin 8 → 9</th>
+<th style="text-align:right">Bin 7 → 9, bypassing bin 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word</td>
+<td style="text-align:right">0.27096</td>
+<td style="text-align:right">0.27023</td>
+<td style="text-align:right">0.16953</td>
+</tr>
+<tr>
+<td>Line</td>
+<td style="text-align:right">0.27901</td>
+<td style="text-align:right">0.28606</td>
+<td style="text-align:right">0.17686</td>
+</tr>
+</tbody>
+</table>
+<p>The bypass is an existing all-bin-pair scEGRET score, not a refit after deleting H. This two-sided contrast occurs in four of the six primary word/line × resolution views, and four of six raw-count controls. It holds at 10 and 12 bins; changing the neighboring membership at 14 bins removes this particular pattern. Thus the feature evidence supports a locally distinct pocket in those views, rather than an unambiguous smooth intermediate. It does not establish whether the cause is missing text, topic, scribal differences or short samples, and it concerns the entire mixed bin rather than f58 alone.</p>
+<p>Pooling changes the test. At eight bins, H:58–65 shares a bin with four 3a pools, two 3b pools and one 5a pool. Neither channel shows the same two-sided contrast. Across the six pooled primary views, none of the four eligible comparisons satisfies it; the 10-bin comparisons are unavailable because the H-containing bin has only two observations and is excluded by scEGRET. Raw controls have the same pattern. Averaging H into a mixed bin can therefore obscure the page-level contrast. That is a loss or change of resolution, not evidence that pooling has resolved the historical uncertainty.</p>
+<h3>Continuity scores do not select a robust B ordering</h3>
+<p>Among the four B-family representatives at each penalty, no single candidate has the smallest mean adjacent-bin score in all six primary channel/resolution views, for either cohort. The counts below summarize these six dependent diagnostic views; they are not probabilities. A family label reports two median-order signs and can conceal other changes in the five-group B route.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort and lambda</th>
+<th style="text-align:right">3a first, Bio first</th>
+<th style="text-align:right">3a first, Stars first</th>
+<th style="text-align:right">3b first, Bio first</th>
+<th style="text-align:right">3b first, Stars first</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, 0.01</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Pages, 0.05</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Pools, 0.01</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Pools, 0.05</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2</td>
+</tr>
+</tbody>
+</table>
+<p>Raw-count controls often change these rankings. More decisively, no pairwise comparison between the pooled B-family candidates has a view in which <strong>both candidates retain any between-bin Bio 4a–Stars 4c resolution</strong>. In the original Golf eight-bin pooled view, all five Bio pools and both Stars 4c pools occupy bin 8: all ten cross-group pairs are within one bin. Both groups are present, but their internal order is invisible to the score. A pure two-pool Stars bin would instead fail the minimum occupancy rule. Pooled aggregate score preferences therefore cannot adjudicate the Bio/Stars reversal here.</p>
+<p>The page result also depends on the broader B route, not just a final swap. At lambda 0.01, the descriptive primary winners at 10 and 12 bins follow median order Bio 4a → Stars 4c → Stars 3c → Herbal 3b → Herbal 3a; at 14 bins the last two switch. Raw-count winners change that broader preference. These comparisons are useful diagnostics of feature continuity and its dependence on binning and length scaling, not grounds for replacing the Golf chronology with a uniquely preferred sequence.</p>
+<h3>Reading the scEGRET figure</h3>
+<p>The triangle compares every pair of retained position bins; stronger color means greater feature contrast. The bottom adjacent-bin tracks show where the proposed route encounters those changes, separately for word and line transitions. Occupancy numbers and Golf-colored composition bars explain what was averaged. An asterisk identifies the f58-containing page bin or H:58–65 pool bin. Hatched cells are unavailable because a bin failed the minimum occupancy rule. Dashed connections span an excluded original bin and must not be read as an observed continuous intermediate.</p>
+<p>All 648 original-R outputs pass an independent reconstruction of filtering, bin labels, membership, adjacent scores, all-pair scores and top feature contributions. Maximum absolute score discrepancies are 1.33×10⁻¹⁵ for adjacent scores and 4.44×10⁻¹⁶ for all-pair scores. Seven legacy run exports were corrected from compressed factor codes to original bin numbers; memberships and numerical scores did not change. See <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_summary.json">scEGRET summary</a>, <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_independent_audit.json">independent audit</a>, and the retained <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_source/source_manifest.json">source manifest</a>.</p>
+<h2>Verification and reproducibility</h2>
+<p>The principal-graph calculation comprises 4,800 production fits, two native-wrapper equivalence fits and two independent weighted replay fits. Every production fit is accounted for; none failed or was discarded. Both independent replays reproduce the saved full-node hashes exactly, with independent projection differences at most 3.33×10⁻¹⁶. The <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_independent_audit.json">replay audit</a> is separate from the complete <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_audit.json">mask, weight and objective audit</a>.</p>
+<p>The scEGRET release contains 648 unique evaluations from the authors' unchanged R functions, plus runtime versions and source hashes. A probe and redundant intermediate work are not counted as independent evaluations. All 648 summary means and 1,296 pair-bin resolution records also passed independent review. The Cassidy derivative, assignment-event, outward-path and return checks are reported above.</p>
+<p>All four PNG figures were visually inspected; their SVG versions parse and match their recorded provenance hashes. Source code, compact result data, feature inputs, captions and reproduction instructions are retained. Temporary research runtimes and duplicate partition checkpoints were removed after verification, with their hashes recorded. The final workspace storage check passed at 18.29 GiB with no prohibited completed-study arrays. See <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/REPRODUCE.md">REPRODUCE.md</a> for the execution sequence and <a href="replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/DESIGN.md">DESIGN.md</a> for the declared choices.</p>
+<h2>What these procedures do not establish</h2>
+<p>Random-resampling ensembles can reveal instability without assigning historical probabilities. Derivative-based continuation can track sensitivity and local solution persistence without making a score frontier a loss-of-stability boundary. Neither procedure proves global optimization, independently dates the text, or discovers branches when constrained to a chain. The previous learned-tree and connectivity studies address topology separately.</p>
+<p>The frozen distance representation and MDS basis are not re-estimated inside the ensembles. This study measures fitting and resampling sensitivity conditional on that representation; it does not encompass transcription errors, alternative distance definitions, all missing-text models or every possible fitted route. This study does not claim a jackknife confidence interval, a Bayesian chronology posterior or a temporal Lyapunov exponent.</p>
+</main><script>(()=>{let pending=false;const send=()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;parent.postMessage({type:'voynich-path-height',height:Math.ceil(document.body.getBoundingClientRect().height)+30},'*')})};if(window.ResizeObserver)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send()})();</script></body></html>

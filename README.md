@@ -234,3 +234,7 @@ the matrix and scatterplot retain the full selected text.
 Sparse text and the distance geometry limit interpretation. Clustering and
 outlier scores are exploratory rather than tests establishing distinct languages.
 The viewer's expandable method notes describe the calculations in more detail.
+
+## Ordering stability
+
+The [Stability tab](index.html#stability) opens the [full writeup](chronology-stability/index.html), with [figures](chronology-stability/figures.html), [frozen data and replication code](chronology-stability/replication.html), and a [concise forum methodology](chronology-stability/FORUM_METHODS.md). It includes ElPiGraph resampling ensembles, H-coordinate continuation at lambda 0.01, and the original scEGRET continuity calculations.

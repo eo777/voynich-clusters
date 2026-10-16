@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "source_sha256": "675142bef11c3b3b7ba2d3c4327e17d6de5f746e72f73265ee8fd2c7d4f34f24",
+  "rendering_source_sha256": "a85d14c10865487e97096ab658421705584f4f282877252e1ac5f97afa75f40b",
+  "panels": [
+    {
+      "plane": [
+        0,
+        1
+      ],
+      "three_a_first_cells": 301,
+      "three_b_first_cells": 324,
+      "tied_cells": 0,
+      "unavailable_cells": 0,
+      "path_preference_disagreement_cells": 35,
+      "original_map_preference_changes": 127,
+      "maximum_gap_change_from_original_percent": 3.401249578129208,
+      "native_H_gap_percent": 0.016858731345476698,
+      "any_seed_path_order_disagreement_cells": 0,
+      "any_seed_return_order_change_cells": 0,
+      "maximum_path_node_rms": 0.0062849877848509894,
+      "maximum_return_node_rms": 0.0026893638792603496,
+      "terminal_4c_first_cells": 625
+    },
+    {
+      "plane": [
+        0,
+        2
+      ],
+      "three_a_first_cells": 175,
+      "three_b_first_cells": 450,
+      "tied_cells": 0,
+      "unavailable_cells": 0,
+      "path_preference_disagreement_cells": 32,
+      "original_map_preference_changes": 127,
+      "maximum_gap_change_from_original_percent": 3.4355127321990486,
+      "native_H_gap_percent": 0.016858731345476698,
+      "any_seed_path_order_disagreement_cells": 0,
+      "any_seed_return_order_change_cells": 0,
+      "maximum_path_node_rms": 0.005922634676924627,
+      "maximum_return_node_rms": 0.0026893638792603496,
+      "terminal_4c_first_cells": 617
+    }
+  ],
+  "color_limit_percent": 3.7,
+  "grid": "Actual midpoint cell boundaries; displayed zero contour is interpolation of corrected grid scores.",
+  "score": "100*(best3b-first objective-best3a-first objective)/min(best directional objectives); minimum over three paths and ten seed families, final1a-first outcomes only.",
+  "outputs": {
+    "cassidy_H_regions.png": {
+      "bytes": 171822,
+      "sha256": "50065320955c340a65d28be62a28316d75f3ca9198bcdac6cb5f43947de2de7e"
+    },
+    "cassidy_H_regions.svg": {
+      "bytes": 320615,
+      "sha256": "2c418fbc565b4a5baf8f5bff142e4040ea35c36d531e49a1a255b62ba5727b12"
+    }
+  }
+}

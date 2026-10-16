@@ -1,0 +1,111 @@
+{
+  "repository": "https://github.com/qingshanni/scEGRET",
+  "commit": "93517e5ce3f09ccdd3c0d604d0a1b53e70c5cc70",
+  "files": [
+    {
+      "path": "DESCRIPTION",
+      "bytes": 1014,
+      "sha256": "d290d748ac094cccaf740ecc3a4eb66201b1575666503aa0f79c969c1440bae6"
+    },
+    {
+      "path": "NAMESPACE",
+      "bytes": 763,
+      "sha256": "9d5e99be3bc2cc1e4b6fa5195f757f7ea24af0ea83c3c907ea0967aa22c49578"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 43,
+      "sha256": "8cd0cb1488aa35e954b76f062dd3dd731cc6008c7fb1641bd460dd827b213d20"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 1072,
+      "sha256": "6c29ea4d4cce9a6a26c599b403f9e434cc7753c64204276081199bef2cd232fd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8786,
+      "sha256": "66862247921623372794a686f0c4baa47ce80ee9f637e767d28024947be193c9"
+    },
+    {
+      "path": "R/FindBackgroundGenes.R",
+      "bytes": 1988,
+      "sha256": "c993a1bdb90a0ca6fa5030633d2ffbce4cff3ddf328831a30de31448d9dbcdbf"
+    },
+    {
+      "path": "R/FindCorrelatedGenes.R",
+      "bytes": 1839,
+      "sha256": "10e7603279c2eb950b0b62913098ca939d25c65459e7512f76f8d50f2249e5d4"
+    },
+    {
+      "path": "R/FindUnstableGenes.R",
+      "bytes": 910,
+      "sha256": "89be2805a3b57feb788e4c573140b7acd594356c39afb83f47f05a0ac2d15d1c"
+    },
+    {
+      "path": "R/RunMonocle2.R",
+      "bytes": 1184,
+      "sha256": "2bbae7bad7f58b7e2a9eec07af6e4ddd9ef1798ceb4fd038e863e1ea75c5b692"
+    },
+    {
+      "path": "R/SeuratBasic.R",
+      "bytes": 1415,
+      "sha256": "6a030b25e22f0df2d62d5c696da967a49ff42a3c304a71030a144f46e06007cc"
+    },
+    {
+      "path": "R/Soar_DEGs.R",
+      "bytes": 1282,
+      "sha256": "e54cb1796650ec05d152969f17ffec701c6aea27e2e331831928f94f55812a1f"
+    },
+    {
+      "path": "R/Soar_GEXpseudotime.R",
+      "bytes": 1355,
+      "sha256": "dc80fb236a6e501da3486169d1ceef208b2d5b12415cc7641619b68f530d173e"
+    },
+    {
+      "path": "R/Soar_GEXtimebin.R",
+      "bytes": 1551,
+      "sha256": "9750431c5ae45ea04d5c05513c48090e8fb5e7c5e0cc284d341496f1c14c184e"
+    },
+    {
+      "path": "R/Soar_Mountain_DEGs.R",
+      "bytes": 3341,
+      "sha256": "c27f2aeaaee1878bae9f8bb181d2c73f7ec4544f2ba4b06d8eb967c232db6a5b"
+    },
+    {
+      "path": "R/Soar_Mountain_GEXCor.R",
+      "bytes": 2392,
+      "sha256": "dd24cdcdbff61b81b74db787745343a3c3f2cec357b275613859e1e72bf70a7e"
+    },
+    {
+      "path": "R/Soar_Mountain_StepChange.R",
+      "bytes": 3167,
+      "sha256": "13bba311d8bc031e1f18eba3fa11c535acd3a29bb48c17c1f1b76a90892fef66"
+    },
+    {
+      "path": "R/Soar_StepDist.R",
+      "bytes": 1102,
+      "sha256": "8405c2e57848930cd218304b0f96b0e5ad3e0b5953109a7f6c5674c817e7dc6d"
+    },
+    {
+      "path": "R/Soar_cellstream.R",
+      "bytes": 1110,
+      "sha256": "38fe4fa0c74e67934467e01aa741937dfc809121fdd0454f3bca48ef6709b91c"
+    },
+    {
+      "path": "R/egret_flap.R",
+      "bytes": 2058,
+      "sha256": "0a769688f8d31deb41fd31711d6d25bf67f0f7d3f3f3b07ef638eaf6895cc951"
+    },
+    {
+      "path": "R/egret_fly.R",
+      "bytes": 7874,
+      "sha256": "db5ded2af164e387ac3de83e05bdfa94e09c2e94338990bc1f4c305185e86b7e"
+    },
+    {
+      "path": "R/seurat2Monocle.R",
+      "bytes": 803,
+      "sha256": "e7644c2b75f84088925dd8ed959361308dabd4012d5cb122528dc8a85b121cd8"
+    }
+  ]
+}

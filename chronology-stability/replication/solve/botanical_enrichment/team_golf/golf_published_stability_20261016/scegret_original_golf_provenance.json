@@ -1,0 +1,787 @@
+{
+  "status": "complete",
+  "source_sha256": "aa3ee1741da2206de94884cc6453b41c481e2884b508bce96834c38284479a49",
+  "rendering_source_sha256": "2c78fca4a4221731cc9a06c22e1eb7ca9a36c65edb15a233fbe5958585162847",
+  "palette_sha256": "71187afb7215b9a6817b0ae3d07551513c3a4283f4fecaa203e8735e5738da84",
+  "panels": [
+    {
+      "cohort": "paragraph207",
+      "steps": 12,
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        5,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "missing_pair_tiles": 0,
+      "H_focal_bins": [
+        8
+      ],
+      "H_bypass_comparisons": [
+        {
+          "H_bin": 8,
+          "bins": [
+            7,
+            8,
+            9
+          ],
+          "memberships": [
+            {
+              "bin": 7,
+              "count": 21,
+              "retained": true,
+              "golf_counts": {
+                "": 0,
+                "1.5a": 1,
+                "1a": 0,
+                "1b": 0,
+                "2a": 17,
+                "3a": 0,
+                "3b": 1,
+                "3c": 0,
+                "4a": 0,
+                "4c": 0,
+                "5a": 2,
+                "6": 0
+              },
+              "observations": [
+                "f67r1",
+                "f67r2",
+                "f68r2",
+                "f68v3",
+                "f68v2",
+                "f86v4",
+                "f87v",
+                "f88r",
+                "f88v",
+                "f89r1",
+                "f89r2",
+                "f89v2",
+                "f89v1",
+                "f90r2",
+                "f90v2",
+                "f99r",
+                "f99v",
+                "f100v",
+                "f101r",
+                "f102r1",
+                "f102v2"
+              ]
+            },
+            {
+              "bin": 8,
+              "count": 5,
+              "retained": true,
+              "golf_counts": {
+                "": 0,
+                "1.5a": 0,
+                "1a": 0,
+                "1b": 0,
+                "2a": 0,
+                "3a": 0,
+                "3b": 0,
+                "3c": 0,
+                "4a": 0,
+                "4c": 0,
+                "5a": 3,
+                "6": 2
+              },
+              "observations": [
+                "f58r",
+                "f58v",
+                "f67v2",
+                "f69r",
+                "f70r2"
+              ]
+            },
+            {
+              "bin": 9,
+              "count": 25,
+              "retained": true,
+              "golf_counts": {
+                "": 0,
+                "1.5a": 0,
+                "1a": 0,
+                "1b": 0,
+                "2a": 0,
+                "3a": 20,
+                "3b": 5,
+                "3c": 0,
+                "4a": 0,
+                "4c": 0,
+                "5a": 0,
+                "6": 0
+              },
+              "observations": [
+                "f33r",
+                "f33v",
+                "f34r",
+                "f34v",
+                "f39r",
+                "f39v",
+                "f40r",
+                "f40v",
+                "f43r",
+                "f43v",
+                "f46r",
+                "f46v",
+                "f48v",
+                "f50r",
+                "f50v",
+                "f55r",
+                "f55v",
+                "f66r",
+                "f66v",
+                "f94r",
+                "f94v",
+                "f95r1",
+                "f95r2",
+                "f95v2",
+                "f95v1"
+              ]
+            }
+          ],
+          "status": "available",
+          "incoming_change": 0.27096251991177,
+          "outgoing_change": 0.2702292556135131,
+          "bypass_change": 0.1695259304036749,
+          "both_H_neighbor_changes_exceed_bypass": true,
+          "top_incoming_features": [
+            [
+              "d__to__e",
+              0.006227738362003666
+            ],
+            [
+              "o__to__i",
+              0.005660902221932411
+            ],
+            [
+              "ee__to__t",
+              0.005471539399350072
+            ],
+            [
+              "e__to__other",
+              0.005442118372852911
+            ],
+            [
+              "y__to__l",
+              0.005440455369153197
+            ],
+            [
+              "ee__to__ch",
+              0.005406901005379478
+            ],
+            [
+              "other__to__d",
+              0.005260164016247296
+            ],
+            [
+              "o__to__iii",
+              0.005189691621099182
+            ],
+            [
+              "o__to__o",
+              0.005150964744271652
+            ],
+            [
+              "cth__to__e",
+              0.005134435403126076
+            ]
+          ],
+          "top_outgoing_features": [
+            [
+              "ckh__to__d",
+              0.005945042452529355
+            ],
+            [
+              "e__to__f",
+              0.005893039228396314
+            ],
+            [
+              "cth__to__d",
+              0.005806253735792693
+            ],
+            [
+              "r__to__d",
+              0.005369315630101943
+            ],
+            [
+              "ch__to__ckh",
+              0.005356917927063133
+            ],
+            [
+              "eee__to__d",
+              0.005305522437521828
+            ],
+            [
+              "k__to__$",
+              0.005260711667390355
+            ],
+            [
+              "other__to__d",
+              0.00500774396450386
+            ],
+            [
+              "ee__to__a",
+              0.004943232778483246
+            ],
+            [
+              "sh__to__ckh",
+              0.004894161068393416
+            ]
+          ]
+        }
+      ],
+      "focal_pair_bin_resolution": {
+        "3a|3b": {
+          "retained_cross_group_pairs": 300,
+          "original_cross_group_pairs": 300,
+          "within_same_bin": 100,
+          "first_bin_before": 180,
+          "first_bin_after": 20,
+          "both_groups_retained": true,
+          "between_bin_pairs": 200,
+          "fraction_retained_pairs_between_bins": 0.6666666666666666,
+          "fraction_original_pairs_between_bins": 0.6666666666666666,
+          "bin_separates_any_retained_pairs": true,
+          "resolution_status": "partial_between_bin_resolution",
+          "mixed_retained_bins": [
+            9
+          ]
+        },
+        "4a|4c": {
+          "retained_cross_group_pairs": 180,
+          "original_cross_group_pairs": 180,
+          "within_same_bin": 0,
+          "first_bin_before": 140,
+          "first_bin_after": 40,
+          "both_groups_retained": true,
+          "between_bin_pairs": 180,
+          "fraction_retained_pairs_between_bins": 1.0,
+          "fraction_original_pairs_between_bins": 1.0,
+          "bin_separates_any_retained_pairs": true,
+          "resolution_status": "all_retained_pairs_between_bins",
+          "mixed_retained_bins": []
+        }
+      },
+      "pyramid_source": "word_per_million",
+      "feature_count": 214,
+      "largest_steps": {
+        "word": {
+          "bins": [
+            1,
+            2
+          ],
+          "value": 0.36877148978936636,
+          "spans_excluded_bins": false,
+          "top_features": [
+            [
+              "t__to__eee",
+              0.0062409061445557355
+            ],
+            [
+              "s__to__e",
+              0.005754928481381716
+            ],
+            [
+              "l__to__other",
+              0.0055205449855184555
+            ],
+            [
+              "d__to__other",
+              0.005411067552954583
+            ],
+            [
+              "eee__to__s",
+              0.0053158535008718
+            ],
+            [
+              "other__to__a",
+              0.005285390732131572
+            ],
+            [
+              "ee__to__other",
+              0.005226887988943481
+            ],
+            [
+              "cth__to__d",
+              0.005223040576843224
+            ],
+            [
+              "ch__to__other",
+              0.005215273153389269
+            ],
+            [
+              "e__to__s",
+              0.005180584698024123
+            ]
+          ]
+        },
+        "line": {
+          "bins": [
+            1,
+            2
+          ],
+          "value": 0.3791314018231359,
+          "spans_excluded_bins": false,
+          "top_features": [
+            [
+              "t__to__eee",
+              0.005320674314148796
+            ],
+            [
+              "e__to__sh",
+              0.005056386138376955
+            ],
+            [
+              "s__to__e",
+              0.004917108997222748
+            ],
+            [
+              "^__to__other",
+              0.004726251705771345
+            ],
+            [
+              "n__to__k",
+              0.004679429510085632
+            ],
+            [
+              "d__to__other",
+              0.004557664527533724
+            ],
+            [
+              "d__to__e",
+              0.004555167338290981
+            ],
+            [
+              "eee__to__s",
+              0.0045380080983668785
+            ],
+            [
+              "y__to__other",
+              0.004506504786319513
+            ],
+            [
+              "ee__to__other",
+              0.004482743075180473
+            ]
+          ]
+        }
+      },
+      "source_summary": {
+        "word": {
+          "mean": 0.2024946157295763,
+          "maximum": 0.36877148978936636,
+          "median": 0.18437748444968147,
+          "sum": 2.2274407730253394,
+          "count": 11
+        },
+        "line": {
+          "mean": 0.20369989860966733,
+          "maximum": 0.3791314018231359,
+          "median": 0.17872508468232132,
+          "sum": 2.2406988847063407,
+          "count": 11
+        }
+      }
+    },
+    {
+      "cohort": "pool50",
+      "steps": 8,
+      "occupancy": [
+        1,
+        10,
+        7,
+        5,
+        5,
+        8,
+        7,
+        7
+      ],
+      "retained_bins": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "missing_pair_tiles": 7,
+      "H_focal_bins": [
+        6
+      ],
+      "H_bypass_comparisons": [
+        {
+          "H_bin": 6,
+          "bins": [
+            5,
+            6,
+            7
+          ],
+          "memberships": [
+            {
+              "bin": 5,
+              "count": 5,
+              "retained": true,
+              "golf_counts": {
+                "1.5a": 0,
+                "1a": 0,
+                "1b": 0,
+                "2a": 5,
+                "3a": 0,
+                "3b": 0,
+                "3c": 0,
+                "4a": 0,
+                "4c": 0,
+                "5a": 0,
+                "6": 0
+              },
+              "observations": [
+                "I:67-68",
+                "O:87-90",
+                "O:88-89",
+                "S:100-101",
+                "S:99-102"
+              ]
+            },
+            {
+              "bin": 6,
+              "count": 8,
+              "retained": true,
+              "golf_counts": {
+                "1.5a": 0,
+                "1a": 0,
+                "1b": 0,
+                "2a": 0,
+                "3a": 4,
+                "3b": 2,
+                "3c": 0,
+                "4a": 0,
+                "4c": 0,
+                "5a": 1,
+                "6": 1
+              },
+              "observations": [
+                "E:33-40",
+                "E:34-39",
+                "F:43-46",
+                "G:50-55",
+                "H:57-66",
+                "H:58-65",
+                "J:69-70",
+                "Q:94-95"
+              ]
+            },
+            {
+              "bin": 7,
+              "count": 7,
+              "retained": true,
+              "golf_counts": {
+                "1.5a": 0,
+                "1a": 0,
+                "1b": 0,
+                "2a": 0,
+                "3a": 0,
+                "3b": 2,
+                "3c": 5,
+                "4a": 0,
+                "4c": 0,
+                "5a": 0,
+                "6": 0
+              },
+              "observations": [
+                "D:26-31",
+                "F:41-48",
+                "N:85-86",
+                "T:104-115",
+                "T:105-114",
+                "T:106-113",
+                "T:107-112"
+              ]
+            }
+          ],
+          "status": "available",
+          "incoming_change": 0.25114977973148744,
+          "outgoing_change": 0.17015648690507648,
+          "bypass_change": 0.22775519449872025,
+          "both_H_neighbor_changes_exceed_bypass": false,
+          "top_incoming_features": [
+            [
+              "l__to__e",
+              0.004611977674701795
+            ],
+            [
+              "q__to__y",
+              0.004564610409304323
+            ],
+            [
+              "a__to__ch",
+              0.004509095471406
+            ],
+            [
+              "ii__to__m",
+              0.004458502717131583
+            ],
+            [
+              "a__to__o",
+              0.004426047089248855
+            ],
+            [
+              "q__to__k",
+              0.004377120235356655
+            ],
+            [
+              "ee__to__f",
+              0.004353235747447471
+            ],
+            [
+              "cth__to__ee",
+              0.004138496863775779
+            ],
+            [
+              "ckh__to__d",
+              0.004136422187758279
+            ],
+            [
+              "ckh__to__ee",
+              0.0040801970990927364
+            ]
+          ],
+          "top_outgoing_features": [
+            [
+              "d__to__r",
+              0.0046557651414141105
+            ],
+            [
+              "t__to__l",
+              0.004576763228920042
+            ],
+            [
+              "q__to__a",
+              0.003974103966198181
+            ],
+            [
+              "eee__to__o",
+              0.0037953082343534093
+            ],
+            [
+              "ii__to__other",
+              0.003789764523719965
+            ],
+            [
+              "t__to__eee",
+              0.003724147623106499
+            ],
+            [
+              "a__to__y",
+              0.0036782382959783693
+            ],
+            [
+              "t__to__d",
+              0.0034889552252362643
+            ],
+            [
+              "d__to__p",
+              0.0033771337528033184
+            ],
+            [
+              "cth__to__ee",
+              0.003350120761620992
+            ]
+          ]
+        }
+      ],
+      "focal_pair_bin_resolution": {
+        "3a|3b": {
+          "retained_cross_group_pairs": 16,
+          "original_cross_group_pairs": 16,
+          "within_same_bin": 8,
+          "first_bin_before": 8,
+          "first_bin_after": 0,
+          "both_groups_retained": true,
+          "between_bin_pairs": 8,
+          "fraction_retained_pairs_between_bins": 0.5,
+          "fraction_original_pairs_between_bins": 0.5,
+          "bin_separates_any_retained_pairs": true,
+          "resolution_status": "partial_between_bin_resolution",
+          "mixed_retained_bins": [
+            6
+          ]
+        },
+        "4a|4c": {
+          "retained_cross_group_pairs": 10,
+          "original_cross_group_pairs": 10,
+          "within_same_bin": 10,
+          "first_bin_before": 0,
+          "first_bin_after": 0,
+          "both_groups_retained": true,
+          "between_bin_pairs": 0,
+          "fraction_retained_pairs_between_bins": 0.0,
+          "fraction_original_pairs_between_bins": 0.0,
+          "bin_separates_any_retained_pairs": false,
+          "resolution_status": "all_retained_pairs_same_bin",
+          "mixed_retained_bins": [
+            8
+          ]
+        }
+      },
+      "pyramid_source": "word_per_million",
+      "feature_count": 306,
+      "largest_steps": {
+        "word": {
+          "bins": [
+            3,
+            4
+          ],
+          "value": 0.3110768028868217,
+          "spans_excluded_bins": false,
+          "top_features": [
+            [
+              "ii__to__other",
+              0.004779605352603803
+            ],
+            [
+              "d__to__p",
+              0.004531478121266236
+            ],
+            [
+              "t__to__other",
+              0.0045164239281038
+            ],
+            [
+              "ckh__to__ee",
+              0.004427617857032949
+            ],
+            [
+              "^__to__m",
+              0.004427485420483857
+            ],
+            [
+              "cph__to__ee",
+              0.0044050221813192155
+            ],
+            [
+              "ii__to__m",
+              0.004353025586870706
+            ],
+            [
+              "i__to__other",
+              0.004316158094980062
+            ],
+            [
+              "a__to__y",
+              0.004306821927108567
+            ],
+            [
+              "d__to__r",
+              0.004147023728624355
+            ]
+          ]
+        },
+        "line": {
+          "bins": [
+            3,
+            4
+          ],
+          "value": 0.3239286985905282,
+          "spans_excluded_bins": false,
+          "top_features": [
+            [
+              "ii__to__other",
+              0.0041566156323503125
+            ],
+            [
+              "r__to__ee",
+              0.004058515940670693
+            ],
+            [
+              "a__to__$",
+              0.003967305786571416
+            ],
+            [
+              "t__to__other",
+              0.003933971731359677
+            ],
+            [
+              "d__to__p",
+              0.003928210950801388
+            ],
+            [
+              "ckh__to__ee",
+              0.0038637059758003197
+            ],
+            [
+              "cph__to__ee",
+              0.003839061042474497
+            ],
+            [
+              "a__to__y",
+              0.003810460881718023
+            ],
+            [
+              "l__to__ckh",
+              0.003807936443646898
+            ],
+            [
+              "ii__to__m",
+              0.003805349457633864
+            ]
+          ]
+        }
+      },
+      "source_summary": {
+        "word": {
+          "mean": 0.24331042358033872,
+          "maximum": 0.3110768028868217,
+          "median": 0.25546008896486977,
+          "sum": 1.4598625414820323,
+          "count": 6
+        },
+        "line": {
+          "mean": 0.24239762065460776,
+          "maximum": 0.3239286985905282,
+          "median": 0.2506826223992131,
+          "sum": 1.4543857239276465,
+          "count": 6
+        }
+      }
+    }
+  ],
+  "selection": "Original Golf spline only; middle predeclared resolution12pages/8pools; wordperMillionpyramid, word/lineperMillionadjacent scores.",
+  "bins": "Every original bin ID remains on the axis; omitted bins and pair tiles marked, no factor-code compression.",
+  "new_fits": 0,
+  "new_scegret_runs": 0,
+  "outputs": {
+    "scegret_original_golf.png": {
+      "bytes": 181451,
+      "sha256": "d438592f2a10c8899bc88e04878674fce0d1296a5164ca13ad582bebd51544f6"
+    },
+    "scegret_original_golf.svg": {
+      "bytes": 142221,
+      "sha256": "25b68832cdc8857b97a3783b6035c2cbc60f77b32c958436112204193d9ba17a"
+    }
+  }
+}

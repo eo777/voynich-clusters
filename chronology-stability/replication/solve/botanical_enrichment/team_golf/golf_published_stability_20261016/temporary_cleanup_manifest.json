@@ -1,0 +1,98 @@
+{
+  "status": "verified_then_removed",
+  "reason": "Redundant merged checkpoints and temporary runtimes after completed independent audits",
+  "retained_results": "scegret_results.json",
+  "directories": [
+    "_deps",
+    "_r_runtime",
+    "__pycache__"
+  ],
+  "removed_files": [
+    {
+      "path": "scegret_job_first_page.json",
+      "bytes": 2746939,
+      "sha256": "4c5d5430959f44cce8901b48b7d117495c81be2b0dd72ed42a2ab8e45246da52"
+    },
+    {
+      "path": "scegret_job_page_line_per_million.json",
+      "bytes": 2964386,
+      "sha256": "7bdee472b9cbfac68a0f591d72e56197f7797f41374085c97da13e13fe11a428"
+    },
+    {
+      "path": "scegret_job_page_line_raw.json",
+      "bytes": 2959781,
+      "sha256": "c0e913f4960b1b09e33e1af07e816440ac2ac0bb2b332e7596af46f7504ecaa5"
+    },
+    {
+      "path": "scegret_job_page_word_raw.json",
+      "bytes": 3018110,
+      "sha256": "72291c896ca840a7cd41a0ccc6790a54ef8ca6ce6070cce24c957adc92068f88"
+    },
+    {
+      "path": "scegret_job_pages_remaining.json",
+      "bytes": 2917448,
+      "sha256": "9fbb11850fcaacae0b381cc70779761f499d5af3048b94ffa05da16431f1ab93"
+    },
+    {
+      "path": "scegret_job_pool_lines.json",
+      "bytes": 3257489,
+      "sha256": "d5c01f5b56ae9730eb3ba8cbf8a9eb4a7af9cb7c260b5ed3b4032a001948de00"
+    },
+    {
+      "path": "scegret_job_pool_words.json",
+      "bytes": 3219390,
+      "sha256": "d418ac7fd78e4e0890f9463d00adc5d8c4d19c75e026b55b552dcf44822226b8"
+    },
+    {
+      "path": "scegret_job_pools.json",
+      "bytes": 3129155,
+      "sha256": "044fc11e632c48dfb3eca82a8f3afd116a770b5eef0d25c070c6361846ea2212"
+    },
+    {
+      "path": "scegret_page_line_per_million.log",
+      "bytes": 1632,
+      "sha256": "a149f7c6f0dfc35cf15c0aa1a2328f82c5def5ac431c5217ca04245e67538c3e"
+    },
+    {
+      "path": "scegret_page_line_raw.log",
+      "bytes": 1480,
+      "sha256": "483be4cdb47abc7495cd754b9c623ef71156ab2b641ce778a55997a36fe48d6e"
+    },
+    {
+      "path": "scegret_pages.log",
+      "bytes": 1472,
+      "sha256": "57d6c931bd1bb78211ea076a40c074796457632aa809f6243dc0d707462998aa"
+    },
+    {
+      "path": "scegret_partial_independent_audit.json",
+      "bytes": 55205,
+      "sha256": "8cdde45013a010ce924ad562418b3fd210c707d3c3413525a2386f89ae84701f"
+    },
+    {
+      "path": "scegret_pool_lines.log",
+      "bytes": 1883,
+      "sha256": "191c3b2372689cc8c6bb3a7dd97faeb2750762023a809e749c43116556021659"
+    },
+    {
+      "path": "scegret_pools.log",
+      "bytes": 1766,
+      "sha256": "d14369e9fd51d5f50cda888cd56e6bb9f78140a5693136a4627f4e0a9b564cde"
+    },
+    {
+      "path": "scegret_probe.log",
+      "bytes": 2135,
+      "sha256": "7dc7d5302c602b24e548aba2b6cb1b53b56b38c0b2ad279992db4143e57c561e"
+    },
+    {
+      "path": "scegret_runtime.log",
+      "bytes": 1022,
+      "sha256": "6baff484d2bce918e0ced5f678d04aade5de808b2ce70202b3d79d51342cf9e1"
+    }
+  ],
+  "runtime_metadata": [
+    "python_dependency_versions.json",
+    "base_runtime_versions.json",
+    "webr_package_lock.json",
+    "scegret_results.json"
+  ]
+}

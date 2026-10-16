@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "source_sha256": {
+    "golf_published_stability_20261016\\ensemble_index.json": "0227a2a0da42e80c9b41fa633f5716ca564cd2b278a1596fd975cd5aa12f3738",
+    "golf_published_stability_20261016\\ENSEMBLE_DESIGN.md": "c1f94c8f1e36d5e0b0112dfde18cdbde5e83f3348a89f3bdd7deac8ab717c232",
+    "golf_published_stability_20261016\\plot_ordering_ensemble.py": "8aaeb570b0a3b3b95024402a71863182d2853a5f0051f56e9f47184a0e07ead6",
+    "nonlinear_sequence_20261010\\plot_data.json": "71187afb7215b9a6817b0ae3d07551513c3a4283f4fecaa203e8735e5738da84",
+    "ensemble_frequency_paragraph207_point_l010.json": "1e4da7a1688204c1bfdb3515aaf173c8d4d51543bfaa8d74c9e4510f25dfefec",
+    "ensemble_frequency_paragraph207_point_l050.json": "711a71a26e02ee0d4fc5016f951e83ad777ec3b67d3a9d43ad77d2f46d9ebeaf",
+    "ensemble_frequency_pool50_point_l010.json": "276b31b79d3fad3d82969f21c536270ae1de426be1530aba290700329d03dc37",
+    "ensemble_frequency_pool50_point_l050.json": "fb53ad69c31de2e7a259b68eb95920907dfbca10074f21ac9c78f3d160b4a066"
+  },
+  "observations": 257,
+  "figure": "ordering_ensemble.png",
+  "histogram_bins": 100,
+  "frequency_scope": "retained observations, all eight starts per penalty; equal penalty/start weights",
+  "scale": {
+    "frequency_cap": 0.2,
+    "opacity": "sqrt(min(frequency/.20,1)); common to every row/hue"
+  },
+  "sampler": "native points in both cohorts",
+  "new_fits": 0,
+  "outputs": {
+    "ordering_ensemble.png": {
+      "bytes": 165540,
+      "sha256": "ae908535a596917a686300ebbba7edb96d85a87859a4bbfc513f479be7b64ca3"
+    },
+    "ordering_ensemble.svg": {
+      "bytes": 101285,
+      "sha256": "017f9b220438e0cffb37abacd9a13d779206d01276de7062141e72e714a29e59"
+    }
+  }
+}

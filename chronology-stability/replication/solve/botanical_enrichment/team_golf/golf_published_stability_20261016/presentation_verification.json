@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "local_links_checked": 52,
+  "links": [
+    {
+      "source": "index.html",
+      "target": "report.html"
+    },
+    {
+      "source": "index.html",
+      "target": "forum_figures.zip"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble.svg"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_H_regions.png"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_H_regions.png"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_H_regions.png"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_H_regions.svg"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_original_golf.png"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_original_golf.png"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_original_golf.png"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_original_golf.svg"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble_sheet_control.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble_sheet_control.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble_sheet_control.png"
+    },
+    {
+      "source": "index.html",
+      "target": "ordering_ensemble_sheet_control.svg"
+    },
+    {
+      "source": "index.html",
+      "target": "ensemble_summary.json"
+    },
+    {
+      "source": "index.html",
+      "target": "ensemble_findings.json"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_h_summary.json"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_summary.json"
+    },
+    {
+      "source": "index.html",
+      "target": "ensemble_audit.json"
+    },
+    {
+      "source": "index.html",
+      "target": "ensemble_independent_audit.json"
+    },
+    {
+      "source": "index.html",
+      "target": "cassidy_independent_audit.json"
+    },
+    {
+      "source": "index.html",
+      "target": "scegret_independent_audit.json"
+    },
+    {
+      "source": "index.html",
+      "target": "DESIGN.md"
+    },
+    {
+      "source": "index.html",
+      "target": "ENSEMBLE_DESIGN.md"
+    },
+    {
+      "source": "index.html",
+      "target": "CASSIDY_DESIGN.md"
+    },
+    {
+      "source": "index.html",
+      "target": "REPRODUCE.md"
+    },
+    {
+      "source": "report.html",
+      "target": "index.html"
+    },
+    {
+      "source": "report.html",
+      "target": "RESULTS.md"
+    },
+    {
+      "source": "report.html",
+      "target": "index.html"
+    },
+    {
+      "source": "report.html",
+      "target": "ordering_ensemble.png"
+    },
+    {
+      "source": "report.html",
+      "target": "cassidy_H_regions.png"
+    },
+    {
+      "source": "report.html",
+      "target": "scegret_original_golf.png"
+    },
+    {
+      "source": "report.html",
+      "target": "ordering_ensemble_sheet_control.png"
+    },
+    {
+      "source": "report.html",
+      "target": "CASSIDY_DESIGN.md"
+    },
+    {
+      "source": "report.html",
+      "target": "cassidy_h_summary.json"
+    },
+    {
+      "source": "report.html",
+      "target": "cassidy_independent_audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "cassidy_return_check.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_findings.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_summary.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_competition.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "scegret_summary.json"
+    },
+    {
+      "source": "report.html",
+      "target": "scegret_independent_audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "scegret_source/source_manifest.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_independent_audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "ensemble_audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "REPRODUCE.md"
+    },
+    {
+      "source": "report.html",
+      "target": "DESIGN.md"
+    }
+  ],
+  "images": [
+    {
+      "file": "cassidy_H_regions.png",
+      "width": 1728,
+      "height": 944,
+      "sha256": "50065320955c340a65d28be62a28316d75f3ca9198bcdac6cb5f43947de2de7e"
+    },
+    {
+      "file": "ordering_ensemble.png",
+      "width": 1920,
+      "height": 1472,
+      "sha256": "ae908535a596917a686300ebbba7edb96d85a87859a4bbfc513f479be7b64ca3"
+    },
+    {
+      "file": "ordering_ensemble_sheet_control.png",
+      "width": 1920,
+      "height": 1472,
+      "sha256": "d7af23c1099ab566331ee8fa07b8385e28bcfe09d8f6be7b9524c64274bbbb24"
+    },
+    {
+      "file": "scegret_original_golf.png",
+      "width": 1920,
+      "height": 1360,
+      "sha256": "d438592f2a10c8899bc88e04878674fce0d1296a5164ca13ad582bebd51544f6"
+    }
+  ],
+  "bundle_members": [
+    "ordering_ensemble.png",
+    "ordering_ensemble.svg",
+    "cassidy_H_regions.png",
+    "cassidy_H_regions.svg",
+    "scegret_original_golf.png",
+    "scegret_original_golf.svg",
+    "forum_captions.txt",
+    "ordering_ensemble_sheet_control.png",
+    "ordering_ensemble_sheet_control.svg"
+  ],
+  "scope": "Programmatic links and PNG integrity; visual review recorded separately."
+}

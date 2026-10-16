@@ -1,0 +1,8 @@
+{
+  "python": "3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "scikit-learn": "1.6.1",
+  "matplotlib": "3.9.4",
+  "Pillow": "11.3.0"
+}
