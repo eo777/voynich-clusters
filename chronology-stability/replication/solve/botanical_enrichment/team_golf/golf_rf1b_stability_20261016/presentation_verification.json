@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "local_links": 30,
+  "png_svg_pairs": 6,
+  "images": [
+    "ordering_combined.png",
+    "ordering_combined_sheet_control.png",
+    "ordering_comparison.png",
+    "ordering_comparison_sheet_control.png",
+    "ordering_rf1b.png",
+    "ordering_rf1b_sheet_control.png"
+  ],
+  "source_sha256": {
+    "comparison.json": "7c2bea72681d05626c3497e12ad0b2a1724ee558752590ce64a747a2cb1b8387",
+    "ensemble_audit.json": "aa333a22b4317c245db6f3de2b6e66211cc5a0f40135820d3f14abe8b65566e1",
+    "inputs.json": "1d865524af622e87c34ca3efd3059b80fbf8f66e1f20fdf674c143be447c3505",
+    "execution_verification.json": "1eda5757e5047299eba1d9d364f6a97af5fb2adaa0af6c3c6d58fbd1b26aa63a",
+    "build_report.py": "7736cba0b7facbc86f7aa61ee545158284ad95b8140aeb856b7a4ad1a27fa3fa",
+    "plot_comparison.py": "3938d46823c42b136c7bec7bbca7328a16367d2f64135e24251096a535a86b6d"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "production_records_checked": 2,
+  "checks": [
+    {
+      "setting": "paragraph207_sheet_l050",
+      "full_dimensional_node_hash_exact": true,
+      "positions_exact": true,
+      "objective_exact": true,
+      "result_sha256": "0922d0d2f1dcf292c616268bab9bd9fde172cda5b625c2437888b1fa6ce310fe"
+    },
+    {
+      "setting": "pool50_point_l010",
+      "full_dimensional_node_hash_exact": true,
+      "positions_exact": true,
+      "objective_exact": true,
+      "result_sha256": "91e31260ed8a1eb7e483161a32329813d544ba21de2109f3de9d9d277cf905df"
+    }
+  ],
+  "new_growth_calls": 0,
+  "source_sha256": {
+    "verify_completed.py": "69ddeccecf9dce29151cf2c5eb8f819268f1c477816f87ac5cd4818c38d5f380",
+    "ensemble_index.json": "aa3c4b4a30316c17ee0db8b839cc8f37e77a5d3da15b6306fc6359ef1e4f31bb",
+    "execution_verification.json": "1eda5757e5047299eba1d9d364f6a97af5fb2adaa0af6c3c6d58fbd1b26aa63a"
+  }
+}

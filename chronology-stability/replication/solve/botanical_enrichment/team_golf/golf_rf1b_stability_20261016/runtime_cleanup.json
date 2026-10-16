@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "removed_temporary_directory": "_deps",
+  "removed_bytes": 125881565.0,
+  "dependency_versions_and_hashes": "execution_verification.json",
+  "restoration_instructions": "REPRODUCE.md",
+  "retained_production_fits": 4800
+}

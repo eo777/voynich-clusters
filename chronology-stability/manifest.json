@@ -1,6 +1,7 @@
 {
   "study": "Golf chronology stability, 16 October 2026",
   "original_release_sha256": "54e1107026305147f7920eff37c86aa5f6afc170625265c8a4a6df135068ad0f",
+  "rf1b_release_sha256": "b1b856a16d0cc09585306513ebf55a6d0c6dc6ee5c0c63386999bd9f7286b381",
   "scope": "Frozen observed inputs, starting candidates, complete report, results, analysis code and audits; no private paper or runtime binaries.",
   "files": {
     ".gitattributes": {
@@ -8,28 +9,33 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     "FORUM_METHODS.md": {
-      "bytes": 3033,
-      "sha256": "7a6989e3ce0b0c7c079900bc9efd8c01f55c59b44f446aa383e2910aa03f9993"
+      "bytes": 3727,
+      "sha256": "63cfefbbd62d9080107ca1e56c111dfd71b7c29c6a7b66c5ac66fec72f807e40"
     },
     "README.md": {
-      "bytes": 8328,
-      "sha256": "06f31cee4d49b4652937fca8c5b338d7c15292b9f59b05c3185d0de2437b2499"
+      "bytes": 9263,
+      "sha256": "23974907572dea76f51ee281e68ebb4270c9e91abdd27162fc203a13e641cfe0"
     },
     "check_inputs.py": {
       "bytes": 2264,
       "sha256": "09f5d1b4727c342c01bed9c9780c3eed6c85d540d04a2b8889fc4c9a1dce23bb"
     },
     "figures.html": {
-      "bytes": 9824,
-      "sha256": "ae473f0aa797106e05cbc33e837d82e72cbe6c185620f633108f1bac6df693db"
+      "bytes": 11271,
+      "sha256": "597cc080b5e484879ecfcd6fbb393fa2335acdc31b11f425b2b7b386e5a67aa4"
     },
     "index.html": {
-      "bytes": 41874,
-      "sha256": "abf1a36aa2fc8cb5a9155e3ea41678db46d8f0a7e2c0bde7a77d3c3131590ee6"
+      "bytes": 43321,
+      "sha256": "1b3067074b0f37bc2d50739bc79a8b9339ed1c032ccf2d029038b6b25c7d0185"
     },
     "replication.html": {
-      "bytes": 78930,
-      "sha256": "173e331b9d8cf5b417016f7bb0d81cebb6a08ed32e8fd6e9ca60c7d6aa08686d"
+      "bytes": 95263,
+      "sha256": "68362f4bb2729179964bcbba815e0f12c02f6bedb29c554d8a8d2abbd786b115"
+    },
+    "replication/ZL_ivtff_raw.txt": {
+      "bytes": 411671,
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "original_source": "ZL_ivtff_raw.txt"
     },
     "replication/apps/clustermatrix/research-data/.gitattributes": {
       "bytes": 14,
@@ -1231,6 +1237,286 @@
       "sha256": "8e2f80f8973f8f71491850bad748fd73ea4b928d9997d98cc2e1d01e56a2a770",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/webr_windows_register.mjs"
     },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/DESIGN.md": {
+      "bytes": 4665,
+      "sha256": "11ec474ee0be25ba04c87e032ea5e488f7710daf442544a31abd3358389c9b59",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/DESIGN.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/REPRODUCE.md": {
+      "bytes": 2938,
+      "sha256": "4099f91477c18ca1d52cb1729b27d0b0530099803091a7788ea27502b2420588",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/REPRODUCE.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RESULTS.md": {
+      "bytes": 10548,
+      "sha256": "41f08069825c6c06fef9cece23a2a3fae4eac4fcdd04f914525e0d040bcbe871",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RESULTS.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RF1b-er.txt": {
+      "bytes": 343891,
+      "sha256": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RF1b-er.txt"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/artifact_manifest.json": {
+      "bytes": 9424,
+      "sha256": "b1b856a16d0cc09585306513ebf55a6d0c6dc6ee5c0c63386999bd9f7286b381",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/artifact_manifest.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/build_report.py": {
+      "bytes": 14165,
+      "sha256": "7736cba0b7facbc86f7aa61ee545158284ad95b8140aeb856b7a4ad1a27fa3fa",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/build_report.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/comparison.json": {
+      "bytes": 457781,
+      "sha256": "7c2bea72681d05626c3497e12ad0b2a1724ee558752590ce64a747a2cb1b8387",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/comparison.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_audit.json": {
+      "bytes": 6384,
+      "sha256": "aa333a22b4317c245db6f3de2b6e66211cc5a0f40135820d3f14abe8b65566e1",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_audit.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_competition.json": {
+      "bytes": 6953733,
+      "sha256": "4ea7f8a9fa3395091ecea5f8f0327740c04439d72d04d45b7c338dd9616f8eb5",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_competition.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_point_l010.json": {
+      "bytes": 1054971,
+      "sha256": "38328a89a60654df9fdaeda9e272e15149783f1d1972db3ff16dfeba21308469",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_point_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_point_l050.json": {
+      "bytes": 1047489,
+      "sha256": "ddcad79cef4cb2c038dee227c9a37a510b0f0e31ddfa05b743eae41203ce6ca6",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_point_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_sheet_l010.json": {
+      "bytes": 1055831,
+      "sha256": "bd5c1e21c70ee1bd20b6f7342f304aad70fe1feb65ef69ee65f44c25f890f82b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_sheet_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_sheet_l050.json": {
+      "bytes": 1050282,
+      "sha256": "0cf626b948d6e4ad223287a0a3b57a34f4b4e60017ca71d5fc2d8fffe0bc8494",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_paragraph207_sheet_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_pool50_point_l010.json": {
+      "bytes": 120043,
+      "sha256": "dede04714a80e518c79d50610a27a6d796966c7f8f29deb779f10d41aab4270f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_pool50_point_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_pool50_point_l050.json": {
+      "bytes": 119624,
+      "sha256": "88172926b1c8da019a9c3ff140a40584cc0b01c05558135206e8237788101794",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_frequency_pool50_point_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_index.json": {
+      "bytes": 5829,
+      "sha256": "aa3c4b4a30316c17ee0db8b839cc8f37e77a5d3da15b6306fc6359ef1e4f31bb",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_index.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_point_l010.json": {
+      "bytes": 5281396,
+      "sha256": "d3343a99d090b372526fd7359076fece160373e88e6ab0dde9fcd6b27c589da7",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_point_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_point_l050.json": {
+      "bytes": 5176237,
+      "sha256": "a71b1b50f264ba66316f3b02b5f45ba09e4aebd78eb7586fe6eef7b0c347389e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_point_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_sheet_l010.json": {
+      "bytes": 5282587,
+      "sha256": "2f298bdf4072d90b3532f10b116f0fa3a156265603010d0619a3984cbc93322f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_sheet_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_sheet_l050.json": {
+      "bytes": 5168238,
+      "sha256": "0922d0d2f1dcf292c616268bab9bd9fde172cda5b625c2437888b1fa6ce310fe",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_paragraph207_sheet_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pilot.json": {
+      "bytes": 5103,
+      "sha256": "ad668253f6a428b30064fa1b6fe7f738e34f4a3dbe0dfc2db6b0176da0885b07",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pilot.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pool50_point_l010.json": {
+      "bytes": 2953113,
+      "sha256": "91e31260ed8a1eb7e483161a32329813d544ba21de2109f3de9d9d277cf905df",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pool50_point_l010.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pool50_point_l050.json": {
+      "bytes": 2920406,
+      "sha256": "a766e5153900e6a0f1e0b67c0cb6aa6cb095c1c96e19f1f0f86ffeee16dfdada",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_pool50_point_l050.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_summary.json": {
+      "bytes": 211414,
+      "sha256": "776fb143cdaaf91e8e27e7402cd87dbaec0c9fe899c33958aac273d10c527dd5",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ensemble_summary.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/execution_verification.json": {
+      "bytes": 9671,
+      "sha256": "1eda5757e5047299eba1d9d364f6a97af5fb2adaa0af6c3c6d58fbd1b26aa63a",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/execution_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/index.html": {
+      "bytes": 16429,
+      "sha256": "978f8513a3009d1c5d8fe900d8c58affa336181533c650b788f895781aa20d66",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/index.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/inputs.json": {
+      "bytes": 90662,
+      "sha256": "1d865524af622e87c34ca3efd3059b80fbf8f66e1f20fdf674c143be447c3505",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/inputs.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/inputs.npz": {
+      "bytes": 1396787,
+      "sha256": "e5a382788acf6fceaee0e4ce862bc329eda54cac0886357411bfee09257b8103",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/inputs.npz"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined.png": {
+      "bytes": 164237,
+      "sha256": "0d346ac2a2c1df58fc08e26ab4f2c59e682f8f959c5b48a1caec635d5a8616e9",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined.svg": {
+      "bytes": 105080,
+      "sha256": "a0cad11a4209ec4cfa4073ee86efa0c9e629416ac45f940acff5c23658e13c12",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_data.json": {
+      "bytes": 309297,
+      "sha256": "84bd08357aa7d90a6a3a5624fd825a05dda28f6f347d3857165e835a9271bdde",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control.png": {
+      "bytes": 165960,
+      "sha256": "eadfe9b5f00b650bda3f3924012f68dbbbd88f655a236fd1e668098251bd84d2",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control.svg": {
+      "bytes": 107607,
+      "sha256": "e5baa6fc94a248dd960643f98e0bed1268a913f9089e2b3cde5d8ebccdd635a3",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control_data.json": {
+      "bytes": 320896,
+      "sha256": "d598faea2f48d014c84a4bddce5d030243953c9a6ca45537ba4dca1b200e09bd",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_combined_sheet_control_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison.png": {
+      "bytes": 215191,
+      "sha256": "7fc04be6ca8d506737edd02ab25727ee9734f9e3a45e595a7dcafffbbed6aa6d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison.svg": {
+      "bytes": 191585,
+      "sha256": "5dc8e36ee5ee1a6850288f0fcc11dce81a32e35da8eb298cd39599cc0da15d18",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_data.json": {
+      "bytes": 586613,
+      "sha256": "28e9032bfef5cd39b295a20ba315705211620d81d8e6900f1cfb290b9eb144e1",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control.png": {
+      "bytes": 219492,
+      "sha256": "cd0af339023f3420cd29030d7d53175f785995d891936af8b73c7f7bfffe9332",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control.svg": {
+      "bytes": 198360,
+      "sha256": "87c106b03028b28d33006db8d0edb862aef91e130501de509bad1d14093b7168",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control_data.json": {
+      "bytes": 612824,
+      "sha256": "a1f8926dba4352371db30d8fc38338662f7c9073914cf55dc7613800aecaf952",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_comparison_sheet_control_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b.png": {
+      "bytes": 155098,
+      "sha256": "167c882bf99dced416cf8a68db67792f48d6b4e2ca3977d122e74e88ec144c3b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b.svg": {
+      "bytes": 101855,
+      "sha256": "5fa2ed625c087e342dc175370fa355b1b5a9863a10c2b5617178b02685702129",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_data.json": {
+      "bytes": 292504,
+      "sha256": "a795a966102884835102cb004effaf93c0500ac67b8b1aea3b9a83f0c9a0a4b3",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control.png": {
+      "bytes": 156913,
+      "sha256": "66fc00ccfd8a1f35e3b1ce80e0c821ec361a92d5a441552a72a011ef3eb907a1",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control.svg": {
+      "bytes": 105798,
+      "sha256": "6fcbcd14845af95ae4c8dc746038fa6cc867225922f7a782f492fc2f8eb34358",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control_data.json": {
+      "bytes": 305686,
+      "sha256": "84f1aa068e644126c29f41b5a888154a1f2551eafc915fd8f27959e76cdb4377",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/ordering_rf1b_sheet_control_data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/plot_comparison.py": {
+      "bytes": 6513,
+      "sha256": "3938d46823c42b136c7bec7bbca7328a16367d2f64135e24251096a535a86b6d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/plot_comparison.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/prepare_data.py": {
+      "bytes": 8091,
+      "sha256": "ba2b882abdf29467592654a74b5a3c2db22fe4973159d6afea8525974f8dbca5",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/prepare_data.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/presentation_verification.json": {
+      "bytes": 905,
+      "sha256": "c2aeb24e59ccd48f3adbd1d65e78474e2238e60af4b5d7db8a7e714c30fa839f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/presentation_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/production_replay_verification.json": {
+      "bytes": 955,
+      "sha256": "9cd56da8dab0d924500db2faabced029dd032f99bcf37cf204102051d31ef82c",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/production_replay_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/report.html": {
+      "bytes": 16429,
+      "sha256": "978f8513a3009d1c5d8fe900d8c58affa336181533c650b788f895781aa20d66",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/report.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/run_ensemble.py": {
+      "bytes": 8502,
+      "sha256": "fba35df8bc9782d4c5b15e36528bb1e33243604275477353d370bc8eb8ca390e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/run_ensemble.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/runtime_cleanup.json": {
+      "bytes": 258,
+      "sha256": "c0d903df1710ff126e2799592b6362fb9188d509a6db729c03c83666b99f5e14",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/runtime_cleanup.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/summarize.py": {
+      "bytes": 4559,
+      "sha256": "f135e2bb629fe1423911b4bb7ec6e195f7c4b703539cb1a0b2c852cbf8319dec",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/summarize.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/verify_completed.py": {
+      "bytes": 1566,
+      "sha256": "69ddeccecf9dce29151cf2c5eb8f819268f1c477816f87ac5cd4818c38d5f380",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/verify_completed.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/visual_review.json": {
+      "bytes": 2945,
+      "sha256": "593a8febc161c96001e0105723a8c23b34215cd6b15b50f588d8a6ee3f3dba15",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/visual_review.json"
+    },
     "replication/solve/botanical_enrichment/team_golf/golf_stability_20261016/basins.json": {
       "bytes": 3480246,
       "sha256": "8311ffa194ea0b536ddab74e88e8a5fbd6c2e26f05b5328295cac748228ccea0",
@@ -1261,9 +1547,48 @@
       "sha256": "42a6b810ca88a4151241307c220be4746722f9c4e0cef71036d1b144b1fe43d7",
       "original_source": "solve/botanical_enrichment/team_golf/whole_manuscript_topology_20261015/models.py"
     },
+    "replication/voynich_toolkit/__init__.py": {
+      "bytes": 95,
+      "sha256": "c299916eb78052c8d91ce9a17e3f85048bb49c434482999ba7be86597b0aa569",
+      "original_source": "voynich_toolkit/__init__.py"
+    },
+    "replication/voynich_toolkit/eva.py": {
+      "bytes": 2441,
+      "sha256": "ef3af296ba70835bc97f60c40a4aaacc90f369f5ffc12b3969d14adbfece214f",
+      "original_source": "voynich_toolkit/eva.py"
+    },
+    "replication/voynich_toolkit/glyph_units.py": {
+      "bytes": 3731,
+      "sha256": "b823d660a9d2b2a00c127d9278c558f1d7b5bfb61d59fffa6473fe0b0753a57f",
+      "original_source": "voynich_toolkit/glyph_units.py"
+    },
+    "replication/voynich_toolkit/grammar.py": {
+      "bytes": 3837,
+      "sha256": "dae5f066261b98f3aa30ec81131fb20fc8885b81e3ec7e375d6f306571e648a6",
+      "original_source": "voynich_toolkit/grammar.py"
+    },
+    "replication/voynich_toolkit/model.py": {
+      "bytes": 3147,
+      "sha256": "c331b275f14ae6702f4a5571f6855c73934d4aaad3cd5d5203bb68592e5845e2",
+      "original_source": "voynich_toolkit/model.py"
+    },
+    "replication/voynich_toolkit/source_lattice.py": {
+      "bytes": 24273,
+      "sha256": "77c7c061f2136a5ae96c9fa1c510cd7c275dccc833674a33dfbaeaeac7852947",
+      "original_source": "voynich_toolkit/source_lattice.py"
+    },
+    "replication/voynich_toolkit/transforms.py": {
+      "bytes": 7448,
+      "sha256": "efae5d2306e0e8db0e4299cf65c287c615151d2952940c7739028e3f9c92fa68",
+      "original_source": "voynich_toolkit/transforms.py"
+    },
     "requirements.txt": {
       "bytes": 241,
       "sha256": "1c539d939bb88f084fda6d3681107bf365c8822e859153a920fbde9d39439abe"
+    },
+    "rf1b.html": {
+      "bytes": 19283,
+      "sha256": "c1146cfeba623412c9a18cf1241ebb46dffea8f5053ba60e0d0c44c679215942"
     },
     "verify.py": {
       "bytes": 2308,

@@ -1,0 +1,266 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RF1b-er ordering stability</title><style>body{margin:0;color:#193244;background:#f4f7f9;font:16px/1.55 system-ui,sans-serif}main{max-width:1400px;margin:auto;padding:30px 4vw;background:white}h1{font-size:30px}h2{margin-top:2.4em}img{max-width:100%;height:auto}a{color:#086b9d}table{border-collapse:collapse;font-size:14px;width:100%;display:block;overflow-x:auto}th,td{border-bottom:1px solid #dce4e8;padding:8px 12px;text-align:left}th{background:#eef3f6}code{background:#eef3f6;padding:2px 4px}</style><main><h1>RF1b-er / basic EVA: ordering stability</h1>
+<p>Completed 16 October 2026. <strong>4,800 new ElPiGraph fits</strong>, compared with the frozen 4,800-fit ZL ensemble. All 207 paragraph pages and 50 pooled bifolia match. <a href="DESIGN.md">Design</a> · <a href="REPRODUCE.md">Reproduction</a> · <a href="comparison.json">Numerical comparison</a> · <a href="ensemble_audit.json">Fit audit</a> · <a href="../golf_published_stability_20261016/report.html">Original ZL report</a>.</p>
+<p>This is the requested RF1b-er transcription with <strong>individual EVA characters</strong>: for example, <code>ch</code> becomes separate <code>c</code> and <code>h</code> transitions, and <code>ee</code> contains two <code>e</code> characters. The existing ZL analysis uses <strong>Zattera glyph groups</strong>. Both transcription and unitization change, so differences cannot be attributed to transcription alone. Golf labels and sheet membership remain fixed. The same paragraph cohort has 34,618 readable RF words versus 34,977 ZL words; source readings and word boundaries are retained rather than forced into agreement.</p>
+<h2>RF1b-er separately</h2>
+<p><img src="ordering_rf1b.png" alt="RF1b-er basic EVA ordering sensitivity" /></p>
+<p><a href="ordering_rf1b.png">PNG</a> · <a href="ordering_rf1b.svg">SVG</a> · <a href="ordering_rf1b_data.json">Chart data</a></p>
+<h2>Both representations together</h2>
+<p><img src="ordering_combined.png" alt="Equal-weight combined ordering sensitivity" /></p>
+<p><a href="ordering_combined.png">PNG</a> · <a href="ordering_combined.svg">SVG</a> · <a href="ordering_combined_data.json">Chart data</a></p>
+<p>The combined chart averages the two retained-fit frequency histograms <strong>50:50 for each observation</strong>. It preserves separate modes, rather than replacing alternatives with a bell curve. Equal weight is an explicit sensitivity-design choice, not a probability that either representation is correct. The shared masks mean these are paired experiments, not twice as many independent samples.</p>
+<h2>Where the representations differ</h2>
+<p><img src="ordering_comparison.png" alt="Side-by-side representation comparison" /></p>
+<p><a href="ordering_comparison.png">PNG</a> · <a href="ordering_comparison.svg">SVG</a> · <a href="ordering_comparison_data.json">Chart data</a></p>
+<p>Each horizontal strip is one page or pooled bifolium. Its darker portions are positions reached more often among fits retaining that observation. Multiple separated dark portions indicate alternative placements. The same Golf colors, row order, position bins and opacity scale are used in every panel. Rows are grouped by their fixed Golf labels, not sorted into a new chronology. Positions are normalized arc length in each fitted curve: 0 and 1 indicate the oriented ends, not dates. Coordinates from different representations need not have the same intermediate metric meaning; the combined view deliberately includes that coordinate sensitivity.</p>
+<h2>B-section ordering</h2>
+<p>The following compares the best recovered candidate <strong>within each sample and penalty</strong>, restricted to fitted outcomes whose group medians put 1a before 1b. This is an outcome filter, not a hard ordering constraint. The denominator is the number of samples with an eligible candidate. It is not a posterior probability. “Before” compares group medians; individual pages may interleave. These ordering tables use projections of all reference profiles to define group medians, as in the original competition analysis. The frequency strips themselves use retained observations only.</p>
+<ul>
+<li><strong>Pages, λ=0.01:</strong> 3a-before-3b wins 44/100 ZL samples and 19/100 RF samples. Bio-before-Stars 4c wins 2/100 and 0/100, respectively.</li>
+<li><strong>Pages, λ=0.05:</strong> 3a-before-3b wins 24/100 ZL samples and 29/100 RF samples. Bio-before-Stars 4c wins 13/100 and 8/100, respectively.</li>
+<li><strong>Bifolia, λ=0.01:</strong> 3a-before-3b wins 58/100 ZL samples and 43/100 RF samples. Bio-before-Stars 4c wins 1/100 and 0/100, respectively.</li>
+<li><strong>Bifolia, λ=0.05:</strong> 3a-before-3b wins 23/100 ZL samples and 19/100 RF samples. Bio-before-Stars 4c wins 0/100 and 0/100, respectively.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Sampling unit</th>
+<th style="text-align:right">λ</th>
+<th style="text-align:right">ZL: 3a before 3b</th>
+<th style="text-align:right">RF: 3a before 3b</th>
+<th style="text-align:right">ZL: Bio before Stars 4c</th>
+<th style="text-align:right">RF: Bio before Stars 4c</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">44/100</td>
+<td style="text-align:right">19/100</td>
+<td style="text-align:right">2/100</td>
+<td style="text-align:right">0/100</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">38/100</td>
+<td style="text-align:right">24/100</td>
+<td style="text-align:right">2/100</td>
+<td style="text-align:right">1/100</td>
+</tr>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">24/100</td>
+<td style="text-align:right">29/100</td>
+<td style="text-align:right">13/100</td>
+<td style="text-align:right">8/100</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">25/100</td>
+<td style="text-align:right">27/100</td>
+<td style="text-align:right">24/100</td>
+<td style="text-align:right">17/100</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">58/100</td>
+<td style="text-align:right">43/100</td>
+<td style="text-align:right">1/100</td>
+<td style="text-align:right">0/100</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">23/100</td>
+<td style="text-align:right">19/100</td>
+<td style="text-align:right">0/100</td>
+<td style="text-align:right">0/100</td>
+</tr>
+</tbody>
+</table>
+<p>The frequency charts retain all starting solutions, including less competitive local optima. The table above supplies their score context. The complete <a href="ensemble_competition.json">within-sample competition results</a> also report when only one of the two directions was recovered; absence from this finite search is not evidence that an alternative is impossible.</p>
+<p>The next table uses <strong>all eight starts</strong>, matching the frequency charts, and separately counts paired runs whose group-median direction reverses between representations. Matching the mask and starting permutation does not guarantee that optimization reaches corresponding local minima. Ties remain in the denominators and are recorded separately in the JSON; the complement of a “before” percentage can include ties as well as the opposite direction.</p>
+<table>
+<thead>
+<tr>
+<th>Sampling unit</th>
+<th style="text-align:right">λ</th>
+<th>Relation</th>
+<th style="text-align:right">ZL frequency</th>
+<th style="text-align:right">RF frequency</th>
+<th style="text-align:right">Paired strict reversals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.01</td>
+<td>3a before 3b</td>
+<td style="text-align:right">49%</td>
+<td style="text-align:right">45%</td>
+<td style="text-align:right">34/800</td>
+</tr>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.01</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">60%</td>
+<td style="text-align:right">55%</td>
+<td style="text-align:right">49/800</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.01</td>
+<td>3a before 3b</td>
+<td style="text-align:right">46%</td>
+<td style="text-align:right">43%</td>
+<td style="text-align:right">38/800</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.01</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">60%</td>
+<td style="text-align:right">55%</td>
+<td style="text-align:right">50/800</td>
+</tr>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.05</td>
+<td>3a before 3b</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:right">49%</td>
+<td style="text-align:right">10/800</td>
+</tr>
+<tr>
+<td>Pages, individual sampling</td>
+<td style="text-align:right">0.05</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">45%</td>
+<td style="text-align:right">49%</td>
+<td style="text-align:right">26/800</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.05</td>
+<td>3a before 3b</td>
+<td style="text-align:right">49%</td>
+<td style="text-align:right">46%</td>
+<td style="text-align:right">29/800</td>
+</tr>
+<tr>
+<td>Pages, whole-sheet sampling</td>
+<td style="text-align:right">0.05</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">44%</td>
+<td style="text-align:right">47%</td>
+<td style="text-align:right">38/800</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.01</td>
+<td>3a before 3b</td>
+<td style="text-align:right">49%</td>
+<td style="text-align:right">46%</td>
+<td style="text-align:right">20/800</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.01</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">48%</td>
+<td style="text-align:right">47%</td>
+<td style="text-align:right">9/800</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.05</td>
+<td>3a before 3b</td>
+<td style="text-align:right">60%</td>
+<td style="text-align:right">56%</td>
+<td style="text-align:right">40/800</td>
+</tr>
+<tr>
+<td>Pooled bifolia</td>
+<td style="text-align:right">0.05</td>
+<td>Bio before Stars 4c</td>
+<td style="text-align:right">44%</td>
+<td style="text-align:right">39%</td>
+<td style="text-align:right">39/800</td>
+</tr>
+</tbody>
+</table>
+<h2>f58 and f86v4</h2>
+<p>These are retained-fit 5th–95th percentile position spans, using individual-page sampling and all starts. They describe sensitivity, not statistical confidence intervals. A span can bridge low-frequency gaps between modes; use the strips above to see those modes.</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th style="text-align:right">λ</th>
+<th style="text-align:right">ZL position span</th>
+<th style="text-align:right">RF position span</th>
+<th style="text-align:right">Equal-weight combined span</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f58r</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">0.495–0.592</td>
+<td style="text-align:right">0.492–0.609</td>
+<td style="text-align:right">0.495–0.601</td>
+</tr>
+<tr>
+<td>f58v</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">0.498–0.587</td>
+<td style="text-align:right">0.507–0.778</td>
+<td style="text-align:right">0.499–0.609</td>
+</tr>
+<tr>
+<td>f86v4</td>
+<td style="text-align:right">0.01</td>
+<td style="text-align:right">0.418–0.586</td>
+<td style="text-align:right">0.440–0.543</td>
+<td style="text-align:right">0.422–0.569</td>
+</tr>
+<tr>
+<td>f58r</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">0.509–0.584</td>
+<td style="text-align:right">0.526–0.598</td>
+<td style="text-align:right">0.514–0.594</td>
+</tr>
+<tr>
+<td>f58v</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">0.513–0.586</td>
+<td style="text-align:right">0.527–0.616</td>
+<td style="text-align:right">0.517–0.604</td>
+</tr>
+<tr>
+<td>f86v4</td>
+<td style="text-align:right">0.05</td>
+<td style="text-align:right">0.447–0.643</td>
+<td style="text-align:right">0.479–0.628</td>
+<td style="text-align:right">0.468–0.634</td>
+</tr>
+</tbody>
+</table>
+<h2>Whole-bifolium sampling control</h2>
+<p>Pages from a physical sheet are removed together in this control. The pool fits are unchanged because pools already are sheets. Native page sampling permits remaining pages on the same sheet and is therefore a different uncertainty design. The controls use the original shared sheet masks.</p>
+<p><img src="ordering_rf1b_sheet_control.png" alt="RF whole-sheet control" /></p>
+<p><a href="ordering_rf1b_sheet_control.png">PNG</a> · <a href="ordering_rf1b_sheet_control.svg">SVG</a></p>
+<p><img src="ordering_combined_sheet_control.png" alt="Combined whole-sheet control" /></p>
+<p><a href="ordering_combined_sheet_control.png">PNG</a> · <a href="ordering_combined_sheet_control.svg">SVG</a> · <a href="ordering_comparison_sheet_control.png">Side-by-side control</a></p>
+<h2>Method and checks</h2>
+<p>The ensemble follows Albergante et al. (2020), <a href="https://doi.org/10.3390/e22030296">section 2.10 and Figure 1C</a>, using ElPiGraph 0.3.4. For each representation, each page/pool setting has 100 independent Bernoulli 90% inclusion masks, eight starting group orders and λ=0.01/0.05; μ=0.1 and the unbranched curve grows to 28 nodes before the original fixed-topology refinement. Pages receive equal total weight per physical sheet; pools have equal weights. The original package's weighted-wrapper issue is handled using exactly the same verified explicit-mask procedure. The full design includes page-point, page-sheet and pooled-sheet ensembles.</p>
+<p>RF word and joined-line conditional transition matrices use individual EVA letters. Counts are pooled before normalization. The two base-2 JS matrices are averaged equally, with the same at-least-three-outgoing-observations eligibility rule and unrenormalized row weights as ZL. Classical MDS keeps all positive eigenvalues above 1e-10, giving 196 RF page dimensions and 49 pool dimensions. Each representation's geometry and group-centroid anchors remain fixed during resampling. This measures fit sensitivity conditional on those inputs; it does not resample transcription uncertainty or refit MDS in each draw.</p>
+<p>The eight group permutations are the <strong>same ZL-selected starts</strong> as the original ensemble, with centroids recomputed in RF geometry. No fitted ZL curve is passed into RF. This holds search coverage constant; it is not a new exhaustive search for all RF-specific routes. Golf labels are retained for comparison rather than inferred again from RF.</p>
+<p>The same counting implementation reproduces every frozen ZL transition count and both distance matrices exactly. An independent JS implementation agrees with RF within 1.2×10⁻¹⁶. The native/explicit-mask RF pilot agrees to numerical precision, and a saved ZL ensemble fit replays exactly. Two RF production records also match their pre-production checks exactly, including their full-dimensional node hashes. All 4,800 production RF fits converged, and masks, weights, labels, starting permutations and run identities match across representations. The <a href="inputs.json">input checks</a>, <a href="execution_verification.json">execution verification</a>, <a href="production_replay_verification.json">production replay checks</a>, <a href="ensemble_audit.json">ensemble audit</a> and <a href="comparison.json">paired comparison</a> retain details. Six single-BLAS-thread workers completed the production fitting in 10.8 minutes. No private or unpublished source is used.</p>
+<p>The <a href="https://www.voynich.nu/data/RF1b-er.txt">RF1b-er source</a>, source checksums, compact result records and replication scripts are retained. This is an ElPiGraph stability comparison; it does not rerun the scEGRET continuity calibration or H-coordinate influence map.</p>
+</main></html>

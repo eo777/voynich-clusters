@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-16",
+  "combined_histogram_checks": [
+    {
+      "view": "individual_sampling",
+      "panel": 0,
+      "rows": 207,
+      "equal_weight_histogram": "passed"
+    },
+    {
+      "view": "individual_sampling",
+      "panel": 1,
+      "rows": 50,
+      "equal_weight_histogram": "passed"
+    },
+    {
+      "view": "_sheet_control",
+      "panel": 0,
+      "rows": 207,
+      "equal_weight_histogram": "passed"
+    },
+    {
+      "view": "_sheet_control",
+      "panel": 1,
+      "rows": 50,
+      "equal_weight_histogram": "passed"
+    }
+  ],
+  "figures": [
+    {
+      "figure": "ordering_combined",
+      "sha256": {
+        "png": "0d346ac2a2c1df58fc08e26ab4f2c59e682f8f959c5b48a1caec635d5a8616e9",
+        "svg": "a0cad11a4209ec4cfa4073ee86efa0c9e629416ac45f940acff5c23658e13c12"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    },
+    {
+      "figure": "ordering_combined_sheet_control",
+      "sha256": {
+        "png": "eadfe9b5f00b650bda3f3924012f68dbbbd88f655a236fd1e668098251bd84d2",
+        "svg": "e5baa6fc94a248dd960643f98e0bed1268a913f9089e2b3cde5d8ebccdd635a3"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    },
+    {
+      "figure": "ordering_comparison",
+      "sha256": {
+        "png": "7fc04be6ca8d506737edd02ab25727ee9734f9e3a45e595a7dcafffbbed6aa6d",
+        "svg": "5dc8e36ee5ee1a6850288f0fcc11dce81a32e35da8eb298cd39599cc0da15d18"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    },
+    {
+      "figure": "ordering_comparison_sheet_control",
+      "sha256": {
+        "png": "cd0af339023f3420cd29030d7d53175f785995d891936af8b73c7f7bfffe9332",
+        "svg": "87c106b03028b28d33006db8d0edb862aef91e130501de509bad1d14093b7168"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    },
+    {
+      "figure": "ordering_rf1b",
+      "sha256": {
+        "png": "167c882bf99dced416cf8a68db67792f48d6b4e2ca3977d122e74e88ec144c3b",
+        "svg": "5fa2ed625c087e342dc175370fa355b1b5a9863a10c2b5617178b02685702129"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    },
+    {
+      "figure": "ordering_rf1b_sheet_control",
+      "sha256": {
+        "png": "66fc00ccfd8a1f35e3b1ce80e0c821ec361a92d5a441552a72a011ef3eb907a1",
+        "svg": "6fcbcd14845af95ae4c8dc746038fa6cc867225922f7a782f492fc2f8eb34358"
+      },
+      "visual_review": "passed: legible labels, aligned rows, shared scale, no clipping or overlap"
+    }
+  ],
+  "notes": "Visual inspection of all six final layouts; final RF-only footer also reviewed. Frequencies are sensitivity summaries, not posterior probabilities."
+}
