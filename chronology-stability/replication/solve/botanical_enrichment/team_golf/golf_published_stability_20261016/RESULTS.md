@@ -2,7 +2,11 @@
 
 **Completed 16 October 2026.** The study runs the original ElPiGraph fitting implementation, Cassidy's derivative-based continuation calculation, and the original scEGRET assessment functions, with the manuscript-specific adaptations documented below. All numerical audits passed.
 
-The main findings are that **3a/3b remains competitively unstable**, observed H lies very near an equal-score frontier, and pooling can hide feature discontinuities rather than resolve them. Bio/Stars alternatives persist, but the best recovered elastic scores usually favor Stars before Bio. scEGRET adds useful continuity information while exposing a serious resolution limitation: pooled Bio and Stars often fall in the same bin, so its aggregate score cannot settle their internal order.
+The main findings are that **3a/3b remains competitively unstable**, observed H lies very near an equal-score frontier, and pooling can hide feature contrasts rather than resolve them. Bio/Stars alternatives persist, but the best recovered elastic scores usually favor Stars before Bio. Pooled Bio and Stars often fall in the same scEGRET bin, so its aggregate score cannot settle their internal order.
+
+**Calibration follow-up:** scEGRET does not robustly identify f58 as a discontinuity under the empirical sheet-resampling reference. The earlier two-sided “pocket” interpretation was overstated: comparable contrasts occur in continuous controls. Detection power is also low under that reference, so the negative screen does not establish continuity. Read the [completed calibration and controls](calibration/report.html), including model-sensitive exceptions and the [numerical tables](calibration/tables.html).
+
+**Actual-page removal follow-up:** [Removing f58 and astro/stars](calibration/omission_test/report.html) produces some positive screens with raw counts or an independent-profile noise model, but none with normalized frequencies and empirical sheet resampling. Removing only f58 makes the remaining focal bin too sparse to score; retaining only f58 does the same. The test cannot isolate a two-page bridge under its minimum-occupancy rule.
 
 [Open the figures and downloads](index.html). The two requested replacements are [overall ordering sensitivity](ordering_ensemble.png) and the [H-position map at lambda 0.01](cassidy_H_regions.png). The additional [scEGRET figure](scegret_original_golf.png) shows the original Golf route's feature continuity. The [whole-sheet sampling control](ordering_ensemble_sheet_control.png) is provided separately.
 
@@ -153,7 +157,7 @@ The earlier figures and scientific results remain preserved for comparison. Deta
 
 ## scEGRET results
 
-### H is a distinct pocket in some page-level views
+### H has a two-sided feature contrast; calibration does not establish a distinct pocket
 
 Along the original Golf route, the 12-bin page calculation puts f58r and f58v with f67v2, f69r and f70r2 in bin 8. Both transitions into and out of that bin are larger than the direct feature contrast between its two neighbors:
 
@@ -162,7 +166,7 @@ Along the original Golf route, the 12-bin page calculation puts f58r and f58v wi
 | Word | 0.27096 | 0.27023 | 0.16953 |
 | Line | 0.27901 | 0.28606 | 0.17686 |
 
-The bypass is an existing all-bin-pair scEGRET score, not a refit after deleting H. This two-sided contrast occurs in four of the six primary word/line × resolution views, and four of six raw-count controls. It holds at 10 and 12 bins; changing the neighboring membership at 14 bins removes this particular pattern. Thus the feature evidence supports a locally distinct pocket in those views, rather than an unambiguous smooth intermediate. It does not establish whether the cause is missing text, topic, scribal differences or short samples, and it concerns the entire mixed bin rather than f58 alone.
+The bypass is an existing all-bin-pair scEGRET score, not a refit after deleting H. This two-sided contrast occurs in four of the six primary word/line × resolution views, and four of six raw-count controls. It holds at 10 and 12 bins; changing the neighboring membership at 14 bins removes this particular pattern. This was initially interpreted too strongly as a distinct feature pocket. The [subsequent calibration](calibration/report.html) shows that its two-sided excess is reached or exceeded by about 24% of word and 22% of line continuous sheet-resampling controls at the primary bandwidth. The same noisy middle bin enters both adjacent comparisons, making their changes correlated. The pattern is descriptive, not an established detection of a discontinuity or branch, and it concerns the entire mixed bin rather than f58 alone.
 
 Pooling changes the test. At eight bins, H:58–65 shares a bin with four 3a pools, two 3b pools and one 5a pool. Neither channel shows the same two-sided contrast. Across the six pooled primary views, none of the four eligible comparisons satisfies it; the 10-bin comparisons are unavailable because the H-containing bin has only two observations and is excluded by scEGRET. Raw controls have the same pattern. Averaging H into a mixed bin can therefore obscure the page-level contrast. That is a loss or change of resolution, not evidence that pooling has resolved the historical uncertainty.
 
@@ -187,13 +191,19 @@ The triangle compares every pair of retained position bins; stronger color means
 
 All 648 original-R outputs pass an independent reconstruction of filtering, bin labels, membership, adjacent scores, all-pair scores and top feature contributions. Maximum absolute score discrepancies are 1.33×10⁻¹⁵ for adjacent scores and 4.44×10⁻¹⁶ for all-pair scores. Seven legacy run exports were corrected from compressed factor codes to original bin numbers; memberships and numerical scores did not change. See [scEGRET summary](scegret_summary.json), [independent audit](scegret_independent_audit.json), and the retained [source manifest](scegret_source/source_manifest.json).
 
+### Calibration, known gaps and the scope of a negative result
+
+The [calibration follow-up](calibration/report.html) contains 147,888 production simulated datasets, continuous references at three smoothness settings, two noise models, literal missing-intermediate/random-thinning comparisons, fixed-count missing-state controls using the exact adjusted decision rule, and a separate test of the supplementary two-sided contrast. The original published EGRET calculation is preserved through an exact translation verified against all 648 R outputs; the manuscript simulation models and calibration rules are explicitly our adaptations. Source, input hashes, fixed seeds, all conditions and [audit results](calibration/audit.json) are included.
+
+The main result is failure to robustly detect a discontinuity at f58, not evidence that no discontinuity exists. Local line-feature elevations lose significance after the scan over boundaries and views, and the two-sided contrast is unexceptional even locally. Some other section boundaries exceed the smooth reference. Raw pooled H-neighborhood flags occur under the Dirichlet–multinomial sensitivity model but do not persist under per-million scaling or empirical sheet resampling. Known-gap detection is weak under the empirical model. These findings replace the earlier uncalibrated interpretation; they do not change the ordering ensembles or H-position frontier.
+
 ## Verification and reproducibility
 
 The principal-graph calculation comprises 4,800 production fits, two native-wrapper equivalence fits and two independent weighted replay fits. Every production fit is accounted for; none failed or was discarded. Both independent replays reproduce the saved full-node hashes exactly, with independent projection differences at most 3.33×10⁻¹⁶. The [replay audit](ensemble_independent_audit.json) is separate from the complete [mask, weight and objective audit](ensemble_audit.json).
 
 The scEGRET release contains 648 unique evaluations from the authors' unchanged R functions, plus runtime versions and source hashes. A probe and redundant intermediate work are not counted as independent evaluations. All 648 summary means and 1,296 pair-bin resolution records also passed independent review. The Cassidy derivative, assignment-event, outward-path and return checks are reported above.
 
-All four PNG figures were visually inspected; their SVG versions parse and match their recorded provenance hashes. Source code, compact result data, feature inputs, captions and reproduction instructions are retained. Temporary research runtimes and duplicate partition checkpoints were removed after verification, with their hashes recorded. The final workspace storage check passed at 18.29 GiB with no prohibited completed-study arrays. See [REPRODUCE.md](REPRODUCE.md) for the execution sequence and [DESIGN.md](DESIGN.md) for the declared choices.
+The original four PNG figures were visually inspected; their SVG versions parse and match their recorded provenance hashes. The additional calibration figure was also visually inspected, all calibration links were checked, and two complete reference models replay exactly from their saved seeds. Source code, compact result data, feature inputs, captions and reproduction instructions are retained. Temporary research runtimes and duplicate partition checkpoints were removed after verification, with their hashes recorded. The final workspace storage check, including calibration, passed at 18.31 GiB with no prohibited completed-study arrays. See [REPRODUCE.md](REPRODUCE.md) for the execution sequence and [DESIGN.md](DESIGN.md) for the declared choices.
 
 ## What these procedures do not establish
 

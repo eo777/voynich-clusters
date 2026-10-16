@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "files": {
+    "results_word_sheet_residual.json": "7d244edb469ca54daf40ee54aa17f32a9796cb4593d6f7e5efaa8c01b2c72370",
+    "results_word_dirichlet_multinomial.json": "9296e45f9a1630b9d54635b09320187b85f9f56d64f41ffd5d1557dfb2e3c126",
+    "results_line_sheet_residual.json": "31f417f67495f7dc6550daea51562254c5f9e465add12eb138c60144a87b0446",
+    "results_line_dirichlet_multinomial.json": "823fa9f896fe585d315b2e2f8b92c0dc3d65386afc6a1b8740be317c1d9ca968"
+  },
+  "continuous_draws": 7596,
+  "observed_cases": 14,
+  "models": 2,
+  "source_R_score_verification": "Every observed omission matches the independently R-validated calculation to <1e-12.",
+  "reproduction": "All four full-data reference means and SDs exactly reproduce the frozen previous calibration.",
+  "conditioning": "Same omissions applied to observed and continuous data; fixed original Golf order; native rebinning."
+}

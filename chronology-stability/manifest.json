@@ -1,6 +1,6 @@
 {
   "study": "Golf chronology stability, 16 October 2026",
-  "original_release_sha256": "73c0d8ce6e7b9a2019e6e3dc958bd0d93e74e971c94b45d3d14ba863cc9587ff",
+  "original_release_sha256": "54e1107026305147f7920eff37c86aa5f6afc170625265c8a4a6df135068ad0f",
   "scope": "Frozen observed inputs, starting candidates, complete report, results, analysis code and audits; no private paper or runtime binaries.",
   "files": {
     ".gitattributes": {
@@ -8,28 +8,28 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     "FORUM_METHODS.md": {
-      "bytes": 1744,
-      "sha256": "d12c1bd20382567e98a057c04ba87d2cfcf6bb3918ccd4ed56f627a6cce96395"
+      "bytes": 3033,
+      "sha256": "7a6989e3ce0b0c7c079900bc9efd8c01f55c59b44f446aa383e2910aa03f9993"
     },
     "README.md": {
-      "bytes": 5480,
-      "sha256": "b9c7aaa605cf67184162314b2704c3a503aa493d5adc4569c04a5cb50866d36a"
+      "bytes": 8328,
+      "sha256": "06f31cee4d49b4652937fca8c5b338d7c15292b9f59b05c3185d0de2437b2499"
     },
     "check_inputs.py": {
       "bytes": 2264,
       "sha256": "09f5d1b4727c342c01bed9c9780c3eed6c85d540d04a2b8889fc4c9a1dce23bb"
     },
     "figures.html": {
-      "bytes": 8720,
-      "sha256": "c270abafca1baa96d6093c6f543792ec1163b48f83f0751c711433eef3fa531b"
+      "bytes": 9824,
+      "sha256": "ae473f0aa797106e05cbc33e837d82e72cbe6c185620f633108f1bac6df693db"
     },
     "index.html": {
-      "bytes": 38494,
-      "sha256": "1b55046b5a7f977023c5f51b604acdfe96221b5a79d4a90f2ede22e1f18b5188"
+      "bytes": 41874,
+      "sha256": "abf1a36aa2fc8cb5a9155e3ea41678db46d8f0a7e2c0bde7a77d3c3131590ee6"
     },
     "replication.html": {
-      "bytes": 47793,
-      "sha256": "37b345bc1cd032633b914030cca69e43c3ff32b4e33e62c14b9d0ba9ab1de219"
+      "bytes": 78930,
+      "sha256": "173e331b9d8cf5b417016f7bb0d81cebb6a08ed32e8fd6e9ca60c7d6aa08686d"
     },
     "replication/apps/clustermatrix/research-data/.gitattributes": {
       "bytes": 14,
@@ -222,18 +222,18 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ENSEMBLE_DESIGN.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/REPRODUCE.md": {
-      "bytes": 4001,
-      "sha256": "41c4752ff55f958c3336fe3f4ff55979cfa8351b3c54fe72ff017a38b4ce925e",
+      "bytes": 5492,
+      "sha256": "f11f90b4e0ef4b749b0f137a054ad9a39213a27f46ef921598d95ea284770e28",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/REPRODUCE.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/RESULTS.md": {
-      "bytes": 29423,
-      "sha256": "3e98cb7e18768869f17a278ee8e73dfa8bcd4a997f684c9b9726eb89b03a6476",
+      "bytes": 32185,
+      "sha256": "982688846348eb2a062580a616b61246787d929727d5efe0e0e0563ac7784dc0",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/RESULTS.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/artifact_manifest.json": {
-      "bytes": 20364,
-      "sha256": "73c0d8ce6e7b9a2019e6e3dc958bd0d93e74e971c94b45d3d14ba863cc9587ff",
+      "bytes": 38372,
+      "sha256": "54e1107026305147f7920eff37c86aa5f6afc170625265c8a4a6df135068ad0f",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/artifact_manifest.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/base_runtime_versions.json": {
@@ -242,9 +242,459 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/base_runtime_versions.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/build_gallery.py": {
-      "bytes": 8750,
-      "sha256": "85f9e6a09337ea75236c334f75641a0cb1a7d8d86231800ff3a798231eda554f",
+      "bytes": 9552,
+      "sha256": "af1677da4fb52b2e961e31bc04f7c7a8999c551456351753ae409728912eab12",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/build_gallery.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/BYPASS_DESIGN.md": {
+      "bytes": 1891,
+      "sha256": "32a5233c1b0f8be60d2501e7c9d89ec6647441ca0b746c58f8b85967d2e155ed",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/BYPASS_DESIGN.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/DESIGN.md": {
+      "bytes": 7995,
+      "sha256": "04a980c707fc2d5913b5a0355f3e4f65a2c680f8e57ea71b227f797bb8606dff",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/DESIGN.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/MATCHED_DESIGN.md": {
+      "bytes": 2310,
+      "sha256": "b1f0a7834044cfbe166eb5ad6e97927d12ea140ff7f93246acbc14cf3cacf463",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/MATCHED_DESIGN.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/RESULTS.md": {
+      "bytes": 13359,
+      "sha256": "a054ea31d030cc21030d0a1700eece6b0ab96af9a2460dbeed06f7febc397187",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/RESULTS.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/TABLES.md": {
+      "bytes": 17472,
+      "sha256": "4b2916692a351ee8f1aa689ddb60e723a33ca22f715f4a9d87064e447e2e87a9",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/TABLES.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/attribution.json": {
+      "bytes": 16352,
+      "sha256": "62b35c56be1896816ff30d44b5893cc888e29041b9f2e0c2434913fac577daf4",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/attribution.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/audit.json": {
+      "bytes": 7743,
+      "sha256": "e711d4c3998f9e17c65b73af02d2c65196de93deb440e4a32211dc840cf1a010",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/audit.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/build_report.py": {
+      "bytes": 16170,
+      "sha256": "326e5ca7943c542b243d1e80921de93ef12c4bbd725322456637fa4c5525c6fe",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/build_report.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_calibration.py": {
+      "bytes": 3677,
+      "sha256": "7c625ab0d681ca2c30c4d6dde6ba8020400eaaf9ae636c17eb1b229b7f0deefc",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_calibration.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_dirichlet_multinomial_h0.12.json": {
+      "bytes": 73714,
+      "sha256": "44cb696dbc1d0304226934ea9aa106e7d8934d76a9b50dcefb137a2b56a8723a",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.08.json": {
+      "bytes": 73729,
+      "sha256": "2cc28d054defe0fe98f5f5ec2b85be27fe32fb1862100dac184c966ab7cb9d71",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.12.json": {
+      "bytes": 73785,
+      "sha256": "df7ec0760d5618de936e43b03414cbc2cfb07aa0baa331e93dcb5598061be92b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.20.json": {
+      "bytes": 73710,
+      "sha256": "156536c94d9c33d667aaf149101d8fac433d73757d5a39bf5670971fc25d19b0",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_line_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_dirichlet_multinomial_h0.12.json": {
+      "bytes": 73727,
+      "sha256": "9e0d6fc9b4109b2b4b6ec632acf16777c8d82f78b0e15efd5541c0824d1b3bf0",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.08.json": {
+      "bytes": 73755,
+      "sha256": "a672620b8649d7b286a4e157a8a3b949b161fc52f3bfc540ac4976bfd317bdae",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.12.json": {
+      "bytes": 73732,
+      "sha256": "2e3c1fd223b3ea14d6ee4fb2bcdf9faa51d1a66e36b800538dd3674a44a43635",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.20.json": {
+      "bytes": 73722,
+      "sha256": "68d3d2c46669993f88cb1a98afea3c10e16d6a5deb3276ab561689a232edd296",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_paragraph207_word_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_dirichlet_multinomial_h0.12.json": {
+      "bytes": 55006,
+      "sha256": "300e2b3ce2be6b4a56147951b59730f3087b286e9874675a61ab3b71c88d848b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.08.json": {
+      "bytes": 55007,
+      "sha256": "1d45a3f6e9e6dea64570c3864b76b832957f9cd8becee969ca66e8658292e7ac",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.12.json": {
+      "bytes": 54948,
+      "sha256": "51a78b90f6d8480e8f452d1214b18f18ef537414124c0a61859353ed08919405",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.20.json": {
+      "bytes": 54979,
+      "sha256": "a4f00ba13acb765ffccc0c5926d3c1874e79c8445d5899e5441e1774763ed725",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_line_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_dirichlet_multinomial_h0.12.json": {
+      "bytes": 55008,
+      "sha256": "e6eafb5118c638185786c14036a4f4f38549dda1243ebc83b319f7dd6c645f85",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.08.json": {
+      "bytes": 55030,
+      "sha256": "0d81aeead55a425d0927aaa021845b29d3c74aed6c6ac80ff38c6231ab9db35b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.12.json": {
+      "bytes": 55001,
+      "sha256": "f3d52e391bc7a476cf5f22f544b09b2688a7ea2d0997bc614181a5380d6fcdae",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.20.json": {
+      "bytes": 54967,
+      "sha256": "65257786346e16db4f428ff37ec70b67b37d444806068391bb4d08089d981dc8",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/bypass_pool50_word_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/calibration.png": {
+      "bytes": 186440,
+      "sha256": "0a0c21d0a55444fc5afd613673c20028d49ead75a7afd7a3281057a8ac5da4dd",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/calibration.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/calibration.svg": {
+      "bytes": 116023,
+      "sha256": "84f1d8f86ea30a530b8dd8d3f31fbaefe1037bdf7f8209f0856cc2010251ef53",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/calibration.svg"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/configuration.json": {
+      "bytes": 1137,
+      "sha256": "df6c8b2ca1025942254cee410a3914aac1862df73c526219be9f6c8c8b267253",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/configuration.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/feature_attribution.json": {
+      "bytes": 34980,
+      "sha256": "35b7e7264b3bc62ac8a411972c10dedc570e71a07f6433bebcdd55c64fa0238a",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/feature_attribution.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_line_dirichlet_multinomial.json": {
+      "bytes": 4249,
+      "sha256": "aa113de2527a436ef823bbdd1ad2c6a7467da6ae1a1ba87a23c58da575266d21",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_line_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_line_sheet_residual.json": {
+      "bytes": 4314,
+      "sha256": "3bee02debede31232623b9f95fbc25fe61a8dc6b97d1414c5e0a68750886d7df",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_line_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_word_dirichlet_multinomial.json": {
+      "bytes": 4270,
+      "sha256": "c77008209e78e10ddbdc9dfa3dbe24fba89a9a298d44f46b8f7fc7452482284e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_word_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_word_sheet_residual.json": {
+      "bytes": 4298,
+      "sha256": "673751d95ef590fc943a8f459627fa5d89e717848ab67a19da2ae7adbf20de7d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_paragraph207_word_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_line_dirichlet_multinomial.json": {
+      "bytes": 4257,
+      "sha256": "1d1075fa5d24a8ad417206ab7458caf67192eab094c587d67741691988ed66b9",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_line_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_line_sheet_residual.json": {
+      "bytes": 4254,
+      "sha256": "908a8ac887a02fc0f0498a65ea2b314fca807fe21f75a370a5ed1afa353a0459",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_line_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_word_dirichlet_multinomial.json": {
+      "bytes": 4268,
+      "sha256": "e5f86ed2e1abb45c41b065adb6e0cd7557379d513e0bd8a1973a7265a8dc4720",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_word_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_word_sheet_residual.json": {
+      "bytes": 4254,
+      "sha256": "be473f02c3333a3ff354e2d4e06fbc574cf32b46654501fbf3d022565f254116",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_pool50_word_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_power.py": {
+      "bytes": 2895,
+      "sha256": "ed6d3531640e53c979478ed287371ad06e855222aca55a0ef9cc56478caca3e3",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/matched_power.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.08.json": {
+      "bytes": 71196,
+      "sha256": "93fd52b0a03a1b55c64c8d3fcba8d511b238eddf4f72c7ef42adf0b660940ebc",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.12.json": {
+      "bytes": 71184,
+      "sha256": "f031568a29fbbddbe83313dab46487d7d1503a006c62fe52819a61f6b84fe564",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.20.json": {
+      "bytes": 71230,
+      "sha256": "9758be52b2881a619f2c56bc8b88e3c81bf81c4a56bbb24f9a8e4f2fd9dd388d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_dirichlet_multinomial_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.08.json": {
+      "bytes": 71152,
+      "sha256": "25cec65c650238d24f20a9df15bf4c21f5a0a64a207513cb848a8c30de104c14",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.12.json": {
+      "bytes": 71106,
+      "sha256": "70d0014f909349bef66adc9cbb32a56163063df8a305872397ab82846a241c69",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.20.json": {
+      "bytes": 71128,
+      "sha256": "592fc9e5abc873e4c8535ee81f814e075db34d802be7d92679c3087faf31bf3e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_line_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.08.json": {
+      "bytes": 71176,
+      "sha256": "cf71a74616d42b03311d9c209e6ae9aee78d70e9e47595f903af142184b09e93",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.12.json": {
+      "bytes": 71163,
+      "sha256": "dae16ea1a855d1462ef89333217d37a618f59426b64e9c76a196d4e0c40d96c0",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.20.json": {
+      "bytes": 71211,
+      "sha256": "f012cdfa146186051e96531d8c780940f473b69591a4d3c75fa81472cce6a200",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_dirichlet_multinomial_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.08.json": {
+      "bytes": 71129,
+      "sha256": "3b999718a20eb29cc71373e787f5d8d3078ba712853f1d775b31b4036e47d3f7",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.12.json": {
+      "bytes": 71109,
+      "sha256": "8d4a1912e7c5de4adae3db10b8d2a838b9984be2da4786484edb0777804b6c4f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.20.json": {
+      "bytes": 71156,
+      "sha256": "94aa703146e01ac1e02efc8e8429d1763c84678a636c2b80939682973e88b7bd",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_paragraph207_word_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.08.json": {
+      "bytes": 55259,
+      "sha256": "f712b3492fa02fad3afa0d282198800b766392f26f00cdcc1773077c903eca7c",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.12.json": {
+      "bytes": 55217,
+      "sha256": "6d7a320bca2131c3071ad6650f6f0792df877da40a95eaba79994fe408286904",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.20.json": {
+      "bytes": 55220,
+      "sha256": "0b73c739640ea63b282b096a8e06957b6ff05f8aa63e517b93b362bbeb3215ff",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_dirichlet_multinomial_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.08.json": {
+      "bytes": 55241,
+      "sha256": "e08b75135b3db2976edabc28b9446a38bc0533575167d7bbbe972af064beb4af",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.12.json": {
+      "bytes": 55226,
+      "sha256": "85956d5fa99ba3d6d44333f6f426074406e6e3a591d4a348b70a7e83fae05707",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.20.json": {
+      "bytes": 55228,
+      "sha256": "19423fb0ff9ca8bcd5c2e6a627b36ff6fec472105f170596f2d7d00f9edbc882",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_line_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.08.json": {
+      "bytes": 55285,
+      "sha256": "526927397b2d411166a81ec861955737c2666bec78eb877c92683fa9e91a8370",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.12.json": {
+      "bytes": 55289,
+      "sha256": "8f1ef535e27c49f30aae8f5689c5e44d3a27f18c621a0e5d42a23c89cc860a46",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.20.json": {
+      "bytes": 55275,
+      "sha256": "786ef11c94c40eca59329f9882826384cc2049c6ddb7f1dee0e0ad12238f3589",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_dirichlet_multinomial_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.08.json": {
+      "bytes": 55266,
+      "sha256": "decf95a67b52820585703e363797c6f94955949ea1238cf3280206256e432417",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.08.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.12.json": {
+      "bytes": 55257,
+      "sha256": "22fca50090bfdaff46a605077a0489ea23f0306321374745a5e598ce9ba1ca2d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.12.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.20.json": {
+      "bytes": 55211,
+      "sha256": "9d8a15e4d9323581a023573953af476cb7eff8880e39e475c43d9736cda6a5ea",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/null_pool50_word_sheet_residual_h0.20.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/DESIGN.md": {
+      "bytes": 3102,
+      "sha256": "601f4de114d59118a847ce10ef1a5b8fba44afe79e2bde3ffd2c175b69e7bc62",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/DESIGN.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/RESULTS.md": {
+      "bytes": 9943,
+      "sha256": "219acc5f9b28fdb972eb7ea470dff57fd544780dd54d34264dc40e5886487ad1",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/RESULTS.md"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/audit.json": {
+      "bytes": 928,
+      "sha256": "afb99893e4013b36bdbd0e65f83a62b41e6477f811c2c523d237aa020de8f45e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/audit.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/build_report.py": {
+      "bytes": 11719,
+      "sha256": "ece542b7d659e7a4b543163c1d0b9b809137c8c9338d05e440ff4bda89323b5d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/build_report.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/presentation_verification.json": {
+      "bytes": 424,
+      "sha256": "6fe752a6e076b5d3e6be0102dcf3acf0be2bff9dae94649f8aeec87900db1be9",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/presentation_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/report.html": {
+      "bytes": 15550,
+      "sha256": "c06f34a9aaaa933d95447161e7c0aa388f065de72605ab82527256951159b633",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/report.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_line_dirichlet_multinomial.json": {
+      "bytes": 433893,
+      "sha256": "823fa9f896fe585d315b2e2f8b92c0dc3d65386afc6a1b8740be317c1d9ca968",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_line_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_line_sheet_residual.json": {
+      "bytes": 433663,
+      "sha256": "31f417f67495f7dc6550daea51562254c5f9e465add12eb138c60144a87b0446",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_line_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_word_dirichlet_multinomial.json": {
+      "bytes": 433847,
+      "sha256": "9296e45f9a1630b9d54635b09320187b85f9f56d64f41ffd5d1557dfb2e3c126",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_word_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_word_sheet_residual.json": {
+      "bytes": 433630,
+      "sha256": "7d244edb469ca54daf40ee54aa17f32a9796cb4593d6f7e5efaa8c01b2c72370",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/results_word_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/run_omissions.py": {
+      "bytes": 7230,
+      "sha256": "203f3b20754b59bad61eebb9909c2aebf4ddf6fdc6e82044bd19ad4d2d978096",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/run_omissions.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_line_dirichlet_multinomial.json": {
+      "bytes": 9181,
+      "sha256": "3c60ae8e66466b99a2824c4b502f2bf6c77cda7e0acecad45602677fe9ec3435",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_line_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_line_sheet_residual.json": {
+      "bytes": 9178,
+      "sha256": "4126333a821d06b204ded92bb87b989180e98de3ca39d332456c00f335b75e22",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_line_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_word_dirichlet_multinomial.json": {
+      "bytes": 9165,
+      "sha256": "d0b7c0ed2c34ee8344149abf3a0bac9152d8f6257072cffd64272091e518c8db",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_word_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_word_sheet_residual.json": {
+      "bytes": 9172,
+      "sha256": "4b69bc3d936151e6c7920ddf94072a14356645c5dcd859acb6f418fad7028e12",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_paragraph207_word_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_line_dirichlet_multinomial.json": {
+      "bytes": 8607,
+      "sha256": "94a08e57a8a9be3ebfd2363a33aa9012505d1317e584acb8e3f12b93125db864",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_line_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_line_sheet_residual.json": {
+      "bytes": 8626,
+      "sha256": "ab20898533fc21a85ecb2d434642167ded9921d282716f491ff1d033cf60b082",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_line_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_word_dirichlet_multinomial.json": {
+      "bytes": 8609,
+      "sha256": "c4e785807d60d8d828a1e5e9289dc53a80df8abfd3e25309263430988b502c7d",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_word_dirichlet_multinomial.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_word_sheet_residual.json": {
+      "bytes": 8592,
+      "sha256": "208e07ad6e10937badbea5ea419fc0ac55befe859a1b3ef5a8736ea226121fae",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/power_pool50_word_sheet_residual.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/presentation_verification.json": {
+      "bytes": 1695,
+      "sha256": "adf0c63d68ed29a319b76553c8c83dd71d9c746f408d9e35f5a45c3d8c55b148",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/presentation_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/replay_reference.py": {
+      "bytes": 1079,
+      "sha256": "551b0416ae98bfe00af1cb73000930e89094d6bbfa93ef083f4914b14b4083d4",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/replay_reference.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/replay_verification.json": {
+      "bytes": 726,
+      "sha256": "77c145dd3f2c705c6f7221c70e36a5d306d5eb6231679ef68e0c6339225fe59e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/replay_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/report.html": {
+      "bytes": 17226,
+      "sha256": "7ca2918d51104cc5ae8715cf8eb9e692d6dd73fc53a6c05dfe443badfe20630b",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/report.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/run_calibration.py": {
+      "bytes": 17865,
+      "sha256": "b5cd0f30bfb0109d7bac2ecaa8a03e071e841f3517231ef1dd7ec7b36ad20f5f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/run_calibration.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/scorer_verification.json": {
+      "bytes": 307,
+      "sha256": "5ebe1b9881b28af30b576e8b382e23606b9aabb76debee5676ad4d1d5860e7ec",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/scorer_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/summarize.py": {
+      "bytes": 16682,
+      "sha256": "882e6624975579aab88d5f138153aadc05eb929c698b1b230b82102056b77cf1",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/summarize.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/summary.json": {
+      "bytes": 402049,
+      "sha256": "c39d2dbd5420733dd10ada5fa8b2d30b4bdb5c18c3bbc16e75505ea5b29665d4",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/summary.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/tables.html": {
+      "bytes": 53312,
+      "sha256": "56f51b600d70419f4700edffbee6827d507fd93a92ff8eecb5b85ea9541d54d3",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/tables.html"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/cassidy_H_regions.png": {
       "bytes": 171822,
@@ -432,23 +882,23 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/ensemble_summary.py"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/finalize_manifest.py": {
-      "bytes": 1962,
-      "sha256": "79e888ef49a1e13197502b523a90af1141403eb08f4de22f0c239cd5ae03d6e0",
+      "bytes": 2223,
+      "sha256": "9f6ea911243c4063728eb355cb089af52f26e8429760c0356b3cf6ff81512c7f",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/finalize_manifest.py"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/forum_captions.txt": {
-      "bytes": 7493,
-      "sha256": "698857d1879509b51ece475d0271c76a3223193359d81aaa583153a33b8c5660",
+      "bytes": 7723,
+      "sha256": "ea5067e785a5021a3e8ad2a9ae2fa9c098bc0fb077fd013890ec275223969475",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/forum_captions.txt"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/forum_figures.zip": {
-      "bytes": 791657,
-      "sha256": "202b7d100c190467b3fcff8b39273b0f2521d09416a2f79fa6aa95dd318f5589",
+      "bytes": 791758,
+      "sha256": "9f63bde7051918d94219ebaa9f39c58cccc2694a23fca3ad4bb9b18ff099b25d",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/forum_figures.zip"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/index.html": {
-      "bytes": 5700,
-      "sha256": "a25e2ea7b4450537389c0e91361b641662fb25427d0ae4e5691a643263de770c",
+      "bytes": 6472,
+      "sha256": "c3e00daaad44aa63112dde270a81dfb0cf13c6e36a3b5c8e3bfb876995b9e78f",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/index.html"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/merge_scegret.py": {
@@ -532,8 +982,8 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/prepare_scegret.py"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/presentation_verification.json": {
-      "bytes": 5879,
-      "sha256": "0a8b2843fc71132b5058a1688b72f09b97b2949ca706d29466e0da5569492555",
+      "bytes": 6806,
+      "sha256": "e5549459ad376badf646784c6e42da4bdbcaf1659a600f8f87b10ad113b3e83b",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/presentation_verification.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/probe_scegret.mjs": {
@@ -547,8 +997,8 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/python_dependency_versions.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/report.html": {
-      "bytes": 36539,
-      "sha256": "9e32709d7a712c368eb25712d73a2eb25f3a7bc7304caa2db604bc7eba30e1e4",
+      "bytes": 39426,
+      "sha256": "e1ab09d545ba23992de75509209377c81ec436c242ff56815f5f2aa49907e375",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/report.html"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/retain_scegret_partitions.py": {
@@ -587,8 +1037,8 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_original_golf.svg"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_original_golf_caption.txt": {
-      "bytes": 2178,
-      "sha256": "e6cf3bf0bda5dfc3b78f5eef2876e0cf89f45720efa2a813c25a60bf2e56ec2a",
+      "bytes": 2408,
+      "sha256": "112293e6851b7080422da09961edc2b46382c83bd58c85196772b4f397227f0d",
       "original_source": "solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_original_golf_caption.txt"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/scegret_original_golf_provenance.json": {

@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>scEGRET calibration</title><style>
+:root{color-scheme:light;--ink:#193246;--muted:#536b7b;--line:#dce4e9;--paper:#fff;--wash:#f4f7f9}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:36px 24px 70px}h1,h2,h3{line-height:1.2;letter-spacing:-.02em}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px;margin-top:42px}h3{font-size:20px}p{max-width:92ch}a{color:#075c86;text-underline-offset:3px}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}.muted{color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;margin:22px 0}img{display:block;width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap;margin:12px 0 0}.caption{font-size:15px;color:var(--muted)}table{border-collapse:collapse;max-width:100%;font-size:15px;display:block;overflow:auto}th,td{padding:9px 13px;border-bottom:1px solid var(--line);text-align:left}th{background:#eaf0f4}code{font-size:.9em;background:#eaf0f4;padding:2px 4px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eaf0f4;padding:14px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:650}footer{margin-top:40px;color:var(--muted);font-size:14px}.report{max-width:1000px}blockquote{border-left:3px solid #89acbd;padding-left:16px;margin-left:0}
+@media(max-width:600px){main{padding:20px 12px}h1{font-size:28px}.card{padding:10px}body{font-size:16px}}
+</style></head><body><main class="report"><h1>scEGRET calibration: what the f58 signal does and does not establish</h1>
+<p><strong>Completed 16 October 2026.</strong> 147,888 production simulated datasets, with continuous references, deliberate missing-state controls, held-out false-alarm checks and a separate calibration of the two-sided excursion diagnostic. The original 648 R evaluations remain unchanged. <a href="tables.html">Full numerical tables</a> · <a href="audit.json">Audit</a> · <a href="../REPRODUCE.md">Reproduction</a>.</p>
+<p><strong>Requested removal follow-up:</strong> <a href="omission_test/report.html">Remove f58 and astro/stars material</a>. Some post-removal screens do flag the newly compared neighbors, depending on count scaling and noise model. The follow-up preserves both positive and negative results and explains the minimum-bin-size limitation.</p>
+<h2>The answer</h2>
+<p><strong>The calibrated screening does not robustly identify f58 as a discontinuity. It also has too little demonstrated power under the empirical sheet-noise model to establish that the region is continuous.</strong> The earlier claim that the two-sided contrast established a “distinct pocket” was too strong. It is an observed contrast whose statistical distinctiveness had not been established.</p>
+<p>This is a substantive change in the interpretation, not a change to the original feature scores. Both the normalized adjacent-score screen and the supplementary two-sided test fail to single out f58 under the primary calibration. The primary result is consistent across all three smoothing bandwidths. Some other section boundaries are more exceptional relative to their local sampling variability, although that does not identify a historical gap or settle their ordering.</p>
+<p><img src="calibration.png" alt="Continuous references and known-gap sensitivity" /></p>
+<p>In the first two panels, the colored interval is the central 95% of simulated scores under the continuous sheet-resampling reference; the colored dot is its mean, and the black diamond is the observed score. These are reference distributions of a feature-change statistic, not confidence intervals for chronology. The right panel reports how often known missing-state controls were detected, with uncertainty from 300 simulations per point. A low detection rate limits what can be concluded from a negative screen.</p>
+<h2>What happened at f58</h2>
+<p>The original 12-bin page view puts <strong>f58r, f58v, f67v2, f69r and f70r2</strong> together in bin 8. Its adjacent bins contain 21 and 25 profiles. The comparison is therefore between a five-profile mixed bin and substantially larger neighbors. The individual f58 profiles are not unusually short: they contain 2,060 and 1,980 within-word transition events, compared with a cohort median of 498. Small bin occupancy and sheet dependence, rather than unusually short f58 texts, are the relevant sampling concerns here.</p>
+<p>At the primary smoothing bandwidth, the sheet-resampling reference gives:</p>
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Boundary</th>
+<th style="text-align:right">Observed score</th>
+<th>Continuous-control 95% range</th>
+<th style="text-align:right">Local tail</th>
+<th style="text-align:right">Scan tail before cross-channel adjustment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Line</td>
+<td>7 → 8</td>
+<td style="text-align:right">0.279</td>
+<td>0.162–0.275</td>
+<td style="text-align:right">0.018</td>
+<td style="text-align:right">0.606</td>
+</tr>
+<tr>
+<td>Line</td>
+<td>8 → 9</td>
+<td style="text-align:right">0.286</td>
+<td>0.156–0.274</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">0.535</td>
+</tr>
+<tr>
+<td>Word</td>
+<td>7 → 8</td>
+<td style="text-align:right">0.271</td>
+<td>0.163–0.284</td>
+<td style="text-align:right">0.059</td>
+<td style="text-align:right">0.868</td>
+</tr>
+<tr>
+<td>Word</td>
+<td>8 → 9</td>
+<td style="text-align:right">0.270</td>
+<td>0.163–0.291</td>
+<td style="text-align:right">0.073</td>
+<td style="text-align:right">0.943</td>
+</tr>
+</tbody>
+</table>
+<p>The line scores are locally elevated: approximately 1–2% of corresponding continuous simulations reach those values. But f58 was noticed after inspecting the manuscript and several views. Accounting for that scan makes these modest local elevations unexceptional. Even <strong>before</strong> the extra adjustment across channels and cohorts, their scan tails are about 0.54–0.61. A reported adjusted tail of 1 is a capped comparison result, not a 100% probability that the route is continuous.</p>
+<p>The earlier two-sided argument compared the changes into and out of bin 8 with the direct change from bin 7 to bin 9. We separately calibrated its exact diagnostic, <code>B = min(E7,8, E8,9) − E7,9</code>. The observed values are <strong>0.101 for word</strong> and <strong>0.102 for line</strong> features. Continuous sheet-resampling controls produce an equal or larger value about <strong>24%</strong> and <strong>22%</strong> of the time, respectively. This pattern is not exceptional even as a local comparison.</p>
+<p>There is a direct reason: the <strong>same small middle bin enters both comparisons</strong>. If sampling or sheet variation moves its average away from the neighboring averages, both adjacent scores rise together while the outer-bin comparison is unaffected. Thus two adjacent jumps are not two independent confirmations of a pocket. A curved but continuous feature path can also produce the pattern. This diagnostic was our interpretation of EGRET's all-bin scores; it is not a discontinuity test introduced by the authors.</p>
+<p>Removing f58r/v makes the middle bin shrink from five to three profiles, which fails the source code's strict &gt;3 occupancy rule. Removing the three other profiles leaves two, also ineligible. Therefore the apparent disappearance of the flag after either omission cannot isolate f58 as its cause. <a href="attribution.json">Omission accounting</a> and <a href="feature_attribution.json">descriptive feature/subgroup contrasts</a> preserve these exclusions. The subgroup contrasts are not additional calibrated significance tests.</p>
+<h2>Known missing-state controls: detection is not reliable enough to prove continuity</h2>
+<p>We performed two complementary positive-control experiments. First, following the paper's validation logic, remove actual contiguous spans from simulated continuous datasets and compare them with equally sized random removals. Recompute binning, feature eligibility and scores after every omission. The sparse-bin rule is part of the experiment, not bypassed. All 72 conditions, with three locations and three widths, are in the <a href="tables.html">tables</a>.</p>
+<p>Second, to test the <strong>identical adjusted decision rule</strong> used for the manuscript, keep observed sample sizes, totals and bin occupancy fixed and omit a known interval of latent feature development. Its remaining coordinate is compressed back to the observed range. At a join near H (position 0.65), the empirical sheet-resampling model gives:</p>
+<table>
+<thead>
+<tr>
+<th>Unit / features</th>
+<th style="text-align:right">10% latent gap</th>
+<th style="text-align:right">20% latent gap</th>
+<th style="text-align:right">30% latent gap</th>
+<th style="text-align:right">Held-out continuous false alarms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pages / line</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">1.0%</td>
+<td style="text-align:right">1.7%</td>
+<td style="text-align:right">0.6%</td>
+</tr>
+<tr>
+<td>Pages / word</td>
+<td style="text-align:right">1.3%</td>
+<td style="text-align:right">2.0%</td>
+<td style="text-align:right">1.3%</td>
+<td style="text-align:right">1.0%</td>
+</tr>
+<tr>
+<td>Bifolia / line</td>
+<td style="text-align:right">3.0%</td>
+<td style="text-align:right">3.3%</td>
+<td style="text-align:right">8.3%</td>
+<td style="text-align:right">1.8%</td>
+</tr>
+<tr>
+<td>Bifolia / word</td>
+<td style="text-align:right">1.7%</td>
+<td style="text-align:right">3.0%</td>
+<td style="text-align:right">4.0%</td>
+<td style="text-align:right">0.6%</td>
+</tr>
+</tbody>
+</table>
+<p>Each detection percentage uses 300 draws and the same scan-adjusted threshold as the observed test; continuous false-alarm rates use 500 independent draws. A detection means the altered trajectory is flagged somewhere in the scan, not necessarily that the exact injected join is localized. Full Wilson intervals are retained. The gap widths are fractions of a simulated latent feature path, <strong>not percentages of missing manuscript pages or elapsed historical time</strong>. Broad gaps can still have weak feature contrast when development over that region is gradual relative to empirical variation. These controls show why absence of an H flag cannot certify continuity.</p>
+<p>The alternative Dirichlet–multinomial model has substantially greater power in some conditions: for a 30% latent gap near H, page word and line detection rates are about 54% and 88%. That improvement is model-dependent. At primary bandwidth it simulates only about 171 detected word features where the observed pages have 214, and it does not preserve empirical feature covariance or within-sheet dependence. Its apparent sensitivity cannot simply be substituted for the more conservative empirical-noise result.</p>
+<h2>Other findings and sensitivity exceptions</h2>
+<p>The normalized page scan flags the transition from predominantly <strong>1a</strong> to predominantly <strong>1b</strong> in the 10-bin view in both channels at the primary bandwidth. The 12-bin word view also flags the mixed later-Herbal/Stars bin's transition into <strong>Bio 4a</strong> at that bandwidth; this is not a consistently replicated Bio/Stars ordering result. Raw-count scores flag additional boundaries, including 1b to 1.5a. Raw counts are sensitive to text length as well as composition. <a href="tables.html">Every qualifying sheet-model boundary</a> is retained; <a href="summary.json">summary.json</a> includes the exact bin composition and members.</p>
+<p>There is an important exception to any blanket statement that “nothing near H was flagged”: under the Dirichlet–multinomial model, <strong>raw-count pooled</strong> boundaries touching the H-containing bin do pass the adjusted screen. Those flags do not persist under sheet resampling or per-million scaling. That pooled bin also contains four 3a, two 3b and one 5a pool alongside H. They are model- and scale-sensitive contrasts of a broad mixture, not an isolated detection at f58. These exceptions are retained in the numerical data, not silently discarded.</p>
+<p>Pooling therefore remains a change of resolution and observation definition. It neither resolves the page-level continuity question nor supplies the internal Bio/Stars information already lost when both groups share a bin. This calibration does not change the ElPiGraph ordering ensembles or the H-coordinate sensitivity frontier; those measure different properties of the fit.</p>
+<h2>Method and relation to the source research</h2>
+<p><a href="https://doi.org/10.1093/bib/bbad356">Zheng et al. (2023), Figures 1–2 and Methods</a> use continuous trajectories, missing intermediates and random downsampling to validate the EGRET screen. We used that validation structure with manuscript-specific count and sampling models. We retained the <a href="https://github.com/qingshanni/scEGRET">published EGRET calculation</a> and its actual source thresholds. <strong>The manuscript noise generators, simulation-tail calibration, multiplicity adjustment and bypass diagnostic are our adaptations, not procedures claimed to be supplied by the paper.</strong> The paper's illustrative 0.5 flag is not treated as a universal cutoff.</p>
+<p>The continuous references follow Gaussian-kernel mean transition proportions along the fixed original Golf order. Bandwidths 0.08, 0.12 and 0.20 are fixed sensitivity choices; 0.12 is primary. These bandwidths describe the simulated reference's smoothness and are unrelated to the elastic fitting penalty lambda. The primary model resamples whole-sheet residual patterns in square-root frequency space, preserving empirical feature covariance and sheet dependence approximately. The sensitivity model uses moment-fitted Dirichlet–multinomial overdispersion. Both preserve observed profile totals. No private or unpublished work is an input.</p>
+<p>For each model/cohort/channel/bandwidth, 400 draws estimate each boundary's baseline mean and standard deviation; a disjoint 999 draws calibrate the largest standardized score across all boundaries, three bin resolutions and two scales; a further 500 check false alarms. A factor of four covers the two channels and two cohorts without assuming independence. The supplementary bypass analysis also accounts for the additional statistic family. Simulation tails use <code>(1 + exceedances)/(999 + 1)</code>. The unadjusted within-channel 5% scan false-alarm rates range from 2.0% to 7.0% across the 24 reference models; intervals and all diagnostics are available. Positive-control streams are separate.</p>
+<p>These are <strong>conditional simulation references</strong>, not exact p-values after fitting the order and reference to the same data. They do not establish that either noise generator is the manuscript's true process. Including all observed variation in the residual library may make the primary screen conservative; the alternative model's covariance restrictions can make it optimistic. Smoothness assumptions matter because an arbitrarily fast continuous curve can interpolate any finite observations. No universal test of all possible continuous histories is available from these data alone.</p>
+<h2>Reproduction</h2>
+<p>From the parent study directory, run:</p>
+<pre><code>python scegret_independent_audit.py
+python calibration/run_calibration.py
+python calibration/matched_power.py
+python calibration/bypass_calibration.py
+python calibration/summarize.py
+python calibration/replay_reference.py
+python calibration/build_report.py
+</code></pre>
+<p>The original-R audit checks all 648 cases again. Monte Carlo runs use its independently validated exact NumPy score, with an additional fast-scorer comparison; this changes execution speed, not the EGRET formula. Seeds, sample counts, source hashes and full retained results accompany the code. Synthetic feature matrices are generated in memory and discarded. The <a href="DESIGN.md">initial design</a>, <a href="MATCHED_DESIGN.md">matched-rule addition</a> and <a href="BYPASS_DESIGN.md">bypass addition</a> state when each decision was made, including that the additions followed inspection of preliminary results.</p>
+<p>The calibration applies to feature continuity <strong>conditional on the original Golf order</strong>. It does not rerun every candidate trajectory, rank historical chronologies, discover a branch, date a section or reconstruct the missing H bifolia. Its practical conclusion is narrower and clear: <strong>f58 remains a candidate worth investigating, but scEGRET has not established a discontinuity there, and the available negative screen cannot exclude one.</strong></p>
+<p><a href="../report.html">Return to the main study</a> · <a href="../index.html">Figures</a> · <a href="calibration.png">PNG</a> · <a href="calibration.svg">SVG</a></p>
+</main></body></html>

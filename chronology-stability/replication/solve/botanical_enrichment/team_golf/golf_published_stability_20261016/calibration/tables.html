@@ -1,0 +1,1969 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>scEGRET calibration: numerical tables</title><style>
+:root{color-scheme:light;--ink:#193246;--muted:#536b7b;--line:#dce4e9;--paper:#fff;--wash:#f4f7f9}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:36px 24px 70px}h1,h2,h3{line-height:1.2;letter-spacing:-.02em}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px;margin-top:42px}h3{font-size:20px}p{max-width:92ch}a{color:#075c86;text-underline-offset:3px}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}.muted{color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;margin:22px 0}img{display:block;width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap;margin:12px 0 0}.caption{font-size:15px;color:var(--muted)}table{border-collapse:collapse;max-width:100%;font-size:15px;display:block;overflow:auto}th,td{padding:9px 13px;border-bottom:1px solid var(--line);text-align:left}th{background:#eaf0f4}code{font-size:.9em;background:#eaf0f4;padding:2px 4px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eaf0f4;padding:14px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:650}footer{margin-top:40px;color:var(--muted);font-size:14px}.report{max-width:1000px}blockquote{border-left:3px solid #89acbd;padding-left:16px;margin-left:0}
+@media(max-width:600px){main{padding:20px 12px}h1{font-size:28px}.card{padding:10px}body{font-size:16px}}
+</style></head><body><main class="report"><nav><a href="report.html">Calibration report</a><a href="summary.json">Machine-readable results</a></nav><h1>Calibration numerical tables</h1>
+<p>All tails below are conditional simulation references. “Adjusted” scans boundaries, three bin counts, two scales, and applies a factor of four across channels/cohorts. They are not historical probabilities.</p>
+<h2>H boundaries at primary bandwidth 0.12, sheet-resampling model</h2>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Bins</th>
+<th style="text-align:right">Observed</th>
+<th style="text-align:right">Continuous mean</th>
+<th>Continuous 95% range</th>
+<th style="text-align:right">Local tail</th>
+<th style="text-align:right">Adjusted tail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>7 → 8</td>
+<td style="text-align:right">0.279</td>
+<td style="text-align:right">0.217</td>
+<td>0.162–0.275</td>
+<td style="text-align:right">0.018</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>8 → 9</td>
+<td style="text-align:right">0.286</td>
+<td style="text-align:right">0.217</td>
+<td>0.156–0.274</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>7 → 8</td>
+<td style="text-align:right">0.271</td>
+<td style="text-align:right">0.221</td>
+<td>0.163–0.284</td>
+<td style="text-align:right">0.059</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>8 → 9</td>
+<td style="text-align:right">0.270</td>
+<td style="text-align:right">0.222</td>
+<td>0.163–0.291</td>
+<td style="text-align:right">0.073</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>5 → 6</td>
+<td style="text-align:right">0.258</td>
+<td style="text-align:right">0.202</td>
+<td>0.150–0.265</td>
+<td style="text-align:right">0.040</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.180</td>
+<td style="text-align:right">0.170</td>
+<td>0.121–0.224</td>
+<td style="text-align:right">0.306</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>5 → 6</td>
+<td style="text-align:right">0.251</td>
+<td style="text-align:right">0.219</td>
+<td>0.156–0.275</td>
+<td style="text-align:right">0.101</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.170</td>
+<td style="text-align:right">0.176</td>
+<td>0.123–0.235</td>
+<td style="text-align:right">0.575</td>
+<td style="text-align:right">1.000</td>
+</tr>
+</tbody>
+</table>
+<h2>Supplementary two-sided excursion diagnostic</h2>
+<p>B = min(E entering, E leaving) − E bypass. This is our diagnostic, not a published scEGRET test. Adjusted tails also include a factor of two for the additional statistic family.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Model</th>
+<th style="text-align:right">Bandwidth</th>
+<th style="text-align:right">Bins</th>
+<th>Scale</th>
+<th style="text-align:right">Middle bin</th>
+<th style="text-align:right">Observed B</th>
+<th style="text-align:right">Local tail</th>
+<th style="text-align:right">Adjusted tail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.123</td>
+<td style="text-align:right">0.349</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.102</td>
+<td style="text-align:right">0.467</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">14</td>
+<td>per_million</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">-0.055</td>
+<td style="text-align:right">0.450</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.123</td>
+<td style="text-align:right">0.155</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.102</td>
+<td style="text-align:right">0.216</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">14</td>
+<td>per_million</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">-0.055</td>
+<td style="text-align:right">0.495</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.122</td>
+<td style="text-align:right">0.391</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.101</td>
+<td style="text-align:right">0.545</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">14</td>
+<td>per_million</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">-0.072</td>
+<td style="text-align:right">0.776</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">0.122</td>
+<td style="text-align:right">0.177</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.101</td>
+<td style="text-align:right">0.243</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">14</td>
+<td>per_million</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">-0.072</td>
+<td style="text-align:right">0.681</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">6</td>
+<td>per_million</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.103</td>
+<td style="text-align:right">0.852</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>per_million</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-0.041</td>
+<td style="text-align:right">0.112</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">6</td>
+<td>per_million</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.103</td>
+<td style="text-align:right">0.771</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>per_million</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-0.041</td>
+<td style="text-align:right">0.355</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">6</td>
+<td>per_million</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.114</td>
+<td style="text-align:right">0.892</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>per_million</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-0.058</td>
+<td style="text-align:right">0.412</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">6</td>
+<td>per_million</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.114</td>
+<td style="text-align:right">0.768</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>per_million</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-0.058</td>
+<td style="text-align:right">0.514</td>
+<td style="text-align:right">1.000</td>
+</tr>
+</tbody>
+</table>
+<h2>Other boundaries flagged under sheet resampling</h2>
+<p>All qualifying results are retained, including scale and bandwidth sensitivity. These are deviations from a specified smooth reference, not proof of missing text.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th style="text-align:right">Bandwidth</th>
+<th style="text-align:right">Bins</th>
+<th>Scale</th>
+<th>Original bins</th>
+<th style="text-align:right">Score</th>
+<th style="text-align:right">Adjusted tail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.171</td>
+<td style="text-align:right">0.032</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">12</td>
+<td>raw</td>
+<td>4 → 5</td>
+<td style="text-align:right">0.426</td>
+<td style="text-align:right">0.020</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.171</td>
+<td style="text-align:right">0.048</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>raw</td>
+<td>4 → 5</td>
+<td style="text-align:right">0.426</td>
+<td style="text-align:right">0.028</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.171</td>
+<td style="text-align:right">0.044</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">12</td>
+<td>raw</td>
+<td>4 → 5</td>
+<td style="text-align:right">0.426</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.183</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.317</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.183</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.317</td>
+<td style="text-align:right">0.020</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td>10 → 11</td>
+<td style="text-align:right">0.135</td>
+<td style="text-align:right">0.048</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">10</td>
+<td>per_million</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.183</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.317</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>4 → 5</td>
+<td style="text-align:right">0.393</td>
+<td style="text-align:right">0.048</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">12</td>
+<td>per_million</td>
+<td>10 → 11</td>
+<td style="text-align:right">0.135</td>
+<td style="text-align:right">0.044</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">14</td>
+<td>per_million</td>
+<td>3 → 4</td>
+<td style="text-align:right">0.201</td>
+<td style="text-align:right">0.048</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>3 → 4</td>
+<td style="text-align:right">0.507</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>3 → 5</td>
+<td style="text-align:right">0.541</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">6</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.462</td>
+<td style="text-align:right">0.020</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>3 → 4</td>
+<td style="text-align:right">0.507</td>
+<td style="text-align:right">0.016</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>3 → 5</td>
+<td style="text-align:right">0.541</td>
+<td style="text-align:right">0.016</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">6</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.462</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>3 → 4</td>
+<td style="text-align:right">0.507</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>3 → 5</td>
+<td style="text-align:right">0.541</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.392</td>
+<td style="text-align:right">0.028</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.348</td>
+<td style="text-align:right">0.048</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">10</td>
+<td>raw</td>
+<td>2 → 3</td>
+<td style="text-align:right">0.392</td>
+<td style="text-align:right">0.032</td>
+</tr>
+</tbody>
+</table>
+<h2>Model-sensitive H-neighborhood flags</h2>
+<p>These are all H-touching boundaries that pass the adjusted screen under any sensitivity model. They must be read alongside results under empirical sheet resampling and per-million scaling.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Model</th>
+<th style="text-align:right">Bandwidth</th>
+<th style="text-align:right">Bins</th>
+<th>Scale</th>
+<th>Boundary</th>
+<th style="text-align:right">Adjusted tail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.024</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.016</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>5 → 6</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.028</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.012</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.012</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td style="text-align:right">8</td>
+<td>raw</td>
+<td>6 → 7</td>
+<td style="text-align:right">0.004</td>
+</tr>
+</tbody>
+</table>
+<h2>Exact decision-rule power: gap join at 0.65</h2>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Noise model</th>
+<th style="text-align:right">Gap width</th>
+<th style="text-align:right">Detected / 300</th>
+<th>Detection rate (95% interval)</th>
+<th style="text-align:right">Continuous false alarms / 500</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">30</td>
+<td>10.0% (7.1%–13.9%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">140</td>
+<td>46.7% (41.1%–52.3%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">263</td>
+<td>87.7% (83.5%–90.9%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">1</td>
+<td>0.3% (0.1%–1.9%)</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">3</td>
+<td>1.0% (0.3%–2.9%)</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">5</td>
+<td>1.7% (0.7%–3.8%)</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">12</td>
+<td>4.0% (2.3%–6.9%)</td>
+<td style="text-align:right">4</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">63</td>
+<td>21.0% (16.8%–26.0%)</td>
+<td style="text-align:right">4</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">161</td>
+<td>53.7% (48.0%–59.2%)</td>
+<td style="text-align:right">4</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">4</td>
+<td>1.3% (0.5%–3.4%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">6</td>
+<td>2.0% (0.9%–4.3%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">4</td>
+<td>1.3% (0.5%–3.4%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">9</td>
+<td>3.0% (1.6%–5.6%)</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">77</td>
+<td>25.7% (21.1%–30.9%)</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">193</td>
+<td>64.3% (58.8%–69.5%)</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">9</td>
+<td>3.0% (1.6%–5.6%)</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">10</td>
+<td>3.3% (1.8%–6.0%)</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">25</td>
+<td>8.3% (5.7%–12.0%)</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">12</td>
+<td>4.0% (2.3%–6.9%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">49</td>
+<td>16.3% (12.6%–20.9%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">133</td>
+<td>44.3% (38.8%–50.0%)</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td>1.7% (0.7%–3.8%)</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">9</td>
+<td>3.0% (1.6%–5.6%)</td>
+<td style="text-align:right">3</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">12</td>
+<td>4.0% (2.3%–6.9%)</td>
+<td style="text-align:right">3</td>
+</tr>
+</tbody>
+</table>
+<h2>Literal removal versus same-size random thinning</h2>
+<p>This uses the paper-style largest adjacent CPM score at the middle bin count, with a separate same-size random-deletion reference. It does not use the standardized multi-view decision rule above.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Model</th>
+<th style="text-align:right">Center</th>
+<th style="text-align:right">Span</th>
+<th style="text-align:right">Removed</th>
+<th style="text-align:right">Gap detection</th>
+<th style="text-align:right">Random deletion false alarms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">6.3%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">44</td>
+<td style="text-align:right">15.0%</td>
+<td style="text-align:right">6.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">66</td>
+<td style="text-align:right">15.3%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">5.0%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">12.3%</td>
+<td style="text-align:right">4.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">35.3%</td>
+<td style="text-align:right">6.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">29</td>
+<td style="text-align:right">9.7%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">10.7%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">82</td>
+<td style="text-align:right">21.3%</td>
+<td style="text-align:right">7.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">13.7%</td>
+<td style="text-align:right">8.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">44</td>
+<td style="text-align:right">14.0%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">66</td>
+<td style="text-align:right">18.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">6.0%</td>
+<td style="text-align:right">5.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">6.7%</td>
+<td style="text-align:right">2.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">26.3%</td>
+<td style="text-align:right">5.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">29</td>
+<td style="text-align:right">10.7%</td>
+<td style="text-align:right">9.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">11.0%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">82</td>
+<td style="text-align:right">22.7%</td>
+<td style="text-align:right">8.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">10.3%</td>
+<td style="text-align:right">8.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">44</td>
+<td style="text-align:right">7.7%</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">66</td>
+<td style="text-align:right">13.7%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">4.7%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">13.3%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">36.0%</td>
+<td style="text-align:right">6.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">29</td>
+<td style="text-align:right">4.7%</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">8.7%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">82</td>
+<td style="text-align:right">25.7%</td>
+<td style="text-align:right">9.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">2.3%</td>
+<td style="text-align:right">1.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">44</td>
+<td style="text-align:right">14.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">66</td>
+<td style="text-align:right">14.7%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">6.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">10.0%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">72</td>
+<td style="text-align:right">16.7%</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">29</td>
+<td style="text-align:right">7.3%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">12.0%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">82</td>
+<td style="text-align:right">14.7%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">16.3%</td>
+<td style="text-align:right">6.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">2.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">6.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">15.7%</td>
+<td style="text-align:right">6.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">4.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">1.3%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">4.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">17.0%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">8.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">4.3%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">2.7%</td>
+<td style="text-align:right">5.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">8.7%</td>
+<td style="text-align:right">5.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">1.3%</td>
+<td style="text-align:right">5.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">6.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">10.7%</td>
+<td style="text-align:right">5.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">9.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">4.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">5.7%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">8.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">8.0%</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.35</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">5.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2.3%</td>
+<td style="text-align:right">5.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">4.3%</td>
+<td style="text-align:right">4.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.65</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">14.3%</td>
+<td style="text-align:right">3.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">2.0%</td>
+<td style="text-align:right">3.3%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">0.3%</td>
+<td style="text-align:right">6.7%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.85</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">0.0%</td>
+<td style="text-align:right">9.0%</td>
+</tr>
+</tbody>
+</table>
+<h2>Null-model diagnostics</h2>
+<p>Zero fractions refer to the channel’s features observed at least once anywhere; all-zero features have no effect on EGRET. Diagnostics are essential: a conditional calibration is only as credible as its generator.</p>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Channel</th>
+<th>Model</th>
+<th style="text-align:right">Bandwidth</th>
+<th>Detected features: data / median simulated</th>
+<th>Zero fraction: data / median simulated</th>
+<th>Residual squared error: data / median simulated</th>
+<th style="text-align:right">Held-out 5% scan false alarms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td>249 / 208</td>
+<td>0.761 / 0.798</td>
+<td>0.00480 / 0.00525</td>
+<td style="text-align:right">5.2%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td>249 / 206</td>
+<td>0.761 / 0.799</td>
+<td>0.00517 / 0.00551</td>
+<td style="text-align:right">4.4%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td>249 / 204</td>
+<td>0.761 / 0.799</td>
+<td>0.00566 / 0.00594</td>
+<td style="text-align:right">4.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.08</td>
+<td>249 / 247</td>
+<td>0.761 / 0.746</td>
+<td>0.00480 / 0.00455</td>
+<td style="text-align:right">6.6%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td>249 / 244</td>
+<td>0.761 / 0.747</td>
+<td>0.00517 / 0.00479</td>
+<td style="text-align:right">3.4%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.20</td>
+<td>249 / 240</td>
+<td>0.761 / 0.749</td>
+<td>0.00566 / 0.00515</td>
+<td style="text-align:right">4.6%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td>214 / 172</td>
+<td>0.774 / 0.814</td>
+<td>0.00442 / 0.00486</td>
+<td style="text-align:right">5.2%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td>214 / 171</td>
+<td>0.774 / 0.814</td>
+<td>0.00477 / 0.00509</td>
+<td style="text-align:right">7.0%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td>214 / 169</td>
+<td>0.774 / 0.814</td>
+<td>0.00522 / 0.00548</td>
+<td style="text-align:right">5.6%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.08</td>
+<td>214 / 216</td>
+<td>0.774 / 0.760</td>
+<td>0.00442 / 0.00432</td>
+<td style="text-align:right">4.8%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td>214 / 214</td>
+<td>0.774 / 0.760</td>
+<td>0.00477 / 0.00453</td>
+<td style="text-align:right">3.6%</td>
+</tr>
+<tr>
+<td>paragraph207</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.20</td>
+<td>214 / 210</td>
+<td>0.774 / 0.763</td>
+<td>0.00522 / 0.00490</td>
+<td style="text-align:right">5.4%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td>347 / 266</td>
+<td>0.601 / 0.701</td>
+<td>0.00204 / 0.00255</td>
+<td style="text-align:right">6.2%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td>347 / 262</td>
+<td>0.601 / 0.704</td>
+<td>0.00242 / 0.00279</td>
+<td style="text-align:right">5.4%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td>347 / 258</td>
+<td>0.601 / 0.706</td>
+<td>0.00286 / 0.00314</td>
+<td style="text-align:right">4.8%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.08</td>
+<td>347 / 354</td>
+<td>0.601 / 0.583</td>
+<td>0.00204 / 0.00218</td>
+<td style="text-align:right">3.6%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td>347 / 352</td>
+<td>0.601 / 0.583</td>
+<td>0.00242 / 0.00245</td>
+<td style="text-align:right">3.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>line</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.20</td>
+<td>347 / 346</td>
+<td>0.601 / 0.587</td>
+<td>0.00286 / 0.00279</td>
+<td style="text-align:right">4.2%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.08</td>
+<td>306 / 222</td>
+<td>0.625 / 0.731</td>
+<td>0.00192 / 0.00242</td>
+<td style="text-align:right">6.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.12</td>
+<td>306 / 218</td>
+<td>0.625 / 0.734</td>
+<td>0.00228 / 0.00264</td>
+<td style="text-align:right">4.8%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>dirichlet_multinomial</td>
+<td style="text-align:right">0.20</td>
+<td>306 / 214</td>
+<td>0.625 / 0.737</td>
+<td>0.00270 / 0.00295</td>
+<td style="text-align:right">2.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.08</td>
+<td>306 / 312</td>
+<td>0.625 / 0.610</td>
+<td>0.00192 / 0.00214</td>
+<td style="text-align:right">6.4%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.12</td>
+<td>306 / 309</td>
+<td>0.625 / 0.613</td>
+<td>0.00228 / 0.00236</td>
+<td style="text-align:right">4.0%</td>
+</tr>
+<tr>
+<td>pool50</td>
+<td>word</td>
+<td>sheet_residual</td>
+<td style="text-align:right">0.20</td>
+<td>306 / 303</td>
+<td>0.625 / 0.615</td>
+<td>0.00270 / 0.00270</td>
+<td style="text-align:right">6.0%</td>
+</tr>
+</tbody>
+</table>
+</main></body></html>

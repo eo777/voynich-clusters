@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "cohort": "pool50",
+  "channel": "word",
+  "model": "sheet_residual",
+  "bandwidth": 0.12,
+  "threshold_rule": "4 * scan_simulation_tail <= 0.05",
+  "continuous_heldout_false_alarm": {
+    "events": 3,
+    "trials": 500,
+    "rate": 0.006,
+    "interval95": [
+      0.0020425962719602363,
+      0.01749025210405338
+    ]
+  },
+  "conditions": [
+    {
+      "center": 0.35,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.315,
+        0.41500000000000004
+      ],
+      "detection": {
+        "events": 3,
+        "trials": 300,
+        "rate": 0.01,
+        "interval95": [
+          0.003406618437715286,
+          0.02898349336233983
+        ]
+      },
+      "median_max_z": 1.9672633120871834
+    },
+    {
+      "center": 0.35,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.27999999999999997,
+        0.48
+      ],
+      "detection": {
+        "events": 16,
+        "trials": 300,
+        "rate": 0.05333333333333334,
+        "interval95": [
+          0.03309191251909646,
+          0.08486914177483133
+        ]
+      },
+      "median_max_z": 2.0995162570383195
+    },
+    {
+      "center": 0.35,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.24499999999999997,
+        0.5449999999999999
+      ],
+      "detection": {
+        "events": 19,
+        "trials": 300,
+        "rate": 0.06333333333333334,
+        "interval95": [
+          0.040916882383915276,
+          0.09679131248552161
+        ]
+      },
+      "median_max_z": 2.2390998458100837
+    },
+    {
+      "center": 0.65,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.5850000000000001,
+        0.685
+      ],
+      "detection": {
+        "events": 5,
+        "trials": 300,
+        "rate": 0.016666666666666666,
+        "interval95": [
+          0.00713947735063333,
+          0.0384153948330945
+        ]
+      },
+      "median_max_z": 1.893233821746786
+    },
+    {
+      "center": 0.65,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.52,
+        0.72
+      ],
+      "detection": {
+        "events": 9,
+        "trials": 300,
+        "rate": 0.03,
+        "interval95": [
+          0.01586185380943231,
+          0.05602253914164096
+        ]
+      },
+      "median_max_z": 2.010385682316174
+    },
+    {
+      "center": 0.65,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.45499999999999996,
+        0.7549999999999999
+      ],
+      "detection": {
+        "events": 12,
+        "trials": 300,
+        "rate": 0.04,
+        "interval95": [
+          0.023027321487942308,
+          0.06860421203864003
+        ]
+      },
+      "median_max_z": 2.1222966193958595
+    },
+    {
+      "center": 0.85,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.765,
+        0.865
+      ],
+      "detection": {
+        "events": 6,
+        "trials": 300,
+        "rate": 0.02,
+        "interval95": [
+          0.009197631557703617,
+          0.042939620817860576
+        ]
+      },
+      "median_max_z": 1.9202491495926495
+    },
+    {
+      "center": 0.85,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.68,
+        0.8800000000000001
+      ],
+      "detection": {
+        "events": 22,
+        "trials": 300,
+        "rate": 0.07333333333333333,
+        "interval95": [
+          0.04892399383922859,
+          0.10853134160571733
+        ]
+      },
+      "median_max_z": 2.27296480480783
+    },
+    {
+      "center": 0.85,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.595,
+        0.895
+      ],
+      "detection": {
+        "events": 74,
+        "trials": 300,
+        "rate": 0.24666666666666667,
+        "interval95": [
+          0.20129380271657715,
+          0.2984453027038595
+        ]
+      },
+      "median_max_z": 3.1372165303059187
+    }
+  ],
+  "source_reference_sha256": "22fca50090bfdaff46a605077a0489ea23f0306321374745a5e598ce9ba1ca2d",
+  "code_sha256": "ed6d3531640e53c979478ed287371ad06e855222aca55a0ef9cc56478caca3e3",
+  "design_sha256": "b1f0a7834044cfbe166eb5ad6e97927d12ea140ff7f93246acbc14cf3cacf463"
+}

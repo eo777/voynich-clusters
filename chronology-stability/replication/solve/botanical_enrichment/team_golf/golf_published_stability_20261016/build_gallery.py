@@ -44,6 +44,8 @@ def main():
         ('scegret_original_golf','scEGRET continuity of the original Golf route',
          'The original scEGRET R calculation measures changes in transition features between position bins. Larger values mark sharper changes. Original bin numbers, occupancy and Golf composition remain visible, including bins too sparse for the calculation. A jump does not uniquely identify missing bifolia.')]
     body = '<p class="muted">Golf chronology · 16 October 2026</p><h1>Ordering uncertainty and the H frontier</h1><p>Published principal-graph ensembles, derivative-based continuation and scEGRET continuity screening, with explicit text-data adaptations and numerical audits.</p><nav><a href="report.html">Methods and findings</a><a href="forum_figures.zip">Download figures and captions</a></nav>'
+    body += '<section class="card"><h2 style="margin-top:0">scEGRET calibration completed</h2><p>The calibration does not robustly identify f58 as a discontinuity. Comparable two-sided contrasts occur in continuous controls, and known-gap detection is too weak under empirical sheet resampling to establish continuity from a negative screen.</p><p><a href="calibration/report.html">Calibration findings and methods</a> · <a href="calibration/tables.html">Full control results</a> · <a href="calibration/calibration.png">Calibration figure</a></p></section>'
+    body += '<p><a href="calibration/omission_test/report.html">New: removing f58 and astro/stars material</a> — actual-page omissions, paired continuous controls, and the positive screens that depend on scaling and noise assumptions.</p>'
     bundle = []  # Forum bundle contains standalone graphics and their captions.
     for stem,title,caption in figures:
         for ext in ['png','svg']:

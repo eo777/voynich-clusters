@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "cohort": "paragraph207",
+  "channel": "word",
+  "model": "sheet_residual",
+  "bandwidth": 0.12,
+  "threshold_rule": "4 * scan_simulation_tail <= 0.05",
+  "continuous_heldout_false_alarm": {
+    "events": 5,
+    "trials": 500,
+    "rate": 0.01,
+    "interval95": [
+      0.004278753896590496,
+      0.023193099755730702
+    ]
+  },
+  "conditions": [
+    {
+      "center": 0.35,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.315,
+        0.41500000000000004
+      ],
+      "detection": {
+        "events": 1,
+        "trials": 300,
+        "rate": 0.0033333333333333335,
+        "interval95": [
+          0.0005886577218511581,
+          0.018636693694531237
+        ]
+      },
+      "median_max_z": 2.27068260271845
+    },
+    {
+      "center": 0.35,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.27999999999999997,
+        0.48
+      ],
+      "detection": {
+        "events": 6,
+        "trials": 300,
+        "rate": 0.02,
+        "interval95": [
+          0.009197631557703617,
+          0.042939620817860576
+        ]
+      },
+      "median_max_z": 2.4508592268278657
+    },
+    {
+      "center": 0.35,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.24499999999999997,
+        0.5449999999999999
+      ],
+      "detection": {
+        "events": 10,
+        "trials": 300,
+        "rate": 0.03333333333333333,
+        "interval95": [
+          0.01820494733885481,
+          0.06026182580405482
+        ]
+      },
+      "median_max_z": 2.7004004381454503
+    },
+    {
+      "center": 0.65,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.5850000000000001,
+        0.685
+      ],
+      "detection": {
+        "events": 4,
+        "trials": 300,
+        "rate": 0.013333333333333334,
+        "interval95": [
+          0.005196961739358857,
+          0.03377553025253262
+        ]
+      },
+      "median_max_z": 2.2586331750199466
+    },
+    {
+      "center": 0.65,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.52,
+        0.72
+      ],
+      "detection": {
+        "events": 6,
+        "trials": 300,
+        "rate": 0.02,
+        "interval95": [
+          0.009197631557703617,
+          0.042939620817860576
+        ]
+      },
+      "median_max_z": 2.4543838217690945
+    },
+    {
+      "center": 0.65,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.45499999999999996,
+        0.7549999999999999
+      ],
+      "detection": {
+        "events": 4,
+        "trials": 300,
+        "rate": 0.013333333333333334,
+        "interval95": [
+          0.005196961739358857,
+          0.03377553025253262
+        ]
+      },
+      "median_max_z": 2.599448433684688
+    },
+    {
+      "center": 0.85,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.765,
+        0.865
+      ],
+      "detection": {
+        "events": 2,
+        "trials": 300,
+        "rate": 0.006666666666666667,
+        "interval95": [
+          0.0018301483579117855,
+          0.023977583250306973
+        ]
+      },
+      "median_max_z": 2.244933709894132
+    },
+    {
+      "center": 0.85,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.68,
+        0.8800000000000001
+      ],
+      "detection": {
+        "events": 5,
+        "trials": 300,
+        "rate": 0.016666666666666666,
+        "interval95": [
+          0.00713947735063333,
+          0.0384153948330945
+        ]
+      },
+      "median_max_z": 2.6468466604032588
+    },
+    {
+      "center": 0.85,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.595,
+        0.895
+      ],
+      "detection": {
+        "events": 38,
+        "trials": 300,
+        "rate": 0.12666666666666668,
+        "interval95": [
+          0.09369224846506602,
+          0.16908117004926165
+        ]
+      },
+      "median_max_z": 3.518047258809678
+    }
+  ],
+  "source_reference_sha256": "8d4a1912e7c5de4adae3db10b8d2a838b9984be2da4786484edb0777804b6c4f",
+  "code_sha256": "ed6d3531640e53c979478ed287371ad06e855222aca55a0ef9cc56478caca3e3",
+  "design_sha256": "b1f0a7834044cfbe166eb5ad6e97927d12ea140ff7f93246acbc14cf3cacf463"
+}

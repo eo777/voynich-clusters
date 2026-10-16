@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "local_links_checked": 52,
+  "local_links_checked": 62,
   "links": [
     {
       "source": "index.html",
@@ -9,6 +9,22 @@
     {
       "source": "index.html",
       "target": "forum_figures.zip"
+    },
+    {
+      "source": "index.html",
+      "target": "calibration/report.html"
+    },
+    {
+      "source": "index.html",
+      "target": "calibration/tables.html"
+    },
+    {
+      "source": "index.html",
+      "target": "calibration/calibration.png"
+    },
+    {
+      "source": "index.html",
+      "target": "calibration/omission_test/report.html"
     },
     {
       "source": "index.html",
@@ -132,6 +148,18 @@
     },
     {
       "source": "report.html",
+      "target": "calibration/report.html"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration/tables.html"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration/omission_test/report.html"
+    },
+    {
+      "source": "report.html",
       "target": "index.html"
     },
     {
@@ -184,6 +212,10 @@
     },
     {
       "source": "report.html",
+      "target": "calibration/report.html"
+    },
+    {
+      "source": "report.html",
       "target": "scegret_summary.json"
     },
     {
@@ -193,6 +225,14 @@
     {
       "source": "report.html",
       "target": "scegret_source/source_manifest.json"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration/report.html"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration/audit.json"
     },
     {
       "source": "report.html",

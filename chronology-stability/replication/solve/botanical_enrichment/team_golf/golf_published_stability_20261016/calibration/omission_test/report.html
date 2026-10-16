@@ -1,0 +1,217 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>f58 and astro/stars removal tests</title><style>
+:root{color-scheme:light;--ink:#193246;--muted:#536b7b;--line:#dce4e9;--paper:#fff;--wash:#f4f7f9}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:36px 24px 70px}h1,h2,h3{line-height:1.2;letter-spacing:-.02em}h1{font-size:36px;margin-bottom:12px}h2{font-size:25px;margin-top:42px}h3{font-size:20px}p{max-width:92ch}a{color:#075c86;text-underline-offset:3px}nav{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}.muted{color:var(--muted)}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;margin:22px 0}img{display:block;width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap;margin:12px 0 0}.caption{font-size:15px;color:var(--muted)}table{border-collapse:collapse;max-width:100%;font-size:15px;display:block;overflow:auto}th,td{padding:9px 13px;border-bottom:1px solid var(--line);text-align:left}th{background:#eaf0f4}code{font-size:.9em;background:#eaf0f4;padding:2px 4px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eaf0f4;padding:14px}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:650}footer{margin-top:40px;color:var(--muted);font-size:14px}.report{max-width:1000px}blockquote{border-left:3px solid #89acbd;padding-left:16px;margin-left:0}
+@media(max-width:600px){main{padding:20px 12px}h1{font-size:28px}.card{padding:10px}body{font-size:16px}}
+</style></head><body><main class="report"><h1>Removing f58 and the astro/stars material</h1>
+<p><strong>Completed 16 October 2026.</strong> Seven cases including the full-data baseline; word and line features; 10/12/14 bins; normalized and raw counts; two previously calibrated noise models. No new curve fits. <a href="DESIGN.md">Design</a> · <a href="run_omissions.py">Code</a> · <a href="audit.json">Audit</a>.</p>
+<h2>Answer</h2>
+<p><strong>Some versions of the test do flag a break after removing f58, but the finding depends on count scaling and the noise model.</strong> With per-million frequencies and empirical sheet resampling, no tested removal produces a flag. Raw counts do produce H-region flags under sheet resampling, and the independent-profile Dirichlet–multinomial model also flags some normalized comparisons after the narrower removals. This is evidence of a sensitive comparison, not a robust demonstration that f58 is the surviving bridge preventing a discontinuity.</p>
+<p>The <strong>per-million feature contrast</strong> actually decreases after removing f58. At 12 bins, the new comparison is approximately <strong>0.168 word / 0.177 line</strong>, versus <strong>0.271 word / 0.279–0.286 line</strong> entering and leaving the original focal bin. These are unitless EGRET feature-change scores, not gap sizes or probabilities. “Raw counts” below means a different input scaling, not simply an unadjusted test statistic.</p>
+<h2>Observed comparisons</h2>
+<p>These scores use per-million transition frequencies and the 12-bin view.</p>
+<table>
+<thead>
+<tr>
+<th>Removal</th>
+<th style="text-align:right">Profiles removed</th>
+<th style="text-align:right">Word score at H join</th>
+<th style="text-align:right">Line score at H join</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full data</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">0.271 / 0.270</td>
+<td style="text-align:right">0.279 / 0.286</td>
+</tr>
+<tr>
+<td>Remove f58r/v</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.168</td>
+<td style="text-align:right">0.177</td>
+</tr>
+<tr>
+<td>Remove the five-profile focal bin</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">0.168</td>
+<td style="text-align:right">0.177</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">0.182</td>
+<td style="text-align:right">0.186</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a, 3c, 4c</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">0.257</td>
+<td style="text-align:right">0.287</td>
+</tr>
+<tr>
+<td>Remove source sections A, C, S</td>
+<td style="text-align:right">38</td>
+<td style="text-align:right">0.154</td>
+<td style="text-align:right">0.159</td>
+</tr>
+<tr>
+<td>Retain f58; remove its three bin companions</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">0.170</td>
+<td style="text-align:right">0.177</td>
+</tr>
+</tbody>
+</table>
+<p>The five-profile focal bin contains <strong>f58r, f58v, f67v2, f69r and f70r2</strong>. Golf 5a comprises f67r1, f67v2, f68v2, f69r, f70r2 and fRos. The broader Golf removal additionally removes Stars groups 3c and 4c. The separate A/C/S case uses the original source-section labels, so it is an alternative definition, not a nested extension of the Golf-group removal. <a href="results_word_sheet_residual.json">Exact removed IDs and resulting bin membership</a> are retained.</p>
+<p>The broad exclusions remove the last part of the fitted sequence, shrinking the surviving normalized position range from 0–1 to about 0–0.902. Native scEGRET consequently moves its bin boundaries even though every surviving profile keeps its original pseudotime. Their 12-bin scores compare different mixtures from the narrow removals and should not be interpreted as the isolated contribution of f58.</p>
+<h2>The minimum-bin-size rule matters</h2>
+<p>Removing f58 leaves three profiles in the focal bin. scEGRET requires <strong>more than three</strong>, so it excludes that bin and directly compares the original bins 7 and 9. Removing all five focal profiles produces essentially the same comparison. Conversely, removing the three other profiles while <strong>retaining f58</strong> leaves only two profiles, also excluded, and produces essentially the same comparison again.</p>
+<p>Thus this test cannot isolate whether f58 itself is an indispensable bridge. The source method operates on sufficiently populated bins; it does not evaluate a two-page bridge directly. An excluded bin is not equivalent to physical absence of every text profile it contained.</p>
+<h2>What the calibrated comparisons say</h2>
+<p>The following are targeted simulation-tail comparisons, adjusted over the H-region boundaries in all removal cases, resolutions and scales, and across the two feature channels. Smaller values mean the surviving join is unusually contrasting under that particular reference model. Values at or below 0.05 are flags, not historical probabilities. For the baseline's two boundaries the smaller tail is shown.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th style="text-align:right">Word: sheet model</th>
+<th style="text-align:right">Line: sheet model</th>
+<th style="text-align:right">Word: independent model</th>
+<th style="text-align:right">Line: independent model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full data</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.486</td>
+<td style="text-align:right">0.936</td>
+<td style="text-align:right">0.224</td>
+</tr>
+<tr>
+<td>Remove f58r/v</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.640</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">0.012</td>
+</tr>
+<tr>
+<td>Remove the five-profile focal bin</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.602</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">0.008</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.504</td>
+<td style="text-align:right">0.004</td>
+<td style="text-align:right">0.004</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a, 3c, 4c</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.244</td>
+</tr>
+<tr>
+<td>Remove source sections A, C, S</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.882</td>
+<td style="text-align:right">0.156</td>
+<td style="text-align:right">0.178</td>
+</tr>
+<tr>
+<td>Retain f58; remove its three bin companions</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.660</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">0.012</td>
+</tr>
+</tbody>
+</table>
+<p>For the per-million inputs shown above, none of these joins passes the adjusted screen under the empirical sheet model. Under the independent-profile model, some narrow-removal joins do. Importantly, this also happens in the control <strong>retaining f58 but removing its three bin companions</strong>. Because the source's occupancy rule then excludes f58 itself, the test cannot identify f58 specifically as the material preventing a break.</p>
+<p>A lower observed EGRET score can nevertheless become more unusual under a model: the new comparison averages larger neighboring bins, so a model that treats profiles as independent expects much less variation between those means. The empirical residual model retains broader feature covariance and sheet variation, giving a less decisive result. The earlier calibration's mismatch in feature detection under the independent model remains relevant; that model cannot simply be selected because it gives the stronger finding.</p>
+<h3>Raw counts do produce flags under sheet resampling</h3>
+<p>The following table reports the smallest adjusted tail across the three bin resolutions for raw counts. The adjustments already include scanning those resolutions. “Whole-path” additionally scans <strong>every manuscript boundary</strong> in every case, rather than only the H-region joins.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th style="text-align:right">Word: targeted tail</th>
+<th style="text-align:right">Word: whole-path tail</th>
+<th style="text-align:right">Line: targeted tail</th>
+<th style="text-align:right">Line: whole-path tail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full data</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.660</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>Remove f58r/v</td>
+<td style="text-align:right">0.004</td>
+<td style="text-align:right">0.042</td>
+<td style="text-align:right">0.016</td>
+<td style="text-align:right">0.182</td>
+</tr>
+<tr>
+<td>Remove the five-profile focal bin</td>
+<td style="text-align:right">0.004</td>
+<td style="text-align:right">0.038</td>
+<td style="text-align:right">0.016</td>
+<td style="text-align:right">0.168</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a</td>
+<td style="text-align:right">0.002</td>
+<td style="text-align:right">0.024</td>
+<td style="text-align:right">0.014</td>
+<td style="text-align:right">0.146</td>
+</tr>
+<tr>
+<td>Remove f58 and Golf 5a, 3c, 4c</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">1.000</td>
+<td style="text-align:right">0.870</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>Remove source sections A, C, S</td>
+<td style="text-align:right">0.004</td>
+<td style="text-align:right">0.044</td>
+<td style="text-align:right">0.008</td>
+<td style="text-align:right">0.076</td>
+</tr>
+<tr>
+<td>Retain f58; remove its three bin companions</td>
+<td style="text-align:right">0.002</td>
+<td style="text-align:right">0.022</td>
+<td style="text-align:right">0.010</td>
+<td style="text-align:right">0.098</td>
+</tr>
+</tbody>
+</table>
+<p>For example, removing f58 gives a raw word-feature flag at 14 bins (targeted tail 0.004; whole-path tail 0.042). Removing f58 and all Golf 5a also passes the whole-path raw word screen (0.024). These are actual positive screening results and should not be omitted. They do not persist under per-million normalization. Raw input reflects absolute transition totals and gives longer profiles greater influence on bin means; it tests a different mixture of text amount and composition. That makes the scale dependence a material limitation, not grounds for silently choosing either result. The source method supports both inputs; the earlier study designated per-million frequencies as primary for the text comparison.</p>
+<p>All views and their actual bin members are retained in the JSON results, including findings outside H. The unchanged 0.12 reference bandwidth is the primary setting from the prior calibration; other smoothing bandwidths were not rerun for this quick omission test.</p>
+<h2>Does this support partially missing material around f58?</h2>
+<p><strong>Partial loss around a surviving f58 is compatible with these results, but it is not demonstrated by them.</strong> The calculation does not estimate the quantity of missing text. It also does not prove that the gradient lacks a break: the previous controls showed weak detection under empirical sheet noise.</p>
+<p>The practical finding is that the currently observed regions on either side can be compared without a larger raw feature jump when f58 is removed. Whether they belong to one historical progression remains a modeling question. This screen neither establishes an actual historical connection nor shows that it is impossible.</p>
+<h2>Method and reproduction</h2>
+<p>We reused the frozen bandwidth-0.12 generators and the exact existing deterministic continuous-control streams. Because synthetic matrices had not been retained, <strong>7,596 control datasets were regenerated</strong>, each scored under all seven cases. These are paired replays, not seven independent sets of controls. Each channel/model uses 400 standardization draws, 999 reference draws and 500 held-out draws. The full-data means and standard deviations reproduce the earlier calibration exactly.</p>
+<p>The same omissions are applied to observed and simulated data. Feature detection, normalization, native binning and occupancy exclusions are recomputed after each deletion. This asks whether the remaining join is unusually contrasting <strong>relative to a smooth reference with the same omissions</strong>. It conditions on the missing-data pattern rather than estimating whether or how much material was historically lost. The reference feature curve and noise estimates stay fixed; the original Golf ordering is not refitted.</p>
+<p>Every observed removal calculation was checked against the independently R-validated EGRET implementation, with maximum discrepancy below 10⁻¹². This is the same published feature-change statistic as the main study, with the manuscript-specific calibration documented in the <a href="../report.html">parent report</a>. No pooled-bifolium deletion is substituted for removing f58 pages: the H pool also contains f65v.</p>
+<p>From this directory:</p>
+<pre><code>python run_omissions.py
+python build_report.py
+</code></pre>
+<p>Numerical results: <a href="results_word_sheet_residual.json">word / sheet</a>, <a href="results_line_sheet_residual.json">line / sheet</a>, <a href="results_word_dirichlet_multinomial.json">word / independent</a>, <a href="results_line_dirichlet_multinomial.json">line / independent</a>.</p>
+<p><a href="../report.html">Return to the calibration report</a> · <a href="../../report.html">Main study</a></p>
+</main></body></html>

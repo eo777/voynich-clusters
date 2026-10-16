@@ -1,0 +1,1224 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "channel": "word",
+      "groups": {
+        "bin7": [
+          "f67r1",
+          "f67r2",
+          "f68r2",
+          "f68v3",
+          "f68v2",
+          "f86v4",
+          "f87v",
+          "f88r",
+          "f88v",
+          "f89r1",
+          "f89r2",
+          "f89v2",
+          "f89v1",
+          "f90r2",
+          "f90v2",
+          "f99r",
+          "f99v",
+          "f100v",
+          "f101r",
+          "f102r1",
+          "f102v2"
+        ],
+        "bin8": [
+          "f58r",
+          "f58v",
+          "f67v2",
+          "f69r",
+          "f70r2"
+        ],
+        "bin9": [
+          "f33r",
+          "f33v",
+          "f34r",
+          "f34v",
+          "f39r",
+          "f39v",
+          "f40r",
+          "f40v",
+          "f43r",
+          "f43v",
+          "f46r",
+          "f46v",
+          "f48v",
+          "f50r",
+          "f50v",
+          "f55r",
+          "f55v",
+          "f66r",
+          "f66v",
+          "f94r",
+          "f94v",
+          "f95r1",
+          "f95r2",
+          "f95v2",
+          "f95v1"
+        ],
+        "f58rv": [
+          "f58r",
+          "f58v"
+        ],
+        "other_bin8": [
+          "f67v2",
+          "f69r",
+          "f70r2"
+        ]
+      },
+      "contrasts": [
+        {
+          "left": "bin7",
+          "right": "bin8",
+          "score": 0.2709625199117881,
+          "top_features": [
+            {
+              "feature": "d__to__e",
+              "contribution": 0.006227738362004432
+            },
+            {
+              "feature": "o__to__i",
+              "contribution": 0.005660902221932616
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.005471539399349712
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005442118372853557
+            },
+            {
+              "feature": "y__to__l",
+              "contribution": 0.005440455369152657
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.0054069010053799165
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.005260164016246586
+            },
+            {
+              "feature": "o__to__iii",
+              "contribution": 0.005189691621099019
+            },
+            {
+              "feature": "o__to__o",
+              "contribution": 0.005150964744271632
+            },
+            {
+              "feature": "cth__to__e",
+              "contribution": 0.005134435403125964
+            },
+            {
+              "feature": "o__to__eee",
+              "contribution": 0.005055555135997507
+            },
+            {
+              "feature": "r__to__sh",
+              "contribution": 0.005008159165900409
+            },
+            {
+              "feature": "e__to__s",
+              "contribution": 0.0050079825473895185
+            },
+            {
+              "feature": "l__to__p",
+              "contribution": 0.004910401174210325
+            },
+            {
+              "feature": "sh__to__$",
+              "contribution": 0.00490056611923151
+            }
+          ]
+        },
+        {
+          "left": "bin8",
+          "right": "bin9",
+          "score": 0.2702292556135387,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005945042452529255
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.005893039228396383
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.0058062537357924035
+            },
+            {
+              "feature": "r__to__d",
+              "contribution": 0.005369315630102154
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0053569179270632535
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.005305522437522154
+            },
+            {
+              "feature": "k__to__$",
+              "contribution": 0.005260711667390224
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.0050077439645032015
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.004943232778484398
+            },
+            {
+              "feature": "sh__to__ckh",
+              "contribution": 0.0048941610683930605
+            },
+            {
+              "feature": "e__to__ckh",
+              "contribution": 0.004856340921427935
+            },
+            {
+              "feature": "e__to__sh",
+              "contribution": 0.004820496019774366
+            },
+            {
+              "feature": "other__to__o",
+              "contribution": 0.004761826974046662
+            },
+            {
+              "feature": "r__to__sh",
+              "contribution": 0.004745602418140708
+            },
+            {
+              "feature": "e__to__s",
+              "contribution": 0.004574631600165113
+            }
+          ]
+        },
+        {
+          "left": "bin7",
+          "right": "bin9",
+          "score": 0.16952593040368918,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005945042452529255
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.0058062537357924035
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005261034378439673
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.005190359151717761
+            },
+            {
+              "feature": "d__to__l",
+              "contribution": 0.004730989054185575
+            },
+            {
+              "feature": "d__to__e",
+              "contribution": 0.004578967951280949
+            },
+            {
+              "feature": "eee__to__o",
+              "contribution": 0.004357914441209276
+            },
+            {
+              "feature": "d__to__k",
+              "contribution": 0.004290350473438394
+            },
+            {
+              "feature": "e__to__cth",
+              "contribution": 0.0038724455585733408
+            },
+            {
+              "feature": "ch__to__p",
+              "contribution": 0.003807291574284459
+            },
+            {
+              "feature": "cth__to__a",
+              "contribution": 0.003401003194163098
+            },
+            {
+              "feature": "s__to__sh",
+              "contribution": 0.002319234210905801
+            },
+            {
+              "feature": "cth__to__o",
+              "contribution": 0.0021515150035959583
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.0020363475048526926
+            },
+            {
+              "feature": "o__to__i",
+              "contribution": 0.0019459734640835285
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "bin7",
+          "score": 0.2840683298452335,
+          "top_features": [
+            {
+              "feature": "o__to__i",
+              "contribution": 0.005660902221932616
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.005471539399349712
+            },
+            {
+              "feature": "y__to__l",
+              "contribution": 0.005440455369152657
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.0054069010053799165
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.005260164016246586
+            },
+            {
+              "feature": "cph__to__e",
+              "contribution": 0.0052558576258568135
+            },
+            {
+              "feature": "l__to__other",
+              "contribution": 0.005252002222698342
+            },
+            {
+              "feature": "o__to__iii",
+              "contribution": 0.005189691621099019
+            },
+            {
+              "feature": "o__to__o",
+              "contribution": 0.005150964744271632
+            },
+            {
+              "feature": "cth__to__e",
+              "contribution": 0.005134435403125964
+            },
+            {
+              "feature": "y__to__o",
+              "contribution": 0.005067829311738461
+            },
+            {
+              "feature": "o__to__eee",
+              "contribution": 0.005055555135997507
+            },
+            {
+              "feature": "r__to__sh",
+              "contribution": 0.005008159165900409
+            },
+            {
+              "feature": "e__to__s",
+              "contribution": 0.0050079825473895185
+            },
+            {
+              "feature": "l__to__p",
+              "contribution": 0.004910401174210325
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "bin9",
+          "score": 0.3025923307424464,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005945042452529255
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.005893039228396383
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.0058062537357924035
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.00565138994993377
+            },
+            {
+              "feature": "sh__to__d",
+              "contribution": 0.00556780091135074
+            },
+            {
+              "feature": "r__to__d",
+              "contribution": 0.005369315630102154
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0053569179270632535
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.005305522437522154
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005261034378439673
+            },
+            {
+              "feature": "k__to__$",
+              "contribution": 0.005260711667390224
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.0050077439645032015
+            },
+            {
+              "feature": "sh__to__ckh",
+              "contribution": 0.0048941610683930605
+            },
+            {
+              "feature": "e__to__ckh",
+              "contribution": 0.004856340921427935
+            },
+            {
+              "feature": "e__to__sh",
+              "contribution": 0.004820496019774366
+            },
+            {
+              "feature": "other__to__o",
+              "contribution": 0.004761826974046662
+            }
+          ]
+        },
+        {
+          "left": "other_bin8",
+          "right": "bin7",
+          "score": 0.4803940585494525,
+          "top_features": [
+            {
+              "feature": "d__to__e",
+              "contribution": 0.006677708812796468
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005899225899679214
+            },
+            {
+              "feature": "o__to__i",
+              "contribution": 0.005660902221932616
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.005471539399349712
+            },
+            {
+              "feature": "y__to__l",
+              "contribution": 0.005440455369152657
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.0054069010053799165
+            },
+            {
+              "feature": "o__to__ckh",
+              "contribution": 0.0053902456257554415
+            },
+            {
+              "feature": "^__to__e",
+              "contribution": 0.005384180900941355
+            },
+            {
+              "feature": "ee__to__other",
+              "contribution": 0.005371233957062145
+            },
+            {
+              "feature": "q__to__e",
+              "contribution": 0.005316820805710044
+            },
+            {
+              "feature": "s__to__sh",
+              "contribution": 0.005310650223271779
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.005260164016246586
+            },
+            {
+              "feature": "d__to__l",
+              "contribution": 0.005250643441578896
+            },
+            {
+              "feature": "a__to__s",
+              "contribution": 0.005219790179172914
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.005190359151717761
+            }
+          ]
+        },
+        {
+          "left": "other_bin8",
+          "right": "bin9",
+          "score": 0.4777636773179237,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005945042452529255
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.005893039228396383
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.0058062537357924035
+            },
+            {
+              "feature": "f__to__a",
+              "contribution": 0.005779274045876421
+            },
+            {
+              "feature": "l__to__f",
+              "contribution": 0.005598701556739138
+            },
+            {
+              "feature": "r__to__d",
+              "contribution": 0.005369315630102154
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0053569179270632535
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.005305522437522154
+            },
+            {
+              "feature": "k__to__$",
+              "contribution": 0.005260711667390224
+            },
+            {
+              "feature": "a__to__s",
+              "contribution": 0.005240361713734681
+            },
+            {
+              "feature": "f__to__ch",
+              "contribution": 0.005212408445433725
+            },
+            {
+              "feature": "f__to__y",
+              "contribution": 0.005212349265121939
+            },
+            {
+              "feature": "^__to__f",
+              "contribution": 0.005067237449482431
+            },
+            {
+              "feature": "ee__to__k",
+              "contribution": 0.005013129260835081
+            },
+            {
+              "feature": "q__to__e",
+              "contribution": 0.005010226614202634
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "other_bin8",
+          "score": 0.37517621177876054,
+          "top_features": [
+            {
+              "feature": "d__to__e",
+              "contribution": 0.006677708812796468
+            },
+            {
+              "feature": "sh__to__k",
+              "contribution": 0.006440391788627304
+            },
+            {
+              "feature": "cph__to__e",
+              "contribution": 0.005953643851760538
+            },
+            {
+              "feature": "p__to__$",
+              "contribution": 0.00593975723226593
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005899225899679214
+            },
+            {
+              "feature": "l__to__other",
+              "contribution": 0.00586403520620585
+            },
+            {
+              "feature": "f__to__o",
+              "contribution": 0.005860161781455963
+            },
+            {
+              "feature": "i__to__m",
+              "contribution": 0.005838823395337749
+            },
+            {
+              "feature": "l__to__f",
+              "contribution": 0.005681193638152857
+            },
+            {
+              "feature": "sh__to__a",
+              "contribution": 0.005677119860316713
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.00565138994993377
+            },
+            {
+              "feature": "ch__to__l",
+              "contribution": 0.005615361652474389
+            },
+            {
+              "feature": "f__to__a",
+              "contribution": 0.005594576761698261
+            },
+            {
+              "feature": "y__to__o",
+              "contribution": 0.005565382311794085
+            },
+            {
+              "feature": "l__to__t",
+              "contribution": 0.005556115917795658
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "channel": "line",
+      "groups": {
+        "bin7": [
+          "f67r1",
+          "f67r2",
+          "f68r2",
+          "f68v3",
+          "f68v2",
+          "f86v4",
+          "f87v",
+          "f88r",
+          "f88v",
+          "f89r1",
+          "f89r2",
+          "f89v2",
+          "f89v1",
+          "f90r2",
+          "f90v2",
+          "f99r",
+          "f99v",
+          "f100v",
+          "f101r",
+          "f102r1",
+          "f102v2"
+        ],
+        "bin8": [
+          "f58r",
+          "f58v",
+          "f67v2",
+          "f69r",
+          "f70r2"
+        ],
+        "bin9": [
+          "f33r",
+          "f33v",
+          "f34r",
+          "f34v",
+          "f39r",
+          "f39v",
+          "f40r",
+          "f40v",
+          "f43r",
+          "f43v",
+          "f46r",
+          "f46v",
+          "f48v",
+          "f50r",
+          "f50v",
+          "f55r",
+          "f55v",
+          "f66r",
+          "f66v",
+          "f94r",
+          "f94v",
+          "f95r1",
+          "f95r2",
+          "f95v2",
+          "f95v1"
+        ],
+        "f58rv": [
+          "f58r",
+          "f58v"
+        ],
+        "other_bin8": [
+          "f67v2",
+          "f69r",
+          "f70r2"
+        ]
+      },
+      "contrasts": [
+        {
+          "left": "bin7",
+          "right": "bin8",
+          "score": 0.2790125517822074,
+          "top_features": [
+            {
+              "feature": "n__to__t",
+              "contribution": 0.005443974033082746
+            },
+            {
+              "feature": "d__to__e",
+              "contribution": 0.005243902761158198
+            },
+            {
+              "feature": "o__to__i",
+              "contribution": 0.004840476459437988
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.004677896232669855
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.00466707257623354
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.004613788179853291
+            },
+            {
+              "feature": "^__to__other",
+              "contribution": 0.004444695978422044
+            },
+            {
+              "feature": "o__to__iii",
+              "contribution": 0.004406413012899514
+            },
+            {
+              "feature": "cth__to__e",
+              "contribution": 0.004403235740464837
+            },
+            {
+              "feature": "y__to__ckh",
+              "contribution": 0.004391867888553042
+            },
+            {
+              "feature": "e__to__sh",
+              "contribution": 0.004351513925930598
+            },
+            {
+              "feature": "l__to__p",
+              "contribution": 0.004344407179113609
+            },
+            {
+              "feature": "o__to__eee",
+              "contribution": 0.004307874306170234
+            },
+            {
+              "feature": "d__to__q",
+              "contribution": 0.004295065869329344
+            },
+            {
+              "feature": "s__to__d",
+              "contribution": 0.004275280987564262
+            }
+          ]
+        },
+        {
+          "left": "bin8",
+          "right": "bin9",
+          "score": 0.28606012877433096,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005048128888036921
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.0050347296056274665
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.004848764760785067
+            },
+            {
+              "feature": "^__to__l",
+              "contribution": 0.0047062246149473476
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0045902560725043515
+            },
+            {
+              "feature": "p__to__d",
+              "contribution": 0.004571516241714146
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.004526691426878126
+            },
+            {
+              "feature": "n__to__l",
+              "contribution": 0.004461113881579924
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.004234440041188974
+            },
+            {
+              "feature": "sh__to__ckh",
+              "contribution": 0.004201689163615032
+            },
+            {
+              "feature": "d__to__q",
+              "contribution": 0.004171569412128168
+            },
+            {
+              "feature": "e__to__ckh",
+              "contribution": 0.004161468222268315
+            },
+            {
+              "feature": "e__to__sh",
+              "contribution": 0.003984270402166564
+            },
+            {
+              "feature": "a__to__iii",
+              "contribution": 0.003925372681837275
+            },
+            {
+              "feature": "other__to__o",
+              "contribution": 0.003909282112546352
+            }
+          ]
+        },
+        {
+          "left": "bin7",
+          "right": "bin9",
+          "score": 0.17686180792738926,
+          "top_features": [
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.004848764760785067
+            },
+            {
+              "feature": "^__to__l",
+              "contribution": 0.0047062246149473476
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.004506946541012305
+            },
+            {
+              "feature": "n__to__l",
+              "contribution": 0.004461113881579924
+            },
+            {
+              "feature": "r__to__s",
+              "contribution": 0.0044596704865965744
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.004447784059177146
+            },
+            {
+              "feature": "n__to__t",
+              "contribution": 0.004328999287587413
+            },
+            {
+              "feature": "r__to__ckh",
+              "contribution": 0.0039032178853370876
+            },
+            {
+              "feature": "d__to__e",
+              "contribution": 0.0038976648923442973
+            },
+            {
+              "feature": "eee__to__o",
+              "contribution": 0.0037715995628111202
+            },
+            {
+              "feature": "r__to__l",
+              "contribution": 0.0037305401952365843
+            },
+            {
+              "feature": "d__to__k",
+              "contribution": 0.0036118109233534935
+            },
+            {
+              "feature": "d__to__s",
+              "contribution": 0.0035177082625515357
+            },
+            {
+              "feature": "e__to__cth",
+              "contribution": 0.0033035479344746235
+            },
+            {
+              "feature": "ch__to__p",
+              "contribution": 0.0032953069554738875
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "bin7",
+          "score": 0.28797964861824354,
+          "top_features": [
+            {
+              "feature": "o__to__i",
+              "contribution": 0.004840476459437988
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.004677896232669855
+            },
+            {
+              "feature": "r__to__l",
+              "contribution": 0.0046445292957456455
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.004613788179853291
+            },
+            {
+              "feature": "cph__to__e",
+              "contribution": 0.004504233430304074
+            },
+            {
+              "feature": "^__to__other",
+              "contribution": 0.004444695978422044
+            },
+            {
+              "feature": "o__to__iii",
+              "contribution": 0.004406413012899514
+            },
+            {
+              "feature": "cth__to__e",
+              "contribution": 0.004403235740464837
+            },
+            {
+              "feature": "y__to__ckh",
+              "contribution": 0.004391867888553042
+            },
+            {
+              "feature": "e__to__sh",
+              "contribution": 0.004351513925930598
+            },
+            {
+              "feature": "l__to__p",
+              "contribution": 0.004344407179113609
+            },
+            {
+              "feature": "o__to__eee",
+              "contribution": 0.004307874306170234
+            },
+            {
+              "feature": "d__to__q",
+              "contribution": 0.004295065869329344
+            },
+            {
+              "feature": "s__to__d",
+              "contribution": 0.004275280987564262
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.00426358241164784
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "bin9",
+          "score": 0.3072148182395106,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005048128888036921
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.0050347296056274665
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.004848764760785067
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.0048243546063470874
+            },
+            {
+              "feature": "sh__to__d",
+              "contribution": 0.004737747088151308
+            },
+            {
+              "feature": "^__to__l",
+              "contribution": 0.0047062246149473476
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0045902560725043515
+            },
+            {
+              "feature": "p__to__d",
+              "contribution": 0.004571516241714146
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.004526691426878126
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.004506946541012305
+            },
+            {
+              "feature": "n__to__l",
+              "contribution": 0.004461113881579924
+            },
+            {
+              "feature": "r__to__ckh",
+              "contribution": 0.004343707486841676
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.004300147776179641
+            },
+            {
+              "feature": "sh__to__ckh",
+              "contribution": 0.004201689163615032
+            },
+            {
+              "feature": "d__to__q",
+              "contribution": 0.004171569412128168
+            }
+          ]
+        },
+        {
+          "left": "other_bin8",
+          "right": "bin7",
+          "score": 0.4690816379222535,
+          "top_features": [
+            {
+              "feature": "n__to__t",
+              "contribution": 0.0057610845275552405
+            },
+            {
+              "feature": "d__to__e",
+              "contribution": 0.00561418996494851
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005046240899341823
+            },
+            {
+              "feature": "s__to__q",
+              "contribution": 0.004882214075961622
+            },
+            {
+              "feature": "o__to__i",
+              "contribution": 0.004840476459437988
+            },
+            {
+              "feature": "m__to__sh",
+              "contribution": 0.004798174023765902
+            },
+            {
+              "feature": "ee__to__t",
+              "contribution": 0.004677896232669855
+            },
+            {
+              "feature": "ee__to__ch",
+              "contribution": 0.004613788179853291
+            },
+            {
+              "feature": "ee__to__other",
+              "contribution": 0.004592696657635597
+            },
+            {
+              "feature": "q__to__e",
+              "contribution": 0.004551691909076508
+            },
+            {
+              "feature": "o__to__ckh",
+              "contribution": 0.004550659449863073
+            },
+            {
+              "feature": "r__to__s",
+              "contribution": 0.0044596704865965744
+            },
+            {
+              "feature": "a__to__s",
+              "contribution": 0.004452551755088642
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.004447784059177146
+            },
+            {
+              "feature": "^__to__other",
+              "contribution": 0.004444695978422044
+            }
+          ]
+        },
+        {
+          "left": "other_bin8",
+          "right": "bin9",
+          "score": 0.4663608582821338,
+          "top_features": [
+            {
+              "feature": "ckh__to__d",
+              "contribution": 0.005048128888036921
+            },
+            {
+              "feature": "e__to__f",
+              "contribution": 0.0050347296056274665
+            },
+            {
+              "feature": "f__to__a",
+              "contribution": 0.0049216515948976415
+            },
+            {
+              "feature": "cth__to__d",
+              "contribution": 0.004848764760785067
+            },
+            {
+              "feature": "y__to__f",
+              "contribution": 0.0047864508652354755
+            },
+            {
+              "feature": "^__to__l",
+              "contribution": 0.0047062246149473476
+            },
+            {
+              "feature": "l__to__f",
+              "contribution": 0.004641882944217927
+            },
+            {
+              "feature": "r__to__t",
+              "contribution": 0.00459782242560986
+            },
+            {
+              "feature": "ch__to__ckh",
+              "contribution": 0.0045902560725043515
+            },
+            {
+              "feature": "p__to__d",
+              "contribution": 0.004571516241714146
+            },
+            {
+              "feature": "eee__to__d",
+              "contribution": 0.004526691426878126
+            },
+            {
+              "feature": "n__to__l",
+              "contribution": 0.004461113881579924
+            },
+            {
+              "feature": "f__to__y",
+              "contribution": 0.004460449387658971
+            },
+            {
+              "feature": "y__to__a",
+              "contribution": 0.00445910993343876
+            },
+            {
+              "feature": "f__to__ch",
+              "contribution": 0.004434718126062239
+            }
+          ]
+        },
+        {
+          "left": "f58rv",
+          "right": "other_bin8",
+          "score": 0.3462681180256743,
+          "top_features": [
+            {
+              "feature": "d__to__e",
+              "contribution": 0.00561418996494851
+            },
+            {
+              "feature": "r__to__t",
+              "contribution": 0.0054030827361330695
+            },
+            {
+              "feature": "sh__to__k",
+              "contribution": 0.005374575265440866
+            },
+            {
+              "feature": "n__to__other",
+              "contribution": 0.005260239349350258
+            },
+            {
+              "feature": "m__to__sh",
+              "contribution": 0.005142086059058471
+            },
+            {
+              "feature": "cph__to__e",
+              "contribution": 0.005073084147983299
+            },
+            {
+              "feature": "e__to__other",
+              "contribution": 0.005046240899341823
+            },
+            {
+              "feature": "f__to__o",
+              "contribution": 0.004985966976565203
+            },
+            {
+              "feature": "i__to__m",
+              "contribution": 0.0049811883650107145
+            },
+            {
+              "feature": "sh__to__a",
+              "contribution": 0.004846242576112812
+            },
+            {
+              "feature": "ee__to__a",
+              "contribution": 0.0048243546063470874
+            },
+            {
+              "feature": "ch__to__l",
+              "contribution": 0.004813567689519603
+            },
+            {
+              "feature": "f__to__a",
+              "contribution": 0.004767194882418055
+            },
+            {
+              "feature": "other__to__d",
+              "contribution": 0.0047466351299539225
+            },
+            {
+              "feature": "y__to__a",
+              "contribution": 0.004688953909025503
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warning": "Custom subgroup contrasts retain the full-cohort feature filter and denominator. Two- and three-profile subgroups do not meet original EGRET bin eligibility; their scores are descriptive attribution only, without a separate significance test."
+}

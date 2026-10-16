@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "cohort": "paragraph207",
+  "channel": "word",
+  "model": "dirichlet_multinomial",
+  "bandwidth": 0.12,
+  "threshold_rule": "4 * scan_simulation_tail <= 0.05",
+  "continuous_heldout_false_alarm": {
+    "events": 4,
+    "trials": 500,
+    "rate": 0.008,
+    "interval95": [
+      0.00311531518006224,
+      0.020387035834105168
+    ]
+  },
+  "conditions": [
+    {
+      "center": 0.35,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.315,
+        0.41500000000000004
+      ],
+      "detection": {
+        "events": 22,
+        "trials": 300,
+        "rate": 0.07333333333333333,
+        "interval95": [
+          0.04892399383922859,
+          0.10853134160571733
+        ]
+      },
+      "median_max_z": 2.6451128119608596
+    },
+    {
+      "center": 0.35,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.27999999999999997,
+        0.48
+      ],
+      "detection": {
+        "events": 190,
+        "trials": 300,
+        "rate": 0.6333333333333333,
+        "interval95": [
+          0.5774367141816825,
+          0.6858584934917717
+        ]
+      },
+      "median_max_z": 4.115792678274547
+    },
+    {
+      "center": 0.35,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.24499999999999997,
+        0.5449999999999999
+      ],
+      "detection": {
+        "events": 288,
+        "trials": 300,
+        "rate": 0.96,
+        "interval95": [
+          0.9313957879613599,
+          0.9769726785120576
+        ]
+      },
+      "median_max_z": 5.5016785428320025
+    },
+    {
+      "center": 0.65,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.5850000000000001,
+        0.685
+      ],
+      "detection": {
+        "events": 12,
+        "trials": 300,
+        "rate": 0.04,
+        "interval95": [
+          0.023027321487942308,
+          0.06860421203864003
+        ]
+      },
+      "median_max_z": 2.460082720536441
+    },
+    {
+      "center": 0.65,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.52,
+        0.72
+      ],
+      "detection": {
+        "events": 63,
+        "trials": 300,
+        "rate": 0.21,
+        "interval95": [
+          0.1677218007333024,
+          0.25961112257693425
+        ]
+      },
+      "median_max_z": 3.12527462834628
+    },
+    {
+      "center": 0.65,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.45499999999999996,
+        0.7549999999999999
+      ],
+      "detection": {
+        "events": 161,
+        "trials": 300,
+        "rate": 0.5366666666666666,
+        "interval95": [
+          0.4801320652390865,
+          0.5922741168711132
+        ]
+      },
+      "median_max_z": 3.857937034483849
+    },
+    {
+      "center": 0.85,
+      "width": 0.1,
+      "skipped_latent_interval": [
+        0.765,
+        0.865
+      ],
+      "detection": {
+        "events": 7,
+        "trials": 300,
+        "rate": 0.023333333333333334,
+        "interval95": [
+          0.011347660299125234,
+          0.04737197226827532
+        ]
+      },
+      "median_max_z": 2.400333553543805
+    },
+    {
+      "center": 0.85,
+      "width": 0.2,
+      "skipped_latent_interval": [
+        0.68,
+        0.8800000000000001
+      ],
+      "detection": {
+        "events": 122,
+        "trials": 300,
+        "rate": 0.4066666666666667,
+        "interval95": [
+          0.3526017598634212,
+          0.46309159476516065
+        ]
+      },
+      "median_max_z": 3.633816993972488
+    },
+    {
+      "center": 0.85,
+      "width": 0.3,
+      "skipped_latent_interval": [
+        0.595,
+        0.895
+      ],
+      "detection": {
+        "events": 299,
+        "trials": 300,
+        "rate": 0.9966666666666667,
+        "interval95": [
+          0.9813633063054688,
+          0.9994113422781488
+        ]
+      },
+      "median_max_z": 6.104938009249459
+    }
+  ],
+  "source_reference_sha256": "dae16ea1a855d1462ef89333217d37a618f59426b64e9c76a196d4e0c40d96c0",
+  "code_sha256": "ed6d3531640e53c979478ed287371ad06e855222aca55a0ef9cc56478caca3e3",
+  "design_sha256": "b1f0a7834044cfbe166eb5ad6e97927d12ea140ff7f93246acbc14cf3cacf463"
+}

@@ -1,0 +1,852 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "channel": "word",
+      "omission": "full",
+      "omitted": [],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        5,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.3687714897893754
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18437748444968563
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.1725727286301358
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.2283927246247437
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.21427217205174964
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.14436011920127545
+        },
+        {
+          "left": 7,
+          "right": 8,
+          "score": 0.27096251991178805
+        },
+        {
+          "left": 8,
+          "right": 9,
+          "score": 0.2702292556135387
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.09683563213634379
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.13541471923232545
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.14125192738444528
+        }
+      ],
+      "bin8_members": [
+        "f58r",
+        "f58v",
+        "f67v2",
+        "f69r",
+        "f70r2"
+      ],
+      "bin8_eligible": true,
+      "top_overall_features": [
+        "other__to__d",
+        "eee__to__o",
+        "ee__to__ch",
+        "r__to__d",
+        "d__to__e",
+        "o__to__iii",
+        "t__to__eee",
+        "r__to__sh",
+        "e__to__s",
+        "f__to__y",
+        "k__to__eee",
+        "i__to__m"
+      ]
+    },
+    {
+      "channel": "word",
+      "omission": "omit_f58rv",
+      "omitted": [
+        "f58r",
+        "f58v"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        3,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.3634172248156483
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18107237664273754
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.1736835901922253
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.2203810554263891
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.21060343673703585
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.14516119089831817
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.1679300256155077
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.09530718123713319
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.13143514199495054
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.13821412176323242
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "t__to__eee",
+        "other__to__d",
+        "d__to__e",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "r__to__d",
+        "ee__to__a",
+        "ee__to__ch",
+        "ckh__to__a",
+        "l__to__other"
+      ]
+    },
+    {
+      "channel": "word",
+      "omission": "omit_other_three_H_bin_profiles",
+      "omitted": [
+        "f67v2",
+        "f69r",
+        "f70r2"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        2,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.3692653860409521
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18419206133086055
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.17276703959234305
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.22870315981042794
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.21437607317896556
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.14457973946411118
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.16955890423538897
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.09678410924889203
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.13551700411243275
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.14121926397330195
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "t__to__eee",
+        "d__to__e",
+        "other__to__d",
+        "f__to__y",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "r__to__d",
+        "ee__to__a",
+        "ee__to__ch",
+        "ckh__to__a"
+      ]
+    },
+    {
+      "channel": "word",
+      "omission": "omit_H_sheet",
+      "omitted": [
+        "f58r",
+        "f58v",
+        "f65v"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        3,
+        25,
+        30,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.363610828054976
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18121243355254402
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.1738042012486413
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.22050295827295888
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.21060012776438594
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.14532289634716913
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.16817839857301561
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.09636430095635592
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.12980867659617779
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.1383709669648159
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "t__to__eee",
+        "other__to__d",
+        "d__to__e",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "r__to__d",
+        "ee__to__a",
+        "ee__to__ch",
+        "ckh__to__a",
+        "l__to__other"
+      ]
+    },
+    {
+      "channel": "line",
+      "omission": "full",
+      "omitted": [],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        5,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.37913140182313915
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18594744056084977
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.17872508468232812
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.21598540487632112
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.16878823857078812
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.16134025845068314
+        },
+        {
+          "left": 7,
+          "right": 8,
+          "score": 0.2790125517822076
+        },
+        {
+          "left": 8,
+          "right": 9,
+          "score": 0.28606012877433085
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.10246934576656878
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.13205254680966302
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.15118648260947984
+        }
+      ],
+      "bin8_members": [
+        "f58r",
+        "f58v",
+        "f67v2",
+        "f69r",
+        "f70r2"
+      ],
+      "bin8_eligible": true,
+      "top_overall_features": [
+        "eee__to__o",
+        "l__to__p",
+        "^__to__other",
+        "r__to__l",
+        "ee__to__ch",
+        "d__to__e",
+        "p__to__d",
+        "^__to__f",
+        "o__to__iii",
+        "t__to__eee",
+        "m__to__d",
+        "f__to__y"
+      ]
+    },
+    {
+      "channel": "line",
+      "omission": "omit_f58rv",
+      "omitted": [
+        "f58r",
+        "f58v"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        3,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.3783996141829777
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18704926389528836
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.17509886759637677
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.21251588091218304
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.16062287189820998
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.15859324209932163
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.17700270996277825
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.10215104805774473
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.12546368451125484
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.14529128110080017
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "r__to__l",
+        "t__to__eee",
+        "d__to__e",
+        "l__to__p",
+        "cth__to__d",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "^__to__other",
+        "ee__to__a",
+        "ee__to__ch"
+      ]
+    },
+    {
+      "channel": "line",
+      "omission": "omit_other_three_H_bin_profiles",
+      "omitted": [
+        "f67v2",
+        "f69r",
+        "f70r2"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        2,
+        25,
+        31,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.38107060675167087
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.186512897182564
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.17494951118366225
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.21634892696943323
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.16423027296577025
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.15841322873640626
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.17703604277590124
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.10204969077849955
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.12910670102575744
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.14835234268625308
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "r__to__l",
+        "t__to__eee",
+        "d__to__e",
+        "l__to__p",
+        "cth__to__d",
+        "f__to__y",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "^__to__other",
+        "ee__to__a"
+      ]
+    },
+    {
+      "channel": "line",
+      "omission": "omit_H_sheet",
+      "omitted": [
+        "f58r",
+        "f58v",
+        "f65v"
+      ],
+      "occupancy": [
+        4,
+        16,
+        26,
+        25,
+        12,
+        15,
+        21,
+        3,
+        25,
+        30,
+        20,
+        7
+      ],
+      "retained_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "adjacent": [
+        {
+          "left": 1,
+          "right": 2,
+          "score": 0.38010069360391296
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "score": 0.18431674443290708
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "score": 0.17515888689531575
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "score": 0.20919705145870293
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "score": 0.16130725979483454
+        },
+        {
+          "left": 6,
+          "right": 7,
+          "score": 0.15547052160408845
+        },
+        {
+          "left": 7,
+          "right": 9,
+          "score": 0.17714133390074507
+        },
+        {
+          "left": 9,
+          "right": 10,
+          "score": 0.10348816750856789
+        },
+        {
+          "left": 10,
+          "right": 11,
+          "score": 0.12471138325765596
+        },
+        {
+          "left": 11,
+          "right": 12,
+          "score": 0.14207998011708176
+        }
+      ],
+      "bin8_members": [],
+      "bin8_eligible": false,
+      "top_overall_features": [
+        "eee__to__o",
+        "r__to__l",
+        "t__to__eee",
+        "d__to__e",
+        "l__to__p",
+        "cth__to__d",
+        "i__to__m",
+        "s__to__e",
+        "e__to__cth",
+        "^__to__other",
+        "ee__to__a",
+        "ee__to__ch"
+      ]
+    }
+  ],
+  "warning": "Omissions that make a bin ineligible do not isolate causal responsibility."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "file": "null_paragraph207_word_sheet_residual_h0.12.json",
+      "sha256": "8d4a1912e7c5de4adae3db10b8d2a838b9984be2da4786484edb0777804b6c4f",
+      "result": "exact equality of every reference, boundary, diagnostic and held-out field"
+    },
+    {
+      "file": "null_pool50_line_sheet_residual_h0.12.json",
+      "sha256": "85956d5fa99ba3d6d44333f6f426074406e6e3a591d4a348b70a7e83fae05707",
+      "result": "exact equality of every reference, boundary, diagnostic and held-out field"
+    }
+  ],
+  "additional_validation_draws": 3798,
+  "not_in_production_count": true,
+  "code_sha256": "551b0416ae98bfe00af1cb73000930e89094d6bbfa93ef083f4914b14b4083d4"
+}

@@ -10,7 +10,10 @@ TEMP_DIRS={'_deps','_r_runtime','__pycache__'}
 def main():
     checks={}
     for name in ['ensemble_audit.json','ensemble_independent_audit.json','cassidy_independent_audit.json',
-                 'scegret_independent_audit.json','presentation_verification.json']:
+                 'scegret_independent_audit.json','presentation_verification.json',
+                 'calibration/audit.json','calibration/presentation_verification.json',
+                 'calibration/replay_verification.json','calibration/omission_test/audit.json',
+                 'calibration/omission_test/presentation_verification.json']:
         obj=json.loads((HERE/name).read_text(encoding='utf-8'))
         assert obj.get('status') in ['passed','complete'], (name,obj.get('status'))
         checks[name]=dict(status=obj['status'],sha256=hashlib.sha256((HERE/name).read_bytes()).hexdigest())

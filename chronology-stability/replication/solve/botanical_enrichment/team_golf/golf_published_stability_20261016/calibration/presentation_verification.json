@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "links_checked": 19,
+  "links": [
+    {
+      "source": "report.html",
+      "target": "tables.html"
+    },
+    {
+      "source": "report.html",
+      "target": "audit.json"
+    },
+    {
+      "source": "report.html",
+      "target": "../REPRODUCE.md"
+    },
+    {
+      "source": "report.html",
+      "target": "omission_test/report.html"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration.png"
+    },
+    {
+      "source": "report.html",
+      "target": "attribution.json"
+    },
+    {
+      "source": "report.html",
+      "target": "feature_attribution.json"
+    },
+    {
+      "source": "report.html",
+      "target": "tables.html"
+    },
+    {
+      "source": "report.html",
+      "target": "tables.html"
+    },
+    {
+      "source": "report.html",
+      "target": "summary.json"
+    },
+    {
+      "source": "report.html",
+      "target": "DESIGN.md"
+    },
+    {
+      "source": "report.html",
+      "target": "MATCHED_DESIGN.md"
+    },
+    {
+      "source": "report.html",
+      "target": "BYPASS_DESIGN.md"
+    },
+    {
+      "source": "report.html",
+      "target": "../report.html"
+    },
+    {
+      "source": "report.html",
+      "target": "../index.html"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration.png"
+    },
+    {
+      "source": "report.html",
+      "target": "calibration.svg"
+    },
+    {
+      "source": "tables.html",
+      "target": "report.html"
+    },
+    {
+      "source": "tables.html",
+      "target": "summary.json"
+    }
+  ],
+  "scope": "Local links and image integrity; visual inspection is separate."
+}

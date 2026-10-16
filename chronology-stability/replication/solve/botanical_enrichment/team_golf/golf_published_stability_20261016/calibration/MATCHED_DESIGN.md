@@ -1,0 +1,11 @@
+# Additional power check using the identical scan decision rule
+
+This addition was specified after the first word/page continuous-reference and deletion-control outputs were inspected, before running the additional controls. It does not change the original generator, statistic, observed results, thresholds, or design. Its purpose is to avoid confusing the paper-style deletion experiment's maximum raw EGRET rule with the location-standardized, multiplicity-adjusted rule used for the observed manuscript.
+
+Hold the observed positions, profile totals, noise parameters and bin occupancies fixed. Evaluate the smooth latent mean at `u(t) = (1-w)t + w I(t >= c)` instead of `t`. This omits a contiguous interval of latent feature development of width w, then compresses the surviving trajectory back to the observed coordinate. Endpoints remain 0 and 1. The unobserved interval is `[(1-w)c, (1-w)c+w]`; its apparent join lies at c in the displayed coordinate. This is an injected missing-state scenario with unchanged observed sample size, not a reconstruction of historical missing pages.
+
+Use the already declared centers 0.35, 0.65, 0.85, widths 0.10, 0.20, 0.30, both noise models, both cohorts and both channels at bandwidth 0.12. Draw 300 independent datasets per condition using distinct SeedSequence streams. Each draw is evaluated using the exact original six-view scan, fitted means/standard deviations and 999-member maximum-score reference. Count detection only when its scan tail multiplied by four is at most 0.05. This is exactly the whole-study decision rule applied to the observed data. Report Wilson intervals and compare with the held-out continuous false-alarm rate under that same rule. No threshold is refitted or chosen to improve power.
+
+These controlled missing-state powers and the literal-deletion/random-thinning experiment answer complementary questions. Neither estimates the probability that an arbitrary real missing bifolium will be detected. The smooth path may change very little over a deleted interval, and a gap then has little feature signal even if it is large in pseudotime. All candidate models and every control condition are retained, including weak detection.
+
+Additional cost: 21,600 synthetic datasets, streamed; under 2 MB retained output. No new dependencies.

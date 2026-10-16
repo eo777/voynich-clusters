@@ -1,0 +1,36 @@
+{
+  "seed": 20261016,
+  "bandwidths": [
+    0.08,
+    0.12,
+    0.2
+  ],
+  "models": [
+    "sheet_residual",
+    "dirichlet_multinomial"
+  ],
+  "fit_reps": 400,
+  "calibration_reps": 999,
+  "evaluation_reps": 500,
+  "power_calibration_reps": 399,
+  "power_evaluation_reps": 300,
+  "gap_centers": [
+    0.35,
+    0.65,
+    0.85
+  ],
+  "gap_widths": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "design_sha256": "04a980c707fc2d5913b5a0355f3e4f65a2c680f8e57ea71b227f797bb8606dff",
+  "code_sha256": "b5cd0f30bfb0109d7bac2ecaa8a03e071e841f3517231ef1dd7ec7b36ad20f5f",
+  "input_sha256": {
+    "scegret_paragraph207_word_raw.csv": "9dbe9d4a95f777934fa0e8b579a5e175366d86c84b8e36c1654bb807059e8d71",
+    "scegret_paragraph207_line_raw.csv": "1095f548e90ada2b004082f0f82992682f6ea14ae49dfb46ba3c1a1751081637",
+    "scegret_pool50_word_raw.csv": "1601ad264f5e8fe8fbada4eb352a381a54f2e6ee32d71552d78e96b5b8abf833",
+    "scegret_pool50_line_raw.csv": "f626f91d46e1fb8d21a3b754c0f995792a63712fa5588092b1606d4a60815ad1"
+  },
+  "original_positions_sha256": "55fc639f4b710baaa7c67df6a198b8c3185d67ef1de7756eae7d73f2998eeeb6"
+}

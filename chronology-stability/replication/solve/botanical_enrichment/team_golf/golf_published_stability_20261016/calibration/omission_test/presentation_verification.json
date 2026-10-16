@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "local_links": 11,
+  "targets": [
+    "DESIGN.md",
+    "run_omissions.py",
+    "audit.json",
+    "results_word_sheet_residual.json",
+    "../report.html",
+    "results_word_sheet_residual.json",
+    "results_line_sheet_residual.json",
+    "results_word_dirichlet_multinomial.json",
+    "results_line_dirichlet_multinomial.json",
+    "../report.html",
+    "../../report.html"
+  ]
+}

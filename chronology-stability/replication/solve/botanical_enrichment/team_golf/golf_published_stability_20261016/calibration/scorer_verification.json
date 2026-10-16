@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "fast_scorer_comparisons": 8,
+  "max_absolute_error": 8.881784197001252e-16,
+  "original_R_audit_sha256": "183d5da0181e6b22eded947820d517226f38ada636688a87b42d7e2de94cd68c",
+  "original_R_results_sha256": "95692030e75cebe297a7e6cd2bacc8afb430030169337295c80e8fe0980a1a97"
+}
