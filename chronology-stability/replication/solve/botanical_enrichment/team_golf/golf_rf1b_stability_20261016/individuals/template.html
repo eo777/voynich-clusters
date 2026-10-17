@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Individual pages and bifolia · ordering stability</title>
+<style>
+:root{font:15px/1.5 system-ui,sans-serif;color:#193244;background:#f3f6f8}body{margin:0}main{max-width:1400px;margin:auto;padding:28px;background:white}h1{font-size:28px;margin:12px 0}h2{font-size:20px;margin-top:28px}a{color:#08709c}p{max-width:1050px}.controls{display:flex;flex-wrap:wrap;gap:12px;background:#edf3f6;padding:16px;border-radius:8px}label{display:flex;flex-direction:column;font-size:13px;gap:4px}select,input,button{font:inherit;padding:7px;border:1px solid #aebfc9;border-radius:4px;background:white;color:inherit}button{cursor:pointer}button:hover{background:#e7f3fa}.muted{color:#647884;font-size:13px}.scroll{overflow:auto;max-height:660px;border:1px solid #dce6ec}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;border-bottom:1px solid #e2e9ed;padding:7px 10px;white-space:nowrap}th{position:sticky;top:0;background:#eef3f6;z-index:1}tr.selected{background:#eaf4fa}tbody tr:hover{background:#f2f7fa}td button{padding:2px 5px;border:0;background:none;font-weight:600}svg{display:block;width:100%;height:auto}.spark{width:250px;height:30px}.detail{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{padding:16px;border:1px solid #dce6ec;border-radius:8px}.badge{padding:3px 7px;background:#f1eee2;border-radius:3px}.axis{font:12px system-ui;fill:#647884}.note{border-left:3px solid #61a4bf;padding:8px 14px;background:#f1f7fa}.pairs{max-height:340px}#stats{min-height:22px}@media(max-width:850px){.detail{grid-template-columns:1fr}main{padding:14px}.spark{width:190px}}
+</style><body><main>
+<a href="../report.html">Full RF / ZL comparison</a>
+<h1>Individual pages and bifolia</h1>
+<p>Inspect the labeled distributions, then compare pages <strong>within the same fitted runs</strong>. This separates movement of an entire section from uncertainty about its internal order.</p>
+<div class="controls">
+<label>Observations<select id="cohort"><option value="paragraph207">Individual pages</option><option value="pool50" selected>Pooled bifolia</option></select></label>
+<label>Representation<select id="rep"><option value="RF">RF1b-er / basic EVA</option><option value="ZL">ZL / Zattera</option><option value="both" selected>Both · equal weight</option></select></label>
+<label>Sampling<select id="sampler"><option value="point">Individual observations</option><option value="sheet">Whole physical sheets</option></select></label>
+<label>λ<select id="penalty"><option value="both">0.01 + 0.05 · equal weight</option><option value="0.01">0.01</option><option value="0.05">0.05</option></select></label>
+<label>Fits<select id="scope"><option value="all">All starts · matches chart</option><option value="best" selected>Best per sample · 1a before 1b</option></select></label>
+<label>Golf section<select id="group"></select></label>
+<label>Display order<select id="sort"><option value="original">Original chart rows</option><option value="consensus" selected>Pairwise consensus · selected section</option><option value="median">Median curve position</option></select></label>
+<label>Find page / bifolium<input id="search" placeholder="e.g. f86v4 or I:67-68"></label>
+</div>
+<p><button id="example3b">Earlier 3b page</button> <button id="example2a">Later 2a bifolium</button> <button id="csv">Download current rows (CSV)</button></p>
+<p id="stats" class="muted"></p>
+<div class="scroll"><table><thead><tr><th>ID · click to inspect</th><th>Golf</th><th>Physical bifolium</th><th>Position distribution · 0 → 1</th><th>Median*</th><th>5–95% span*</th><th>Consensus score†</th><th>Precedes next row</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="muted">* Binned position summaries (0.01-wide bins); spans are sensitivity summaries, not confidence intervals. All strips share one opacity scale, capped at 20% per bin. † Lower score means earlier relative to the other members of the selected section. Search hides rows without recalculating scores.</p>
+<div class="detail"><section class="card"><h2 id="selectedTitle">Selected observation</h2><p id="selectedMeta" class="muted"></p><div id="distribution"></div><p id="distributionNote" class="muted"></p></section>
+<section class="card"><h2>Same-run comparisons</h2><p id="pairNote"></p><div class="scroll pairs"><table><thead><tr><th>Other observation</th><th>Selected before</th><th>Tied</th><th>Selected after</th><th>Joint fits</th></tr></thead><tbody id="pairs"></tbody></table></div></section></div>
+<h2>What a consensus sequence means</h2>
+<p>A shifted distribution is a useful clue, but the paired comparisons are the ordering evidence: they count how often two retained observations change places in the same fit. Overlapping marginal distributions can still have a consistent internal order.</p>
+<p>The consensus display sorts each observation by its average pairwise “after” frequency, counting a tied projection as half. It is a descriptive ranking, not a maximum-likelihood chronology or a newly fitted path. A low-support adjacent comparison marks an unresolved ordering. Pairwise preferences can form cycles, and this sorted list need not occur as one complete fitted route. Equal scores have no inferred internal order.</p>
+<p>“Best per sample” selects the lowest-objective recovered start within each sample and λ, among fitted outcomes whose all-reference group medians put 1a before 1b. This matches the published competition analysis. It does not compare energies across representations, penalties or different samples; it does not establish that the winning route is historically correct.</p>
+<p class="note">Neither a strong pairwise preference nor adjacency in the list establishes a direct connection, excludes missing pages, or rules out a branch. Pages with the same closest-curve position remain tied; the display does not invent an order between them. Page labels and pooled-bifolium labels can differ on mixed sheets.</p>
+<h2>Data and calculation</h2><p>No new models were fitted. Histograms exactly reproduce the published all-start charts. Pair counts use only jointly retained observations, with position differences within 10⁻⁷ counted as tied. Selected representation/penalty settings receive equal weight after normalizing their own counts. Starts, settings and transliterations share resampling masks; “joint fits” is a computational count, not a count of independent samples. Both transcription and glyph grouping differ between RF and ZL.</p>
+<p><a href="data.json">All individual histograms and pair counts</a> · <a href="verification.json">Checks and focal findings</a> · <a href="build.py">Reproduction code</a></p>
+</main><script id="dataset" type="application/json">__DATA__</script><script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('dataset').textContent), $=id=>document.getElementById(id);
+const groups=['1a','1b','1.5a','2a','3a','3b','3c','4a','4c','5a','6',''];
+const label=g=>({'3a':'Herbal 3a','3b':'Herbal 3b','3c':'Stars 3c','4a':'Bio 4a','4c':'Stars 4c','':'Unassigned'}[g]||g);
+$('group').innerHTML='<option value="all">All sections</option>'+groups.map(g=>`<option value="${g}">${label(g)}</option>`).join('');$('group').value='all';
+let selected='I:67-68', state=null;
+const pct=x=>(100*x).toFixed(1)+'%', esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function pair(d,i,j,n){if(i===j)return [0,d.retained[i],d.retained[i]];if(i>j){const [b,t,z]=pair(d,j,i,n);return [z-b-t,t,z]}const k=n*i-i*(i+1)/2+j-i-1;return [d.before[k],d.ties[k],d.together[k]]}
+function paired(i,j){let b=0,t=0,a=0,total=0,k=0;for(const s of state.settings){const [bb,tt,z]=pair(s.scopes[$('scope').value],i,j,state.meta.length);if(!z)continue;b+=bb/z;t+=tt/z;a+=(z-bb-tt)/z;total+=z;k++}return {before:b/k,tie:t/k,after:a/k,total,settings:k}}
+function quantile(h,q){let c=0;for(let i=0;i<h.length;i++){c+=h[i];if(c>=q)return (i+.5)/100}return .995}
+function spark(h,color){return '<svg class="spark" viewBox="0 0 250 30" aria-label="Position distribution">'+h.map((v,i)=>v?`<rect x="${i*2.5}" y="2" width="2.5" height="26" fill="${color}" fill-opacity="${Math.sqrt(Math.min(v/.2,1))}"/>`:'').join('')+'</svg>'}
+function refresh(){const cohort=$('cohort').value; $('sampler').disabled=cohort==='pool50';const sampler=cohort==='pool50'?'point':$('sampler').value;
+const settings=DATA.settings.filter(s=>s.cohort===cohort&&s.sampler===sampler&&($('rep').value==='both'||s.rep===$('rep').value)&&($('penalty').value==='both'||s.penalty===Number($('penalty').value)));
+const meta=settings[0].meta;state={settings,meta,rows:[],members:[]};
+meta.forEach((m,i)=>{const h=Array(100).fill(0);let count=0;for(const s of settings){const d=s.scopes[$('scope').value];count+=d.retained[i];for(let k=0;k<100;k++)h[k]+=d.hist[i][k]/d.retained[i]/settings.length}state.rows.push({i,m,h,count,median:quantile(h,.5),low:quantile(h,.05),high:quantile(h,.95),score:0})});
+state.members=state.rows.filter(r=>$('group').value==='all'||r.m.group===$('group').value);
+for(const r of state.members){const others=state.members.filter(x=>x.i!==r.i);r.score=others.length?others.reduce((sum,x)=>{const p=paired(r.i,x.i);return sum+p.after+.5*p.tie},0)/others.length:0}
+let rows=state.members.slice();if($('sort').value==='consensus')rows.sort((a,b)=>a.score-b.score||a.i-b.i);else if($('sort').value==='median')rows.sort((a,b)=>a.median-b.median||a.i-b.i);
+const query=$('search').value.trim().toLowerCase();rows=rows.filter(r=>(r.m.id+' '+r.m.bifolium).toLowerCase().includes(query));state.visible=rows;
+if(!rows.some(r=>r.m.id===selected))selected=rows[0]?.m.id;
+$('rows').innerHTML=rows.map((r,k)=>{const p=k+1<rows.length?paired(r.i,rows[k+1].i):null;return `<tr class="${r.m.id===selected?'selected':''}"><td><button data-id="${esc(r.m.id)}">${esc(r.m.id)}</button></td><td style="color:${DATA.palette[r.m.group]||'#647884'}">${esc(label(r.m.group))}</td><td>${esc(r.m.bifolium)}</td><td>${spark(r.h,DATA.palette[r.m.group]||'#647884')}</td><td>${r.median.toFixed(2)}</td><td>${r.low.toFixed(2)}–${r.high.toFixed(2)}</td><td>${r.score.toFixed(3)}</td><td>${p?`${pct(p.before)} <span class="muted">(${pct(p.tie)} tied)</span>`:'—'}</td></tr>`}).join('');
+$('rows').querySelectorAll('button').forEach(b=>b.onclick=()=>{selected=b.dataset.id;refresh()});
+const masks=Math.max(...settings.map(s=>s.scopes[$('scope').value].masks)),fits=settings.reduce((n,s)=>n+s.scopes[$('scope').value].fits,0);
+$('stats').textContent=`${rows.length} displayed · ${settings.length} settings · ${fits.toLocaleString()} fitted outcomes · ${masks} shared resampling masks. Row and pair counts exclude omitted observations.`;detail();}
+function detail(){const r=state.rows.find(r=>r.m.id===selected);if(!r){$('selectedTitle').textContent='No matching rows';$('distribution').innerHTML='';$('pairs').innerHTML='';return}
+$('selectedTitle').textContent=r.m.id+' · '+label(r.m.group);$('selectedMeta').textContent=`Physical bifolium ${r.m.bifolium} · ${r.count.toLocaleString()} retained fitted outcomes`;
+const colors=['#256b9b','#cc6c3e','#6c59a2','#198c84'],series=state.settings.map((s,k)=>{const d=s.scopes[$('scope').value];return {name:`${s.rep} · λ ${s.penalty}`,color:colors[k],v:d.hist[r.i].map(x=>x/d.retained[r.i])}});
+const max=Math.max(.05,...series.flatMap(s=>s.v));let svg='<svg viewBox="0 0 600 250" role="img" aria-label="Individual histogram by representation and penalty">';
+for(let t=0;t<=4;t++){const y=190-t*40;svg+=`<line x1="50" x2="580" y1="${y}" y2="${y}" stroke="#e2e9ed"/><text class="axis" x="43" y="${y+4}" text-anchor="end">${pct(max*t/4)}</text>`}
+for(let t=0;t<=5;t++)svg+=`<text class="axis" x="${50+106*t}" y="211" text-anchor="middle">${(t/5).toFixed(1)}</text>`;
+for(const s of series){let path='';s.v.forEach((v,k)=>{const x=50+k*5.3,y=190-v/max*160;path+=`${k?'L':'M'}${x},${y}L${x+5.3},${y}`});svg+=`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="1.7"/>`}
+svg+='<text class="axis" x="315" y="240" text-anchor="middle">Position along fitted curve</text></svg>';
+$('distribution').innerHTML=svg+'<div>'+series.map(s=>`<span style="color:${s.color};margin-right:14px">━ ${esc(s.name)}</span>`).join('')+'</div>';
+$('distributionNote').textContent='Unsmoothed 0.01-wide bins. Vertical scale: fraction of retained fits in each bin; the scale adapts to this observation.';
+$('pairNote').textContent=`How often ${r.m.id} precedes, ties or follows each other member of the selected section. Only runs retaining both count.`;
+const peers=state.members.filter(x=>x.i!==r.i).sort((a,b)=>a.score-b.score);
+$('pairs').innerHTML=peers.map(o=>{const p=paired(r.i,o.i);return `<tr><td><button data-id="${esc(o.m.id)}">${esc(o.m.id)}</button></td><td>${pct(p.before)}</td><td>${pct(p.tie)}</td><td>${pct(p.after)}</td><td>${p.total.toLocaleString()}</td></tr>`}).join('');
+$('pairs').querySelectorAll('button').forEach(b=>b.onclick=()=>{selected=b.dataset.id;$('search').value='';refresh()});}
+for(const id of ['cohort','rep','sampler','penalty','scope','group','sort'])$(id).onchange=refresh;$('search').oninput=refresh;
+$('example3b').onclick=()=>{$('cohort').value='paragraph207';$('group').value='3b';$('search').value='';selected='f86v4';refresh()};
+$('example2a').onclick=()=>{$('cohort').value='pool50';$('group').value='2a';$('search').value='';selected='I:67-68';refresh()};
+$('csv').onclick=()=>{const head=['id','golf','bifolium','binned_p05','binned_median','binned_p95','pairwise_score','retained_fits','representation','lambda','scope','sampling'];const rows=state.visible.map(r=>[r.m.id,r.m.group,r.m.bifolium,r.low,r.median,r.high,r.score,r.count,$('rep').value,$('penalty').value,$('scope').value,$('cohort').value==='pool50'?'sheet':$('sampler').value]);const csv=[head,...rows].map(a=>a.map(x=>'"'+String(x).replaceAll('"','""')+'"').join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='individual-ordering-sensitivity.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+refresh();
+</script></body></html>

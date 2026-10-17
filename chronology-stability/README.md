@@ -6,6 +6,7 @@ This directory contains the completed 16 October 2026 analysis, including the fo
 
 The follow-ups are included in full:
 
+- [Individual bifolia and pages](individuals.html): directly linkable distributions, same-run pair comparisons, ties and a descriptive consensus ordering. Defaults are pooled bifolia, both representations equally weighted, all sections, pairwise consensus, and the best recovered candidate per sample with 1a before 1b.
 - [RF1b-er / basic EVA comparison](rf1b.html): 4,800 additional matched ElPiGraph fits, separate RF charts, equal-weight combined charts, side-by-side comparisons and whole-sheet controls. Both transcription and glyph grouping differ from ZL/Zattera; these are sensitivity frequencies, not historical probabilities.
 - [scEGRET calibration](replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/report.html): 147,888 production simulated datasets, continuous references, missing-state controls, false-alarm and power checks, and calibration of the supplementary two-sided diagnostic.
 - [Actual f58 and astro/stars removals](replication/solve/botanical_enrichment/team_golf/golf_published_stability_20261016/calibration/omission_test/report.html): seven cases applied to the observed pages and 7,596 regenerated continuous controls, with exact omitted IDs, bin memberships, normalized and raw-count results, and both noise models. Each control is reused across the seven masks; these are paired comparisons, not seven independent sets of controls.

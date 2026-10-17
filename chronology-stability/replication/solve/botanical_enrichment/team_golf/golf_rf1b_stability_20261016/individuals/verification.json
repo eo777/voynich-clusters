@@ -1,0 +1,678 @@
+{
+  "status": "passed",
+  "new_fits": 0,
+  "settings": 12,
+  "original_histograms_exact": true,
+  "original_winners_exact": true,
+  "pair_partition_exact": true,
+  "findings": [
+    {
+      "rep": "RF",
+      "cohort": "paragraph207",
+      "focal": "f86v4",
+      "scope": "all",
+      "relation": "before",
+      "comparisons": [
+        {
+          "id": "f26r",
+          "before": 1343,
+          "tied": 0,
+          "after": 1,
+          "joint_fits": 1344,
+          "direction_fraction": 0.9992559523809523
+        },
+        {
+          "id": "f26v",
+          "before": 1407,
+          "tied": 0,
+          "after": 1,
+          "joint_fits": 1408,
+          "direction_fraction": 0.9992897727272727
+        },
+        {
+          "id": "f31r",
+          "before": 1439,
+          "tied": 0,
+          "after": 1,
+          "joint_fits": 1440,
+          "direction_fraction": 0.9993055555555556
+        },
+        {
+          "id": "f31v",
+          "before": 1282,
+          "tied": 46,
+          "after": 0,
+          "joint_fits": 1328,
+          "direction_fraction": 0.9653614457831325
+        },
+        {
+          "id": "f41r",
+          "before": 1296,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1296,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f41v",
+          "before": 1262,
+          "tied": 2,
+          "after": 0,
+          "joint_fits": 1264,
+          "direction_fraction": 0.9984177215189873
+        },
+        {
+          "id": "f43r",
+          "before": 1360,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1360,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43v",
+          "before": 1343,
+          "tied": 1,
+          "after": 0,
+          "joint_fits": 1344,
+          "direction_fraction": 0.9992559523809523
+        },
+        {
+          "id": "f46v",
+          "before": 1392,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1392,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f48r",
+          "before": 1358,
+          "tied": 2,
+          "after": 0,
+          "joint_fits": 1360,
+          "direction_fraction": 0.9985294117647059
+        },
+        {
+          "id": "f57r",
+          "before": 1252,
+          "tied": 19,
+          "after": 41,
+          "joint_fits": 1312,
+          "direction_fraction": 0.9542682926829268
+        },
+        {
+          "id": "f65v",
+          "before": 1324,
+          "tied": 1,
+          "after": 3,
+          "joint_fits": 1328,
+          "direction_fraction": 0.9969879518072289
+        },
+        {
+          "id": "f66r",
+          "before": 1407,
+          "tied": 0,
+          "after": 1,
+          "joint_fits": 1408,
+          "direction_fraction": 0.9992897727272727
+        },
+        {
+          "id": "f66v",
+          "before": 1310,
+          "tied": 1,
+          "after": 1,
+          "joint_fits": 1312,
+          "direction_fraction": 0.9984756097560976
+        }
+      ],
+      "min_fraction": 0.9542682926829268,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "RF",
+      "cohort": "paragraph207",
+      "focal": "f86v4",
+      "scope": "best",
+      "relation": "before",
+      "comparisons": [
+        {
+          "id": "f26r",
+          "before": 168,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 168,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f26v",
+          "before": 176,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 176,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f31r",
+          "before": 180,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 180,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f31v",
+          "before": 165,
+          "tied": 1,
+          "after": 0,
+          "joint_fits": 166,
+          "direction_fraction": 0.9939759036144579
+        },
+        {
+          "id": "f41r",
+          "before": 162,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 162,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f41v",
+          "before": 158,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 158,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43r",
+          "before": 170,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 170,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43v",
+          "before": 168,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 168,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f46v",
+          "before": 174,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 174,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f48r",
+          "before": 170,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 170,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f57r",
+          "before": 164,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 164,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f65v",
+          "before": 166,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 166,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f66r",
+          "before": 176,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 176,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f66v",
+          "before": 164,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 164,
+          "direction_fraction": 1.0
+        }
+      ],
+      "min_fraction": 0.9939759036144579,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "RF",
+      "cohort": "pool50",
+      "focal": "I:67-68",
+      "scope": "all",
+      "relation": "after",
+      "comparisons": [
+        {
+          "id": "O:87-90",
+          "before": 0,
+          "tied": 2,
+          "after": 1310,
+          "joint_fits": 1312,
+          "direction_fraction": 0.9984756097560976
+        },
+        {
+          "id": "O:88-89",
+          "before": 0,
+          "tied": 2,
+          "after": 1262,
+          "joint_fits": 1264,
+          "direction_fraction": 0.9984177215189873
+        },
+        {
+          "id": "S:100-101",
+          "before": 0,
+          "tied": 0,
+          "after": 1296,
+          "joint_fits": 1296,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "S:99-102",
+          "before": 0,
+          "tied": 5,
+          "after": 1195,
+          "joint_fits": 1200,
+          "direction_fraction": 0.9958333333333333
+        }
+      ],
+      "min_fraction": 0.9958333333333333,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "RF",
+      "cohort": "pool50",
+      "focal": "I:67-68",
+      "scope": "best",
+      "relation": "after",
+      "comparisons": [
+        {
+          "id": "O:87-90",
+          "before": 0,
+          "tied": 1,
+          "after": 163,
+          "joint_fits": 164,
+          "direction_fraction": 0.9939024390243902
+        },
+        {
+          "id": "O:88-89",
+          "before": 0,
+          "tied": 0,
+          "after": 158,
+          "joint_fits": 158,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "S:100-101",
+          "before": 0,
+          "tied": 0,
+          "after": 162,
+          "joint_fits": 162,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "S:99-102",
+          "before": 0,
+          "tied": 1,
+          "after": 149,
+          "joint_fits": 150,
+          "direction_fraction": 0.9933333333333333
+        }
+      ],
+      "min_fraction": 0.9933333333333333,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "ZL",
+      "cohort": "paragraph207",
+      "focal": "f86v4",
+      "scope": "all",
+      "relation": "before",
+      "comparisons": [
+        {
+          "id": "f26r",
+          "before": 1342,
+          "tied": 1,
+          "after": 1,
+          "joint_fits": 1344,
+          "direction_fraction": 0.9985119047619048
+        },
+        {
+          "id": "f26v",
+          "before": 1408,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1408,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f31r",
+          "before": 1436,
+          "tied": 3,
+          "after": 1,
+          "joint_fits": 1440,
+          "direction_fraction": 0.9972222222222222
+        },
+        {
+          "id": "f31v",
+          "before": 1264,
+          "tied": 60,
+          "after": 4,
+          "joint_fits": 1328,
+          "direction_fraction": 0.9518072289156626
+        },
+        {
+          "id": "f41r",
+          "before": 1294,
+          "tied": 1,
+          "after": 1,
+          "joint_fits": 1296,
+          "direction_fraction": 0.9984567901234568
+        },
+        {
+          "id": "f41v",
+          "before": 1261,
+          "tied": 2,
+          "after": 1,
+          "joint_fits": 1264,
+          "direction_fraction": 0.997626582278481
+        },
+        {
+          "id": "f43r",
+          "before": 1360,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1360,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43v",
+          "before": 1344,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1344,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f46v",
+          "before": 1392,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1392,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f48r",
+          "before": 1356,
+          "tied": 3,
+          "after": 1,
+          "joint_fits": 1360,
+          "direction_fraction": 0.9970588235294118
+        },
+        {
+          "id": "f57r",
+          "before": 1285,
+          "tied": 13,
+          "after": 14,
+          "joint_fits": 1312,
+          "direction_fraction": 0.979420731707317
+        },
+        {
+          "id": "f65v",
+          "before": 1316,
+          "tied": 4,
+          "after": 8,
+          "joint_fits": 1328,
+          "direction_fraction": 0.9909638554216867
+        },
+        {
+          "id": "f66r",
+          "before": 1408,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 1408,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f66v",
+          "before": 1294,
+          "tied": 3,
+          "after": 15,
+          "joint_fits": 1312,
+          "direction_fraction": 0.9862804878048781
+        }
+      ],
+      "min_fraction": 0.9518072289156626,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "ZL",
+      "cohort": "paragraph207",
+      "focal": "f86v4",
+      "scope": "best",
+      "relation": "before",
+      "comparisons": [
+        {
+          "id": "f26r",
+          "before": 168,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 168,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f26v",
+          "before": 176,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 176,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f31r",
+          "before": 179,
+          "tied": 1,
+          "after": 0,
+          "joint_fits": 180,
+          "direction_fraction": 0.9944444444444445
+        },
+        {
+          "id": "f31v",
+          "before": 154,
+          "tied": 12,
+          "after": 0,
+          "joint_fits": 166,
+          "direction_fraction": 0.927710843373494
+        },
+        {
+          "id": "f41r",
+          "before": 162,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 162,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f41v",
+          "before": 158,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 158,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43r",
+          "before": 170,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 170,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f43v",
+          "before": 168,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 168,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f46v",
+          "before": 174,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 174,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f48r",
+          "before": 170,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 170,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f57r",
+          "before": 158,
+          "tied": 4,
+          "after": 2,
+          "joint_fits": 164,
+          "direction_fraction": 0.9634146341463414
+        },
+        {
+          "id": "f65v",
+          "before": 163,
+          "tied": 1,
+          "after": 2,
+          "joint_fits": 166,
+          "direction_fraction": 0.9819277108433735
+        },
+        {
+          "id": "f66r",
+          "before": 176,
+          "tied": 0,
+          "after": 0,
+          "joint_fits": 176,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "f66v",
+          "before": 163,
+          "tied": 0,
+          "after": 1,
+          "joint_fits": 164,
+          "direction_fraction": 0.9939024390243902
+        }
+      ],
+      "min_fraction": 0.927710843373494,
+      "max_fraction": 1.0
+    },
+    {
+      "rep": "ZL",
+      "cohort": "pool50",
+      "focal": "I:67-68",
+      "scope": "all",
+      "relation": "after",
+      "comparisons": [
+        {
+          "id": "O:87-90",
+          "before": 0,
+          "tied": 4,
+          "after": 1308,
+          "joint_fits": 1312,
+          "direction_fraction": 0.9969512195121951
+        },
+        {
+          "id": "O:88-89",
+          "before": 0,
+          "tied": 66,
+          "after": 1198,
+          "joint_fits": 1264,
+          "direction_fraction": 0.9477848101265823
+        },
+        {
+          "id": "S:100-101",
+          "before": 0,
+          "tied": 23,
+          "after": 1273,
+          "joint_fits": 1296,
+          "direction_fraction": 0.9822530864197531
+        },
+        {
+          "id": "S:99-102",
+          "before": 0,
+          "tied": 45,
+          "after": 1155,
+          "joint_fits": 1200,
+          "direction_fraction": 0.9625
+        }
+      ],
+      "min_fraction": 0.9477848101265823,
+      "max_fraction": 0.9969512195121951
+    },
+    {
+      "rep": "ZL",
+      "cohort": "pool50",
+      "focal": "I:67-68",
+      "scope": "best",
+      "relation": "after",
+      "comparisons": [
+        {
+          "id": "O:87-90",
+          "before": 0,
+          "tied": 0,
+          "after": 164,
+          "joint_fits": 164,
+          "direction_fraction": 1.0
+        },
+        {
+          "id": "O:88-89",
+          "before": 0,
+          "tied": 7,
+          "after": 151,
+          "joint_fits": 158,
+          "direction_fraction": 0.9556962025316456
+        },
+        {
+          "id": "S:100-101",
+          "before": 0,
+          "tied": 2,
+          "after": 160,
+          "joint_fits": 162,
+          "direction_fraction": 0.9876543209876543
+        },
+        {
+          "id": "S:99-102",
+          "before": 0,
+          "tied": 4,
+          "after": 146,
+          "joint_fits": 150,
+          "direction_fraction": 0.9733333333333334
+        }
+      ],
+      "min_fraction": 0.9556962025316456,
+      "max_fraction": 1.0
+    }
+  ],
+  "outputs": {
+    "data.json": "9a821f43aa75ae1878ce4798a176b02e8d94cb95ccc44ab14a972d5fa6656097",
+    "index.html": "9e68238d6a536e967c7aaf7a20506e946346b1ea7b342dac8f977cea792ce016"
+  }
+}

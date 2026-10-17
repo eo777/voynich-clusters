@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "control_combinations": 72,
+  "checks": [
+    "normalization",
+    "focal selection",
+    "paired reversal symmetry",
+    "consensus sorting",
+    "CSV action",
+    "empty search"
+  ],
+  "browser_visual_check": "separate"
+}

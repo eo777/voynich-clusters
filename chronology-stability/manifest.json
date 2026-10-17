@@ -1,7 +1,7 @@
 {
   "study": "Golf chronology stability, 16 October 2026",
   "original_release_sha256": "54e1107026305147f7920eff37c86aa5f6afc170625265c8a4a6df135068ad0f",
-  "rf1b_release_sha256": "b1b856a16d0cc09585306513ebf55a6d0c6dc6ee5c0c63386999bd9f7286b381",
+  "rf1b_release_sha256": "f136fb04c8c7b1d21feab0daab951d43904019bf023598e8c06ed6997d3888f8",
   "scope": "Frozen observed inputs, starting candidates, complete report, results, analysis code and audits; no private paper or runtime binaries.",
   "files": {
     ".gitattributes": {
@@ -13,24 +13,28 @@
       "sha256": "63cfefbbd62d9080107ca1e56c111dfd71b7c29c6a7b66c5ac66fec72f807e40"
     },
     "README.md": {
-      "bytes": 9263,
-      "sha256": "23974907572dea76f51ee281e68ebb4270c9e91abdd27162fc203a13e641cfe0"
+      "bytes": 9583,
+      "sha256": "3140e895e452075ef8da862477a9ff4a8eaa937e615218a08012f1ab9025040e"
     },
     "check_inputs.py": {
       "bytes": 2264,
       "sha256": "09f5d1b4727c342c01bed9c9780c3eed6c85d540d04a2b8889fc4c9a1dce23bb"
     },
     "figures.html": {
-      "bytes": 11271,
-      "sha256": "597cc080b5e484879ecfcd6fbb393fa2335acdc31b11f425b2b7b386e5a67aa4"
+      "bytes": 11462,
+      "sha256": "3305caef1f23791c46dd13dcbb8a0a696c1d9078f07db1106f933d464a423f04"
     },
     "index.html": {
-      "bytes": 43321,
-      "sha256": "1b3067074b0f37bc2d50739bc79a8b9339ed1c032ccf2d029038b6b25c7d0185"
+      "bytes": 43512,
+      "sha256": "ee72d2c77558364257ce51bf7bc9b0ea4fefbe1e033f0cc844c82734cdb8a97b"
+    },
+    "individuals.html": {
+      "bytes": 4366588,
+      "sha256": "ffa82d2951e970c5bebaebb91cb288806ba4dbcb59de30276484d0b7a6863672"
     },
     "replication.html": {
-      "bytes": 95263,
-      "sha256": "68362f4bb2729179964bcbba815e0f12c02f6bedb29c554d8a8d2abbd786b115"
+      "bytes": 98026,
+      "sha256": "01203332d44233627cefd30806ef8354f18ed87c2a8f814c899bf3a0a506cc47"
     },
     "replication/ZL_ivtff_raw.txt": {
       "bytes": 411671,
@@ -1243,13 +1247,13 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/DESIGN.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/REPRODUCE.md": {
-      "bytes": 2938,
-      "sha256": "4099f91477c18ca1d52cb1729b27d0b0530099803091a7788ea27502b2420588",
+      "bytes": 3441,
+      "sha256": "2d20f2bb35398f1add9061bd00673890476ccce70b8dc34cd3ecaf0c2d1688ac",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/REPRODUCE.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RESULTS.md": {
-      "bytes": 10548,
-      "sha256": "41f08069825c6c06fef9cece23a2a3fae4eac4fcdd04f914525e0d040bcbe871",
+      "bytes": 11531,
+      "sha256": "93bc5868b9ae5893b838593b2f464ed2b47b833623cceff75c9c31deab0ca2da",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RESULTS.md"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RF1b-er.txt": {
@@ -1258,13 +1262,13 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/RF1b-er.txt"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/artifact_manifest.json": {
-      "bytes": 9424,
-      "sha256": "b1b856a16d0cc09585306513ebf55a6d0c6dc6ee5c0c63386999bd9f7286b381",
+      "bytes": 10925,
+      "sha256": "f136fb04c8c7b1d21feab0daab951d43904019bf023598e8c06ed6997d3888f8",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/artifact_manifest.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/build_report.py": {
-      "bytes": 14165,
-      "sha256": "7736cba0b7facbc86f7aa61ee545158284ad95b8140aeb856b7a4ad1a27fa3fa",
+      "bytes": 15144,
+      "sha256": "6073089d9188077e2ea142439e54981bea3ba28fecc628c278105e3b0b8f15cc",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/build_report.py"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/comparison.json": {
@@ -1363,9 +1367,54 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/execution_verification.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/index.html": {
-      "bytes": 16429,
-      "sha256": "978f8513a3009d1c5d8fe900d8c58affa336181533c650b788f895781aa20d66",
+      "bytes": 17470,
+      "sha256": "f68d66b9f3eeb7a4159142cfd581ef6c39ee252c00ffb4fbcf308c8301a15cf9",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/index.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/build.py": {
+      "bytes": 6286,
+      "sha256": "9be2c600e1ded98ca7c30bd6e8ec6befef431109f1f5f5ec027e34dfd84dc970",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/build.py"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/data.json": {
+      "bytes": 4351599,
+      "sha256": "9a821f43aa75ae1878ce4798a176b02e8d94cb95ccc44ab14a972d5fa6656097",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/data.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/index.html": {
+      "bytes": 4365945,
+      "sha256": "9e68238d6a536e967c7aaf7a20506e946346b1ea7b342dac8f977cea792ce016",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/index.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/preview.png": {
+      "bytes": 133871,
+      "sha256": "2cbc9d26302266b56d4773c888ec5d0ec90e1f78f921a67255a15c7164f2696e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/preview.png"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/template.html": {
+      "bytes": 14279,
+      "sha256": "9b65c556829f46d65f464ef63807d1c7af5727ddfbecf60b58ecb4a45b88544e",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/template.html"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/ui_verification.json": {
+      "bytes": 250,
+      "sha256": "d94054c4240e3621e36ee03bb867e54588743dfbf964a48743e166699ae6075f",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/ui_verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/verification.json": {
+      "bytes": 16459,
+      "sha256": "e7637033f64ef86a0d89c36b0ccdd55d5859744127be3520e05c299a3a39d4ba",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/verification.json"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/verify_ui.cjs": {
+      "bytes": 3542,
+      "sha256": "2434c7b910c6341ce6722b327020102282fcc6039cb485b1c346d3959ece6707",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/verify_ui.cjs"
+    },
+    "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/visual_verification.json": {
+      "bytes": 838,
+      "sha256": "78ec4c4ece20f7f12001ee0c13bef5bc2f2b72b5bdf4fe68c9220cc5f601c512",
+      "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/individuals/visual_verification.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/inputs.json": {
       "bytes": 90662,
@@ -1479,7 +1528,7 @@
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/presentation_verification.json": {
       "bytes": 905,
-      "sha256": "c2aeb24e59ccd48f3adbd1d65e78474e2238e60af4b5d7db8a7e714c30fa839f",
+      "sha256": "fc708da3ec2506e38411eabf094e232396dd2c9a829ede864353224a567634bd",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/presentation_verification.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/production_replay_verification.json": {
@@ -1488,8 +1537,8 @@
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/production_replay_verification.json"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/report.html": {
-      "bytes": 16429,
-      "sha256": "978f8513a3009d1c5d8fe900d8c58affa336181533c650b788f895781aa20d66",
+      "bytes": 17470,
+      "sha256": "f68d66b9f3eeb7a4159142cfd581ef6c39ee252c00ffb4fbcf308c8301a15cf9",
       "original_source": "solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/report.html"
     },
     "replication/solve/botanical_enrichment/team_golf/golf_rf1b_stability_20261016/run_ensemble.py": {
@@ -1587,8 +1636,8 @@
       "sha256": "1c539d939bb88f084fda6d3681107bf365c8822e859153a920fbde9d39439abe"
     },
     "rf1b.html": {
-      "bytes": 19283,
-      "sha256": "c1146cfeba623412c9a18cf1241ebb46dffea8f5053ba60e0d0c44c679215942"
+      "bytes": 20453,
+      "sha256": "7650676451732a302cb1c9a7b25b000da579ac532bcc489ae9e18cd33874c572"
     },
     "verify.py": {
       "bytes": 2308,

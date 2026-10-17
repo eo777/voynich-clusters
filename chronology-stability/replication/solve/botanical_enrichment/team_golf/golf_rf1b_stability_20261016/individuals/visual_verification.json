@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "renderer": "Microsoft Edge headless, isolated temporary profile",
+  "visual_check": "Labels and controls legible; table and detail panels aligned; no overlapping labels. Large tables intentionally scroll.",
+  "screenshot_sha256": "2cbc9d26302266b56d4773c888ec5d0ec90e1f78f921a67255a15c7164f2696e",
+  "temporary_profiles_removed": true,
+  "latest_defaults": {
+    "cohort": "pooled bifolia",
+    "representation": "both equal weight",
+    "order": "pairwise consensus",
+    "fits": "best per sample, 1a before 1b",
+    "sections": "all"
+  },
+  "latest_defaults_verification": "72 control combinations passed; saved browser screenshot inspected and confirms all five defaults.",
+  "browser_exit_note": "Browser process timed out after saving the complete screenshot; temporary profile removed."
+}

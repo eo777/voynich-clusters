@@ -6,6 +6,10 @@ This is the requested RF1b-er transcription with **individual EVA characters**: 
 
 ## RF1b-er separately
 
+[Inspect individual pages and bifolia](individuals/index.html): labeled distributions, same-run pairwise comparisons, and a descriptive consensus ordering. The explorer preserves ties and distinguishes all starts from the best recovered candidate per sample.
+
+The early 3b row is **f86v4**. Across all starts and both penalties, it precedes each other 3b page in 95.4–100% of jointly retained RF fits and 95.2–100% of ZL fits. The later pooled 2a row is **I:67–68**: it follows each other 2a bifolium in 99.6–100% of RF fits and 94.8–99.7% of ZL fits. Each range spans the separate pairwise comparisons, not a confidence interval. These are local ordering preferences within the fitted model, conditional on the tested starts and settings; they do not establish historical dates or direct connections. The [paired counts and verification](individuals/verification.json) retain the underlying counts and the best-per-sample comparison as well. No new fits were needed.
+
 ![RF1b-er basic EVA ordering sensitivity](ordering_rf1b.png)
 
 [PNG](ordering_rf1b.png) · [SVG](ordering_rf1b.svg) · [Chart data](ordering_rf1b_data.json)
