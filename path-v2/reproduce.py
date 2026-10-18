@@ -16,13 +16,15 @@ import numpy as np
 APP = Path(__file__).resolve().parent
 ROOT = APP.parents[1]
 TOL = 1e-7
-DEFAULT = 'v2_default'
+DEFAULT = '1'
+LEGACY = dict(id='0', alias='legacy_proposed', name='Path 0 · original proposed (v1)', conditions=None)
 VARIANTS = [
-    dict(id=DEFAULT, name='V2 default · overall consensus', conditions=None),
-    dict(id='v2_3a_3b__4a_4c', name='V2 · 3a before 3b; 4a before 4c', conditions=[-1, -1]),
-    dict(id='v2_3a_3b__4c_4a', name='V2 · 3a before 3b; 4c before 4a', conditions=[-1, 1]),
-    dict(id='v2_3b_3a__4a_4c', name='V2 · 3b before 3a; 4a before 4c', conditions=[1, -1]),
+    dict(id=DEFAULT, alias='v2_default', name='Path 1 · default overall consensus', conditions=None),
+    dict(id='2', alias='v2_3a_3b__4a_4c', name='Path 2 · 3a before 3b; 4a before 4c', conditions=[-1, -1]),
+    dict(id='3', alias='v2_3a_3b__4c_4a', name='Path 3 · 3a before 3b; 4c before 4a', conditions=[-1, 1]),
+    dict(id='4', alias='v2_3b_3a__4a_4c', name='Path 4 · 3b before 3a; 4a before 4c', conditions=[1, -1]),
 ]
+ALIASES = {v['alias']: v['id'] for v in VARIANTS+[LEGACY]}
 COHORTS = {'pages': 'paragraph207', 'bifolia': 'pool50'}
 OUTPUTS = {'path-v2/collection.json', 'path-v2/pages.csv', 'path-v2/bifolia.csv',
     'path-v2/selected-fits.csv', 'path-v2/README.md', 'path-v2/reproduce.py', 'path-v2/.gitattributes'}
@@ -108,7 +110,7 @@ def build(site_root=None):
                 pairwise_after_half_tie=pairwise[np.triu_indices(n, 1)].tolist())
         assert paths[DEFAULT]['resulting_group_order'] == [1, 1]
         cohorts[unit] = dict(meta=meta, paths=paths)
-    return dict(version=2, classification_version='Golf 2.1', default=DEFAULT,
+    return dict(version=2, classification_version='Golf 2.1', default=DEFAULT, aliases=ALIASES, legacy=LEGACY,
         variants=VARIANTS, omitted_conditional_variant=dict(conditions=[1, 1], reason='Same ending directions as the overall default, which remains unconditioned.'),
         presets=dict(representations=['RF/basic EVA characters', 'ZL/Zattera'], representation_weights=[.5, .5],
             penalties=[.01, .05], penalty_weights=[.5, .5], scope='best eligible fit per sample',
@@ -127,7 +129,7 @@ def wide_rows(collection, unit):
             path_collection_version=2, default_path_id=DEFAULT)
         for variant in VARIANTS:
             key = variant['id']; p = c['paths'][key]
-            row.update({key+'_score': p['scores'][i], key+'_rank': p['ranks'][i], key+'_retained_fits': p['retained_fits'][i]})
+            row.update({'path_'+key+'_score': p['scores'][i], 'path_'+key+'_rank': p['ranks'][i], 'path_'+key+'_retained_fits': p['retained_fits'][i]})
         out.append(row)
     return out
 
@@ -146,8 +148,8 @@ def assignment_fields(collection, page, sheet):
         row[prefix+'_path_rank'] = '' if i is None else c['paths'][DEFAULT]['ranks'][i]
         for variant in VARIANTS[1:]:
             p = c['paths'][variant['id']]
-            row[prefix+'_'+variant['id']+'_score'] = '' if i is None else p['scores'][i]
-            row[prefix+'_'+variant['id']+'_rank'] = '' if i is None else p['ranks'][i]
+            row[prefix+'_path_'+variant['id']+'_score'] = '' if i is None else p['scores'][i]
+            row[prefix+'_path_'+variant['id']+'_rank'] = '' if i is None else p['ranks'][i]
     return row
 
 
@@ -200,10 +202,9 @@ def display_data(base):
             pages=guide(scores, model['coordinates'], para),
             paragraphs_and_pools=guide(scores, model['coordinates'], para+pools)) for mode,model in base['modes'].items()}
         display[key] = dict(positions=scores, sheets=rows, variation=variation, curves=curves)
-    display['legacy_proposed'] = dict(positions=base['modes']['combined']['curves']['proposed']['positions'],
+    display[LEGACY['id']] = dict(positions=base['modes']['combined']['curves']['proposed']['positions'],
         sheets=base['sheets'], variation=base['variation'], curves={})
-    return dict(collection=c, default=DEFAULT, options=VARIANTS+[
-        dict(id='legacy_proposed', name='Legacy · original proposed path (v1)', conditions=None)],
+    return dict(collection=c, default=DEFAULT, legacy_id=LEGACY['id'], aliases=ALIASES, options=VARIANTS+[LEGACY],
         display=display, guide_method=dict(method='Gaussian local linear regression at fixed consensus score',
             bandwidth=.06, points=160, dimensions=8, reference_geometry='unchanged ZL shared MDS',
             interpretation='Visual summary, not an ElPiGraph fit or nearest-curve projection. It cannot change consensus scores.'))

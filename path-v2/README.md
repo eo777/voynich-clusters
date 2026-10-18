@@ -1,18 +1,32 @@
 # Sequence / path collection v2
 
-**Default: `v2_default` — overall pairwise consensus.** Golf **2.1** identifies
+**Default: Path 1 — overall pairwise consensus.** Golf **2.1** identifies
 the classification scheme; path collection **v2** identifies the ordering data.
 The classification memberships have not changed.
 
 ## Named paths
 
-| ID | Meaning |
-| --- | --- |
-| `v2_default` | Overall consensus; no ending-order filter |
-| `v2_3a_3b__4a_4c` | 3a before 3b; Bio 4a before Stars-S 4c |
-| `v2_3a_3b__4c_4a` | 3a before 3b; Stars-S 4c before Bio 4a |
-| `v2_3b_3a__4a_4c` | 3b before 3a; Bio 4a before Stars-S 4c |
-| `legacy_proposed` | Original proposed curve, available in the selector and archive only |
+| Numerical ID | Meaning | Previous ID / link alias |
+| --- | --- | --- |
+| **1 (default)** | Overall consensus; no ending-order filter | `v2_default` |
+| **2** | 3a before 3b; Bio 4a before Stars-S 4c | `v2_3a_3b__4a_4c` |
+| **3** | 3a before 3b; Stars-S 4c before Bio 4a | `v2_3a_3b__4c_4a` |
+| **4** | 3b before 3a; Bio 4a before Stars-S 4c | `v2_3b_3a__4a_4c` |
+| **0 (legacy)** | Original proposed curve, available in the selector and archive only | `legacy_proposed` |
+
+Use `sequence.html?path=1` or `curves.html?path=1`, substituting any ID from
+0 to 4. The earlier descriptive IDs and saved selections still resolve to
+the same paths. Numbers identify paths, not their quality or chronological
+position. They are separate from the collection version and Golf labels.
+
+The machine-readable IDs are digit strings (`"1"`, etc.). `default_path_id`
+is `1`, and `collection.json` records the alias mapping. Wide page/bifolium
+CSVs use `path_1_score`, `path_1_rank`, `path_1_retained_fits`, and analogous
+columns for 2–4. Classification CSVs keep `page_path_score` and
+`bifolium_path_score` for the default, with `page_path_2_score`,
+`bifolium_path_2_score`, etc. for alternates. These replace the long-ID column
+names; scores, ranks, selected fits and eligibility rules are unchanged.
+Path 0 remains in the archive and display data, not the v2 score CSVs.
 
 The default's group-median scores put **3b before 3a and 4c before 4a** in both
 cohorts. The fourth conditional combination is omitted because it has these

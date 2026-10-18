@@ -1,6 +1,6 @@
 # Sequence / path collection v2
 
-The default is `v2_default`: both representations and both penalties equally weighted, best eligible fit per sample, all-section pairwise consensus. Golf 2.1 remains the classification version.
+The default is **Path 1** (`?path=1`): both representations and both penalties equally weighted, best eligible fit per sample, all-section pairwise consensus. Golf 2.1 remains the classification version.
 
 - [Definitions, variants, calculation and reproduction](path-v2/README.md)
 - [Page scores](path-v2/pages.csv) and [bifolium scores](path-v2/bifolia.csv)

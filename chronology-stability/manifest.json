@@ -21,20 +21,20 @@
       "sha256": "09f5d1b4727c342c01bed9c9780c3eed6c85d540d04a2b8889fc4c9a1dce23bb"
     },
     "figures.html": {
-      "bytes": 11623,
-      "sha256": "fd2810a2c36d8eedcc7571bb2e0cd0c745b4905e38bca3f252c87b85836c4e30"
+      "bytes": 11618,
+      "sha256": "4b18f9c9df83c6297671dcedaada359cc4487b1b8046661b61d2900a0c0426bb"
     },
     "index.html": {
-      "bytes": 43673,
-      "sha256": "6e320b7656a993aa7afe54507ef6dabc2b47e67a74dbffa9eb4a76179c817099"
+      "bytes": 43668,
+      "sha256": "2438a4445528fde7b1d3a6db1a9f23059a01ef84bb16fe6a10c631d3a15b7e97"
     },
     "individuals.html": {
-      "bytes": 4366749,
-      "sha256": "ffb66be58aa95eb1ebf015d6f8d867910534febc35cbe65e011df44edab0b0bd"
+      "bytes": 4366744,
+      "sha256": "62facb776ecc355cb96ea58f12d0c6f4941a431b9ce10b97024808e53ee759ce"
     },
     "replication.html": {
-      "bytes": 98187,
-      "sha256": "54673639053dda284588c0ca8a062008d001145e4087005d7fc7a56f57c86209"
+      "bytes": 98182,
+      "sha256": "a28d39d9ae8d4629e5655d287f8fb3971e4d5eeb845ef80109f050699c41ab2b"
     },
     "replication/ZL_ivtff_raw.txt": {
       "bytes": 411671,
@@ -1636,8 +1636,8 @@
       "sha256": "1c539d939bb88f084fda6d3681107bf365c8822e859153a920fbde9d39439abe"
     },
     "rf1b.html": {
-      "bytes": 20614,
-      "sha256": "71a6edcceb27069f21edccab099fc8bcb13dd24cc23ff2bc906b119b778fcae1"
+      "bytes": 20609,
+      "sha256": "bef40ac3d2a409e2b01d0fcd559e934057256f2fadaa4b5273064e75183ae73d"
     },
     "verify.py": {
       "bytes": 2308,

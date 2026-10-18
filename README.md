@@ -110,7 +110,7 @@ reviewed page/text-kind membership export with support and adjudication fields.
 
 ## The manuscript path
 
-**Default ordering: sequence / path collection v2, `v2_default`.**
+**Default ordering: sequence / path collection v2, Path 1.**
 Golf **2.1** remains the classification version. Path **v2** is a separately
 versioned ordering dataset; the memberships have not changed.
 
@@ -123,10 +123,11 @@ Lower is earlier; these are descriptive scores, not probabilities or dates.
 
 | Path ID | Ending conditions |
 | --- | --- |
-| `v2_default` | Overall consensus; no ending filter |
-| `v2_3a_3b__4a_4c` | 3a before 3b; Bio 4a before Stars-S 4c |
-| `v2_3a_3b__4c_4a` | 3a before 3b; Stars-S 4c before Bio 4a |
-| `v2_3b_3a__4a_4c` | 3b before 3a; Bio 4a before Stars-S 4c |
+| **1 (default)** | Overall consensus; no ending filter |
+| **2** | 3a before 3b; Bio 4a before Stars-S 4c |
+| **3** | 3a before 3b; Stars-S 4c before Bio 4a |
+| **4** | 3b before 3a; Bio 4a before Stars-S 4c |
+| **0 (legacy)** | Original proposed v1 path |
 
 The default places group-median scores in the remaining directions, 3b before
 3a and 4c before 4a, for both pages and bifolia. It nevertheless combines all
@@ -135,7 +136,7 @@ choosing each sample's best eligible fit. Support counts are reported because
 some samples have no eligible fit for a particular scenario.
 
 Both **Sequence** and **Curves** open on v2 and share a path selector, including
-the original proposed path as `legacy_proposed`. Existing views, colors, MDS
+the original proposed path as **Path 0**. Existing views, colors, MDS
 coordinates and point interactions are retained. V2 scores update the section
 chart, table, offsets and variation statistic. The smooth v2 lines are display
 guides at fixed consensus scores, not a single ElPiGraph fit. Historical fit
@@ -145,7 +146,11 @@ are restored only with the legacy selector; they are not attributed to v2.
 The [Golf 2.1 assignments CSV](golf-v21-assignments.csv) preserves all 302
 classification rows and appends `path_collection_version`, `default_path_id`,
 `page_path_score`, `bifolium_path_score`, corresponding ranks, and explicitly
-named score/rank columns for the three alternates. The old `*_path_position`
+numbered score/rank columns for the three alternates (e.g. `page_path_2_score`
+and `bifolium_path_2_score`). The wide datasets use `path_1_score` through
+`path_4_score`, with corresponding ranks and retained-fit counts. The default
+ID is `1`. Numerical IDs replace the earlier long descriptive IDs without
+changing any scores. The old `*_path_position`
 columns are archived. Page paragraph scores are repeated across text-kind
 rows; pool scores are repeated across constituent pages. Non-paragraph-only
 pages have blank v2 page scores. Pages and bifolia use different peer
@@ -161,7 +166,9 @@ populations, so their difference is not a geometric residual along one curve.
 - [Archived original path methods](archive/path-v1/path-methods.md)
 
 Use `#curves` and `#sequence` for direct links. A specific path can also be
-linked as `sequence.html?path=v2_3a_3b__4a_4c` (and likewise `curves.html`).
+linked as `sequence.html?path=2` (and likewise `curves.html`); Path 1 is the
+default. Earlier long IDs still work in URLs and saved selections. The
+[path definitions](path-v2/README.md) document their numerical equivalents.
 The historical MDS/path research exports remain frozen references; they do
 not define the current downstream default.
 
