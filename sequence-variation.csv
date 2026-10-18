@@ -1,11 +1,11 @@
 coordinate,within_bifolium_variation_fraction,percent,pages,bifolia,basis
-MDS1,0.022866440629763594,2.2866440629763596,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS2,0.1506834533968276,15.06834533968276,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS3,0.22662849471156687,22.662849471156687,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS4,0.4737796113480772,47.37796113480772,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS5,0.25052978293234146,25.052978293234148,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS6,0.32402766881282585,32.40276688128259,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS7,0.5626653348751652,56.266533487516526,207,50,Within-bifolium page sum of squares / total page sum of squares
-MDS8,0.4809338648563189,48.09338648563189,207,50,Within-bifolium page sum of squares / total page sum of squares
-Curved path,0.007576064402847547,0.7576064402847548,207,50,Within-bifolium page sum of squares / total page sum of squares
-Curve with bifolium left out,0.015493565101381265,1.5493565101381266,207,50,"Fold-normalized; fixed shared MDS, tested bifolium omitted from curve fit"
+MDS1,0.022866440629763594,2.2866440629763596,207,50,Fixed coordinates / v2 page consensus scores
+MDS2,0.1506834533968276,15.06834533968276,207,50,Fixed coordinates / v2 page consensus scores
+MDS3,0.22662849471156687,22.662849471156687,207,50,Fixed coordinates / v2 page consensus scores
+MDS4,0.4737796113480772,47.37796113480772,207,50,Fixed coordinates / v2 page consensus scores
+MDS5,0.25052978293234146,25.052978293234148,207,50,Fixed coordinates / v2 page consensus scores
+MDS6,0.32402766881282585,32.40276688128259,207,50,Fixed coordinates / v2 page consensus scores
+MDS7,0.5626653348751652,56.266533487516526,207,50,Fixed coordinates / v2 page consensus scores
+MDS8,0.4809338648563189,48.09338648563189,207,50,Fixed coordinates / v2 page consensus scores
+V2 consensus score,0.014727726441781715,1.4727726441781714,207,50,Fixed coordinates / v2 page consensus scores
+Held-out v2 score,,,207,50,Not estimated for path v2

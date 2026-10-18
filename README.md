@@ -7,8 +7,8 @@ Jensen–Shannon divergence between word and joined-line transition matrices.
 
 **Current classification — Golf 2.1, reviewed 10 October 2026**
 
-- [Page classifications and scores](golf-classifications.csv) includes Golf 1.0,
-  Golf 2.0 and the current Golf 2.1 memberships for 225 pages/panels. Separate
+- [Page classifications and scores](golf-classifications.csv) includes current
+  Golf 2.1 memberships and path v2 scores for 225 pages/panels. Separate
   paragraph and all-text columns retain the outlier, neighbor and short-text scores.
 - [Complete Golf 2.1 assignments](golf-v21-assignments.csv) covers all 302
   page/text-kind units, including labels, with support and adjudications.
@@ -110,39 +110,60 @@ reviewed page/text-kind membership export with support and adjudication fields.
 
 ## The manuscript path
 
-The **Curves** tab compares word, joined-line and combined transition profiles
-in a shared page-and-bifolium MDS. Toggle fits based on pools, pages, or both,
-and inspect all eight displayed dimensions. The **Sequence** tab follows the
-proposed nonlinear path from group 1 to the Bio side, with manuscript section
-annotations and clickable connections between a pool and its pages.
+**Default ordering: sequence / path collection v2, `v2_default`.**
+Golf **2.1** remains the classification version. Path **v2** is a separately
+versioned ordering dataset; the memberships have not changed.
 
-MDS1 already has only **2.29%** of page variation within bifolia. The curved
-coordinate has **0.76%**, or **1.55%** when each tested bifolium is left out of
-curve fitting. The chart compares these values with all eight MDS axes on the
-same scale. The embedding stays fixed during the held-out calculation.
+The default uses both RF/basic EVA and ZL/Zattera with equal weight, both lambda
+settings (0.01 / 0.05) with equal weight, the best eligible fit per sample,
+and pairwise consensus across all sections. Every path retains the existing
+1a-before-1b eligibility condition. Scores count how often an observation is
+later than its peers in the same retained fits, with half weight for ties.
+Lower is earlier; these are descriptive scores, not probabilities or dates.
 
-Use `#curves` and `#sequence` for direct links. The SVG charts can be saved for
-a writeup. This is a candidate sequence for evaluating a proposed chronology;
-its positions are not dates or independently established historical order.
+| Path ID | Ending conditions |
+| --- | --- |
+| `v2_default` | Overall consensus; no ending filter |
+| `v2_3a_3b__4a_4c` | 3a before 3b; Bio 4a before Stars-S 4c |
+| `v2_3a_3b__4c_4a` | 3a before 3b; Stars-S 4c before Bio 4a |
+| `v2_3b_3a__4a_4c` | 3b before 3a; Bio 4a before Stars-S 4c |
 
-The [Golf 2.1 assignments CSV](golf-v21-assignments.csv) includes two path columns.
-`page_path_position` gives the page's own projection onto the combined-transition
-Sequence curve. It uses paragraph text when available, otherwise the saved
-supplementary circular/radial profile. `bifolium_path_position` gives the
-paragraph-pooled bifolium's projection, repeated for every page on that bifolium.
-Both use the same coordinate, with 0 at the group 1 end and 1 at the Bio side.
-Page projections can extend beyond that interval. Blank values mean that no
-corresponding projection or pooled bifolium exists in the saved study; zero is
-a valid position. Neither column measures elapsed time or assignment confidence.
-These are page-level coordinates repeated across a page's text-kind rows, not
-separate path estimates for each label, circular or radial assignment. All
-original assignment fields and all 302 rows are preserved.
+The default places group-median scores in the remaining directions, 3b before
+3a and 4c before 4a, for both pages and bifolia. It nevertheless combines all
+eligible endings. Variants filter by the named group-median directions before
+choosing each sample's best eligible fit. Support counts are reported because
+some samples have no eligible fit for a particular scenario.
 
-- [Bifolia in sequence](sequence-bifolia.csv)
-- [Page positions and distance from the path](sequence-profiles.csv)
-- [Within-bifolium variation across MDS axes](sequence-variation.csv)
-- [Methods and interpretation](path-methods.md)
-- [Complete chart data and source hashes](path-data.json)
+Both **Sequence** and **Curves** open on v2 and share a path selector, including
+the original proposed path as `legacy_proposed`. Existing views, colors, MDS
+coordinates and point interactions are retained. V2 scores update the section
+chart, table, offsets and variation statistic. The smooth v2 lines are display
+guides at fixed consensus scores, not a single ElPiGraph fit. Historical fit
+overlays are labeled legacy. The original held-out statistic and its intervals
+are restored only with the legacy selector; they are not attributed to v2.
+
+The [Golf 2.1 assignments CSV](golf-v21-assignments.csv) preserves all 302
+classification rows and appends `path_collection_version`, `default_path_id`,
+`page_path_score`, `bifolium_path_score`, corresponding ranks, and explicitly
+named score/rank columns for the three alternates. The old `*_path_position`
+columns are archived. Page paragraph scores are repeated across text-kind
+rows; pool scores are repeated across constituent pages. Non-paragraph-only
+pages have blank v2 page scores. Pages and bifolia use different peer
+populations, so their difference is not a geometric residual along one curve.
+
+- [V2 page dataset](path-v2/pages.csv) and [bifolium dataset](path-v2/bifolia.csv)
+- [Method, exact path names and reproduction](path-v2/README.md)
+- [Selected fit identifiers and objectives](path-v2/selected-fits.csv)
+- [Machine-readable definitions, support and source hashes](path-v2/collection.json)
+- [V2 chart data](sequence-paths-v2.json)
+- [Archived original Golf 2.1 CSV with v1 path positions](archive/path-v1/golf-v21-assignments.csv)
+- [Archived historical classifications](archive/classifications/golf-classifications.csv)
+- [Archived original path methods](archive/path-v1/path-methods.md)
+
+Use `#curves` and `#sequence` for direct links. A specific path can also be
+linked as `sequence.html?path=v2_3a_3b__4a_4c` (and likewise `curves.html`).
+The historical MDS/path research exports remain frozen references; they do
+not define the current downstream default.
 
 ## Explore the manuscript
 
@@ -153,11 +174,11 @@ original assignment fields and all 302 rows are preserved.
 
 ## Page classifications and scores
 
-[Download the Golf V2 assignments CSV](golf-v2-assignments.csv) for the complete
-authoritative membership export. Each row represents a page and text kind,
-including labels, circular text and radial text. It includes working assignment
-codes, support levels, audit status, intermediate candidates and uncertainty
-reasons. This is an unchanged copy of Golf's `page_membership.csv`.
+[Download the current Golf 2.1 assignments CSV](golf-v21-assignments.csv) for
+the reviewed membership export with v2 path scores. Each row represents a page
+and text kind, including labels, circular text and radial text. The
+[historical Golf 2.0 export](archive/classifications/golf-v2-assignments.csv)
+is retained unchanged for comparison.
 
 [Download the page classifications CSV](golf-classifications.csv) for all 225
 pages and panels in the viewer, in manuscript order. Each row gives the Golf
@@ -165,8 +186,12 @@ classification and bifolium, followed by separate `paragraph_` and `all_` scores
 Unassigned pages are retained. These are the viewer's existing classifications.
 The `golf_v21_` fields contain the current reviewed membership, support,
 intermediate boundaries and written adjudication. `golf_v21_text_kind` identifies
-the controlling text kind. Golf 2.0 fields remain for comparison. The numerical
-outlier and neighbor scores retain their original word-transition basis.
+the controlling text kind. Historical Golf 1.0/2.0 fields are available in
+the [archived classification CSV](archive/classifications/golf-classifications.csv),
+not the default CSV. The numerical outlier and neighbor scores retain their
+original word-transition basis.
+
+The following Golf 2.0 field descriptions apply to that **archived** CSV:
 The `golf_v2_assignment_code` and `golf_v2_assignment_id` columns give authoritative
 working membership. `golf_v2_assignment_source` and `golf_v2_assignment_status`
 record its provenance and qualification. These match Golf's `page_membership.csv`
