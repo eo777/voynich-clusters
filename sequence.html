@@ -59,7 +59,7 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
 </section>
 <section class="panel sequence-only">
  <div class="panel-head"><div><h2>Every bifolium in sequence</h2><p>Select a row to inspect its pages above. Spread is page SD divided by overall page SD.</p></div><a href="sequence-bifolia.csv" download>Bifolium data</a></div>
- <div class="table-scroll"><table><thead><tr><th>Rank</th><th>Bifolium</th><th>Sections</th><th>Golf 2.1</th><th>Position</th><th>MDS1 spread</th><th>Curve spread</th><th>Pages</th></tr></thead><tbody id="sheetRows"></tbody></table></div>
+ <div class="table-scroll"><table><thead><tr><th>Rank</th><th>Bifolium</th><th>Sections</th><th>Golf 2.1</th><th id="positionColumn">Consensus score</th><th>MDS1 spread</th><th id="spreadColumn">Score spread</th><th>Pages</th></tr></thead><tbody id="sheetRows"></tbody></table></div>
  <details class="offsets"><summary>Compare individual page offsets</summary><div class="svg-scroll"><svg id="offsetPlot" viewBox="0 0 1200 1520" role="img" aria-label="Individual page offsets from their pooled bifolium on MDS1 and along the curve"></svg></div></details>
 </section>
 <section class="panel curves-only studies">
@@ -107,7 +107,7 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
   {x:0,y:1,w:720,h:550,title:'Primary dimensions'},
   {x:0,y:2,w:720,h:550,title:'The next bend'}];
  $('charts').innerHTML=panels.map((p,n)=>`<section class="chart"><div class="chart-head"><strong>${p.title}</strong><label>X <select aria-label="Chart ${n+1} X dimension" data-panel="${n}" data-axis="x"></select></label><label>Y <select aria-label="Chart ${n+1} Y dimension" data-panel="${n}" data-axis="y"></select></label><button data-export="plot${n}">Save SVG</button></div><svg class="mds" id="plot${n}" viewBox="0 0 ${p.w} ${p.h}" role="img" aria-label="${p.title}"></svg></section>`).join('');
- document.querySelectorAll('[data-axis]').forEach(el=>{const p=panels[+el.dataset.panel];el.innerHTML=Array.from({length:8},(_,i)=>`<option value="${i}">MDS${i+1}</option>`).join('')+(sequence?'<option value="8">Path position</option>':'');el.value=p[el.dataset.axis];el.onchange=()=>{p[el.dataset.axis]=+el.value;p.view=null;draw()}});
+ document.querySelectorAll('[data-axis]').forEach(el=>{const p=panels[+el.dataset.panel];el.innerHTML=Array.from({length:8},(_,i)=>`<option value="${i}">MDS${i+1}</option>`).join('')+(sequence?'<option value="8">Path score / position</option>':'');el.value=p[el.dataset.axis];el.onchange=()=>{p[el.dataset.axis]=+el.value;p.view=null;draw()}});
  const visible=p=>p.kind==='pool'||(p.kind==='para'?$('pages').checked:$('extra').checked);
  const belongs=i=>selected===null||pts[i].sheet===pts[selected].sheet;
  const group=p=>($('colors').value==='section'?p.section:$('colors').value==='golf20'?p.golf20:p.membership21)||'unassigned';
@@ -127,6 +127,8 @@ body[data-mode=sequence] .charts{display:grid;grid-template-columns:1fr 1fr}body
   const percent=v=>v===null?'—':`${(v*100).toFixed(2)}<span>%</span>`;
   $('mdsVariation').innerHTML=percent(D.variation[0].fraction);$('pathVariation').innerHTML=percent(D.variation[8].fraction);$('heldoutVariation').innerHTML=percent(D.variation[9].fraction);
   $('pathVariationLabel').textContent=isLegacy()?'Within-bifolium variation along the curve':'Within-bifolium variation in consensus score';
+  $('positionColumn').textContent=isLegacy()?'Path position':'Consensus score';
+  $('spreadColumn').textContent=isLegacy()?'Curve spread':'Score spread';
   $('heldoutLabel').textContent=isLegacy()?'After leaving the tested bifolium out':'Held-out v2 score not estimated';
   $('mainCurveLabel').textContent=isLegacy()?'Original proposed curve':'Selected path · bifolium guide';
   $('comparisonNote').textContent=isLegacy()?'The left view shows the original fitted curve. The right shows its full-space projected path position.':'The left view shows a smooth guide through bifolia at fixed consensus scores. The right shows independently calculated page and bifolium scores, with MDS1 retained vertically.';
