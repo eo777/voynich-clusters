@@ -36,6 +36,14 @@ not specify the order of every B group or prevent interleaving of their pages.
 
 ## Calculation
 
+**Scope of reproduction:** `reproduce.py` below summarizes saved fits. For
+fresh ElPiGraph fitting from raw transcription and for running your own text,
+see [the text-to-order commands](../text-order/README.md). Published starts use
+Golf group centers and previously selected anchor permutations. Before the
+1a/1b filter, the fitter already chooses curve direction using Early A and
+Bio/Stars. Thus direction and initialization are explicit design inputs;
+this is not an inference of historical direction from text alone.
+
 The inputs are the frozen ElPiGraph ensembles from the published stability
 study: 100 90%-inclusion samples, eight initializations, lambda 0.01 and 0.05,
 and mu 0.1. Pages use individual-page sampling; bifolia use pooled-bifolium

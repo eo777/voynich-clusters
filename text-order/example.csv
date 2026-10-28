@@ -1,0 +1,9 @@
+id,text,block,group
+sample-a,aaaa aaab aaaa aaab aaaa aaab aaaa aaab,a,left
+sample-b,aaaa aaab aaaa aaab aaab aabb aaaa aaab,b,left
+sample-c,aaaa aaab aaab aabb aaab aabb aaab aabb,c,left
+sample-d,aaab aabb aabb abbb aaab aabb aabb abbb,d,middle
+sample-e,aabb abbb aabb abbb aabb abbb aabb abbb,e,middle
+sample-f,aabb abbb abbb bbbb aabb abbb abbb bbbb,f,middle
+sample-g,abbb bbbb abbb bbbb abbb bbbb abbb bbbb,g,right
+sample-h,abbb bbbb bbbb bbbb abbb bbbb bbbb bbbb,h,right

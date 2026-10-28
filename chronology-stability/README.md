@@ -25,6 +25,13 @@ Create a Python virtual environment and install `requirements.txt` for scientifi
 
 ## Reproduce the calculations
 
+For a single command from raw transcription through fresh ElPiGraph fits to
+the current v2 scores, use the [text-to-order entry points](../text-order/README.md).
+That page also provides a custom-text command without Golf labels or group-order
+filters. The published analysis retains its declared label-based starts,
+Early-A-to-Bio/Stars orientation and downstream 1a-before-1b eligibility rule.
+The commands below preserve the original, more extensive study workflow.
+
 Copy `replication/` to a separate working directory before rerunning: the original scripts write results beside themselves. Do not overwrite the frozen reference release. In the copied study directory:
 
 1. Install ElPiGraph's exact source where the original code records its hashes: `python -m pip install --no-deps --target _deps elpigraph-python==0.3.4`. The other dependencies are provided by `requirements.txt` in your virtual environment.
